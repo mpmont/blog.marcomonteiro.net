@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    <div class="container">
+      {% include nav.html %}
+      <div class="content">
+            <!-- page content -->
+            <section class="about">
+                <h2 class="title">{{page.title}}</h2>
+                {{content}}
+            </section>
+        </div>
+          <!-- footer -->
+      {% include footer.html %}
+    </div>
+    <script src="/assets/js/site.js"></script>
+  </body>
+</html>

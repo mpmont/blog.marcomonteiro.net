@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    <div class="container">
+        <!-- nav -->
+        {% include nav.html %}
+        <div class="content">
+            <div id="scrollbubble"></div>
+            <section class="post">
+                <h2 class="flipboard-title title">{{page.title}}</h2>
+                <div class="date flipboard-date">{{ page.date | date: '%B %d, %Y' }} <i class="icon-user"></i> Written By {{page.author}}</div>
+                {{content}}
+                <ul id="tags" class="tags">
+                    {% if post %}
+                        {% assign categories = post.categories %}
+                    {% else %}
+                       {% assign categories = page.categories %}
+                    {% endif %}
+                    {% for category in categories %}
+                        <li><a href="#"><i class="icon-tag"></i> {{category}}</a></li>
+                        {% unless forloop.last %}&nbsp;{% endunless %}
+                    {% endfor %}
+                </ul>
+                <br>
+            </section>
+            <div id="tweet_it">
+                <a href="javascript:void(0)" id="tweet_compose_close" class="close_it">x</a>
+                <h4>Like it? Tweet it.</h4>
+                <p>"{{page.title}}" via <a href="http://twitter.com/marcogmonteiro">@marcogmonteiro</a><br>
+                    <a href="https://twitter.com/share" data-count="horizontal" data-count="none" data-related="marcogmonteiro" data-via="marcogmonteiro" class="twitter-share-button" data-lang="en">Tweet</a>
+                  <br>
+                </p>
+                <footer>
+                    <a href="https://twitter.com/marcogmonteiro" class="twitter-follow-button" data-show-screen-name="false" data-show-count="true" data-lang="en">Follow me!</a>
+                    <img class="avatar" src="https://www.gravatar.com/avatar/44a64ea13da9db6c694e9c26b191a0af?s=28">
+                </footer>
+            </div>
+            {% include footer.html %}
+        </div>
+        <script src="/assets/js/site.js"></script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<header>
+    <h1><a href="https://blog.marcomonteiro.net">$blog++</a></h1>
+    <nav class="main">
+        <h1 class="mobile"><a href="https://blog.marcomonteiro.net">$blog++</a></h1>
+        <span class="mobile-trigger">
+            <a class="navicon-button x">
+                <div class="navicon"></div>
+            </a>
+        </span>
+        <ul>
+            {% for item in site.data.nav.list %}
+                {% if item.target %}
+                    <li><a href="#!" onclick="openLink('{{site.baseurl}}/{{item.url}}')">{{item.title}}</a></li>
+                {% else %}
+                   <li><a href="{{site.baseurl}}/{{item.url}}">{{item.title}}</a></li>
+                {% endif %}
+            {% endfor %}
+            <li><a target="_blank" href="https://marcomonteiro.net">&bull; Website</a></li>
+            <li><a href="javascript:void(0)" id="search" class="search ir" title="Search">&bull; <i class="icon-search"></i> Search</a></li>
+            <div id="searchbar" style="display:none;">
+                <iframe src="https://duckduckgo.com/search.html?site=blog.marcomonteiro.net&prefill=Search" style="overflow:hidden;margin:0;padding:0;width:408px;height:40px;" frameborder="0"></iframe>
+            </div>
+        </ul>
+    </nav>
+</header>

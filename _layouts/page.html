@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+        <div class="container">
+            {% include nav.html %}
+             <div class="content">
+                <section class="not-found">
+                    <h2 class="title">{{page.title}}</h2>
+                    {{content}}
+                </section>
+            </div>
+            {% include footer.html %}
+        </div>
+        <script src="/assets/js/site.js"></script>
+  </body>
+</html>
