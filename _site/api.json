@@ -73,8 +73,8 @@
             {
                 "id": "blog",
                 "title": "Blog",
-                "content_text": "{% for post in site.posts %}{{post.title}}{%endfor%}",
-                "content_html": "{% for post in site.posts %}<a href=\"{{site.baseurl}}{{post.url}}\">{{post.title}}</a>{%endfor%}",
+                "content_text": "",
+                "content_html": "",
                 "url": "http://localhost:4000/",
                 "date_published": "",
                 "date_modified": ""
