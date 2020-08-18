@@ -1,0 +1,22 @@
+I"[<hr />
+
+<p>layout: post</p>
+
+<p>title: Updating your Codeigniter installation with git</p>
+
+<p>date: 2012-08-21</p>
+
+<p>tag: codeigniter,Git,Version-control</p>
+
+<p>description: Ever since Codeigniter moved from Bitbucket to Github I craved for one easy way to update my applications every time a new version gets out. Turns out there is none.</p>
+
+<p>author: Marco Monteiro</p>
+
+<p>categories: [codeigniter,Git,Version-control]</p>
+
+<hr />
+
+<p>Ever since Codeigniter moved from Bitbucket to Github I craved for one easy way to update my applications every time a new version gets out. Turns out there is none. And as you can see here, the updating process is always kinda boring specially if a major version is out. Since the version 3.0 is around the block I’m going to show you how I normally upgrade my codeigniter applications.
+<!--more-->
+First things first, I’m assuming that you work with git in your normal day to day workflow. If you don’t use it, or even worst don’t know how to use it, stop reading this and without further delay go learn how to use it. (You can check this link for that!).</p>
+:ET

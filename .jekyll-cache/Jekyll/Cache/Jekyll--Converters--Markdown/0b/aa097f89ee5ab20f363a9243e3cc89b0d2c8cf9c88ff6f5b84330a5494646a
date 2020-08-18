@@ -1,0 +1,29 @@
+I"<p>Presenting <a href="https://github.com/daniruiz/flat-remix">Flat Remix</a>. Flat remix is a pretty simple icon theme inspired on material design. It is mostly flat with some shadows, highlights and gradients for some depth and uses a colorful palette with nice contrasts.</p>
+
+<!--more-->
+
+<p><img src="https://raw.githubusercontent.com/daniruiz/Flat-Remix/master/preview.png" alt="Flat remix" /></p>
+
+<p>Flat Remix icon theme is available in three variants:</p>
+
+<ol>
+  <li>Flat Remix - main icon theme</li>
+  <li>Flat Remix Dark - for dark interfaces</li>
+  <li>Flat Remix Light - for light interfaces</li>
+</ol>
+
+<p><strong>Terminal installation</strong></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cd /tmp &amp;&amp; rm -rf flat-remix &amp;&amp;
+git clone https://github.com/daniruiz/flat-remix &amp;&amp;
+mkdir -p ~/.icons &amp;&amp; cp -r flat-remix/Flat-Remix* ~/.icons/ &amp;&amp;
+gsettings set org.gnome.desktop.interface icon-theme "Flat-Remix"
+</code></pre></div></div>
+
+<p><strong>Ubuntu based distributions</strong></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo add-apt-repository ppa:daniruiz/flat-remix
+$ sudo apt-get update
+$ sudo apt-get install flat-remix
+</code></pre></div></div>
+:ET

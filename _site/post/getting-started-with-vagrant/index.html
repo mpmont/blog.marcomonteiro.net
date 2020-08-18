@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Blog++ | Getting started with vagrant</title>
+    <!--Meta Desc-->
+    <meta name="keywords" content="development,environment,vagrant,Webdev"/>
+    <meta name="description" content="Recently I wrote a post about my dev setup. However someone has been recommending me for a while to start using Vagrant. But I never did."/>
+    <meta name="subject" content="Web development & Linux Stuff">
+    <meta name="copyright"content="Marco Monteiro">
+    <meta name="language" content="EN">
+    <meta name="robots" content="index,follow" />
+    <meta name="Classification" content="Blog">
+    <meta name="author" content="Marco Monteiro, marco@marcomonteiro.net">
+    <meta name="designer" content="marco@marcomonteiro.net">
+    <meta name="owner" content="Marco Monteiro">
+    <meta name="url" content="https://blog.marcomonteiro.net">
+    <meta name="identifier-URL" content="https://blog.marcomonteiro.net">
+    <meta name="coverage" content="Worldwide">
+
+    <!--Meta Facebook-->
+    <meta property="og:image" content="https://blog.marcomonteiro.net/assets/img/facebooklogo.jpg"/>
+    <meta property="og:title" content="Blog++ | Getting started with vagrant"/>
+    <meta property="og:description" content="Recently I wrote a post about my dev setup. However someone has been recommending me for a while to start using Vagrant. But I never did."/>
+    <meta property="og:url" content="https://blog.marcomonteiro.net"/>
+    <meta property="og:site_name" content="Blog++"/>
+    <meta property="og:type" content="blog"/>
+
+    <!--Meta Twitter-->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@marcogmonteiro">
+    <meta name="twitter:title" content="Blog++ | Getting started with vagrant">
+    <meta name="twitter:description" content="Recently I wrote a post about my dev setup. However someone has been recommending me for a while to start using Vagrant. But I never did.">
+    <meta name="twitter:creator" content="@marcogmonteiro">
+    <meta name="twitter:domain" content="blog.marcomonteiro.net">
+
+    <link rel="start" href="https://blog.marcomonteiro.net/" title="Marco Monteiro Blog">
+    <link rel="shortcut icon" href="/assets/img/favicon.ico">
+    <!-- Styles -->
+    <link href='https://fonts.googleapis.com/css?family=OFL+Sorts+Mill+Goudy+TT' rel='stylesheet' type='text/css'/>
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/github.css" />
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+</head>
+
+  <body>
+    <div class="container">
+        <!-- nav -->
+        <header>
+    <h1><a href="https://blog.marcomonteiro.net">$blog++</a></h1>
+    <nav class="main">
+        <h1 class="mobile"><a href="https://blog.marcomonteiro.net">$blog++</a></h1>
+        <span class="mobile-trigger">
+            <a class="navicon-button x">
+                <div class="navicon"></div>
+            </a>
+        </span>
+        <ul>
+            
+                
+                   <li><a href="/">Posts</a></li>
+                
+            
+                
+                   <li><a href="/about">• About</a></li>
+                
+            
+            <li><a target="_blank" href="https://marcomonteiro.net">&bull; Website</a></li>
+            <li><a href="javascript:void(0)" id="search" class="search ir" title="Search">&bull; <i class="icon-search"></i> Search</a></li>
+            <div id="searchbar" style="display:none;">
+                <iframe src="https://duckduckgo.com/search.html?site=blog.marcomonteiro.net&prefill=Search" style="overflow:hidden;margin:0;padding:0;width:408px;height:40px;" frameborder="0"></iframe>
+            </div>
+        </ul>
+    </nav>
+</header>
+        <div class="content">
+            <div id="scrollbubble"></div>
+            <section class="post">
+                <h2 class="flipboard-title title">Getting started with vagrant</h2>
+                <div class="date flipboard-date">January 04, 2014 <i class="icon-user"></i> Written By Marco Monteiro</div>
+                <p>Recently I wrote a post about <a href="http://blog.marcomonteiro.net/post/my-dev-setup-on-mac">my dev setup on mac</a>. However someone has been recommending me for a while to start using Vagrant. But I never did. Specially because my dev setup was working fine.</p>
+
+<p>A few days ago, I decided it was time to do a clean install on my mac, and start fresh. That means it’s time for some experimenting.</p>
+
+<!--more-->
+
+<p><strong>What is Vagrant?</strong></p>
+
+<blockquote>
+  <p>Vagrant is a tool for building complete development environments. With an easy-to-use workflow and focus on automation, Vagrant lowers development environment setup time, increases development/production parity, and makes the “works on my machine” excuse a relic of the past.</p>
+</blockquote>
+
+<blockquote>
+  <p>Vagrant was started in January 2010 by Mitchell Hashimoto. For almost three years, Vagrant was a side-project for Mitchell, a project that he worked on in his free hours after his full time job. During this time, Vagrant grew to be trusted and used by a range of individuals to entire development teams in large companies.</p>
+</blockquote>
+
+<p>I look at this and I see two features that interest me. First I’ll be developing on a virtual machine that is equal to the one I’ll be deploying in the future. Then, since every configuration, dirty hack or whatever will be done on that virtual machine. My computer will stay clean of all the experimenting a the web developer life requires.</p>
+
+<p>I work mainly with PHP, so the best way to start with Vagrant is to use something like <a href="https://puphpet.com/">puphpet</a>.</p>
+
+<p>Puphpet is a simple GUI to set up virtual machines for PHP Web development. In a few simple steps you’ll have your Manifest ready to start working with Vagrant.</p>
+
+<p>First you setup the deploy target. In this case it will be local. You choose what kind of virtual machine you need and you give it a name and IP address. Then you setup what path will be synced with the VM.</p>
+
+<p>After that is pretty straight forward. You just have to configure some of the aspects of your VM that are specific to you dev environment. This includes: virtual hosts, php version, composer, PEAR modules, PECL Modules, XDebug. All your database preferences, database names, users and passwords. After that you’re ready to go.</p>
+
+<p>Before you do anything with the files you just downloaded you need to download VirtualBox and install it. After that the process is quite simple.</p>
+
+<p>All you need to do is open your terminal. Navigate to your downloaded files from Puphpet and run the following command:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ vagrant up
+</code></pre></div></div>
+
+<p>This will install and start the virtual machine you ended up choosing. After that, you can access your server with the IP you used during the Puphpet setup process or you can configure the virtual host.</p>
+
+<p>Here’s a list of the available commands to use Vagrant.</p>
+
+<ul>
+  <li><i class="icon-angle-right"></i> <strong>box</strong> - manages boxes: installation, removal, etc.</li>
+  <li><i class="icon-angle-right"></i> <strong>destroy</strong> -stops and deletes all traces of the vagrant machine</li>
+  <li><i class="icon-angle-right"></i> <strong>halt</strong> - stops the vagrant machine</li>
+  <li><i class="icon-angle-right"></i> <strong>help</strong> - shows the help for a subcommand</li>
+  <li><i class="icon-angle-right"></i> <strong>init</strong> - initializes a new Vagrant environment by creating a Vagrantfile</li>
+  <li><i class="icon-angle-right"></i> <strong>package</strong> - packages a running vagrant environment into a box</li>
+  <li><i class="icon-angle-right"></i> <strong>plugin</strong> - manages plugins: install, uninstall, update, etc.</li>
+  <li><i class="icon-angle-right"></i> <strong>provision</strong> - provisions the vagrant machine</li>
+  <li><i class="icon-angle-right"></i> <strong>reload</strong> - restarts vagrant machine, loads new Vagrantfile configuration</li>
+  <li><i class="icon-angle-right"></i> <strong>resume</strong> - resume a suspended vagrant machine</li>
+  <li><i class="icon-angle-right"></i> <strong>ssh</strong> - connects to machine via SSH</li>
+  <li><i class="icon-angle-right"></i> <strong>ssh-config</strong> - outputs OpenSSH valid configuration to connect to the machine</li>
+  <li><i class="icon-angle-right"></i> <strong>status</strong> - outputs status of the vagrant machine</li>
+  <li><i class="icon-angle-right"></i> <strong>suspend</strong> - suspends the machine</li>
+  <li><i class="icon-angle-right"></i> <strong>up</strong> - starts and provisions the vagrant environment</li>
+</ul>
+
+<p>That’s it. Easy like that.</p>
+
+                <ul id="tags" class="tags">
+                    
+                    
+                        <li><a href="#"><i class="icon-tag"></i> development</a></li>
+                        &nbsp;
+                    
+                        <li><a href="#"><i class="icon-tag"></i> environment</a></li>
+                        &nbsp;
+                    
+                        <li><a href="#"><i class="icon-tag"></i> vagrant</a></li>
+                        &nbsp;
+                    
+                        <li><a href="#"><i class="icon-tag"></i> Webdev</a></li>
+                        
+                    
+                </ul>
+                <br>
+            </section>
+            <div id="tweet_it">
+                <a href="javascript:void(0)" id="tweet_compose_close" class="close_it">x</a>
+                <h4>Like it? Tweet it.</h4>
+                <p>"Getting started with vagrant" via <a href="http://twitter.com/marcogmonteiro">@marcogmonteiro</a><br>
+                    <a href="https://twitter.com/share" data-count="horizontal" data-count="none" data-related="marcogmonteiro" data-via="marcogmonteiro" class="twitter-share-button" data-lang="en">Tweet</a>
+                  <br>
+                </p>
+                <footer>
+                    <a href="https://twitter.com/marcogmonteiro" class="twitter-follow-button" data-show-screen-name="false" data-show-count="true" data-lang="en">Follow me!</a>
+                    <img class="avatar" src="https://www.gravatar.com/avatar/44a64ea13da9db6c694e9c26b191a0af?s=28">
+                </footer>
+            </div>
+            <footer>
+    <br>
+    <p>
+        <a href="https://twitter.com/marcogmonteiro"><i class="icon-twitter"></i></a>
+        <a href="https://github.com/mpmont"><i class="icon-github-alt"></i></a>
+        <a href="/feed.xml"><i class="icon-rss"></i></a> © 2010 — 2020
+        <a href="http://marcomonteiro.net" target="_blank">Marco Monteiro</a>. All Rights Reserved. Powered by
+        <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>
+    </p>
+</footer>
+        </div>
+        <script src="/assets/js/site.js"></script>
+  </body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Blog++ | Need a legacy vagrant box?</title>
+    <!--Meta Desc-->
+    <meta name="keywords" content="apache,box,mysql,phansible,php,vagrant"/>
+    <meta name="description" content="Last week I was contacted by some really old client. You know, the kind of client that you think that they don't even have the app you made for them"/>
+    <meta name="subject" content="Web development & Linux Stuff">
+    <meta name="copyright"content="Marco Monteiro">
+    <meta name="language" content="EN">
+    <meta name="robots" content="index,follow" />
+    <meta name="Classification" content="Blog">
+    <meta name="author" content="Marco Monteiro, marco@marcomonteiro.net">
+    <meta name="designer" content="marco@marcomonteiro.net">
+    <meta name="owner" content="Marco Monteiro">
+    <meta name="url" content="https://blog.marcomonteiro.net">
+    <meta name="identifier-URL" content="https://blog.marcomonteiro.net">
+    <meta name="coverage" content="Worldwide">
+
+    <!--Meta Facebook-->
+    <meta property="og:image" content="https://blog.marcomonteiro.net/assets/img/facebooklogo.jpg"/>
+    <meta property="og:title" content="Blog++ | Need a legacy vagrant box?"/>
+    <meta property="og:description" content="Last week I was contacted by some really old client. You know, the kind of client that you think that they don't even have the app you made for them"/>
+    <meta property="og:url" content="https://blog.marcomonteiro.net"/>
+    <meta property="og:site_name" content="Blog++"/>
+    <meta property="og:type" content="blog"/>
+
+    <!--Meta Twitter-->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@marcogmonteiro">
+    <meta name="twitter:title" content="Blog++ | Need a legacy vagrant box?">
+    <meta name="twitter:description" content="Last week I was contacted by some really old client. You know, the kind of client that you think that they don't even have the app you made for them">
+    <meta name="twitter:creator" content="@marcogmonteiro">
+    <meta name="twitter:domain" content="blog.marcomonteiro.net">
+
+    <link rel="start" href="https://blog.marcomonteiro.net/" title="Marco Monteiro Blog">
+    <link rel="shortcut icon" href="/assets/img/favicon.ico">
+    <!-- Styles -->
+    <link href='https://fonts.googleapis.com/css?family=OFL+Sorts+Mill+Goudy+TT' rel='stylesheet' type='text/css'/>
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/github.css" />
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+</head>
+
+  <body>
+    <div class="container">
+        <!-- nav -->
+        <header>
+    <h1><a href="https://blog.marcomonteiro.net">$blog++</a></h1>
+    <nav class="main">
+        <h1 class="mobile"><a href="https://blog.marcomonteiro.net">$blog++</a></h1>
+        <span class="mobile-trigger">
+            <a class="navicon-button x">
+                <div class="navicon"></div>
+            </a>
+        </span>
+        <ul>
+            
+                
+                   <li><a href="/">Posts</a></li>
+                
+            
+                
+                   <li><a href="/about">• About</a></li>
+                
+            
+            <li><a target="_blank" href="https://marcomonteiro.net">&bull; Website</a></li>
+            <li><a href="javascript:void(0)" id="search" class="search ir" title="Search">&bull; <i class="icon-search"></i> Search</a></li>
+            <div id="searchbar" style="display:none;">
+                <iframe src="https://duckduckgo.com/search.html?site=blog.marcomonteiro.net&prefill=Search" style="overflow:hidden;margin:0;padding:0;width:408px;height:40px;" frameborder="0"></iframe>
+            </div>
+        </ul>
+    </nav>
+</header>
+        <div class="content">
+            <div id="scrollbubble"></div>
+            <section class="post">
+                <h2 class="flipboard-title title">Need a legacy vagrant box?</h2>
+                <div class="date flipboard-date">August 06, 2016 <i class="icon-user"></i> Written By Marco Monteiro</div>
+                <p>Last week I was contacted by some really old client. You know, the kind of client that you think that they don’t even have the app you made for them online anymore.</p>
+
+<p>Turns out, they do have such app online, and they wanted me to change some minor things in it. But obviously I couldn’t do it directly in production. I needed to create a local environment that would mimic the one the client had.</p>
+
+<!--more-->
+
+<p>I havent developed anything in PHP 5.3 in a long time, and since I’m using vagrant mostly with <a href="http://phansible.com/">Phansible</a> I couldnt create a machine with it. Because the oldest PHP version phansible supports is 5.4.</p>
+
+<p>So I made a small box that supports what I needed and here’s what you need to do:</p>
+
+<h3 id="download-the-box-and-init-vagrant">Download the box and init vagrant</h3>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ vagrant box add legacy-box https://www.dropbox.com/s/ch0rq7ajonkzimp/lucid64-lamp.box?dl=1
+$ vagrant init legacy-box
+</code></pre></div></div>
+
+<h3 id="edit-your-vagrant-file">Edit your vagrant file</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>config.vm.network "private_network", ip: "192.168.33.10"
+config.vm.synced_folder "./", "/vagrant", type: "nfs"
+</code></pre></div></div>
+
+<h3 id="boot-up-the-machine">Boot up the machine</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ vagrant up
+$ vagrant ssh
+</code></pre></div></div>
+
+<h3 id="you-can-add-this-to-your-provision-id-you-want">You can add this to your provision id you want</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt-get install php5 // no futuro adicionar à provision
+$ sudo apt-get install php5-cli // no futuro adicionar à provision
+</code></pre></div></div>
+
+<h3 id="if-you-need-mysql-you-might-want-yo-edit-your-bindaddress-so-you-can-connect-via-ssh-tunnel">If you need mysql you might want yo edit your bindaddress so you can connect via ssh tunnel</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo nano /etc/mysql/my.cnf
+bindaddress passa de 127.0.0.1 a 0.0.0.0 // no futuro adicionar à provision
+</code></pre></div></div>
+
+<h3 id="with-the-lattest-versions-of-vagrant-using-such-a-old-version-of-ubuntu-you-might-need-to-create-this-file-with-the-following-contents">With the lattest versions of vagrant using such a old version of ubuntu you might need to create this file with the following contents</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cat /etc/os-release
+NAME="Ubuntu"
+VERSION="12.04 LTS, Precise Pangolin"
+ID=ubuntu
+ID_LIKE=debian
+PRETTY_NAME="Ubuntu precise (12.04 LTS)"
+VERSION_ID="12.04"
+</code></pre></div></div>
+
+<h3 id="exit-and-restart-the-machine">Exit and restart the machine</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ exit
+$ vagrant reload
+</code></pre></div></div>
+
+<h3 id="heres-your-default-connection-to-mysql">Here’s your default connection to mysql</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>host: 127.0.0.1
+user: root
+password: password
+
+SSH host: 192.168.33.10
+SSH user: vagrant
+SSH pass: vagrant
+</code></pre></div></div>
+
+<p>Enjoy!</p>
+
+                <ul id="tags" class="tags">
+                    
+                    
+                        <li><a href="#"><i class="icon-tag"></i> apache</a></li>
+                        &nbsp;
+                    
+                        <li><a href="#"><i class="icon-tag"></i> box</a></li>
+                        &nbsp;
+                    
+                        <li><a href="#"><i class="icon-tag"></i> mysql</a></li>
+                        &nbsp;
+                    
+                        <li><a href="#"><i class="icon-tag"></i> phansible</a></li>
+                        &nbsp;
+                    
+                        <li><a href="#"><i class="icon-tag"></i> php</a></li>
+                        &nbsp;
+                    
+                        <li><a href="#"><i class="icon-tag"></i> vagrant</a></li>
+                        
+                    
+                </ul>
+                <br>
+            </section>
+            <div id="tweet_it">
+                <a href="javascript:void(0)" id="tweet_compose_close" class="close_it">x</a>
+                <h4>Like it? Tweet it.</h4>
+                <p>"Need a legacy vagrant box?" via <a href="http://twitter.com/marcogmonteiro">@marcogmonteiro</a><br>
+                    <a href="https://twitter.com/share" data-count="horizontal" data-count="none" data-related="marcogmonteiro" data-via="marcogmonteiro" class="twitter-share-button" data-lang="en">Tweet</a>
+                  <br>
+                </p>
+                <footer>
+                    <a href="https://twitter.com/marcogmonteiro" class="twitter-follow-button" data-show-screen-name="false" data-show-count="true" data-lang="en">Follow me!</a>
+                    <img class="avatar" src="https://www.gravatar.com/avatar/44a64ea13da9db6c694e9c26b191a0af?s=28">
+                </footer>
+            </div>
+            <footer>
+    <br>
+    <p>
+        <a href="https://twitter.com/marcogmonteiro"><i class="icon-twitter"></i></a>
+        <a href="https://github.com/mpmont"><i class="icon-github-alt"></i></a>
+        <a href="/feed.xml"><i class="icon-rss"></i></a> © 2010 — 2020
+        <a href="http://marcomonteiro.net" target="_blank">Marco Monteiro</a>. All Rights Reserved. Powered by
+        <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>
+    </p>
+</footer>
+        </div>
+        <script src="/assets/js/site.js"></script>
+  </body>
+</html>

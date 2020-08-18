@@ -1,0 +1,27 @@
+I"�<p>One of reasons we had to use PHP 5.6 in one of our recent projets was related to the fact that we needed to get info from the clients ERP, that one only allowed a connection via MSSQL. So after we got the <a href="https://blog.marcomonteiro.net/post/having-multiple-php-versions-on-your-dev-environment">project running with PHP 5.6 instead of 7.2</a> we had to install the MSSQL drivers.</p>
+
+<!--more-->
+
+<p>Here’s how.</p>
+
+<p>This was done on Ubuntu 16.04 but I tested it on 18.04 too.</p>
+
+<p>First, make sure you’re up to date on all of your packages.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt-get update
+$ sudo apt-get upgrade
+$ sudo apt-get dist-upgrade
+</code></pre></div></div>
+
+<p>Then we need to install all the FreeTDS &amp; Dependencies.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt-get install php5-sybase freetds-common libsybdb5
+$ sudo apache2ctl restart
+</code></pre></div></div>
+
+<p>Just restart apache and you should be good to go.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo service apache2 restart
+</code></pre></div></div>
+
+:ET

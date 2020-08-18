@@ -1,0 +1,20 @@
+I"Í<hr />
+
+<p>layout: post</p>
+
+<p>title: Codeigniter Pagination - Re-use query strings</p>
+
+<p>date: 2012-08-23</p>
+
+<p>tag: codeigniter,pagination</p>
+
+<p>description: A few months ago I had a problem. I was paginating some results based on some data the user had provided. So I needed to be able to pass that</p>
+
+<p>author: Marco Monteiro</p>
+
+<p>categories: [codeigniter,pagination]</p>
+
+<hr />
+
+<p>A few months ago I had a problem. I was paginating some results based on some data the user had provided. So I needed to be able to pass that data from page to page during the pagination process. First I set to read the Codeigniter documentation to see if it was possible to do that with the pagination library.</p>
+:ET

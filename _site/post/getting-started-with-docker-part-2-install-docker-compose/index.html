@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Blog++ | Getting started with Docker part 2 - Install Docker Compose</title>
+    <!--Meta Desc-->
+    <meta name="keywords" content="2019,docker,linux"/>
+    <meta name="description" content="You can run Compose on macOS, Windows, and 64-bit Linux. Docker Compose relies on Docker Engine for any meaningful work, so make sure you have Docker Engine installed either locally"/>
+    <meta name="subject" content="Web development & Linux Stuff">
+    <meta name="copyright"content="Marco Monteiro">
+    <meta name="language" content="EN">
+    <meta name="robots" content="index,follow" />
+    <meta name="Classification" content="Blog">
+    <meta name="author" content="Marco Monteiro, marco@marcomonteiro.net">
+    <meta name="designer" content="marco@marcomonteiro.net">
+    <meta name="owner" content="Marco Monteiro">
+    <meta name="url" content="https://blog.marcomonteiro.net">
+    <meta name="identifier-URL" content="https://blog.marcomonteiro.net">
+    <meta name="coverage" content="Worldwide">
+
+    <!--Meta Facebook-->
+    <meta property="og:image" content="https://blog.marcomonteiro.net/assets/img/facebooklogo.jpg"/>
+    <meta property="og:title" content="Blog++ | Getting started with Docker part 2 - Install Docker Compose"/>
+    <meta property="og:description" content="You can run Compose on macOS, Windows, and 64-bit Linux. Docker Compose relies on Docker Engine for any meaningful work, so make sure you have Docker Engine installed either locally"/>
+    <meta property="og:url" content="https://blog.marcomonteiro.net"/>
+    <meta property="og:site_name" content="Blog++"/>
+    <meta property="og:type" content="blog"/>
+
+    <!--Meta Twitter-->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@marcogmonteiro">
+    <meta name="twitter:title" content="Blog++ | Getting started with Docker part 2 - Install Docker Compose">
+    <meta name="twitter:description" content="You can run Compose on macOS, Windows, and 64-bit Linux. Docker Compose relies on Docker Engine for any meaningful work, so make sure you have Docker Engine installed either locally">
+    <meta name="twitter:creator" content="@marcogmonteiro">
+    <meta name="twitter:domain" content="blog.marcomonteiro.net">
+
+    <link rel="start" href="https://blog.marcomonteiro.net/" title="Marco Monteiro Blog">
+    <link rel="shortcut icon" href="/assets/img/favicon.ico">
+    <!-- Styles -->
+    <link href='https://fonts.googleapis.com/css?family=OFL+Sorts+Mill+Goudy+TT' rel='stylesheet' type='text/css'/>
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/github.css" />
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+</head>
+
+  <body>
+    <div class="container">
+        <!-- nav -->
+        <header>
+    <h1><a href="https://blog.marcomonteiro.net">$blog++</a></h1>
+    <nav class="main">
+        <h1 class="mobile"><a href="https://blog.marcomonteiro.net">$blog++</a></h1>
+        <span class="mobile-trigger">
+            <a class="navicon-button x">
+                <div class="navicon"></div>
+            </a>
+        </span>
+        <ul>
+            
+                
+                   <li><a href="/">Posts</a></li>
+                
+            
+                
+                   <li><a href="/about">• About</a></li>
+                
+            
+            <li><a target="_blank" href="https://marcomonteiro.net">&bull; Website</a></li>
+            <li><a href="javascript:void(0)" id="search" class="search ir" title="Search">&bull; <i class="icon-search"></i> Search</a></li>
+            <div id="searchbar" style="display:none;">
+                <iframe src="https://duckduckgo.com/search.html?site=blog.marcomonteiro.net&prefill=Search" style="overflow:hidden;margin:0;padding:0;width:408px;height:40px;" frameborder="0"></iframe>
+            </div>
+        </ul>
+    </nav>
+</header>
+        <div class="content">
+            <div id="scrollbubble"></div>
+            <section class="post">
+                <h2 class="flipboard-title title">Getting started with Docker part 2 - Install Docker Compose</h2>
+                <div class="date flipboard-date">January 15, 2019 <i class="icon-user"></i> Written By Marco Monteiro</div>
+                <p>You can run Compose on macOS, Windows, and 64-bit Linux.</p>
+
+<p>Docker Compose relies on Docker Engine for any meaningful work, so make sure you have Docker Engine installed either locally or remote, depending on your setup.</p>
+
+<p>On Linux systems, first install the Docker for your OS as described on the Get Docker page, then come back here for instructions on installing Compose on Linux systems.</p>
+
+<!--more-->
+
+<p>To run Compose as a non-root user, see <a href="https://docs.docker.com/install/linux/linux-postinstall/">Manage Docker as a non-root user</a>.</p>
+
+<p>On Linux, you can download the Docker Compose binary from the Compose repository release page on GitHub. Follow the instructions from the link, which involve running the curl command in your terminal to download the binaries. These step by step instructions are also included below.</p>
+
+<p>Run this command to download the latest version of Docker Compose:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo curl -L "https://github.com/docker/compose/releases/download/1.23.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+</code></pre></div></div>
+
+<p>Apply executable permissions to the binary:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo chmod +x /usr/local/bin/docker-compose
+</code></pre></div></div>
+
+<p>Optionally, install command completion for the bash and zsh shell.</p>
+
+<p>I use zsh so here’s what to do:</p>
+
+<p>Place the completion script in your /path/to/zsh/completion (typically ~/.zsh/completion/):</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir -p ~/.zsh/completion
+$ curl -L https://raw.githubusercontent.com/docker/compose/1.23.2/contrib/completion/zsh/_docker-compose &gt; ~/.zsh/completion/_docker-compose
+</code></pre></div></div>
+
+<p>Include the directory in your $fpath by adding in ~/.zshrc:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fpath=(~/.zsh/completion $fpath)
+</code></pre></div></div>
+
+<p>Make sure compinit is loaded or do it by adding in ~/.zshrc:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>autoload -Uz compinit &amp;&amp; compinit -i
+</code></pre></div></div>
+
+<p>Then reload your shell:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>exec $SHELL -l
+</code></pre></div></div>
+
+<p><strong>Available completions</strong></p>
+
+<p>Depending on what you typed on the command line so far, it completes:</p>
+
+<p><strong>Available docker-compose commands</strong></p>
+
+<ul>
+  <li>
+    <ul>
+      <li>Options that are available for a particular command</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>Service names that make sense in a given context, such as services with running or stopped instances or services based on images vs. services based on Dockerfiles. For docker-compose scale, completed service names automatically have “=” appended.</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>Arguments for selected options. For example, docker-compose kill -s completes some signals like SIGHUP and SIGUSR1.</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>Enjoy working with Compose faster and with fewer typos!</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>Test the installation.</strong></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ docker-compose --version
+docker-compose version 1.23.2, build 1110ad01
+</code></pre></div></div>
+
+<p><a href="https://docs.docker.com/">Docker documentation</a> for reference.</p>
+
+                <ul id="tags" class="tags">
+                    
+                    
+                        <li><a href="#"><i class="icon-tag"></i> 2019</a></li>
+                        &nbsp;
+                    
+                        <li><a href="#"><i class="icon-tag"></i> docker</a></li>
+                        &nbsp;
+                    
+                        <li><a href="#"><i class="icon-tag"></i> linux</a></li>
+                        &nbsp;
+                    
+                        <li><a href="#"><i class="icon-tag"></i> 2019</a></li>
+                        
+                    
+                </ul>
+                <br>
+            </section>
+            <div id="tweet_it">
+                <a href="javascript:void(0)" id="tweet_compose_close" class="close_it">x</a>
+                <h4>Like it? Tweet it.</h4>
+                <p>"Getting started with Docker part 2 - Install Docker Compose" via <a href="http://twitter.com/marcogmonteiro">@marcogmonteiro</a><br>
+                    <a href="https://twitter.com/share" data-count="horizontal" data-count="none" data-related="marcogmonteiro" data-via="marcogmonteiro" class="twitter-share-button" data-lang="en">Tweet</a>
+                  <br>
+                </p>
+                <footer>
+                    <a href="https://twitter.com/marcogmonteiro" class="twitter-follow-button" data-show-screen-name="false" data-show-count="true" data-lang="en">Follow me!</a>
+                    <img class="avatar" src="https://www.gravatar.com/avatar/44a64ea13da9db6c694e9c26b191a0af?s=28">
+                </footer>
+            </div>
+            <footer>
+    <br>
+    <p>
+        <a href="https://twitter.com/marcogmonteiro"><i class="icon-twitter"></i></a>
+        <a href="https://github.com/mpmont"><i class="icon-github-alt"></i></a>
+        <a href="/feed.xml"><i class="icon-rss"></i></a> © 2010 — 2020
+        <a href="http://marcomonteiro.net" target="_blank">Marco Monteiro</a>. All Rights Reserved. Powered by
+        <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>
+    </p>
+</footer>
+        </div>
+        <script src="/assets/js/site.js"></script>
+  </body>
+</html>

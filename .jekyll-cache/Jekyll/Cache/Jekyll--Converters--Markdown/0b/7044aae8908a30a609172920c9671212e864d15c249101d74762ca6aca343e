@@ -1,0 +1,20 @@
+I"c<hr />
+
+<p>layout: post</p>
+
+<p>title: Atomic commits</p>
+
+<p>date: 2013-11-04</p>
+
+<p>tag: Git,tips,Version-control</p>
+
+<p>description: I’m sure this happened to you before, more than one time actually. You have a big file, you changed lots of stuff in it, but those changes are not really</p>
+
+<p>author: Marco Monteiro</p>
+
+<p>categories: [Git,tips,Version-control]</p>
+
+<hr />
+
+<p>I’m sure this happened to you before, more than one time actually. You have a big file, you changed lots of stuff in it, but those changes are not really related. One may be related to one class and the other to something completely different. Normally you should avoid that, your commits should <em>always</em> be specific to one task, feature or bug. If you do a small search about how to commit better you’ll see that even the commit messages should have this notion.</p>
+:ET

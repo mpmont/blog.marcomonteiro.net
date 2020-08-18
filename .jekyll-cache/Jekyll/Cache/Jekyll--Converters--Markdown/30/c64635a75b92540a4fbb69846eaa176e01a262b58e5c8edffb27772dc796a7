@@ -1,0 +1,17 @@
+I"i<p>A few weeks ago I bought me a new phone, the Xiaomi Ma2 Lite. Crazy good phone for the price. More on that <a href="https://www.youtube.com/watch?v=ZSUWV7yBK8Q">here</a>. However, I had a small problem with the phone that was actually driving me nuts. I couldn’t get it to recognize my car.</p>
+
+<!--more-->
+
+<p>Took me a week to solve this problem, tried almost everything. Soft reset on the phone, soft reset on the car. Hard reset on the phone. I even did a hard reset to the car infotaiment system. But still, my phone could see all my bluetooth devices at home without exeception. But my car? Nope!</p>
+
+<p>Then I came across <a href="https://forum.xda-developers.com/mi-a2-lite/help/mi-a2-lite-bluetooth-wont-pair-car-t3828878">this article</a> on xda-developers. Basically what worked was this:</p>
+
+<ol>
+  <li>Enable developer options;</li>
+  <li>Go to Settings &gt; System &gt; Developer Options</li>
+  <li>Enble “Show Bluetooth devices without name”</li>
+</ol>
+
+<p>This way wen you want to connecto to a device you’ll be presented with the mac-address and not the device name. This worked like a charm.</p>
+
+:ET

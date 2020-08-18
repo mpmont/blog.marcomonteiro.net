@@ -1,0 +1,34 @@
+I"�<p>PopOS! really made a big splash with its new 20.04 release and many long terms Ubuntu users like myself are now considering the change or actually changing. And there’s good reason why this is happening.</p>
+
+<p>For those who don’t know PopOs! is actually based on Ubuntu, so you might be like: - If that’s the case why don’t you just stick with Ubuntu? - That’s a good question. So here’s why.</p>
+
+<!--more-->
+
+<h3 id="its-made-from-the-guys-at-system76"><strong>IT’S MADE FROM THE GUYS AT SYSTEM76</strong></h3>
+
+<p>If you don’t know what <a href="https://system76.com/">system76</a> is, they are a hardware company that is focussed on shipping their laptops and desktops with linux based systems. So much so, that they started their own distro to make the experience better. Why is this important? Because their distro is focussed on the hardware. Not that I ever had anything bad to say against Canonical, I just like system76 more.</p>
+
+<h3 id="they-dont-change-the-default-gnome-experience"><strong>THEY DON’T CHANGE THE DEFAULT GNOME EXPERIENCE</strong></h3>
+
+<p>One of the things that always bothered me in Ubuntu was the changes they make to gnome. Specially because they only do it for one reason, for the desktop environment to look more like the one that was created by them, <a href="https://en.wikipedia.org/wiki/Unity_%28user_interface%29">Unity</a>. And we all hated Unity right?</p>
+
+<p>I hated this so much that my Ubuntu installs on both personal desktop, laptop and work computer always have the default <a href="https://www.gnome.org/">gnome</a> desktop instaled instead of the one that comes with Ubuntu.</p>
+
+<h3 id="flatpak"><strong>FLATPAK</strong></h3>
+
+<p>I never had anything against snaps. Canonical had a problem at the time and they solved it. However, now that we have <a href="https://www.flatpak.org/">flatpaks</a> that have become more and more popular I really don’t see the point of using <a href="https://snapcraft.io/">snaps</a>. PopOs! has the same philosophy and they ship their system already supporting flatpaks and even the shop that comes with it supports it, giving me the choice if I want to install a .deb or a flatpak.</p>
+
+<h3 id="disk-encryption-by-default"><strong>DISK ENCRYPTION BY DEFAULT</strong></h3>
+
+<p>PopOs! takes your privacy and files very seriously, that’s why during the instalation proccess you actually have to opt out the disk encryption if that’s something you don’t want. But why wouldn’t you want it right?</p>
+
+<h3 id="window-tiling-inside-gnome"><strong>WINDOW TILING INSIDE GNOME</strong></h3>
+
+<iframe width="100%" height="438" src="https://www.youtube.com/embed/-fltwBKsMY0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<p>One of the things that had me intrigged even when popOs! was still in beta was the option to tile windows inside gnome. I always had a passion about window managers like i3 and others. Just never made the change because there’s a lot of stuff I want from a desktop environment like gnome that a window manager doesn’t have. When they started showing the demos about this feature I was blown away. Sure you can even install it on ubuntu.</p>
+
+<h3 id="steam-and-litrus"><strong>STEAM AND LITRUS</strong></h3>
+
+<p>Not that I do any more gaming besides minecraft on Linux, but if you plan on doing so, popOs! comes with almost everything pre-configured for you so that your gaming experience can be as easy as possible.</p>
+:ET

@@ -1,0 +1,23 @@
+I"[<hr />
+
+<p>layout: post</p>
+
+<p>title: Codeigniter version 4 needs your help</p>
+
+<p>date: 2016-08-09</p>
+
+<p>tag: codeigniter,frameworks,mvc,opensource,php</p>
+
+<p>description: CodeIgniter 4 has its own Github repository</p>
+
+<p>author: Marco Monteiro</p>
+
+<p>categories: [codeigniter,frameworks,mvc,opensource,php]</p>
+
+<hr />
+
+<p>CodeIgniter 4 has its own Github repository. It deviates enough from CodeIgniter 3 that the British Columbia Institute of Technology wanted to keep them separate. The CodeIgniter 4 roadmap is explained in the <a href="http://forum.codeigniter.com/forum-27.html">forum</a>, and work to be done is detailed in the <a href="https://github.com/bcit-ci/CodeIgniter4/issues">repository issues</a>.</p>
+
+<p>Until now, the repository was not accepting merge requests, or as github call them, pull requests. However, there’s some bits that everyone can contribute it it. So if you have any spare time and want to help out, go to the <a href="https://github.com/bcit-ci/CodeIgniter4/issues">github page</a> and start helping out with the issues marked as <strong>Help wanted</strong>.</p>
+
+:ET

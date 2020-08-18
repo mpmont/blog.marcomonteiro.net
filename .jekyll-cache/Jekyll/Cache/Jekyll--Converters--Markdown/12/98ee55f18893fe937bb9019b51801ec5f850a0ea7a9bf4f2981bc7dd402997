@@ -1,0 +1,15 @@
+I"�<p>Yes, lately I’ve been doing some Wordpress stuff. Before you start throwing stones, I’m not doing the kind of stuff to be ashamed about. I’m actually building some blogs.</p>
+
+<p>One thing that bothers me a lot is the admin bar on the front-end, always there, always present. Fucking up my css.</p>
+
+<!--more-->
+
+<p>I looked around a little bit and I found this:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	add_filter('show_admin_bar', '__return_false');
+</code></pre></div></div>
+
+<p>Just shove that in your wp-config.php file and you’ll be good to go.</p>
+
+<p>&lt; sarcasm &gt;How awesome is wordpress right?&lt;/ sarcasm &gt;</p>
+:ET

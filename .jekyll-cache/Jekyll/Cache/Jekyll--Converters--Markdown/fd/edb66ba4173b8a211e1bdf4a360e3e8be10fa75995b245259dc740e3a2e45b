@@ -1,0 +1,109 @@
+I"�<p>There’s one of our servers that we use to run small applications for a bunch of clients. At the time when we were configuring this server we ended up choosin PHP 7.2.x as the version that would be used for these clients. However, once we started the development process we needed to connect to the clients ERP. Guess what? That connection needed php version 5.6.x max to work.</p>
+
+<p>Here’s the process to get everything up and running on Ubuntu 16.04, we also tested this on Ubuntu 18.04 and everything worked like a charm.</p>
+
+<!--more-->
+
+<p>Install apache:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt update
+$ sudo apt install apache2 libapache2-mod-fastcgi
+</code></pre></div></div>
+
+<p>On some cases you’ll get an error saying that you can’t install libeapache2-mod-fastcgi.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Package libapache2-mod-fastcgi is not available, but is referred to by another package.
+This may mean that the package is missing, has been obsoleted, or is only available from another source
+ E: Package 'libapache2-mod-fastcgi' has no installation candidate
+</code></pre></div></div>
+
+<p>That can be resolved with the following:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd /tmp &amp;&amp; wget http://mirrors.kernel.org/ubuntu/pool/multiverse/liba/libapache-mod-fastcgi/libapache2-mod-fastcgi_2.4.7~0910052141-1.2_amd64.deb
+    sudo dpkg -i libapache2-mod-fastcgi_2.4.7~0910052141-1.2_amd64.deb; sudo apt install -f
+</code></pre></div></div>
+
+<p>The second step is to install PHP</p>
+
+<p>For the installation of PHP versions, we use the PPA maintained here. Use the below couple of commands to add the PPA to your system.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt install python-software-properties
+$ sudo add-apt-repository ppa:ondrej/php
+</code></pre></div></div>
+
+<p>We’re almost there.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ apt update
+$ sudo apt install php5.6 php5.6-fpm
+$ sudo apt install php7.2 php7.2-fpm
+</code></pre></div></div>
+
+<p>Now we want to make sure everything is up and running:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo systemctl status php5.6-fpm
+$ sudo systemctl status php7.2-fpm
+</code></pre></div></div>
+
+<p>Everything that is left to do is configure our Apache.</p>
+
+<p>Enable few modules required for the configuration of multiple PHP versions with Apache. These modules are necessary to integrate PHP FPM and FastCGI with Apache server.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    $ sudo a2enmod actions fastcgi alias proxy_fcgi
+</code></pre></div></div>
+
+<p>In our www folder we create two projects. Lets say for the sake of this example its something like this:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo mkdir /var/www/php5
+$ sudo mkdir /var/www/php7
+</code></pre></div></div>
+
+<p>Now, create and index.php containing the phpinfo() function on each one.</p>
+
+<p>Let’s start the creation of VirtualHost. Apache keeps all the VirtualHost configuration files under /etc/apache2/sites-available with the extension .conf. Create a file for the first virtual host and edit in your favorite text editor.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo vim /etc/apache2/sites-available/php5.local.conf
+</code></pre></div></div>
+
+<p>Add the following content. Make sure to use correct ServerName and directory path according to your setup. This website is configured to work with PHP 5.6.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  &lt;VirtualHost *:80&gt;
+  ServerName php5.local
+  DocumentRoot /var/www/php5
+  &lt;Directory /var/www/php5&gt;
+	  Options -Indexes +FollowSymLinks +MultiViews
+	  AllowOverride All
+	  Require all granted
+  &lt;/Directory&gt;
+  &lt;FilesMatch \.php$&gt;
+	  # Apache 2.4.10+ can proxy to unix socket
+	  SetHandler "proxy:unix:/var/run/php/php5.6-fpm.sock|fcgi://localhost/"
+  &lt;/FilesMatch&gt;
+</code></pre></div></div>
+<p>&lt;/VirtualHost&gt;</p>
+
+<p>Same thing for the other one with a different path and different PHP version.</p>
+
+ 	$ sudo vim /etc/apache2/sites-available/php7.local.conf
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;VirtualHost *:80&gt;
+ServerName php7.local
+DocumentRoot /var/www/php7
+&lt;Directory /var/www/php7&gt;
+    Options -Indexes +FollowSymLinks +MultiViews
+    AllowOverride All
+    Require all granted
+&lt;/Directory&gt;
+&lt;FilesMatch \.php$&gt;
+    SetHandler "proxy:unix:/var/run/php/php7.2-fpm.sock|fcgi://localhost/"
+&lt;/FilesMatch&gt;
+</code></pre></div></div>
+<p>&lt;/VirtualHost&gt;</p>
+
+<p>Restart apache to get everything up and running.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    $ sudo service apache2 restart
+</code></pre></div></div>
+
+<p>Job done. Now you have two applications running different PHP versions on the same machine.</p>
+
+:ET

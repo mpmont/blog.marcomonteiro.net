@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Blog++ | Git extras</title>
+    <!--Meta Desc-->
+    <meta name="keywords" content="alias,extras,Git,Version-control,workflow"/>
+    <meta name="description" content="I'm a heavy git user, hence I'm always trying to improve my workflow while using it. I normally have 3 ways of using git. I could use a gui client"/>
+    <meta name="subject" content="Web development & Linux Stuff">
+    <meta name="copyright"content="Marco Monteiro">
+    <meta name="language" content="EN">
+    <meta name="robots" content="index,follow" />
+    <meta name="Classification" content="Blog">
+    <meta name="author" content="Marco Monteiro, marco@marcomonteiro.net">
+    <meta name="designer" content="marco@marcomonteiro.net">
+    <meta name="owner" content="Marco Monteiro">
+    <meta name="url" content="https://blog.marcomonteiro.net">
+    <meta name="identifier-URL" content="https://blog.marcomonteiro.net">
+    <meta name="coverage" content="Worldwide">
+
+    <!--Meta Facebook-->
+    <meta property="og:image" content="https://blog.marcomonteiro.net/assets/img/facebooklogo.jpg"/>
+    <meta property="og:title" content="Blog++ | Git extras"/>
+    <meta property="og:description" content="I'm a heavy git user, hence I'm always trying to improve my workflow while using it. I normally have 3 ways of using git. I could use a gui client"/>
+    <meta property="og:url" content="https://blog.marcomonteiro.net"/>
+    <meta property="og:site_name" content="Blog++"/>
+    <meta property="og:type" content="blog"/>
+
+    <!--Meta Twitter-->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@marcogmonteiro">
+    <meta name="twitter:title" content="Blog++ | Git extras">
+    <meta name="twitter:description" content="I'm a heavy git user, hence I'm always trying to improve my workflow while using it. I normally have 3 ways of using git. I could use a gui client">
+    <meta name="twitter:creator" content="@marcogmonteiro">
+    <meta name="twitter:domain" content="blog.marcomonteiro.net">
+
+    <link rel="start" href="https://blog.marcomonteiro.net/" title="Marco Monteiro Blog">
+    <link rel="shortcut icon" href="/assets/img/favicon.ico">
+    <!-- Styles -->
+    <link href='https://fonts.googleapis.com/css?family=OFL+Sorts+Mill+Goudy+TT' rel='stylesheet' type='text/css'/>
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/github.css" />
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+</head>
+
+  <body>
+    <div class="container">
+        <!-- nav -->
+        <header>
+    <h1><a href="https://blog.marcomonteiro.net">$blog++</a></h1>
+    <nav class="main">
+        <h1 class="mobile"><a href="https://blog.marcomonteiro.net">$blog++</a></h1>
+        <span class="mobile-trigger">
+            <a class="navicon-button x">
+                <div class="navicon"></div>
+            </a>
+        </span>
+        <ul>
+            
+                
+                   <li><a href="/">Posts</a></li>
+                
+            
+                
+                   <li><a href="/about">• About</a></li>
+                
+            
+            <li><a target="_blank" href="https://marcomonteiro.net">&bull; Website</a></li>
+            <li><a href="javascript:void(0)" id="search" class="search ir" title="Search">&bull; <i class="icon-search"></i> Search</a></li>
+            <div id="searchbar" style="display:none;">
+                <iframe src="https://duckduckgo.com/search.html?site=blog.marcomonteiro.net&prefill=Search" style="overflow:hidden;margin:0;padding:0;width:408px;height:40px;" frameborder="0"></iframe>
+            </div>
+        </ul>
+    </nav>
+</header>
+        <div class="content">
+            <div id="scrollbubble"></div>
+            <section class="post">
+                <h2 class="flipboard-title title">Git extras</h2>
+                <div class="date flipboard-date">February 10, 2014 <i class="icon-user"></i> Written By Marco Monteiro</div>
+                <p>I’m a heavy git user, hence I’m always trying to improve my workflow while using it. I normally have 3 ways of using git. I could use a gui client (<a href="http://www.sourcetreeapp.com/">sourcetree</a>), normally I do this when I’m preparing a new release.</p>
+
+<p>On my daily code day I would use git inside <a href="http://www.sublimetext.com/">Sublime Text 2</a>. That way I don’t need to constantly change between my text editor of choice and a git gui or the terminal. However, from time to time, I use just the terminal. That happens for two reasons, one I could be using git remotely, or I could be doing something more difficult that couldn’t be resolved inside sourcetree or <a href="http://www.sublimetext.com/">Sublime Text</a>.</p>
+
+<!--more-->
+
+<p>Yesterday I tried this new tool and I’m getting quite found of it. It’s called Git Extras. You have 3 ways of getting it:</p>
+
+<p><strong>Clone / Tarball:</strong></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ make install
+</code></pre></div></div>
+
+<p><strong>One-liner:</strong></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ (cd /tmp &amp;&amp; git clone --depth 1 https://github.com/visionmedia/git-extras.git &amp;&amp; cd git-extras &amp;&amp; sudo make install)
+</code></pre></div></div>
+
+<p><strong>MacPorts</strong></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo port install git-extras
+</code></pre></div></div>
+
+<p><strong>Brew (buggy):</strong></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ brew install git-extras
+</code></pre></div></div>
+
+<p>Here’s a small screencast on how to use it.</p>
+
+<iframe src="//player.vimeo.com/video/45506445?color=ffffff" width="100%" height="350" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+
+<p>This tool is specially useful when you’re managing .gitignore files. Or when you want to know all the info about your repo. You just have to type git info and you’ll get something like this:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git info
+
+## Remote URLs:
+
+origin              git@github.com:sampleAuthor/git-extras.git (fetch)
+origin              git@github.com:sampleAuthor/git-extras.git (push)
+
+## Remote Branches:
+
+origin/HEAD -&gt; origin/master
+origin/myBranch
+
+## Local Branches:
+
+myBranch
+* master
+
+## Most Recent Commit:
+
+commit e3952df2c172c6f3eb533d8d0b1a6c77250769a7
+Author: Sample Author &lt;sampleAuthor@gmail.com&gt;
+
+Added git-info command.
+
+Type 'git log' for more commits, or 'git show &lt;commit id&gt;' for full commit details.
+
+## Configuration (.git/config):
+
+color.diff=auto
+color.status=auto
+color.branch=auto
+user.name=Sample Author
+user.email=sampleAuthor@gmail.com
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+core.ignorecase=true
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+remote.origin.url=git@github.com:mub/git-extras.git
+branch.master.remote=origin
+branch.master.merge=refs/heads/master
+</code></pre></div></div>
+
+<p>Awesome right?</p>
+
+                <ul id="tags" class="tags">
+                    
+                    
+                        <li><a href="#"><i class="icon-tag"></i> alias</a></li>
+                        &nbsp;
+                    
+                        <li><a href="#"><i class="icon-tag"></i> extras</a></li>
+                        &nbsp;
+                    
+                        <li><a href="#"><i class="icon-tag"></i> Git</a></li>
+                        &nbsp;
+                    
+                        <li><a href="#"><i class="icon-tag"></i> Version-control</a></li>
+                        &nbsp;
+                    
+                        <li><a href="#"><i class="icon-tag"></i> workflow</a></li>
+                        
+                    
+                </ul>
+                <br>
+            </section>
+            <div id="tweet_it">
+                <a href="javascript:void(0)" id="tweet_compose_close" class="close_it">x</a>
+                <h4>Like it? Tweet it.</h4>
+                <p>"Git extras" via <a href="http://twitter.com/marcogmonteiro">@marcogmonteiro</a><br>
+                    <a href="https://twitter.com/share" data-count="horizontal" data-count="none" data-related="marcogmonteiro" data-via="marcogmonteiro" class="twitter-share-button" data-lang="en">Tweet</a>
+                  <br>
+                </p>
+                <footer>
+                    <a href="https://twitter.com/marcogmonteiro" class="twitter-follow-button" data-show-screen-name="false" data-show-count="true" data-lang="en">Follow me!</a>
+                    <img class="avatar" src="https://www.gravatar.com/avatar/44a64ea13da9db6c694e9c26b191a0af?s=28">
+                </footer>
+            </div>
+            <footer>
+    <br>
+    <p>
+        <a href="https://twitter.com/marcogmonteiro"><i class="icon-twitter"></i></a>
+        <a href="https://github.com/mpmont"><i class="icon-github-alt"></i></a>
+        <a href="/feed.xml"><i class="icon-rss"></i></a> © 2010 — 2020
+        <a href="http://marcomonteiro.net" target="_blank">Marco Monteiro</a>. All Rights Reserved. Powered by
+        <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>
+    </p>
+</footer>
+        </div>
+        <script src="/assets/js/site.js"></script>
+  </body>
+</html>

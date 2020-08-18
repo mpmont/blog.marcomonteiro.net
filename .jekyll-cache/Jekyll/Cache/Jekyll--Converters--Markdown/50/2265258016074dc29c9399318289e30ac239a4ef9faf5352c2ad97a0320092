@@ -1,0 +1,77 @@
+I"N<hr />
+
+<p>layout: post</p>
+
+<p>title: Glide.js a simple, lightweight &amp; fast jQuery slider</p>
+
+<p>date: 2013-10-22</p>
+
+<p>tag: css3,javascript,jquery,plugin,responsive</p>
+
+<p>description: Glide is responsive and touch-friendly jQuery slider. Based on CSS3 transitions with fallback to older broswers. It’s simple, lightweight and fast. Designed to slide, no less, no more. A lot</p>
+
+<p>author: Marco Monteiro</p>
+
+<p>categories: [css3,javascript,jquery,plugin,responsive]</p>
+
+<hr />
+
+<p>Glide is responsive and touch-friendly jQuery slider. Based on CSS3 transitions with fallback to older broswers. It’s simple, lightweight and fast. Designed to slide, no less, no more. A lot has been said this past few weeks about OOCSS markup, Jędrzej Chałubek (creator of Glide.js) needed simple and fast slider with fully customizable OOCSS markup. If you’re into OOCSS this is the way to go.</p>
+
+<!--more-->
+
+<p><strong>How to use</strong></p>
+
+<p>jQuery is the only dependency. Make sure to include it.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;script src="http://code.jquery.com/jquery-1.9.1.min.js"&gt;&lt;/script&gt;
+</code></pre></div></div>
+
+<p>Include Glide.js</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;script src="jquery.glide.js"&gt;&lt;/script&gt;
+</code></pre></div></div>
+
+<p>Link to slider stylesheet inside document head.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;link rel="stylesheet" type="text/css" href="css/style.css"&gt;
+</code></pre></div></div>
+
+<p>Make necessary markup for slider.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div class="slider"&gt;
+	&lt;ul class="slides"&gt;
+		&lt;li class="slide"&gt;&lt;/li&gt;
+		&lt;li class="slide"&gt;&lt;/li&gt;
+		&lt;li class="slide"&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+</code></pre></div></div>
+
+<p>Init our slider on default options …</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  &lt;script&gt;
+	  $('.slider').glide();
+  &lt;/script&gt;
+</code></pre></div></div>
+
+<p><strong>Best features of Glide.js</strong></p>
+
+<ul>
+  <li><i class="icon-angle-right"></i> Lightweight ~4,5kB minifed</li>
+  <li><i class="icon-angle-right"></i> Ultra fast CSS3 Transitions</li>
+  <li><i class="icon-angle-right"></i> Responsive</li>
+  <li><i class="icon-angle-right"></i> Touch &amp; mobile friendly</li>
+  <li><i class="icon-angle-right"></i> Public API with callbacks</li>
+  <li><i class="icon-angle-right"></i> OOCSS &amp; BEM</li>
+  <li><i class="icon-angle-right"></i> Swipe event</li>
+  <li><i class="icon-angle-right"></i> Arrows and bullets navigation</li>
+  <li><i class="icon-angle-right"></i> Keyboard navigation</li>
+  <li><i class="icon-angle-right"></i> Autoplay</li>
+  <li><i class="icon-angle-right"></i> Pause on hover</li>
+</ul>
+
+<p><a href="http://jedrzejchalubek.com/glide/"><i class="icon-link"></i> Glide.js</a></p>
+
+<p><a href="https://github.com/jedrzejchalubek/Glide.js"><i class="icon-github"></i> Github</a></p>
+:ET

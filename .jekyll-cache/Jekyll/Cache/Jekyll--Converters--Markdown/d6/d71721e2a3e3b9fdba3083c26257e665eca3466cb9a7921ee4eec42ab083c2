@@ -1,0 +1,27 @@
+I"�<p>One of the things that happens to me a lot is when I start a new project on my computer that someone else started on our main repo  is this error saying that I’m trying to merge unrelated histories.</p>
+
+<p>This happens mostly because someone on the other side already started the master and develop branch and made some commits to it.</p>
+
+<!--more-->
+
+<p>However what I normally do is:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git init
+$ git flow init
+$ git remote add origin [insert url here]
+$ git pull origin develop
+</code></pre></div></div>
+
+<p>This is when everything turns to shit and I get the following output:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ fatal: refusing to merge unrelated histories
+$ Error redoing merge 1234deadbeef1234deadbeef
+</code></pre></div></div>
+
+<p>However this is quite easy to solve. All you have to do is shove a <em>–allow-unrelated-histories</em> into your pull command. Like so:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git pull origin develop --allow-unrelated-histories
+</code></pre></div></div>
+
+<p>This will also work if you’re trying to merge or rebase code.</p>
+:ET

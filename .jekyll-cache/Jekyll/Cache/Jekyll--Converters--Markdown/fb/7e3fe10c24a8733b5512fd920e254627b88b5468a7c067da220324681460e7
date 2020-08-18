@@ -1,0 +1,20 @@
+I"j<p>This is a git tool that gives more friendly way to navigate your git logs, commit or even diff files. Personally I use git most times inside Sublime Text 3. However its always nice to have a tool like this at hand.</p>
+
+<!--more-->
+
+<p><img src="https://raw.githubusercontent.com/golbin/git-commander/master/doc/git-commander@2x.gif" alt="git commander" /></p>
+
+<p><strong>Features</strong></p>
+
+<ul>
+  <li><i class="icon-angle-right"></i> git status</li>
+  <li><i class="icon-angle-right"></i> git add [files]</li>
+  <li><i class="icon-angle-right"></i> git reset – [files]</li>
+  <li><i class="icon-angle-right"></i> git commit [files]</li>
+  <li><i class="icon-angle-right"></i> git log</li>
+  <li><i class="icon-angle-right"></i> git reset</li>
+  <li><i class="icon-angle-right"></i> git diff file</li>
+  <li><i class="icon-angle-right"></i> git branch</li>
+</ul>
+
+:ET

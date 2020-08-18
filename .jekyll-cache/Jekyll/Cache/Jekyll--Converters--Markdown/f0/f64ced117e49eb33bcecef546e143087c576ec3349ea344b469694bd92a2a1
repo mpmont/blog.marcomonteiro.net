@@ -1,0 +1,34 @@
+I"J<p>After a few projects we all know that you can have a real mess on your rig. Specially when it comes to saving space. So how to do that?</p>
+
+<!--more-->
+
+<p>For this purpose you can use following command:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ docker system prune -a
+</code></pre></div></div>
+
+<p>This will give you the following output:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>WARNING! This will remove:
+		- all stopped containers
+		- all networks not used by at least one container
+		- all images without at least one container associated to them
+		- all build cache
+Are you sure you want to continue? [y/N]
+</code></pre></div></div>
+
+<p>You can be even a bit more hardcore and shove a <strong>-a</strong> command in there, that will remove everything, not just the images.</p>
+
+<p>If your purpose is just to force Docker to rebuild images without using cache then use following combination:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ docker system prune
+$ docker-compose build --no-cache
+</code></pre></div></div>
+
+<p>Then run up command as usual:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ docker-compose up
+</code></pre></div></div>
+
+<p>Stay clean!</p>
+:ET

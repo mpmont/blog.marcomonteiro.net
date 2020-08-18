@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Blog++ | Go Social</title>
+    <!--Meta Desc-->
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="subject" content="Web development & Linux Stuff">
+    <meta name="copyright"content="Marco Monteiro">
+    <meta name="language" content="EN">
+    <meta name="robots" content="index,follow" />
+    <meta name="Classification" content="Blog">
+    <meta name="author" content="Marco Monteiro, marco@marcomonteiro.net">
+    <meta name="designer" content="marco@marcomonteiro.net">
+    <meta name="owner" content="Marco Monteiro">
+    <meta name="url" content="https://blog.marcomonteiro.net">
+    <meta name="identifier-URL" content="https://blog.marcomonteiro.net">
+    <meta name="coverage" content="Worldwide">
+
+    <!--Meta Facebook-->
+    <meta property="og:image" content="https://blog.marcomonteiro.net/assets/img/facebooklogo.jpg"/>
+    <meta property="og:title" content="Blog++ | Go Social"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content="https://blog.marcomonteiro.net"/>
+    <meta property="og:site_name" content="Blog++"/>
+    <meta property="og:type" content="blog"/>
+
+    <!--Meta Twitter-->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@marcogmonteiro">
+    <meta name="twitter:title" content="Blog++ | Go Social">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:creator" content="@marcogmonteiro">
+    <meta name="twitter:domain" content="blog.marcomonteiro.net">
+
+    <link rel="start" href="https://blog.marcomonteiro.net/" title="Marco Monteiro Blog">
+    <link rel="shortcut icon" href="/assets/img/favicon.ico">
+    <!-- Styles -->
+    <link href='https://fonts.googleapis.com/css?family=OFL+Sorts+Mill+Goudy+TT' rel='stylesheet' type='text/css'/>
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/github.css" />
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+</head>
+
+  <body>
+    <div class="container">
+        <!-- nav -->
+        <header>
+    <h1><a href="https://blog.marcomonteiro.net">$blog++</a></h1>
+    <nav class="main">
+        <h1 class="mobile"><a href="https://blog.marcomonteiro.net">$blog++</a></h1>
+        <span class="mobile-trigger">
+            <a class="navicon-button x">
+                <div class="navicon"></div>
+            </a>
+        </span>
+        <ul>
+            
+                
+                   <li><a href="/">Posts</a></li>
+                
+            
+                
+                   <li><a href="/about">• About</a></li>
+                
+            
+            <li><a target="_blank" href="https://marcomonteiro.net">&bull; Website</a></li>
+            <li><a href="javascript:void(0)" id="search" class="search ir" title="Search">&bull; <i class="icon-search"></i> Search</a></li>
+            <div id="searchbar" style="display:none;">
+                <iframe src="https://duckduckgo.com/search.html?site=blog.marcomonteiro.net&prefill=Search" style="overflow:hidden;margin:0;padding:0;width:408px;height:40px;" frameborder="0"></iframe>
+            </div>
+        </ul>
+    </nav>
+</header>
+        <div class="content">
+            <div id="scrollbubble"></div>
+            <section class="post">
+                <h2 class="flipboard-title title">Go Social</h2>
+                <div class="date flipboard-date">September 17, 2013 <i class="icon-user"></i> Written By </div>
+                <hr />
+
+<p>layout: post</p>
+
+<p>title: Go social</p>
+
+<p>date: 2013-09-17</p>
+
+<p>tag: socialmedia,tips</p>
+
+<p>description: Nowadays everything is about social networks. My question is, do you have your website prepared for all of that malarkey? Facebook released their open-graph. But is Facebook the only one</p>
+
+<p>author: Marco Monteiro</p>
+
+<p>categories: [socialmedia,tips]</p>
+
+<hr />
+
+<p>Nowadays everything is about social networks. My question is, do you have your website prepared for all of that malarkey? Facebook released their open-graph. But is Facebook the only one with it? 
+<!--more--></p>
+
+<p>For Facebook all you need to do it add all these meta tags into your header. That way, every time someone shares your links on facebook they will have a lot more info with it.</p>
+
+<p><strong>image</strong></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;meta property="og:image" content="http://blog.marcomonteiro.net/themes/default/img/facebooklogo.jpg"/&gt;
+</code></pre></div></div>
+
+<p>It’s best to use a square image, as Facebook displays them in that matter. That image should be at least 50x50 in any of the usually supported image forms (JPG, PNG, etc.)</p>
+
+<p><strong>title</strong></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;meta property="og:title" content="Go social"/&gt;
+</code></pre></div></div>
+
+<p>In most cases, this should be the article or page title.</p>
+
+<p><strong>url</strong></p>
+
+<meta property="og:url" content="http://blog.marcomonteiro.net" />
+
+<p>Familiarize yourself with the canonical LINK type if you aren’t aware of its purpose – it could help your SEO out greatly!</p>
+
+<p><strong>site_name</strong></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;meta property="og:site_name" content="$blog++"/&gt;
+</code></pre></div></div>
+
+<p>This is very useful as Facebook may have no way of knowing outside of this META tag.</p>
+
+<p><strong>type</strong></p>
+
+<p>Provides Facebook the type of website that you would like your website to be categorized by:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;meta property="og:type" content="blog"/&gt;
+</code></pre></div></div>
+
+<p>Read the <a href="http://developers.facebook.com/docs/opengraph/#types">complete list of website types</a> to best categorize your website.</p>
+
+<p>These are not the complete list of open-graph tags.</p>
+
+<p>If you use twitter a lot, on the web or on a mobile app you have noticed that some of the links people share now have a description with it, or an image, sometimes even a video. Well that’s because twitter has it’s own tags for content. The main difference is that you have to apply for it. I guess that’s because twitter want’s to filter adult content.</p>
+
+<p>You can test and create your tags <a href="https://dev.twitter.com/docs/cards/validation/validator">here</a>. And when you do so, you can add them to your website and request approval from them. It may take a couple of weeks to be approved (I’m still waiting actually).</p>
+
+<p>Here’s a example list of twitter tags:</p>
+
+  	<meta name="twitter:card" content="summary" />
+  	<meta name="twitter:site" content="@marcogmonteiro" />
+  	<meta name="twitter:title" content="Pixel density of 538ppi?" />
+  	<meta name="twitter:description" content="Full HD displays? Eat your heart out, handset manufacturers. LG Display has just laid claim to the world's first Quad HD (2,560 x 1,440) smartphone display, which also boasts the highest pixel density of a mobile device, clocking in at 538ppi." />
+  	<meta name="twitter:creator" content="@marcogmonteiro" />
+ 	<meta name="twitter:domain" content="blog.marcomonteiro.net" />
+
+<p>So next time you think about going social on your website just remember: the Internet is more than just Facebook.</p>
+
+                <ul id="tags" class="tags">
+                    
+                    
+                </ul>
+                <br>
+            </section>
+            <div id="tweet_it">
+                <a href="javascript:void(0)" id="tweet_compose_close" class="close_it">x</a>
+                <h4>Like it? Tweet it.</h4>
+                <p>"Go Social" via <a href="http://twitter.com/marcogmonteiro">@marcogmonteiro</a><br>
+                    <a href="https://twitter.com/share" data-count="horizontal" data-count="none" data-related="marcogmonteiro" data-via="marcogmonteiro" class="twitter-share-button" data-lang="en">Tweet</a>
+                  <br>
+                </p>
+                <footer>
+                    <a href="https://twitter.com/marcogmonteiro" class="twitter-follow-button" data-show-screen-name="false" data-show-count="true" data-lang="en">Follow me!</a>
+                    <img class="avatar" src="https://www.gravatar.com/avatar/44a64ea13da9db6c694e9c26b191a0af?s=28">
+                </footer>
+            </div>
+            <footer>
+    <br>
+    <p>
+        <a href="https://twitter.com/marcogmonteiro"><i class="icon-twitter"></i></a>
+        <a href="https://github.com/mpmont"><i class="icon-github-alt"></i></a>
+        <a href="/feed.xml"><i class="icon-rss"></i></a> © 2010 — 2020
+        <a href="http://marcomonteiro.net" target="_blank">Marco Monteiro</a>. All Rights Reserved. Powered by
+        <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>
+    </p>
+</footer>
+        </div>
+        <script src="/assets/js/site.js"></script>
+  </body>
+</html>

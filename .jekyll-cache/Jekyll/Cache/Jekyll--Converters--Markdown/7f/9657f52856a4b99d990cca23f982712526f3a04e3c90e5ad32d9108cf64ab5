@@ -1,0 +1,46 @@
+I"�<hr />
+
+<p>layout: post</p>
+
+<p>title: Wardrobe a minimal blogging application</p>
+
+<p>date: 2013-08-15</p>
+
+<p>tag: blog,laravel,wardrobe,Webdev</p>
+
+<p>description: As you may or may not know last week I migrated all my content from tumblr into this new cms called Wardrobe. For now I’m really happy with it. It</p>
+
+<p>author: Marco Monteiro</p>
+
+<p>categories: [blog,laravel,wardrobe,Webdev]</p>
+
+<hr />
+
+<p>As you may or may not know last week I migrated all my content from tumblr into this new cms called Wardrobe. For now I’m really happy with it. It gives me total control over my content and it doesn’t have all those features that most blogging platforms have. Features that I never needed in the first place.</p>
+
+<p><strong>What is Wardrobe anyway?</strong></p>
+
+<blockquote>
+  <p>Wardrobe is a minimalistic blogging application. Wardrobe attempts to make blogging simple and enjoyable by utilizing the latest technologies and keeping the administration as simple as possible with the primary focus on writing.</p>
+</blockquote>
+
+<!--more-->
+
+<p><strong>What are the main features of this minimalistic blogging application?</strong></p>
+
+<p><i class="icon-angle-right"></i> <strong>Markdown</strong> - All content is stored as markdown so its portable and easy to move in and out.</p>
+
+<p><i class="icon-angle-right"></i> <strong>Schedule Posts</strong> - Write posts and schedule the time and date you want them to appear.</p>
+
+<p><i class="icon-angle-right"></i> <strong>Post Tagging</strong> - Wardrobe allows you to tag posts for categorization and for grouping.</p>
+
+<p><i class="icon-angle-right"></i> <strong>Drag &amp; Drop</strong> - Prefer to write in a native app? With Wardrobe you can drag and drop markdown files into the admin to create posts</p>
+
+<p><i class="icon-angle-right"></i> <strong>Simple Theming</strong> - Wardrobe utilizes a simple but powerful theming system so almost any design can be integrated.</p>
+
+<p><i class="icon-angle-right"></i> <strong>Powerful Routing</strong> - Themes have the power to over ride routes and also create completely new custom ones.</p>
+
+<p><a href="https://github.com/ericbarnes/wardrobe"><i class="icon-github"></i> Github</a></p>
+
+<p><a href="http://wardrobecms.com/"><i class="icon-external-link"></i> Wardrobecms</a></p>
+:ET

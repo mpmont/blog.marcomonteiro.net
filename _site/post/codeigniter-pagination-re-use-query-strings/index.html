@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Blog++ | Codeigniter Pagination Re Use Query Strings</title>
+    <!--Meta Desc-->
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="subject" content="Web development & Linux Stuff">
+    <meta name="copyright"content="Marco Monteiro">
+    <meta name="language" content="EN">
+    <meta name="robots" content="index,follow" />
+    <meta name="Classification" content="Blog">
+    <meta name="author" content="Marco Monteiro, marco@marcomonteiro.net">
+    <meta name="designer" content="marco@marcomonteiro.net">
+    <meta name="owner" content="Marco Monteiro">
+    <meta name="url" content="https://blog.marcomonteiro.net">
+    <meta name="identifier-URL" content="https://blog.marcomonteiro.net">
+    <meta name="coverage" content="Worldwide">
+
+    <!--Meta Facebook-->
+    <meta property="og:image" content="https://blog.marcomonteiro.net/assets/img/facebooklogo.jpg"/>
+    <meta property="og:title" content="Blog++ | Codeigniter Pagination Re Use Query Strings"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content="https://blog.marcomonteiro.net"/>
+    <meta property="og:site_name" content="Blog++"/>
+    <meta property="og:type" content="blog"/>
+
+    <!--Meta Twitter-->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@marcogmonteiro">
+    <meta name="twitter:title" content="Blog++ | Codeigniter Pagination Re Use Query Strings">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:creator" content="@marcogmonteiro">
+    <meta name="twitter:domain" content="blog.marcomonteiro.net">
+
+    <link rel="start" href="https://blog.marcomonteiro.net/" title="Marco Monteiro Blog">
+    <link rel="shortcut icon" href="/assets/img/favicon.ico">
+    <!-- Styles -->
+    <link href='https://fonts.googleapis.com/css?family=OFL+Sorts+Mill+Goudy+TT' rel='stylesheet' type='text/css'/>
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/github.css" />
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+</head>
+
+  <body>
+    <div class="container">
+        <!-- nav -->
+        <header>
+    <h1><a href="https://blog.marcomonteiro.net">$blog++</a></h1>
+    <nav class="main">
+        <h1 class="mobile"><a href="https://blog.marcomonteiro.net">$blog++</a></h1>
+        <span class="mobile-trigger">
+            <a class="navicon-button x">
+                <div class="navicon"></div>
+            </a>
+        </span>
+        <ul>
+            
+                
+                   <li><a href="/">Posts</a></li>
+                
+            
+                
+                   <li><a href="/about">• About</a></li>
+                
+            
+            <li><a target="_blank" href="https://marcomonteiro.net">&bull; Website</a></li>
+            <li><a href="javascript:void(0)" id="search" class="search ir" title="Search">&bull; <i class="icon-search"></i> Search</a></li>
+            <div id="searchbar" style="display:none;">
+                <iframe src="https://duckduckgo.com/search.html?site=blog.marcomonteiro.net&prefill=Search" style="overflow:hidden;margin:0;padding:0;width:408px;height:40px;" frameborder="0"></iframe>
+            </div>
+        </ul>
+    </nav>
+</header>
+        <div class="content">
+            <div id="scrollbubble"></div>
+            <section class="post">
+                <h2 class="flipboard-title title">Codeigniter Pagination Re Use Query Strings</h2>
+                <div class="date flipboard-date">August 23, 2012 <i class="icon-user"></i> Written By </div>
+                <hr />
+
+<p>layout: post</p>
+
+<p>title: Codeigniter Pagination - Re-use query strings</p>
+
+<p>date: 2012-08-23</p>
+
+<p>tag: codeigniter,pagination</p>
+
+<p>description: A few months ago I had a problem. I was paginating some results based on some data the user had provided. So I needed to be able to pass that</p>
+
+<p>author: Marco Monteiro</p>
+
+<p>categories: [codeigniter,pagination]</p>
+
+<hr />
+
+<p>A few months ago I had a problem. I was paginating some results based on some data the user had provided. So I needed to be able to pass that data from page to page during the pagination process. First I set to read the Codeigniter documentation to see if it was possible to do that with the pagination library.</p>
+
+<p>Turns out I could if I set up that data to be a query string and save it in my suffix param. However this solution had a problem. Every-time the user clicked the first or last link on the pagination the query string would disappear. 
+<!--more-->
+So I searched some more, and found something even better. The new version of the pagination Library (3.0) already had that feature. So if you ever need it and don’t want to wait for the next version of Codeigniter you just have to do the following.</p>
+
+<p>Download the version 3.0 of the Pagination Library <a href="https://github.com/EllisLab/CodeIgniter/blob/develop/system/libraries/Pagination.php">here</a>.</p>
+
+<p>Extend your current version of the pagination Library with the one that you just downloaded. (see how to do that <a href="http://codeigniter.com/user_guide/general/core_classes.html">here</a>)</p>
+
+<p>As you can see the pagination now has one more param than before. It’s called reuse_query_string. And just by setting that to TRUE, you can now use both uri segments and query strings in your pagination.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>protected $base_url			= ''; // The page we are linking to
+protected $prefix			= ''; // A custom prefix added to the path.
+protected $suffix			= ''; // A custom suffix added to the path.
+protected $total_rows			= 0; // Total number of items (database results)
+protected $per_page			= 10; // Max number of items you want shown per page
+protected $num_links			= 2; // Number of "digit" links to show before/after the currently viewed page
+protected $cur_page			= 0; // The current page being viewed
+protected $use_page_numbers		= FALSE; // Use page number for segment instead of offset
+protected $first_link			= '&amp;lsaquo; First';
+protected $next_link			= '&amp;gt;';
+protected $prev_link			= '&amp;lt;';
+protected $last_link			= 'Last &amp;rsaquo;';
+protected $uri_segment			= 3;
+protected $full_tag_open		= '';
+protected $full_tag_close		= '';
+protected $first_tag_open		= '';
+protected $first_tag_close		= '&amp;nbsp;';
+protected $last_tag_open		= '&amp;nbsp;';
+protected $last_tag_close		= '';
+protected $first_url			= ''; // Alternative URL for the First Page.
+protected $cur_tag_open			= '&amp;nbsp;&lt;strong&gt;';
+protected $cur_tag_close		= '&lt;/strong&gt;';
+protected $next_tag_open		= '&amp;nbsp;';
+protected $next_tag_close		= '&amp;nbsp;';
+protected $prev_tag_open		= '&amp;nbsp;';
+protected $prev_tag_close		= '';
+protected $num_tag_open			= '&amp;nbsp;';
+protected $num_tag_close		= '';
+protected $page_query_string	= FALSE;
+protected $query_string_segment 	= 'per_page';
+protected $display_pages		= TRUE;
+protected $_attributes			= '';
+protected $_link_types			= array();
+protected $reuse_query_string           = FALSE;
+protected $data_page_attr		= 'data-ci-pagination-page';    
+</code></pre></div></div>
+
+                <ul id="tags" class="tags">
+                    
+                    
+                </ul>
+                <br>
+            </section>
+            <div id="tweet_it">
+                <a href="javascript:void(0)" id="tweet_compose_close" class="close_it">x</a>
+                <h4>Like it? Tweet it.</h4>
+                <p>"Codeigniter Pagination Re Use Query Strings" via <a href="http://twitter.com/marcogmonteiro">@marcogmonteiro</a><br>
+                    <a href="https://twitter.com/share" data-count="horizontal" data-count="none" data-related="marcogmonteiro" data-via="marcogmonteiro" class="twitter-share-button" data-lang="en">Tweet</a>
+                  <br>
+                </p>
+                <footer>
+                    <a href="https://twitter.com/marcogmonteiro" class="twitter-follow-button" data-show-screen-name="false" data-show-count="true" data-lang="en">Follow me!</a>
+                    <img class="avatar" src="https://www.gravatar.com/avatar/44a64ea13da9db6c694e9c26b191a0af?s=28">
+                </footer>
+            </div>
+            <footer>
+    <br>
+    <p>
+        <a href="https://twitter.com/marcogmonteiro"><i class="icon-twitter"></i></a>
+        <a href="https://github.com/mpmont"><i class="icon-github-alt"></i></a>
+        <a href="/feed.xml"><i class="icon-rss"></i></a> © 2010 — 2020
+        <a href="http://marcomonteiro.net" target="_blank">Marco Monteiro</a>. All Rights Reserved. Powered by
+        <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>
+    </p>
+</footer>
+        </div>
+        <script src="/assets/js/site.js"></script>
+  </body>
+</html>

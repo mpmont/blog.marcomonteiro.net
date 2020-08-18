@@ -1,0 +1,20 @@
+I"‘<hr />
+
+<p>layout: post</p>
+
+<p>title: normalizedSync.php - Single file demo</p>
+
+<p>date: 2013-11-19</p>
+
+<p>tag: data,database,how-to,sync,tutorial</p>
+
+<p>description: Are you trying to sync de-normalized data from a remote source (e.g. webservice) and struggle importing it into your nicely normalized database? Maybe this little demo might give you an</p>
+
+<p>author: Marco Monteiro</p>
+
+<p>categories: [data,database,how-to,sync,tutorial]</p>
+
+<hr />
+
+<p>Are you trying to sync de-normalized data from a remote source (e.g. webservice) and struggle importing it into your nicely normalized database? Maybe this little demo might give you an idea!</p>
+:ET

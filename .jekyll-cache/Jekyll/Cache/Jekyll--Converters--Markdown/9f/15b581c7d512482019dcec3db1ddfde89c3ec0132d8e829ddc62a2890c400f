@@ -1,0 +1,21 @@
+I"�<hr />
+
+<p>layout: post</p>
+
+<p>title: Php magic methods - The complete guide</p>
+
+<p>date: 2012-10-07</p>
+
+<p>tag: magic methods,oop,php</p>
+
+<p>description: PHP has a few ‘magic’ methods that you can use in OOP (Object oriented programming). All of them must be identified with two underscore prefix and they act as interceptors</p>
+
+<p>author: Marco Monteiro</p>
+
+<p>categories: [magic methods,oop,php]</p>
+
+<hr />
+
+<p>PHP has a few ‘magic’ methods that you can use in OOP (Object oriented programming). All of them must be identified with two underscore prefix and they act as interceptors that will run then certain required conditions are met. So as you can see these methods are extremely useful.
+<!--more--></p>
+:ET

@@ -1,0 +1,61 @@
+I"�<hr />
+
+<p>layout: post</p>
+
+<p>title: Useful tips if you’re starting with Git</p>
+
+<p>date: 2013-10-30</p>
+
+<p>tag: flow,Git,gui,tips,Version-control,workflow</p>
+
+<p>description: When I started using Git I wasn’t doing any version control. I was just working on my projects and I just didn’t see any use to it. I wasn’t seeing</p>
+
+<p>author: Marco Monteiro</p>
+
+<p>categories: [flow,Git,gui,tips,Version-control,workflow]</p>
+
+<hr />
+
+<p>When I started using Git I wasn’t doing any version control. I was just working on my projects and I just didn’t see any use to it. I wasn’t seeing the long run. Everything seemed like too much work — Branching, staging, stashing, committing — I was confused.  But then Git was kind forced on me, since I wanted to contribute to open source projects and almost all of them were (and still are thankfully) using Git I had to learn how to use it. This is what I learned from that process.</p>
+
+<!--more-->
+
+<p><strong><i class="icon-arrow-right"></i> Commit yourself to using Git</strong></p>
+
+<p>Really, don’t give up. It’s going to hurt. Your not going to like it at first. But believe me when I say that in a matter of days, you’ll love it. You must avoid exceptions like <em>“I’m just doing this static html thing, why do I need Git for?”</em>. That is the worst thing you can do.</p>
+
+<p><strong><i class="icon-arrow-right"></i> Do your homework</strong></p>
+
+<p>Read a bit, prepared yourself. You’re going to need a little know how before you start. You don’t need to read a book on the subject, but it’s good to know the basics.</p>
+
+<ul>
+  <li><i class="icon-angle-right"></i> How to start a repository?</li>
+  <li><i class="icon-angle-right"></i> How to commit?</li>
+  <li><i class="icon-angle-right"></i> How to track new files?</li>
+  <li><i class="icon-angle-right"></i> How to push and pull from remotes?</li>
+</ul>
+
+<p>Simple things that you should take a look first.</p>
+
+<p><strong><i class="icon-arrow-right"></i> Don’t overdo</strong></p>
+
+<p>Start with something simple, don’t try to use concepts like Git-Flow at first. Find your own workflow. When you’re comfortable with that, then you can do some research on how to do things from there on. I find this one the easiest one when you’re starting.</p>
+
+<ul>
+  <li><a href="http://blog.teamtreehouse.com/git-for-designers-part-1"><i class="icon-angle-right"></i> Git workflow for designers</a></li>
+</ul>
+
+<p><strong><i class="icon-arrow-right"></i> Branching is awesome</strong></p>
+
+<p>Your first impulse will be to stay on the same branch and just work there. Don’t do that, learn the power of branching and you’ll see that is worth it.</p>
+
+<ul>
+  <li><a href="http://pcottle.github.io/learnGitBranching/"><i class="icon-angle-right"></i> Learn Git Branching</a></li>
+</ul>
+
+<p><strong><i class="icon-arrow-right"></i> To use a Git GUI or not to use a Git GUI?</strong></p>
+
+<p>I’m not against it, if you’re not comfortable using the terminal, you should use a good Git GUI. As long you’re using Git and are versioning your code the world is a better place. Personally I use this one from time to time <a href="http://www.sourcetreeapp.com/">SourceTree</a>.</p>
+
+<p>That’s it, if you follow this small set of tips you’ll be up and ready in no time.</p>
+:ET

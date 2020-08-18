@@ -1,0 +1,20 @@
+I"�<hr />
+
+<p>layout: post</p>
+
+<p>title: GitHub, Reactor, and v2.0.3</p>
+
+<p>date: 2011-08-21</p>
+
+<p>tag: codeigniter,github,news,reactor</p>
+
+<p>description: If you are following <a href="http://cicon2011.com/">CICON 2011</a> yesterday, then you no doubt already heard from the Reactor team: CodeIgniter is now using Git for source control, and has moved its [home</p>
+
+<p>author: Marco Monteiro</p>
+
+<p>categories: [codeigniter,github,news,reactor]</p>
+
+<hr />
+
+<p>If you are following <a href="http://cicon2011.com/">CICON 2011</a> yesterday, then you no doubt already heard from the Reactor team: CodeIgniter is now using Git for source control, and has moved its <a href="https://github.com/EllisLab/CodeIgniter">home to GitHub</a>. Also, CodeIgniter …Core“ is not longer being publicly maintained. CodeIgniter …Reactor“ is CodeIgniter, so we are dropping that suffix. In short: CodeIgniter is the framework, and Reactor is our community driven development program.</p>
+:ET

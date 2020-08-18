@@ -1,0 +1,17 @@
+I"�<p>Codeigniter 4 has been in the works since 2015. It took almost 3 years to have a basic framework working and 2 more to document everything so we can use it in production. This is very exciting news, since codeigniter still holds a place in me. It was PHP framework that I use the most and I still use version 3 at work.</p>
+
+<!--more-->
+
+<p>With this new version up its time to make a new snippets package for Sublime Text 3. I’ve been maintaning the first version of that package for some years now. <a href="https://blog.marcomonteiro.net/post/thank-you!">Back then it had 6400+ installs</a> and I thought that was big, now it has<a href="https://packagecontrol.io/packages/CodeIgniter%20Snippets"> more than 126k</a>.</p>
+
+<p>Let’s make the new one has big as the first one. I made a repo here, and I already have a <a href="https://github.com/wbond/package_control_channel/pull/7845">pull request</a> to have it avaiable to everyone via package control. Until then you can just install it manually. To do that you just have to make a clone of this repository into your packages folder <strong>(Preferences &gt; Browse packages…)</strong>, like so:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/mpmont/ci4-snippets ci4-snippets
+</code></pre></div></div>
+
+<p>If you feel like helping, you can just send me a pull request and we can sort something out.</p>
+
+<p>You can know more about Codeigniter 4 by <a href="https://codeigniter4.github.io/userguide/">checking the docs</a>. And the <a href="https://forum.codeigniter.com/thread-75581.html">official release post</a> in the forums.</p>
+
+<p><a href="https://github.com/mpmont/ci4-snippets">Github repo</a> with the ci4 snippets.</p>
+:ET

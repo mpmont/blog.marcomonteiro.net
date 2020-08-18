@@ -1,0 +1,20 @@
+I"\<hr />
+
+<p>layout: post</p>
+
+<p>title: Using PuPHPet and then connecting to your mysql via SSH tunnel</p>
+
+<p>date: 2016-02-21</p>
+
+<p>tag: mysql,php,puphpet,vagrant</p>
+
+<p>description: I just did a fresh install of vagrant and built it using the online tool from PuPHPet. Had everything ready but I wasn’t able to connect to my mysql server.</p>
+
+<p>author: Marco Monteiro</p>
+
+<p>categories: [mysql,php,puphpet,vagrant]</p>
+
+<hr />
+
+<p>I just did a fresh install of vagrant and built it using the online tool from PuPHPet. Had everything ready but I wasn’t able to connect to my mysql server.</p>
+:ET

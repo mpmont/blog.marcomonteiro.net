@@ -1,0 +1,18 @@
+I"�<p>From time to time, I have to work on a really crappy server. They have the weirdest rules of all, they’re obssed with security. I don’t have a right to see logs, they randomly block my IP from time to time. I can’t even call <a href="http://pt1.php.net/phpinfo">phpinfo()</a>. Yeah, that bad!</p>
+
+<p>Today I ran into a problem that made me go mad. I had a simple form with just a few fields. Locally the form was submiting via <em><a href="http://www.php.net/manual/en/reserved.variables.post.php">$_POST</a></em> and everything was great.</p>
+
+<!--more-->
+
+<p>But when I pushed my code to that server I couldn’t submit anything. The server was not getting the <em><a href="http://www.php.net/manual/en/reserved.variables.post.php">$_POST</a></em> and it was interpreting everything as <em><a href="http://www.php.net/manual/en/reserved.variables.get.php">$_GET</a></em>.</p>
+
+<p>Turns out they turned on <a href="http://en.wikipedia.org/wiki/ModSecurity">mod_security</a> and one of my fields was supposed to be a url. But for some scurity reason if one of my input fields had <em>http://</em> in it, they blocked the request.</p>
+
+<p>First thing that came to mind: remove the <em>http://</em> with javascript before submit and then add it back when I need it.</p>
+
+<p>But that’s just nonsense!</p>
+
+<p>Turns out if I have my input field called <em>something_url</em> the <a href="http://en.wikipedia.org/wiki/ModSecurity">mod_security</a> will be expecting the value to be one url and it will not block my request.</p>
+
+<p>So here’s my tip, if you have a project that you’re deploying to a server that you have no control of, everytime you have a input that will be used to insert a url, you should “always” shove the sufix _url.</p>
+:ET

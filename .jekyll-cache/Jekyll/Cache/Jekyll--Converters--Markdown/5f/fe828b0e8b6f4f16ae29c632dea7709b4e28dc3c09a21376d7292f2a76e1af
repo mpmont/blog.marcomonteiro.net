@@ -1,0 +1,2 @@
+I"�<p>There’s a lot of ways to use Vagrant. Some people create a virtual machine per project. I don’t like that idea. I think it’s best to create a virtual machine for each different server you have to deploy. So if I have 2 projects that are going to be deployed to the same server why should I create two virtual machines? Makes no sense to me. Those two projects belong in the same virtual machine.</p>
+:ET

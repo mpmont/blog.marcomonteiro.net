@@ -1,0 +1,21 @@
+I"I<hr />
+
+<p>layout: post</p>
+
+<p>title: Starting with composer</p>
+
+<p>date: 2012-09-19</p>
+
+<p>tag: composer,dependency manager,php</p>
+
+<p>description: I’m just getting started with Composer. I’ve been reading a lot about it and I think it’s the way to go. I don’t know many common developers (like me) that</p>
+
+<p>author: Marco Monteiro</p>
+
+<p>categories: [composer,dependency manager,php]</p>
+
+<hr />
+
+<p>I’m just getting started with Composer. I’ve been reading a lot about it and I think it’s the way to go. I don’t know many common developers (like me) that are already using it, but I’m going to give it a go. No more Git articles for you. From now on the two main subjects on my blog will be Composer and Unit Testing, since I decided that’s what I’m going to do next.
+What is this thing called Composer?</p>
+:ET

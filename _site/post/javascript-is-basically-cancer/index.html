@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Blog++ | Javascript is basically cancer!</title>
+    <!--Meta Desc-->
+    <meta name="keywords" content="2018,cancer,chrome,internet,javascript"/>
+    <meta name="description" content="Most of us these days have loads of RAM to spare on our laptops and desktops. But do you remember a time when you had a computer just to do"/>
+    <meta name="subject" content="Web development & Linux Stuff">
+    <meta name="copyright"content="Marco Monteiro">
+    <meta name="language" content="EN">
+    <meta name="robots" content="index,follow" />
+    <meta name="Classification" content="Blog">
+    <meta name="author" content="Marco Monteiro, marco@marcomonteiro.net">
+    <meta name="designer" content="marco@marcomonteiro.net">
+    <meta name="owner" content="Marco Monteiro">
+    <meta name="url" content="https://blog.marcomonteiro.net">
+    <meta name="identifier-URL" content="https://blog.marcomonteiro.net">
+    <meta name="coverage" content="Worldwide">
+
+    <!--Meta Facebook-->
+    <meta property="og:image" content="https://blog.marcomonteiro.net/assets/img/facebooklogo.jpg"/>
+    <meta property="og:title" content="Blog++ | Javascript is basically cancer!"/>
+    <meta property="og:description" content="Most of us these days have loads of RAM to spare on our laptops and desktops. But do you remember a time when you had a computer just to do"/>
+    <meta property="og:url" content="https://blog.marcomonteiro.net"/>
+    <meta property="og:site_name" content="Blog++"/>
+    <meta property="og:type" content="blog"/>
+
+    <!--Meta Twitter-->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@marcogmonteiro">
+    <meta name="twitter:title" content="Blog++ | Javascript is basically cancer!">
+    <meta name="twitter:description" content="Most of us these days have loads of RAM to spare on our laptops and desktops. But do you remember a time when you had a computer just to do">
+    <meta name="twitter:creator" content="@marcogmonteiro">
+    <meta name="twitter:domain" content="blog.marcomonteiro.net">
+
+    <link rel="start" href="https://blog.marcomonteiro.net/" title="Marco Monteiro Blog">
+    <link rel="shortcut icon" href="/assets/img/favicon.ico">
+    <!-- Styles -->
+    <link href='https://fonts.googleapis.com/css?family=OFL+Sorts+Mill+Goudy+TT' rel='stylesheet' type='text/css'/>
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/github.css" />
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+</head>
+
+  <body>
+    <div class="container">
+        <!-- nav -->
+        <header>
+    <h1><a href="https://blog.marcomonteiro.net">$blog++</a></h1>
+    <nav class="main">
+        <h1 class="mobile"><a href="https://blog.marcomonteiro.net">$blog++</a></h1>
+        <span class="mobile-trigger">
+            <a class="navicon-button x">
+                <div class="navicon"></div>
+            </a>
+        </span>
+        <ul>
+            
+                
+                   <li><a href="/">Posts</a></li>
+                
+            
+                
+                   <li><a href="/about">• About</a></li>
+                
+            
+            <li><a target="_blank" href="https://marcomonteiro.net">&bull; Website</a></li>
+            <li><a href="javascript:void(0)" id="search" class="search ir" title="Search">&bull; <i class="icon-search"></i> Search</a></li>
+            <div id="searchbar" style="display:none;">
+                <iframe src="https://duckduckgo.com/search.html?site=blog.marcomonteiro.net&prefill=Search" style="overflow:hidden;margin:0;padding:0;width:408px;height:40px;" frameborder="0"></iframe>
+            </div>
+        </ul>
+    </nav>
+</header>
+        <div class="content">
+            <div id="scrollbubble"></div>
+            <section class="post">
+                <h2 class="flipboard-title title">Javascript is basically cancer!</h2>
+                <div class="date flipboard-date">September 11, 2018 <i class="icon-user"></i> Written By Marco Monteiro</div>
+                <p>Most of us these days have loads of RAM to spare on our laptops and desktops. But do you remember a time when you had a computer just to do some web browsing and just 2GB of ram was what you needed?</p>
+
+<p>These days you have just a few tabs open on your browser and you can see the ram just going up and up.</p>
+
+<!--more-->
+
+<p>A good example on this is reddit. Reddit was a lightweight website (client side) but these days if you have a thread open and looking at the contents of your RAM you can see that the page alone claims around 236MB of data. The majority of it is objects that the various JS scripts on the webpage created long after the page was actually downloaded.</p>
+
+<p>I normally never have more than 15 chrome tabs open and this is what that looks.</p>
+
+<p><img src="https://i.imgur.com/M8mG9BN.png" alt="htop" /></p>
+
+<p>Websites are getting heavy and JS frameworks are a core problem of it. Turn off JavaScript in your browser and watch how quickly the RAM usage drops to near nothing, and that’s the core issue here. JavaScript has become this massive beast that just gets worse each year that goes by as devs pile more and more “features”. Just as a test I turned JavaScript off, opened 38 tabs (different news sites, tech companies like Apple/Microsoft/Dell… and a few programming sites python, w3, etc…) Total weight of Chome in RAM, ~650MB.</p>
+
+<p>To say JavaScript is getting out of hand really undersales the issue. JavaScript has reached nightmarishly abusive levels. Heck a lot of sites (imgur) won’t even do anything unless you turn on JavaScript and then when you do, the site by itself wrecks havoc with your RAM. To compound issues, some sites will load into memory eight different fuzzy fonts that’s specific to just that site that you are on, and the worst are when that font is used for at most 400 bytes worth of text. You are left saying to yourself, “Seriously website? You downloaded a 3.8MB font file and loaded into memory just so you could render 400 bytes in foo-foo font? You could have just made a 1.8KB jpeg for 100 different languages and loaded the one image or FFS all 100 images, and it would still be more lightweight than 3.8MB of font that I’ll more than likely never notice!”</p>
+
+<p>I’m not trying to make excuses for browsers, they ought to release resources a bit quicker or at least provide a slider that allows the user to make that call (because web browsers aren’t exactly sure if you’ll hit the back button or not, so it holds on to those resources for a good deal of time because reloading those resources could be a significant performance hit) and then sometimes folks get into the apologist stance and say, “well unused RAM is bad RAM.” But the bigger point folks should focus on is how absolutely insanely ginormous webpages have become, and the abusive JS frameworks that are massive and create 1000s of objects just to do a simple task is single handedly the biggest reason your web browser is eating RAM faster than Charlie Sheen can snort cocaine.</p>
+
+<p>Now I’m not saying that we should stick to website that are just plain text to cut on some ram. There’s use cases where that heavy usage of javascript is just amazing. Take a look at websites like Twitch, Netflix or even something like Google Drive.</p>
+
+<p>Do me a big favor, next time you just npm install the latest framework and all associated dependencies if you don’t understand the overhead and runtime consequences of implementing that code in an objectively shitty language you are basically ruining the web. It needs to be stripped back again. When your bundle.js ginormous you need to rethink your strategy.</p>
+
+                <ul id="tags" class="tags">
+                    
+                    
+                        <li><a href="#"><i class="icon-tag"></i> 2018</a></li>
+                        &nbsp;
+                    
+                        <li><a href="#"><i class="icon-tag"></i> cancer</a></li>
+                        &nbsp;
+                    
+                        <li><a href="#"><i class="icon-tag"></i> chrome</a></li>
+                        &nbsp;
+                    
+                        <li><a href="#"><i class="icon-tag"></i> internet</a></li>
+                        &nbsp;
+                    
+                        <li><a href="#"><i class="icon-tag"></i> javascript</a></li>
+                        &nbsp;
+                    
+                        <li><a href="#"><i class="icon-tag"></i> 2018</a></li>
+                        
+                    
+                </ul>
+                <br>
+            </section>
+            <div id="tweet_it">
+                <a href="javascript:void(0)" id="tweet_compose_close" class="close_it">x</a>
+                <h4>Like it? Tweet it.</h4>
+                <p>"Javascript is basically cancer!" via <a href="http://twitter.com/marcogmonteiro">@marcogmonteiro</a><br>
+                    <a href="https://twitter.com/share" data-count="horizontal" data-count="none" data-related="marcogmonteiro" data-via="marcogmonteiro" class="twitter-share-button" data-lang="en">Tweet</a>
+                  <br>
+                </p>
+                <footer>
+                    <a href="https://twitter.com/marcogmonteiro" class="twitter-follow-button" data-show-screen-name="false" data-show-count="true" data-lang="en">Follow me!</a>
+                    <img class="avatar" src="https://www.gravatar.com/avatar/44a64ea13da9db6c694e9c26b191a0af?s=28">
+                </footer>
+            </div>
+            <footer>
+    <br>
+    <p>
+        <a href="https://twitter.com/marcogmonteiro"><i class="icon-twitter"></i></a>
+        <a href="https://github.com/mpmont"><i class="icon-github-alt"></i></a>
+        <a href="/feed.xml"><i class="icon-rss"></i></a> © 2010 — 2020
+        <a href="http://marcomonteiro.net" target="_blank">Marco Monteiro</a>. All Rights Reserved. Powered by
+        <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>
+    </p>
+</footer>
+        </div>
+        <script src="/assets/js/site.js"></script>
+  </body>
+</html>

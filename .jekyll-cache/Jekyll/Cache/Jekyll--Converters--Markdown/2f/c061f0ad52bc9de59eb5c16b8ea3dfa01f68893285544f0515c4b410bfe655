@@ -1,0 +1,9 @@
+I"Å<p>PuPHPet is a simple GUI to set up virtual machines for PHP development.</p>
+
+<p>This is a gui configurator for the <a href="http://vagrantup.com/">Vagrant</a> automation tool. It uses <a href="http://puppetlabs.com/">Puppet</a> as the provisioning backend.
+This is similar to another tool that recently came out, <a href="http://rove.io/">Rove.io</a>, although that one is more focused on using Vagrant with Chef, and has different configuration options.</p>
+
+<p><a href="https://github.com/puphpet/puphpet/"><i class="icon-github"></i> Github</a></p>
+
+<p><a href="https://puphpet.com/"><i class="icon-external-link"></i> PuPHPet</a></p>
+:ET

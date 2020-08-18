@@ -1,0 +1,30 @@
+I"j<hr />
+
+<p>layout: post</p>
+
+<p>title: Pagodabox FTW</p>
+
+<p>date: 2012-11-16</p>
+
+<p>tag: hosting,tips</p>
+
+<p>description: I know, this is going to sound like a promotion post. Guess what, it is. I’m hosting my website (marcomonteiro.net) there for free so I guessed this was the least</p>
+
+<p>author: Marco Monteiro</p>
+
+<p>categories: [hosting,tips]</p>
+
+<hr />
+
+<p>I know, this is going to sound like a promotion post. Guess what, it is. I’m hosting my website (marcomonteiro.net) there for free so I guessed this was the least I could do for them.
+So what so great about it?
+<!--more--></p>
+<ul>
+  <li>It’s not hosting, it’s a hosting framework.</li>
+  <li>Priced based on monthly usage.</li>
+  <li>Deployment of apps through a Git-based system.</li>
+  <li>It’s beautiful.</li>
+  <li>Scalable.</li>
+  <li>Completely free for open source projects.</li>
+</ul>
+:ET

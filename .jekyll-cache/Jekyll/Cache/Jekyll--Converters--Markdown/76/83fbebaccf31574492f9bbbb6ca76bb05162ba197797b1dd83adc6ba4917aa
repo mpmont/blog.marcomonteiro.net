@@ -1,0 +1,2 @@
+I"Œ<p>One of reasons we had to use PHP 5.6 in one of our recent projets was related to the fact that we needed to get info from the clients ERP, that one only allowed a connection via MSSQL. So after we got the <a href="https://blog.marcomonteiro.net/post/having-multiple-php-versions-on-your-dev-environment">project running with PHP 5.6 instead of 7.2</a> we had to install the MSSQL drivers.</p>
+:ET

@@ -1,0 +1,69 @@
+I"M<p>Last week I was contacted by some really old client. You know, the kind of client that you think that they don’t even have the app you made for them online anymore.</p>
+
+<p>Turns out, they do have such app online, and they wanted me to change some minor things in it. But obviously I couldn’t do it directly in production. I needed to create a local environment that would mimic the one the client had.</p>
+
+<!--more-->
+
+<p>I havent developed anything in PHP 5.3 in a long time, and since I’m using vagrant mostly with <a href="http://phansible.com/">Phansible</a> I couldnt create a machine with it. Because the oldest PHP version phansible supports is 5.4.</p>
+
+<p>So I made a small box that supports what I needed and here’s what you need to do:</p>
+
+<h3 id="download-the-box-and-init-vagrant">Download the box and init vagrant</h3>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ vagrant box add legacy-box https://www.dropbox.com/s/ch0rq7ajonkzimp/lucid64-lamp.box?dl=1
+$ vagrant init legacy-box
+</code></pre></div></div>
+
+<h3 id="edit-your-vagrant-file">Edit your vagrant file</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>config.vm.network "private_network", ip: "192.168.33.10"
+config.vm.synced_folder "./", "/vagrant", type: "nfs"
+</code></pre></div></div>
+
+<h3 id="boot-up-the-machine">Boot up the machine</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ vagrant up
+$ vagrant ssh
+</code></pre></div></div>
+
+<h3 id="you-can-add-this-to-your-provision-id-you-want">You can add this to your provision id you want</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt-get install php5 // no futuro adicionar à provision
+$ sudo apt-get install php5-cli // no futuro adicionar à provision
+</code></pre></div></div>
+
+<h3 id="if-you-need-mysql-you-might-want-yo-edit-your-bindaddress-so-you-can-connect-via-ssh-tunnel">If you need mysql you might want yo edit your bindaddress so you can connect via ssh tunnel</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo nano /etc/mysql/my.cnf
+bindaddress passa de 127.0.0.1 a 0.0.0.0 // no futuro adicionar à provision
+</code></pre></div></div>
+
+<h3 id="with-the-lattest-versions-of-vagrant-using-such-a-old-version-of-ubuntu-you-might-need-to-create-this-file-with-the-following-contents">With the lattest versions of vagrant using such a old version of ubuntu you might need to create this file with the following contents</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cat /etc/os-release
+NAME="Ubuntu"
+VERSION="12.04 LTS, Precise Pangolin"
+ID=ubuntu
+ID_LIKE=debian
+PRETTY_NAME="Ubuntu precise (12.04 LTS)"
+VERSION_ID="12.04"
+</code></pre></div></div>
+
+<h3 id="exit-and-restart-the-machine">Exit and restart the machine</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ exit
+$ vagrant reload
+</code></pre></div></div>
+
+<h3 id="heres-your-default-connection-to-mysql">Here’s your default connection to mysql</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>host: 127.0.0.1
+user: root
+password: password
+
+SSH host: 192.168.33.10
+SSH user: vagrant
+SSH pass: vagrant
+</code></pre></div></div>
+
+<p>Enjoy!</p>
+:ET

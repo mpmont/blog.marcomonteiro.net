@@ -1,0 +1,44 @@
+I"�<hr />
+
+<p>layout: post</p>
+
+<p>title: Bootstrap Magic</p>
+
+<p>date: 2013-09-23</p>
+
+<p>tag: css,front-end,less,twitter bootstrap</p>
+
+<p>description: We all know and love <a href="http://getbootstrap.com/">Twitter Bootstrap</a>.  Or maybe you don’t (in that case here’s a small description: *“Sleek, intuitive, and powerful mobile first front-end framework for faster and easier</p>
+
+<p>author: Marco Monteiro</p>
+
+<p>categories: [css,front-end,less,twitter bootstrap]</p>
+
+<hr />
+
+<p>We all know and love <a href="http://getbootstrap.com/">Twitter Bootstrap</a>.  Or maybe you don’t (in that case here’s a small description: <em>“Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.”</em>).</p>
+
+<p>There’s many ways of using it, some developers just download the massive css file(s) and start hacking into it. Some configure the available variables and then hack into it. Others do it the right way and download the <a href="https://github.com/twbs/bootstrap/">less version</a> and then make their changes.</p>
+
+<!--more-->
+
+<p>However, now there’s a tool that can help you customize all those variables and even more in a more intuitive way. It’s called Bootstrap Magic.</p>
+
+<p><strong>Why is this one better?</strong></p>
+
+<p>Well, this way you change the variables and see the result at the same time.</p>
+
+<p><strong>Some of the main features:</strong></p>
+
+<ul>
+  <li><i class="icon-angle-right"></i> Bootstrap 3</li>
+  <li><i class="icon-angle-right"></i> Importing your own variables</li>
+  <li><i class="icon-angle-right"></i> Contextual and live preview</li>
+  <li><i class="icon-angle-right"></i> Colorpicker</li>
+  <li><i class="icon-angle-right"></i> Google Webfonts</li>
+</ul>
+
+<p><a href="http://getbootstrap.com/"><i class="icon-link"></i> Twitter Bootstrap</a></p>
+
+<p><a href="http://pikock.github.io/bootstrap-magic/"><i class="icon-link"></i> Bootstrap Magic</a></p>
+:ET

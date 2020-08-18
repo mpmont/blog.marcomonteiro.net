@@ -1,0 +1,83 @@
+I"�<p>Let’s work on the following scenario. You are a PHP developer and need a Lamp stack environment to work with.</p>
+
+<p>That means you need Linux, Apache, MariaDB or Mysql and PHP.</p>
+
+<p>So let’s get this show on the road and create our own lamp stack.</p>
+
+<!--more-->
+
+<p>First lets create a project forlder, this can be in any place you want.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ mkdir -p lamp-stack/DocumentRoot
+$ echo "&lt;?php phpinfo(); ?&gt;" &gt; lamp-stack/DocumentRoot/index.php
+</code></pre></div></div>
+
+<p>Basically your DocumentRoot will be your working environment. Now we must create two files, those will be placed on your root project folder.</p>
+
+<ul>
+  <li>docker-compose.yml</li>
+  <li>./php-apache/Dockerfile</li>
+</ul>
+
+<p>Let’s start with the docker-compose.yml file.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>version: '3'
+services:
+	php-apache:
+		build:
+			context: ./php-apache
+		ports:
+			- 80:80
+		volumes:
+			- ./DocumentRoot:/var/www/html
+		links:
+			- 'mysql'
+
+	mysql:
+		image: mysql
+		volumes:
+			- ./db:/var/lib/mysql
+		command: --default-authentication-plugin=mysql_native_password
+		restart: always
+		ports:
+			- 3306:3306
+		environment:
+			MYSQL_ROOT_PASSWORD: root
+</code></pre></div></div>
+
+<p>1st line we need to define the sintax version we’re working with.
+2nd We have the list of our services. These are php-apache and mysql (you can name these however you want).</p>
+
+<p>For the “php-apache” we have 3 items, <strong>build</strong> (where we reference the folder php-apache where the dockerfile is);</p>
+
+<p><strong>Ports</strong> basically telling it to map your port 80 to the exact same port inside the docker container.</p>
+
+<p><strong>Volumes</strong>, this is where we map our own projecto folder to the docker container one.</p>
+
+<p><strong>Links</strong>, this basically tells it to run the second service as a dependent one from the php-apache.</p>
+
+<p>The mysql is basically a direct copy from the <a href="https://hub.docker.com/_/mysql">https://hub.docker.com</a> you should really get familiar with this service.</p>
+
+<p>Finally our dockerfile. This has all the comands you want to run for your php environment.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>FROM php:7.2.1-apache
+MAINTAINER egidio docile
+RUN docker-php-ext-install pdo pdo_mysql mysqli
+RUN a2enmod rewrite
+</code></pre></div></div>
+
+<p>Firs we define our php version (this can be whatever you want to work with). The maintainer of it and then the list of php extensions we need. You can add as many as you like.</p>
+
+<p>Here’s your final folder structure:</p>
+
+<p><img src="https://i.imgur.com/4MxbwGV.png" alt="Folder structure" /></p>
+
+<p>All you need to do now is start your docker container. You do this by going inside your project folder and running the following command.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo docker-compose up
+</code></pre></div></div>
+
+<p>The first time you do it, this may take a while.</p>
+
+<p>Now to access your project just go to http://localhost. And to access your mysql server just connect as usual using your application of choice.</p>
+:ET

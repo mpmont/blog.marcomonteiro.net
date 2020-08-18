@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Blog++ | Having multiple PHP versions on your dev environment</title>
+    <!--Meta Desc-->
+    <meta name="keywords" content="2018,apache,lamp stack,php,sysadmin,ubuntu"/>
+    <meta name="description" content="There's one of our servers that we use to run small applications for a bunch of clients. At the time when we were configuring this server we ended up choosin"/>
+    <meta name="subject" content="Web development & Linux Stuff">
+    <meta name="copyright"content="Marco Monteiro">
+    <meta name="language" content="EN">
+    <meta name="robots" content="index,follow" />
+    <meta name="Classification" content="Blog">
+    <meta name="author" content="Marco Monteiro, marco@marcomonteiro.net">
+    <meta name="designer" content="marco@marcomonteiro.net">
+    <meta name="owner" content="Marco Monteiro">
+    <meta name="url" content="https://blog.marcomonteiro.net">
+    <meta name="identifier-URL" content="https://blog.marcomonteiro.net">
+    <meta name="coverage" content="Worldwide">
+
+    <!--Meta Facebook-->
+    <meta property="og:image" content="https://blog.marcomonteiro.net/assets/img/facebooklogo.jpg"/>
+    <meta property="og:title" content="Blog++ | Having multiple PHP versions on your dev environment"/>
+    <meta property="og:description" content="There's one of our servers that we use to run small applications for a bunch of clients. At the time when we were configuring this server we ended up choosin"/>
+    <meta property="og:url" content="https://blog.marcomonteiro.net"/>
+    <meta property="og:site_name" content="Blog++"/>
+    <meta property="og:type" content="blog"/>
+
+    <!--Meta Twitter-->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@marcogmonteiro">
+    <meta name="twitter:title" content="Blog++ | Having multiple PHP versions on your dev environment">
+    <meta name="twitter:description" content="There's one of our servers that we use to run small applications for a bunch of clients. At the time when we were configuring this server we ended up choosin">
+    <meta name="twitter:creator" content="@marcogmonteiro">
+    <meta name="twitter:domain" content="blog.marcomonteiro.net">
+
+    <link rel="start" href="https://blog.marcomonteiro.net/" title="Marco Monteiro Blog">
+    <link rel="shortcut icon" href="/assets/img/favicon.ico">
+    <!-- Styles -->
+    <link href='https://fonts.googleapis.com/css?family=OFL+Sorts+Mill+Goudy+TT' rel='stylesheet' type='text/css'/>
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/github.css" />
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+</head>
+
+  <body>
+    <div class="container">
+        <!-- nav -->
+        <header>
+    <h1><a href="https://blog.marcomonteiro.net">$blog++</a></h1>
+    <nav class="main">
+        <h1 class="mobile"><a href="https://blog.marcomonteiro.net">$blog++</a></h1>
+        <span class="mobile-trigger">
+            <a class="navicon-button x">
+                <div class="navicon"></div>
+            </a>
+        </span>
+        <ul>
+            
+                
+                   <li><a href="/">Posts</a></li>
+                
+            
+                
+                   <li><a href="/about">• About</a></li>
+                
+            
+            <li><a target="_blank" href="https://marcomonteiro.net">&bull; Website</a></li>
+            <li><a href="javascript:void(0)" id="search" class="search ir" title="Search">&bull; <i class="icon-search"></i> Search</a></li>
+            <div id="searchbar" style="display:none;">
+                <iframe src="https://duckduckgo.com/search.html?site=blog.marcomonteiro.net&prefill=Search" style="overflow:hidden;margin:0;padding:0;width:408px;height:40px;" frameborder="0"></iframe>
+            </div>
+        </ul>
+    </nav>
+</header>
+        <div class="content">
+            <div id="scrollbubble"></div>
+            <section class="post">
+                <h2 class="flipboard-title title">Having multiple PHP versions on your dev environment</h2>
+                <div class="date flipboard-date">July 12, 2018 <i class="icon-user"></i> Written By Marco Monteiro</div>
+                <p>There’s one of our servers that we use to run small applications for a bunch of clients. At the time when we were configuring this server we ended up choosin PHP 7.2.x as the version that would be used for these clients. However, once we started the development process we needed to connect to the clients ERP. Guess what? That connection needed php version 5.6.x max to work.</p>
+
+<p>Here’s the process to get everything up and running on Ubuntu 16.04, we also tested this on Ubuntu 18.04 and everything worked like a charm.</p>
+
+<!--more-->
+
+<p>Install apache:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt update
+$ sudo apt install apache2 libapache2-mod-fastcgi
+</code></pre></div></div>
+
+<p>On some cases you’ll get an error saying that you can’t install libeapache2-mod-fastcgi.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Package libapache2-mod-fastcgi is not available, but is referred to by another package.
+This may mean that the package is missing, has been obsoleted, or is only available from another source
+ E: Package 'libapache2-mod-fastcgi' has no installation candidate
+</code></pre></div></div>
+
+<p>That can be resolved with the following:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd /tmp &amp;&amp; wget http://mirrors.kernel.org/ubuntu/pool/multiverse/liba/libapache-mod-fastcgi/libapache2-mod-fastcgi_2.4.7~0910052141-1.2_amd64.deb
+    sudo dpkg -i libapache2-mod-fastcgi_2.4.7~0910052141-1.2_amd64.deb; sudo apt install -f
+</code></pre></div></div>
+
+<p>The second step is to install PHP</p>
+
+<p>For the installation of PHP versions, we use the PPA maintained here. Use the below couple of commands to add the PPA to your system.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt install python-software-properties
+$ sudo add-apt-repository ppa:ondrej/php
+</code></pre></div></div>
+
+<p>We’re almost there.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ apt update
+$ sudo apt install php5.6 php5.6-fpm
+$ sudo apt install php7.2 php7.2-fpm
+</code></pre></div></div>
+
+<p>Now we want to make sure everything is up and running:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo systemctl status php5.6-fpm
+$ sudo systemctl status php7.2-fpm
+</code></pre></div></div>
+
+<p>Everything that is left to do is configure our Apache.</p>
+
+<p>Enable few modules required for the configuration of multiple PHP versions with Apache. These modules are necessary to integrate PHP FPM and FastCGI with Apache server.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    $ sudo a2enmod actions fastcgi alias proxy_fcgi
+</code></pre></div></div>
+
+<p>In our www folder we create two projects. Lets say for the sake of this example its something like this:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo mkdir /var/www/php5
+$ sudo mkdir /var/www/php7
+</code></pre></div></div>
+
+<p>Now, create and index.php containing the phpinfo() function on each one.</p>
+
+<p>Let’s start the creation of VirtualHost. Apache keeps all the VirtualHost configuration files under /etc/apache2/sites-available with the extension .conf. Create a file for the first virtual host and edit in your favorite text editor.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo vim /etc/apache2/sites-available/php5.local.conf
+</code></pre></div></div>
+
+<p>Add the following content. Make sure to use correct ServerName and directory path according to your setup. This website is configured to work with PHP 5.6.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  &lt;VirtualHost *:80&gt;
+  ServerName php5.local
+  DocumentRoot /var/www/php5
+  &lt;Directory /var/www/php5&gt;
+	  Options -Indexes +FollowSymLinks +MultiViews
+	  AllowOverride All
+	  Require all granted
+  &lt;/Directory&gt;
+  &lt;FilesMatch \.php$&gt;
+	  # Apache 2.4.10+ can proxy to unix socket
+	  SetHandler "proxy:unix:/var/run/php/php5.6-fpm.sock|fcgi://localhost/"
+  &lt;/FilesMatch&gt;
+</code></pre></div></div>
+<p>&lt;/VirtualHost&gt;</p>
+
+<p>Same thing for the other one with a different path and different PHP version.</p>
+
+ 	$ sudo vim /etc/apache2/sites-available/php7.local.conf
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;VirtualHost *:80&gt;
+ServerName php7.local
+DocumentRoot /var/www/php7
+&lt;Directory /var/www/php7&gt;
+    Options -Indexes +FollowSymLinks +MultiViews
+    AllowOverride All
+    Require all granted
+&lt;/Directory&gt;
+&lt;FilesMatch \.php$&gt;
+    SetHandler "proxy:unix:/var/run/php/php7.2-fpm.sock|fcgi://localhost/"
+&lt;/FilesMatch&gt;
+</code></pre></div></div>
+<p>&lt;/VirtualHost&gt;</p>
+
+<p>Restart apache to get everything up and running.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    $ sudo service apache2 restart
+</code></pre></div></div>
+
+<p>Job done. Now you have two applications running different PHP versions on the same machine.</p>
+
+
+                <ul id="tags" class="tags">
+                    
+                    
+                        <li><a href="#"><i class="icon-tag"></i> 2018</a></li>
+                        &nbsp;
+                    
+                        <li><a href="#"><i class="icon-tag"></i> apache</a></li>
+                        &nbsp;
+                    
+                        <li><a href="#"><i class="icon-tag"></i> lamp stack</a></li>
+                        &nbsp;
+                    
+                        <li><a href="#"><i class="icon-tag"></i> php</a></li>
+                        &nbsp;
+                    
+                        <li><a href="#"><i class="icon-tag"></i> sysadmin</a></li>
+                        &nbsp;
+                    
+                        <li><a href="#"><i class="icon-tag"></i> ubuntu</a></li>
+                        &nbsp;
+                    
+                        <li><a href="#"><i class="icon-tag"></i> 2018</a></li>
+                        
+                    
+                </ul>
+                <br>
+            </section>
+            <div id="tweet_it">
+                <a href="javascript:void(0)" id="tweet_compose_close" class="close_it">x</a>
+                <h4>Like it? Tweet it.</h4>
+                <p>"Having multiple PHP versions on your dev environment" via <a href="http://twitter.com/marcogmonteiro">@marcogmonteiro</a><br>
+                    <a href="https://twitter.com/share" data-count="horizontal" data-count="none" data-related="marcogmonteiro" data-via="marcogmonteiro" class="twitter-share-button" data-lang="en">Tweet</a>
+                  <br>
+                </p>
+                <footer>
+                    <a href="https://twitter.com/marcogmonteiro" class="twitter-follow-button" data-show-screen-name="false" data-show-count="true" data-lang="en">Follow me!</a>
+                    <img class="avatar" src="https://www.gravatar.com/avatar/44a64ea13da9db6c694e9c26b191a0af?s=28">
+                </footer>
+            </div>
+            <footer>
+    <br>
+    <p>
+        <a href="https://twitter.com/marcogmonteiro"><i class="icon-twitter"></i></a>
+        <a href="https://github.com/mpmont"><i class="icon-github-alt"></i></a>
+        <a href="/feed.xml"><i class="icon-rss"></i></a> © 2010 — 2020
+        <a href="http://marcomonteiro.net" target="_blank">Marco Monteiro</a>. All Rights Reserved. Powered by
+        <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>
+    </p>
+</footer>
+        </div>
+        <script src="/assets/js/site.js"></script>
+  </body>
+</html>

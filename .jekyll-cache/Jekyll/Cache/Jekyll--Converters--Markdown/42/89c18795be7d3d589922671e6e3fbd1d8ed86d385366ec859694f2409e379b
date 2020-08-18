@@ -1,0 +1,2 @@
+I"‚<p>Thereâ€™s one of our servers that we use to run small applications for a bunch of clients. At the time when we were configuring this server we ended up choosin PHP 7.2.x as the version that would be used for these clients. However, once we started the development process we needed to connect to the clients ERP. Guess what? That connection needed php version 5.6.x max to work.</p>
+:ET

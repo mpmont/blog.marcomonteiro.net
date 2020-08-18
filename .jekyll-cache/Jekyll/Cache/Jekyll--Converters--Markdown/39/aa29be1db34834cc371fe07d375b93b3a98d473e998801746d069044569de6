@@ -1,0 +1,57 @@
+I"�<p>Recently I wrote a post about <a href="http://blog.marcomonteiro.net/post/my-dev-setup-on-mac">my dev setup on mac</a>. However someone has been recommending me for a while to start using Vagrant. But I never did. Specially because my dev setup was working fine.</p>
+
+<p>A few days ago, I decided it was time to do a clean install on my mac, and start fresh. That means it’s time for some experimenting.</p>
+
+<!--more-->
+
+<p><strong>What is Vagrant?</strong></p>
+
+<blockquote>
+  <p>Vagrant is a tool for building complete development environments. With an easy-to-use workflow and focus on automation, Vagrant lowers development environment setup time, increases development/production parity, and makes the “works on my machine” excuse a relic of the past.</p>
+</blockquote>
+
+<blockquote>
+  <p>Vagrant was started in January 2010 by Mitchell Hashimoto. For almost three years, Vagrant was a side-project for Mitchell, a project that he worked on in his free hours after his full time job. During this time, Vagrant grew to be trusted and used by a range of individuals to entire development teams in large companies.</p>
+</blockquote>
+
+<p>I look at this and I see two features that interest me. First I’ll be developing on a virtual machine that is equal to the one I’ll be deploying in the future. Then, since every configuration, dirty hack or whatever will be done on that virtual machine. My computer will stay clean of all the experimenting a the web developer life requires.</p>
+
+<p>I work mainly with PHP, so the best way to start with Vagrant is to use something like <a href="https://puphpet.com/">puphpet</a>.</p>
+
+<p>Puphpet is a simple GUI to set up virtual machines for PHP Web development. In a few simple steps you’ll have your Manifest ready to start working with Vagrant.</p>
+
+<p>First you setup the deploy target. In this case it will be local. You choose what kind of virtual machine you need and you give it a name and IP address. Then you setup what path will be synced with the VM.</p>
+
+<p>After that is pretty straight forward. You just have to configure some of the aspects of your VM that are specific to you dev environment. This includes: virtual hosts, php version, composer, PEAR modules, PECL Modules, XDebug. All your database preferences, database names, users and passwords. After that you’re ready to go.</p>
+
+<p>Before you do anything with the files you just downloaded you need to download VirtualBox and install it. After that the process is quite simple.</p>
+
+<p>All you need to do is open your terminal. Navigate to your downloaded files from Puphpet and run the following command:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ vagrant up
+</code></pre></div></div>
+
+<p>This will install and start the virtual machine you ended up choosing. After that, you can access your server with the IP you used during the Puphpet setup process or you can configure the virtual host.</p>
+
+<p>Here’s a list of the available commands to use Vagrant.</p>
+
+<ul>
+  <li><i class="icon-angle-right"></i> <strong>box</strong> - manages boxes: installation, removal, etc.</li>
+  <li><i class="icon-angle-right"></i> <strong>destroy</strong> -stops and deletes all traces of the vagrant machine</li>
+  <li><i class="icon-angle-right"></i> <strong>halt</strong> - stops the vagrant machine</li>
+  <li><i class="icon-angle-right"></i> <strong>help</strong> - shows the help for a subcommand</li>
+  <li><i class="icon-angle-right"></i> <strong>init</strong> - initializes a new Vagrant environment by creating a Vagrantfile</li>
+  <li><i class="icon-angle-right"></i> <strong>package</strong> - packages a running vagrant environment into a box</li>
+  <li><i class="icon-angle-right"></i> <strong>plugin</strong> - manages plugins: install, uninstall, update, etc.</li>
+  <li><i class="icon-angle-right"></i> <strong>provision</strong> - provisions the vagrant machine</li>
+  <li><i class="icon-angle-right"></i> <strong>reload</strong> - restarts vagrant machine, loads new Vagrantfile configuration</li>
+  <li><i class="icon-angle-right"></i> <strong>resume</strong> - resume a suspended vagrant machine</li>
+  <li><i class="icon-angle-right"></i> <strong>ssh</strong> - connects to machine via SSH</li>
+  <li><i class="icon-angle-right"></i> <strong>ssh-config</strong> - outputs OpenSSH valid configuration to connect to the machine</li>
+  <li><i class="icon-angle-right"></i> <strong>status</strong> - outputs status of the vagrant machine</li>
+  <li><i class="icon-angle-right"></i> <strong>suspend</strong> - suspends the machine</li>
+  <li><i class="icon-angle-right"></i> <strong>up</strong> - starts and provisions the vagrant environment</li>
+</ul>
+
+<p>That’s it. Easy like that.</p>
+:ET

@@ -1,0 +1,33 @@
+I"�<p>If everytime you run <em>sudo apt-get update</em>   you get the following error “Err:14 URL HERE The following signatures couldn’t be verified because the public key is not available: NO_PUBKEY PUBLIC_KEY_HERE” and like me you want to fix that. Don’t worry, I got your back.</p>
+
+<!--more-->
+
+<p>I got this error with the ppa related to the vivaldi browser, so my error was like this:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Err:14 http://repo.vivaldi.com/stable/deb stable Release.gpg The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 8D04CE49EFB20B23
+</code></pre></div></div>
+
+<p>The fix</p>
+
+<p>By far the simplest way to handle this now is with Y-PPA-Manager (which now integrates the launchpad-getkeys script with a graphical interface).</p>
+
+<p>To install it, first add the webupd8 repository for this program:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo add-apt-repository ppa:webupd8team/y-ppa-manager
+</code></pre></div></div>
+
+<p>Update your software list and install Y-PPA-Manager:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt-get update
+$ sudo apt-get install y-ppa-manager
+</code></pre></div></div>
+
+<p>Run y-ppa-manager (i.e. type y-ppa-manager then press enter key).</p>
+
+<p>When the main y-ppa-manager window appears, click on “Advanced.”</p>
+
+<p>From the list of advanced tasks, select “Try to import all missing GPG keys” and click OK.</p>
+
+<p>You’re done! As the warning dialog says when you start the operation, it may take quite a while (about 30 seconds for me) depending on how many PPA’s you have and the speed of your connection.</p>
+
+:ET

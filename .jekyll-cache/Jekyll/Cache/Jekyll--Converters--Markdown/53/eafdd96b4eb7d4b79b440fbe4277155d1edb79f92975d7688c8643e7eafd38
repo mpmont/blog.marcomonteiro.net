@@ -1,0 +1,25 @@
+I"�<p>Gnome if basically my favourite desktop environment, since I moved away from Mac OS and started using Linux full time I tried a lot of flavours. But always ended up back into gnome.</p>
+
+<p>However, I never really liked the Ubuntu implementation of it. I always preffer the vanilla version. But Ubuntu its still my favourite distribution so how to get both?</p>
+
+<p>To get that vanilla gnome experience, open a terminal and enter the following line:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo snap remove gnome-3-26-1604 gnome-calculator gnome-characters gnome-logs gnome-system-monitor
+</code></pre></div></div>
+
+<p>You’ll be asked for your password and after the process is complete you should run the following:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt install gnome-session
+</code></pre></div></div>
+
+<p>After this step you want to reboot your system. Then at the login screen, click on the small gear icon and select “Gnome on Xorg” to get to the vanilla session.</p>
+
+<p>After that you need to run the following:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt install vanilla-gnome-desktop vanilla-gnome-default-settings
+</code></pre></div></div>
+
+<p>This might take a while, but after all these packages are installed you need to reboot once more.</p>
+
+<p>Once you login you’re now in the default gnome session.</p>
+:ET

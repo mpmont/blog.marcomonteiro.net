@@ -1,0 +1,27 @@
+I"�<p>Ever since I moved away from mac and started using Linux as my daily driver there’s been a few minor things that I miss obviously. One of the things is that I never really liked the default application launcher for ubuntu. I always loved the default one mac os has that has a lot of built in functionality. Or if you wanted more on mac you could even install Alfred and that was awesome too.</p>
+
+<p>So I looked a bit more and found out that you can have the exact same thin on Linux and its called Ulauncher.</p>
+
+<!--more-->
+
+<p><img src="https://ulauncher.io/assets/images/demo.gif" alt="Uluncher demo" /></p>
+
+<p>It was basic feature like:</p>
+
+<p><strong>Fuzzy search</strong></p>
+
+<p>Type in an application name without worrying about spelling. Ulauncher will figure out what you meant. It also remembers your previous choices and automatically selects the best option for you.</p>
+
+<p><strong>Custom color themes</strong></p>
+
+<p>Ulauncher provides 4 themes built in. But if you need something different you can always <a href="https://gist.github.com/gornostal/02a232e6e560da7946c053555ced6cce">create a custom color theme</a>. Docs are <a href="http://docs.ulauncher.io/en/latest/themes/themes.html">here</a>.</p>
+
+<p><strong>Shortcuts &amp; extensions</strong></p>
+
+<p>Improve your workflow with customizable shortcuts and extensions. Create a shortcut for web search or your scripts or install a 3rd party extension.</p>
+
+<p><strong>Fast directory browser</strong>
+Browse files and directories with ease.  Type ~ or / to start. Press Alt+Enter to access an alt menu.</p>
+
+<p>Assuming you’re using debian you can just download the .deb file and install the thing.</p>
+:ET

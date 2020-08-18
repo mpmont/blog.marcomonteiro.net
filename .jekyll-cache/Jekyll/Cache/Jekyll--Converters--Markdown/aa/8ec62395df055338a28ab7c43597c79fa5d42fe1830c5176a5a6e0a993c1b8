@@ -1,0 +1,31 @@
+I"�<hr />
+
+<p>layout: post</p>
+
+<p>title: Laracon EU (III)</p>
+
+<p>date: 2013-08-31</p>
+
+<p>tag: laracon,laravel</p>
+
+<p>description: At the end of the first day the legend Fabien Potencier took the stage. If you don’t know who he is, he’s a developer by passion, he started to build</p>
+
+<p>author: Marco Monteiro</p>
+
+<p>categories: [laracon,laravel]</p>
+
+<hr />
+
+<p>At the end of the first day the legend Fabien Potencier took the stage. If you don’t know who he is, he’s a developer by passion, he started to build websites with PHP5 in 2004 and created the Symfony framework to help SensioLabs, his company, leverage the power of PHP for its customers.</p>
+
+<p>As expected his talk was all about Symfony.</p>
+
+<blockquote>
+  <p>Symfony is all about standardization and interoperability. The Symfony foundation is largely based on existing standards like HTTP, but it also leverages existing best-practices and design patterns like dependency injection. Learn more about the fundamental philosophy of Symfony and why embracing these core concepts is good for PHP as a whole.</p>
+</blockquote>
+
+<p>After all the talk about standardization there was a really interesting Q&amp;A. Mostly about general PHP stuff and some decisions and the Symfony roadmap.</p>
+
+<p>This is how great Laracon EU is, we’re here not just to talk about Laravel. Mostly we’re were to talk about PHP in general. Actually I talked to a lot of people and most don’t even use Laravel that much. But we all love it and learn from it.</p>
+
+:ET

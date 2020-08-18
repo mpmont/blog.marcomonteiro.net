@@ -1,0 +1,84 @@
+I"Z<p>You can run Compose on macOS, Windows, and 64-bit Linux.</p>
+
+<p>Docker Compose relies on Docker Engine for any meaningful work, so make sure you have Docker Engine installed either locally or remote, depending on your setup.</p>
+
+<p>On Linux systems, first install the Docker for your OS as described on the Get Docker page, then come back here for instructions on installing Compose on Linux systems.</p>
+
+<!--more-->
+
+<p>To run Compose as a non-root user, see <a href="https://docs.docker.com/install/linux/linux-postinstall/">Manage Docker as a non-root user</a>.</p>
+
+<p>On Linux, you can download the Docker Compose binary from the Compose repository release page on GitHub. Follow the instructions from the link, which involve running the curl command in your terminal to download the binaries. These step by step instructions are also included below.</p>
+
+<p>Run this command to download the latest version of Docker Compose:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo curl -L "https://github.com/docker/compose/releases/download/1.23.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+</code></pre></div></div>
+
+<p>Apply executable permissions to the binary:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo chmod +x /usr/local/bin/docker-compose
+</code></pre></div></div>
+
+<p>Optionally, install command completion for the bash and zsh shell.</p>
+
+<p>I use zsh so here’s what to do:</p>
+
+<p>Place the completion script in your /path/to/zsh/completion (typically ~/.zsh/completion/):</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir -p ~/.zsh/completion
+$ curl -L https://raw.githubusercontent.com/docker/compose/1.23.2/contrib/completion/zsh/_docker-compose &gt; ~/.zsh/completion/_docker-compose
+</code></pre></div></div>
+
+<p>Include the directory in your $fpath by adding in ~/.zshrc:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fpath=(~/.zsh/completion $fpath)
+</code></pre></div></div>
+
+<p>Make sure compinit is loaded or do it by adding in ~/.zshrc:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>autoload -Uz compinit &amp;&amp; compinit -i
+</code></pre></div></div>
+
+<p>Then reload your shell:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>exec $SHELL -l
+</code></pre></div></div>
+
+<p><strong>Available completions</strong></p>
+
+<p>Depending on what you typed on the command line so far, it completes:</p>
+
+<p><strong>Available docker-compose commands</strong></p>
+
+<ul>
+  <li>
+    <ul>
+      <li>Options that are available for a particular command</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>Service names that make sense in a given context, such as services with running or stopped instances or services based on images vs. services based on Dockerfiles. For docker-compose scale, completed service names automatically have “=” appended.</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>Arguments for selected options. For example, docker-compose kill -s completes some signals like SIGHUP and SIGUSR1.</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>Enjoy working with Compose faster and with fewer typos!</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>Test the installation.</strong></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ docker-compose --version
+docker-compose version 1.23.2, build 1110ad01
+</code></pre></div></div>
+
+<p><a href="https://docs.docker.com/">Docker documentation</a> for reference.</p>
+:ET

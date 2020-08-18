@@ -1,0 +1,235 @@
+I"w/<hr />
+
+<p>layout: post</p>
+
+<p>title: normalizedSync.php - Single file demo</p>
+
+<p>date: 2013-11-19</p>
+
+<p>tag: data,database,how-to,sync,tutorial</p>
+
+<p>description: Are you trying to sync de-normalized data from a remote source (e.g. webservice) and struggle importing it into your nicely normalized database? Maybe this little demo might give you an</p>
+
+<p>author: Marco Monteiro</p>
+
+<p>categories: [data,database,how-to,sync,tutorial]</p>
+
+<hr />
+
+<p>Are you trying to sync de-normalized data from a remote source (e.g. webservice) and struggle importing it into your nicely normalized database? Maybe this little demo might give you an idea!</p>
+
+<!--more-->
+
+<p><strong>Part 1:</strong>  ( <a href="http://sqlfiddle.com/#!2/aa28e/1">Normalize existing DB-Data</a> )</p>
+
+<p><strong>Part 2:</strong> Keepin’ it all in sync</p>
+
+<ul>
+  <li>
+    <p>run this from your CLI:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  curl -Ls http://git.io/6VTovw | php
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>or download the <a href="https://gist.github.com/druu/7541557#file-normalizedsync-php">normalizedSync.php</a> file and run it locally</p>
+  </li>
+</ul>
+
+<p><strong>So… just what exactly is going on here?</strong></p>
+
+<p><strong>Picture this:</strong></p>
+
+<ul>
+  <li><i class="icon-angle-right"></i>  You’re facing yourself with the task to frequently pull data from <strong><em>theSERVICE</em></strong> via their API and keep a synchronized copy on your DB cluster.</li>
+  <li><i class="icon-angle-right"></i>  You skim the docs, run some little test scripts and have soon found just the right combination of URL and request data to get exactly the data you need to have.</li>
+  <li><i class="icon-angle-right"></i>  You head happily and motivated into implementing and testing your little cron jobby.</li>
+</ul>
+
+<p>And then you realize…</p>
+
+<p><strong>Yeah, but what happened???</strong></p>
+
+<p>Well… Someone over at <strong><em>theSERVICE</em></strong> thought:</p>
+
+<p><em>“Nah, our users surely won’t need the relational data from our systems… Let’s give ‘em the human friendly, easy readable, flat version.”</em></p>
+
+<p>Or maybe someone though:</p>
+
+<p><em>“3NF - WHAT? Ain’t nobody got tyme fo’ dat!”</em></p>
+
+<p>So basically, you’re facing this situation:</p>
+
+<p><code>&lt;pre&gt;
+   +----------------------+---------------------------+--------------------+-------------+
+   |  vendor              | category                  | name               |    ....     |
+   +----------------------|---------------------------|--------------------|-------------+
+   |                      |                           |                    |             |
+   |  Vendor 1            | Category 2                | Product 1          |             |
+   +-------------------------------------------------------------------------------------+
+   |                      |                           |                    |             |
+   |  Vendor 1            | Category 2                | Product 2          |             |
+   +-------------------------------------------------------------------------------------+
+   |                      |                           |                    |             |
+   |  Vendor 2            | Category 1                | Product 3          |             |
+   +-------------------------------------------------------------------------------------+
+   |                      |                           |                    |             |
+   |  Vendor 3            | Catefory 3                | Product 4          |             |
+   +----------------------+---------------------------+--------------------+-------------+
+   \\===&gt; This is the structure of the data you received...
+&lt;/pre&gt;</code>
+<strong>But:</strong></p>
+
+<p>Your system looks like this:</p>
+
+<p><code>&lt;pre&gt;
+   +-----+-----------------------+          +-----+--------------------------+
+   | id  |  name                 |          | id  |  name                    |
+   |-----|-----------------------|          |-----|--------------------------|
+   |     |                       |          |     |                          |
+   | 1   |  Vendor 1             |          | 1   |  Category 43             |
+   +-----------------------------+          +--------------------------------+
+   |     |                       |          |     |                          |
+   | 2   |  Vendor 2             |          | 2   |  Category 1              |
+   +-----------------------------+          +--------------------------------+
+   |     |                       |          |     |                          |
+   +-----+-----------------------+          +-----+--------------------------+
+   \\==============&gt; vendors table          \\==============&gt; categories table
+&lt;/pre&gt;</code></p>
+
+<p><code>&lt;pre&gt;
+   +-----+--------------+-----------------+----------------------+-----------+
+   | id  | vendor_id    | category_id     | name                 |    ...    |
+   |-----|--------------|-----------------|----------------------|-----------|
+   |     |              |                 |                      |           |
+   | 1   | 1            | 2               | Product 1            |           |
+   +-------------------------------------------------------------------------+
+   |     |              |                 |                      |           |
+   | 2   | 1            | 3               | Product 2            |           |
+   +-------------------------------------------------------------------------+
+   |     |              |                 |                      |           |
+   | 3   | 2            | 12              | Product OVER 9000    |           |
+   +-------------------------------------------------------------------------+
+   \\=========================================================&gt; products table
+&lt;/pre&gt;</code></p>
+
+<p><strong>And:</strong></p>
+
+<p>Your cron-script takes an hour to complete…</p>
+
+<blockquote>
+  <p>Dis no good.</p>
+</blockquote>
+
+<p><strong>Enter: This Demo Script!</strong>
+Again: just run <em>“curl -Ls http://git.io/6VTovw | php”</em> from your CLI and see the data flowing in.</p>
+
+<p>Let me quickly describe what’s going on there:</p>
+
+<ul>
+  <li><i class="icon-angle-right"></i> PHP parses the source file for any class declarations</li>
+  <li><i class="icon-angle-right"></i> The script grabs Jeremy Dorn’s (@jdorn) <a href="https://github.com/jdorn/sql-formatter">SqlFormatter</a> to get some juice ;)</li>
+  <li><i class="icon-angle-right"></i> The main loop is called. Just 3 iterations of a formloop, with constantly growing result sets</li>
+  <li><i class="icon-angle-right"></i> Within the loop:
+    <ul>
+      <li><i class="icon-angle-right"></i> Related data (vendors, categories) get extracted from the flat dataset</li>
+      <li><i class="icon-angle-right"></i> Then 2 batch insert queries are fired <em>(ON DUPLICATE KEY UPDATE)</em> and the results are instantly retrieved</li>
+      <li><i class="icon-angle-right"></i> And a lookup transformation is applied: <br />
+ 		 <i class="icon-angle-right"></i> <strong>Before:</strong> <em>vendors[] = {“id”: 1, “name”: “Vendor 1”}</em> <br />
+ 		 <i class="icon-angle-right"></i> <strong>After:</strong>  <em>vendors[“Vendor 1”] = {“id”: 1, “name”: “Vendor 1”}</em>
+ 	* <i class="icon-angle-right"></i> So with that easy accessible array of meta-infos, for every row of the received data, the columns <em>vendor</em> and <em>category</em> will be replaced by <em>vendor_id</em>, respectively <em>category_id</em>
+ 	* <i class="icon-angle-right"></i> Out of this <em>normalized</em> result set, we can quickly create another batch insert</li>
+      <li><i class="icon-angle-right"></i> And be done.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>But seriously, read the source, get a hang of what’s happening.  This was more or less hastily done, and probably has loads of things to optimize.</p>
+
+<p>But you get the idea ;)</p>
+
+<p><strong>One more thing…</strong></p>
+
+<p>There are a few things I’d like to point out and/or explain:</p>
+
+<p><strong>Why do you use <em>array_map()</em> that much? Why no loops?</strong></p>
+
+<ul>
+  <li><i class="icon-angle-right"></i> I easily could’ve used loops, but I wanted to keep it relatively short.</li>
+</ul>
+
+<p><strong>Why the hell did you even write this?</strong></p>
+
+<ul>
+  <li><i class="icon-angle-right"></i>Well, I started answering a question about how that particular person could implement an efficient way to solve exactly this problem.</li>
+  <li><i class="icon-angle-right"></i> The thing got out of hand…</li>
+</ul>
+
+<p><strong>So, is it efficient?</strong></p>
+
+<ul>
+  <li><i class="icon-angle-right"></i> To be fair, I just lab-tested it. I have no real-life benchmarks or anything.</li>
+  <li><i class="icon-angle-right"></i> This particular thing uses 15 db queries in total, and the queries aren’t super complex either. But again, I have not analyzed in regards of performance</li>
+</ul>
+
+<p><strong>Okay, Lab-tested? You sure have run it against a DB, haven’t ya?</strong></p>
+
+<p><strong><em>OK! Here’s the interesting bit:</em></strong></p>
+
+<p>We’ve got 3 classes (Sorry @jdorn ):</p>
+
+<ul>
+  <li><i class="icon-angle-right"></i> Helper</li>
+  <li><i class="icon-angle-right"></i> Extractor</li>
+  <li><i class="icon-angle-right"></i> DB</li>
+</ul>
+
+<p>It is <em>Helper’s</em> job to simulate the API-call, perform the lookup transformations, generate the query string, and so on. Just a little collection of sort of generic methods.</p>
+
+<p>When you run the script you will see some output like</p>
+
+<p><code>&lt;pre&gt;
+*** SysStats: *******************************************************
+	$&gt; Received 918 products!
+	$&gt; DB Stats:
+	$&gt; COUNT(vendors.*) : 100 rows
+	$&gt; COUNT(categories.*) : 100 rows
+	$&gt; COUNT(products.*) : 1867 rows
+	$&gt; Current query count: 15
+*** End of SysStats *************************************************
+&lt;/pre&gt;</code></p>
+
+<p>When you take a look at <em>Helper::get_products()</em> you will find that I’ve limited the number of unique vendors and categories to a hundred results each.  That’s just for the sake of creating key-collision so the update part of the query is fired to, demonstrating the desired behaviour. (Albeit only accumulating data at this point)</p>
+
+<p>Then we’ve got the <em>Extractor</em> <em>(cue dramatic music)</em><br />
+It’s whole purpose is just to extract the meta-info from the API’s data, induce the assembly of the query string, and initiate the lookup optimization.</p>
+
+<blockquote>
+  <p>…sigh.</p>
+</blockquote>
+
+<p>Yeah, and then there’s the weird uncle at the family reunion, that no one is sure of his actual relation to your family. He also stinks, and doesn’t like you.</p>
+
+<p><strong>Ladies and gentlemen, please welcome: the <em>Database</em>-Emulator!</strong></p>
+
+<p>I can’t quite explain what led my to produce this piece of… this thing. But hey! It does it’s job!</p>
+
+<p>It emulates an <strong>extremely</strong> reduced subset of a DBMS, taking an actual SQL-Query, extracting the wanted data from it, and storing it in a projection of what should’ve been some sort of Relational DBMS scheme.</p>
+
+<p>Also, not wanting to overcomplicate it too much, I just gave it a few quick’n’dirty shorthand methods, to make it obey. :)</p>
+
+<p>As I said, check the source! It’s always fun to see, what the human brain comes up with, when you’re actually drifting into insanity. :D</p>
+
+<p>Drop me a note, if I haven’t scared you already :)</p>
+
+<p><strong>And just btw:</strong>  <br />
+<a href="http://i.imgur.com/JRWcbfC.png">Here’s a call graph.</a>  <br />
+And <a href="https://gist.github.com/druu/7541557">here’s the Gist</a></p>
+
+<blockquote>
+  <p>Have Fun!  <br />
+druu</p>
+</blockquote>
+
+<p><strong>P.S.:</strong> Thanks to Jeremy Dorn (@jdorn) for that supreme SQL Formatter and to Marco Monteiro for editing and publishing this bit :) You rock! \o/</p>
+:ET

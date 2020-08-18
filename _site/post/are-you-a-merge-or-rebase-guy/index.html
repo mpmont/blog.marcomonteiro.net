@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Blog++ | Are You A Merge Or Rebase Guy</title>
+    <!--Meta Desc-->
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="subject" content="Web development & Linux Stuff">
+    <meta name="copyright"content="Marco Monteiro">
+    <meta name="language" content="EN">
+    <meta name="robots" content="index,follow" />
+    <meta name="Classification" content="Blog">
+    <meta name="author" content="Marco Monteiro, marco@marcomonteiro.net">
+    <meta name="designer" content="marco@marcomonteiro.net">
+    <meta name="owner" content="Marco Monteiro">
+    <meta name="url" content="https://blog.marcomonteiro.net">
+    <meta name="identifier-URL" content="https://blog.marcomonteiro.net">
+    <meta name="coverage" content="Worldwide">
+
+    <!--Meta Facebook-->
+    <meta property="og:image" content="https://blog.marcomonteiro.net/assets/img/facebooklogo.jpg"/>
+    <meta property="og:title" content="Blog++ | Are You A Merge Or Rebase Guy"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content="https://blog.marcomonteiro.net"/>
+    <meta property="og:site_name" content="Blog++"/>
+    <meta property="og:type" content="blog"/>
+
+    <!--Meta Twitter-->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@marcogmonteiro">
+    <meta name="twitter:title" content="Blog++ | Are You A Merge Or Rebase Guy">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:creator" content="@marcogmonteiro">
+    <meta name="twitter:domain" content="blog.marcomonteiro.net">
+
+    <link rel="start" href="https://blog.marcomonteiro.net/" title="Marco Monteiro Blog">
+    <link rel="shortcut icon" href="/assets/img/favicon.ico">
+    <!-- Styles -->
+    <link href='https://fonts.googleapis.com/css?family=OFL+Sorts+Mill+Goudy+TT' rel='stylesheet' type='text/css'/>
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/github.css" />
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+</head>
+
+  <body>
+    <div class="container">
+        <!-- nav -->
+        <header>
+    <h1><a href="https://blog.marcomonteiro.net">$blog++</a></h1>
+    <nav class="main">
+        <h1 class="mobile"><a href="https://blog.marcomonteiro.net">$blog++</a></h1>
+        <span class="mobile-trigger">
+            <a class="navicon-button x">
+                <div class="navicon"></div>
+            </a>
+        </span>
+        <ul>
+            
+                
+                   <li><a href="/">Posts</a></li>
+                
+            
+                
+                   <li><a href="/about">• About</a></li>
+                
+            
+            <li><a target="_blank" href="https://marcomonteiro.net">&bull; Website</a></li>
+            <li><a href="javascript:void(0)" id="search" class="search ir" title="Search">&bull; <i class="icon-search"></i> Search</a></li>
+            <div id="searchbar" style="display:none;">
+                <iframe src="https://duckduckgo.com/search.html?site=blog.marcomonteiro.net&prefill=Search" style="overflow:hidden;margin:0;padding:0;width:408px;height:40px;" frameborder="0"></iframe>
+            </div>
+        </ul>
+    </nav>
+</header>
+        <div class="content">
+            <div id="scrollbubble"></div>
+            <section class="post">
+                <h2 class="flipboard-title title">Are You A Merge Or Rebase Guy</h2>
+                <div class="date flipboard-date">September 18, 2012 <i class="icon-user"></i> Written By </div>
+                <hr />
+
+<p>layout: post</p>
+
+<p>title: Are you a merge or rebase guy?</p>
+
+<p>date: 2012-09-18</p>
+
+<p>tag: Git,Version-control</p>
+
+<p>description: I know, by now you read almost every tutorial about how to get started with git. You know how to create your repo, add stuff to it and push to</p>
+
+<p>author: Marco Monteiro</p>
+
+<p>categories: [Git,Version-control]</p>
+
+<hr />
+
+<p>I know, by now you read almost every tutorial about how to get started with git. You know how to create your repo, add stuff to it and push to your remote. You started branching and everything is now great. Then you read the term Rebase somewhere and think - who wants that? I have Merge.</p>
+
+<p>Well today we talk about the differences between them. Also have in mind that these concepts can be applied to both Git and Mercurial.
+Merge or Rebase?
+<!--more--></p>
+
+<blockquote>
+  <p>As you’re no doubt aware, Git and Mercurial are great at re-integrating divergent lines of development through merging. They have to be, since their design strongly encourages developers to commit changes in parallel in their own distributed environments. Eventually some or all of these commits have to be brought together into a shared graph, and merging and rebasing are two primary ways that let us do that. So which one do you use?</p>
+</blockquote>
+
+<blockquote>
+  <p>in: sourcetreeapp.com</p>
+</blockquote>
+
+<p>Ok let’s start be defining both.</p>
+
+<p><strong>Merge</strong></p>
+
+<p>Join two or more development histories together.</p>
+
+<p>Incorporates changes from the named commits (since the time their histories diverged from the current branch) into the current branch. This command is used by git pull to incorporate changes from another repository and can be used by hand to merge changes from one branch into another.</p>
+
+<p>Assume the following history exists and the current branch is “master”:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  A---B---C topic
+ /
+D---E---F---G master
+</code></pre></div></div>
+
+<p>Then “git merge topic” will replay the changes made on the topic branch since it diverged from master (i.e., E) until its current commit (C) on top of master, and record the result in a new commit along with the names of the two parent commits and a log message from the user describing the changes.</p>
+
+<p><strong>Rebase</strong></p>
+
+<p>Forward-port local commits to the updated upstream head.</p>
+
+<p>Assume the following history exists and the current branch is “topic”:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      A---B---C topic
+     /
+D---E---F---G master
+</code></pre></div></div>
+
+<p>From this point, the result of either of the following commands:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git rebase master
+git rebase master topic
+</code></pre></div></div>
+
+<p>Would be:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>              A'--B'--C' topic
+             /
+D---E---F---G master
+</code></pre></div></div>
+
+<p>If the upstream branch already contains a change you have made (e.g., because you mailed a patch which was applied upstream), then that commit will be skipped. For example, running git rebase master on the following history (in which A’ and A introduce the same set of changes, but have different committer information):</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      A---B---C topic
+     /
+D---E---A'---F master
+</code></pre></div></div>
+
+<p>will result in:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>               B'---C' topic
+              /
+D---E---A'---F master
+</code></pre></div></div>
+
+<p>And it can get more and more complex than this. But trying to resume what it is to a more simple definition in contrast to Branching.</p>
+
+<p>Rebasing unifies the lines of development by re-writing changes from the source branch so that they appear as children of the destination branch effectively pretending that those commits were written on top of the destination branch all along.</p>
+
+<p><strong>Pros and cons</strong></p>
+
+<p><strong>Merging Pros</strong></p>
+
+<ul>
+  <li>Simple to use and understand.</li>
+  <li>Maintains the original context of the source branch.</li>
+  <li>The commits on the source branch remain separate from other branch commits, provided you don’t perform a fast-forward merge. This separation can be useful in the case of feature branches (remember git-flow?), where you might want to take a feature and merge it into another branch later.</li>
+  <li>Existing commits on the source branch are unchanged and remain valid; it doesn’t matter if they’ve been shared with others.</li>
+</ul>
+
+<p><strong>Merging Cons</strong></p>
+
+<p>If the need to merge arises simply because multiple people are working on the same branch in parallel, the merges don’t serve any useful historic purpose and create clutter.
+Rebase Pros</p>
+
+<p>Simplifies your history.
+Is the most intuitive and clutter-free way to combine commits from multiple developers in a shared branch
+Rebase Cons</p>
+
+<p>Slightly more complex, especially under conflict conditions. Each commit is rebased in order, and a conflict will interrupt the process of rebasing multiple commits. With a conflict, you have to resolve the conflict in order to continue the rebase. SourceTree guides you through this process, but it can still become a bit more complicated.
+Rewriting of history has ramifications if you’ve previously pushed those commits elsewhere. In Mercurial, you simply cannot push commits that you later intend to rebase, because anyone pulling from the remote will get them. In Git, you may push commits you may want to rebase later (as a backup) but only if it’s to a remote branch that only you use. If anyone else checks out that branch and you later rebase it, it’s going to get very confusing.
+You decide which one to use and where. It’s up to you, personally I rarely use rebase.</p>
+
+<p>Article based on the gitbook.</p>
+
+                <ul id="tags" class="tags">
+                    
+                    
+                </ul>
+                <br>
+            </section>
+            <div id="tweet_it">
+                <a href="javascript:void(0)" id="tweet_compose_close" class="close_it">x</a>
+                <h4>Like it? Tweet it.</h4>
+                <p>"Are You A Merge Or Rebase Guy" via <a href="http://twitter.com/marcogmonteiro">@marcogmonteiro</a><br>
+                    <a href="https://twitter.com/share" data-count="horizontal" data-count="none" data-related="marcogmonteiro" data-via="marcogmonteiro" class="twitter-share-button" data-lang="en">Tweet</a>
+                  <br>
+                </p>
+                <footer>
+                    <a href="https://twitter.com/marcogmonteiro" class="twitter-follow-button" data-show-screen-name="false" data-show-count="true" data-lang="en">Follow me!</a>
+                    <img class="avatar" src="https://www.gravatar.com/avatar/44a64ea13da9db6c694e9c26b191a0af?s=28">
+                </footer>
+            </div>
+            <footer>
+    <br>
+    <p>
+        <a href="https://twitter.com/marcogmonteiro"><i class="icon-twitter"></i></a>
+        <a href="https://github.com/mpmont"><i class="icon-github-alt"></i></a>
+        <a href="/feed.xml"><i class="icon-rss"></i></a> © 2010 — 2020
+        <a href="http://marcomonteiro.net" target="_blank">Marco Monteiro</a>. All Rights Reserved. Powered by
+        <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>
+    </p>
+</footer>
+        </div>
+        <script src="/assets/js/site.js"></script>
+  </body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Blog++ | Git Vs Svn Is It Really A Battle</title>
+    <!--Meta Desc-->
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="subject" content="Web development & Linux Stuff">
+    <meta name="copyright"content="Marco Monteiro">
+    <meta name="language" content="EN">
+    <meta name="robots" content="index,follow" />
+    <meta name="Classification" content="Blog">
+    <meta name="author" content="Marco Monteiro, marco@marcomonteiro.net">
+    <meta name="designer" content="marco@marcomonteiro.net">
+    <meta name="owner" content="Marco Monteiro">
+    <meta name="url" content="https://blog.marcomonteiro.net">
+    <meta name="identifier-URL" content="https://blog.marcomonteiro.net">
+    <meta name="coverage" content="Worldwide">
+
+    <!--Meta Facebook-->
+    <meta property="og:image" content="https://blog.marcomonteiro.net/assets/img/facebooklogo.jpg"/>
+    <meta property="og:title" content="Blog++ | Git Vs Svn Is It Really A Battle"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content="https://blog.marcomonteiro.net"/>
+    <meta property="og:site_name" content="Blog++"/>
+    <meta property="og:type" content="blog"/>
+
+    <!--Meta Twitter-->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@marcogmonteiro">
+    <meta name="twitter:title" content="Blog++ | Git Vs Svn Is It Really A Battle">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:creator" content="@marcogmonteiro">
+    <meta name="twitter:domain" content="blog.marcomonteiro.net">
+
+    <link rel="start" href="https://blog.marcomonteiro.net/" title="Marco Monteiro Blog">
+    <link rel="shortcut icon" href="/assets/img/favicon.ico">
+    <!-- Styles -->
+    <link href='https://fonts.googleapis.com/css?family=OFL+Sorts+Mill+Goudy+TT' rel='stylesheet' type='text/css'/>
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/github.css" />
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+</head>
+
+  <body>
+    <div class="container">
+        <!-- nav -->
+        <header>
+    <h1><a href="https://blog.marcomonteiro.net">$blog++</a></h1>
+    <nav class="main">
+        <h1 class="mobile"><a href="https://blog.marcomonteiro.net">$blog++</a></h1>
+        <span class="mobile-trigger">
+            <a class="navicon-button x">
+                <div class="navicon"></div>
+            </a>
+        </span>
+        <ul>
+            
+                
+                   <li><a href="/">Posts</a></li>
+                
+            
+                
+                   <li><a href="/about">• About</a></li>
+                
+            
+            <li><a target="_blank" href="https://marcomonteiro.net">&bull; Website</a></li>
+            <li><a href="javascript:void(0)" id="search" class="search ir" title="Search">&bull; <i class="icon-search"></i> Search</a></li>
+            <div id="searchbar" style="display:none;">
+                <iframe src="https://duckduckgo.com/search.html?site=blog.marcomonteiro.net&prefill=Search" style="overflow:hidden;margin:0;padding:0;width:408px;height:40px;" frameborder="0"></iframe>
+            </div>
+        </ul>
+    </nav>
+</header>
+        <div class="content">
+            <div id="scrollbubble"></div>
+            <section class="post">
+                <h2 class="flipboard-title title">Git Vs Svn Is It Really A Battle</h2>
+                <div class="date flipboard-date">August 27, 2012 <i class="icon-user"></i> Written By </div>
+                <hr />
+
+<p>layout: post</p>
+
+<p>title: Git vs Svn is it really a battle?</p>
+
+<p>date: 2012-08-27</p>
+
+<p>tag: Git,Version-control</p>
+
+<p>description: Since I wrote that last post on how to update your codeigniter installation with git, I got a question on why use git? (at least this time was why use</p>
+
+<p>author: Marco Monteiro</p>
+
+<p>categories: [Git,Version-control]</p>
+
+<hr />
+
+<p>Since I wrote that last post on how to update your codeigniter installation with git, I got a question on why use git? (at least this time was why use git, and not why use any kind of version control). 
+<!--more-->
+Normally I post some of my posts on Forrst, and there was the place the question took place. Take a look:</p>
+
+<blockquote>
+  <p>Marco,</p>
+
+  <p>really interesting. We use Codeigniter for our applications. May sound so noob but… Should we always be up to date? It’s secure to update?</p>
+
+  <p>I’m one of those that doesn’t use git. We have our own SNV and I can’t still find what is what you guys see in git to not be able to live without it. Can you give a bit of details? :-)</p>
+</blockquote>
+
+<p>So I promised the dude I would blog about this, since the freaking text-area where you comment on Forrst is so damn small.</p>
+
+<p>I’ve made some research about this and obviously I’m not the 1st one blogging about this, so I decided to quote some stuff.</p>
+
+<p>If you have compelling requirements for a single, certain, master copy of your work, use Subversion. You can do this with Git, so long as there are no slip-ups. But you can’t do anything else with Subversion (slip-ups or no), and …compelling requirements“ like Sarbanes-Oxley are happier with guarantees than possibilities.
+If you plan to maintain parallel, largely shared but permanently somewhat different lines of the same product, use Git. One common example: perhaps you have a large product that you customize for each customer. The customizations are permanent, and generally not shared among code lines, but most of the code is common to all. Git was designed for just this case (in Git terms, local customizations to the common core, and occasional feature or bug-fix contributions back up-tree).
+Neither of those? Take your pick, you should be fine with either tool.
+in: blog.collab.net</p>
+
+<p>No need to clarify this. Let’s do a quick run on the best points of both.</p>
+
+<p>Git’s Major Features Over Subversion</p>
+
+<p>Distributed Nature (Git was designed from the ground up as a distributed version control system. Being a distributed version control system means that multiple redundant repositories and branching are first class concepts of the tool.)
+Access Control (Due to being distributed, you inherently do not have to give commit access to other people in order for them to use the versioning features. Instead, you decide when to merge what from whom.)
+Branch Handling (Branches in Git are a core concept used everyday by every user. In Subversion they are more cumbersome and often used sparingly.)
+Performance (Git is extremely fast. Since all operations except for push and fetch are local there is no network latency involved)
+Smaller Space Requirements (Git’s repository and working directory sizes are extremely small when compared to SVN.)
+Obviously there’s some nice things about SVN too. Let’s see.</p>
+
+<p>Subversion’s Major Features Over Git</p>
+
+<p>User Interfaces Maturity (Currently Subversion has a wider range of user interface tools than Git. For example there are SVN plugins available for most popular IDEs. There is a Windows Explorer shell extension. There are a number of native Windows and Mac OS X GUI tools available in ready-to-install packages.)
+Single Repository (Since Subversion only supports a single repository there is little doubt about where something is stored. Once a user knows the repository URL they can reasonably assume that all materials and all branches related to that project are always available at that location.)
+Access Controls (Since Subversion has a single central repository it is possible to specify read and write access controls in a single location and have them be enforced across the entire project.)
+So as you can see they both have their ups and downs. For me I still think Git is way better than SVN. I find it more intuitive/natural to use.</p>
+
+<p>This article does not aspire to be final proof of anything, it’s just a collection of stuff I found on the web. Hell, if someone reads this and is not using any kind of version control and starts using it because of it I say - Mission accomplished.</p>
+
+<p>Take some time to watch this talk from the great Linus Torvalds about Git. If I can’t convince you about using git he’s the man to do it.</p>
+
+<iframe width="600" height="450" src="//www.youtube.com/embed/4XpnKHJAok8" frameborder="0" allowfullscreen=""></iframe>
+
+                <ul id="tags" class="tags">
+                    
+                    
+                </ul>
+                <br>
+            </section>
+            <div id="tweet_it">
+                <a href="javascript:void(0)" id="tweet_compose_close" class="close_it">x</a>
+                <h4>Like it? Tweet it.</h4>
+                <p>"Git Vs Svn Is It Really A Battle" via <a href="http://twitter.com/marcogmonteiro">@marcogmonteiro</a><br>
+                    <a href="https://twitter.com/share" data-count="horizontal" data-count="none" data-related="marcogmonteiro" data-via="marcogmonteiro" class="twitter-share-button" data-lang="en">Tweet</a>
+                  <br>
+                </p>
+                <footer>
+                    <a href="https://twitter.com/marcogmonteiro" class="twitter-follow-button" data-show-screen-name="false" data-show-count="true" data-lang="en">Follow me!</a>
+                    <img class="avatar" src="https://www.gravatar.com/avatar/44a64ea13da9db6c694e9c26b191a0af?s=28">
+                </footer>
+            </div>
+            <footer>
+    <br>
+    <p>
+        <a href="https://twitter.com/marcogmonteiro"><i class="icon-twitter"></i></a>
+        <a href="https://github.com/mpmont"><i class="icon-github-alt"></i></a>
+        <a href="/feed.xml"><i class="icon-rss"></i></a> © 2010 — 2020
+        <a href="http://marcomonteiro.net" target="_blank">Marco Monteiro</a>. All Rights Reserved. Powered by
+        <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>
+    </p>
+</footer>
+        </div>
+        <script src="/assets/js/site.js"></script>
+  </body>
+</html>

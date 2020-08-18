@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Blog++ | Start using CLI more and more with mycli</title>
+    <!--Meta Desc-->
+    <meta name="keywords" content="2018,linux,mysql,ubuntu"/>
+    <meta name="description" content="Ever since I moved into Linux I started using the CLI even more. Don't get me wrong, I used it quite a lot on Mac. However if there was one"/>
+    <meta name="subject" content="Web development & Linux Stuff">
+    <meta name="copyright"content="Marco Monteiro">
+    <meta name="language" content="EN">
+    <meta name="robots" content="index,follow" />
+    <meta name="Classification" content="Blog">
+    <meta name="author" content="Marco Monteiro, marco@marcomonteiro.net">
+    <meta name="designer" content="marco@marcomonteiro.net">
+    <meta name="owner" content="Marco Monteiro">
+    <meta name="url" content="https://blog.marcomonteiro.net">
+    <meta name="identifier-URL" content="https://blog.marcomonteiro.net">
+    <meta name="coverage" content="Worldwide">
+
+    <!--Meta Facebook-->
+    <meta property="og:image" content="https://blog.marcomonteiro.net/assets/img/facebooklogo.jpg"/>
+    <meta property="og:title" content="Blog++ | Start using CLI more and more with mycli"/>
+    <meta property="og:description" content="Ever since I moved into Linux I started using the CLI even more. Don't get me wrong, I used it quite a lot on Mac. However if there was one"/>
+    <meta property="og:url" content="https://blog.marcomonteiro.net"/>
+    <meta property="og:site_name" content="Blog++"/>
+    <meta property="og:type" content="blog"/>
+
+    <!--Meta Twitter-->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@marcogmonteiro">
+    <meta name="twitter:title" content="Blog++ | Start using CLI more and more with mycli">
+    <meta name="twitter:description" content="Ever since I moved into Linux I started using the CLI even more. Don't get me wrong, I used it quite a lot on Mac. However if there was one">
+    <meta name="twitter:creator" content="@marcogmonteiro">
+    <meta name="twitter:domain" content="blog.marcomonteiro.net">
+
+    <link rel="start" href="https://blog.marcomonteiro.net/" title="Marco Monteiro Blog">
+    <link rel="shortcut icon" href="/assets/img/favicon.ico">
+    <!-- Styles -->
+    <link href='https://fonts.googleapis.com/css?family=OFL+Sorts+Mill+Goudy+TT' rel='stylesheet' type='text/css'/>
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/github.css" />
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+</head>
+
+  <body>
+    <div class="container">
+        <!-- nav -->
+        <header>
+    <h1><a href="https://blog.marcomonteiro.net">$blog++</a></h1>
+    <nav class="main">
+        <h1 class="mobile"><a href="https://blog.marcomonteiro.net">$blog++</a></h1>
+        <span class="mobile-trigger">
+            <a class="navicon-button x">
+                <div class="navicon"></div>
+            </a>
+        </span>
+        <ul>
+            
+                
+                   <li><a href="/">Posts</a></li>
+                
+            
+                
+                   <li><a href="/about">• About</a></li>
+                
+            
+            <li><a target="_blank" href="https://marcomonteiro.net">&bull; Website</a></li>
+            <li><a href="javascript:void(0)" id="search" class="search ir" title="Search">&bull; <i class="icon-search"></i> Search</a></li>
+            <div id="searchbar" style="display:none;">
+                <iframe src="https://duckduckgo.com/search.html?site=blog.marcomonteiro.net&prefill=Search" style="overflow:hidden;margin:0;padding:0;width:408px;height:40px;" frameborder="0"></iframe>
+            </div>
+        </ul>
+    </nav>
+</header>
+        <div class="content">
+            <div id="scrollbubble"></div>
+            <section class="post">
+                <h2 class="flipboard-title title">Start using CLI more and more with mycli</h2>
+                <div class="date flipboard-date">July 18, 2018 <i class="icon-user"></i> Written By Marco Monteiro</div>
+                <p>Ever since I moved into Linux I started using the CLI even more. Don’t get me wrong, I used it quite a lot on Mac. However if there was one thing that I normally didn’t use it for was for mySQL. However a few days ago I discovered <a href="http://www.mycli.net/">mycli</a>. Since then I gotta say. Love it!</p>
+
+<!--more-->
+
+<p>Here’s a bit more about the tool.</p>
+
+<p>Install the thing first:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt-get install mycli
+</code></pre></div></div>
+
+<p><strong>Usage:</strong></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ mycli --help
+Usage: mycli [OPTIONS] [DATABASE]
+  	A MySQL terminal client with auto-completion and syntax highlighting.
+</code></pre></div></div>
+
+  	Examples:
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	- mycli my_database
+	- mycli -u my_user -h my_host.com my_database
+	- mycli mysql://my_user@my_host.com:3306/my_database
+
+Options:
+  		-h, --host TEXT               Host address of the database.
+  		-P, --port INTEGER            Port number to use for connection. Honors $MYSQL_TCP_PORT.
+  		-u, --user TEXT               User name to connect to the database.
+  		-S, --socket TEXT             The socket file to use for connection.
+  		-p, --password TEXT           Password to connect to the database.
+  		--pass TEXT                   Password to connect to the database.
+  		--ssl-ca PATH                 CA file in PEM format.
+  		--ssl-capath TEXT             CA directory.
+  		--ssl-cert PATH               X509 cert in PEM format.
+  	--ssl-key PATH                X509 key in PEM format.
+  	--ssl-cipher TEXT             SSL cipher to use.
+  		--ssl-verify-server-cert      Verify server's "Common Name" in its cert against hostname used when connecting. This option is disabled by default.
+	-V, --version                 Output mycli's version.
+	-v, --verbose                 Verbose output.
+	-D, --database TEXT           Database to use.
+	-d, --dsn TEXT                Use DSN configured into the [alias_dsn] section of myclirc file.
+	--list-dsn                    list of DSN configured into the [alias_dsn] section of myclirc file.
+	-R, --prompt TEXT             Prompt format (Default: "\t \u@\h:\d&gt; ").
+	-l, --logfile FILENAME        Log every query and its results to a file.
+	--defaults-group-suffix TEXT  Read MySQL config groups with the specified suffix.
+	--defaults-file PATH          Only read MySQL options from the given file.
+	--myclirc PATH                Location of myclirc file.
+	--auto-vertical-output        Automatically switch to vertical output mode if the result is wider than the terminal width.
+	-t, --table                   Display batch output in table format.
+	--csv                         Display batch output in CSV format.
+	--warn / --no-warn            Warn before running a destructive query.
+	--local-infile BOOLEAN        Enable/disable LOAD DATA LOCAL INFILE.
+	--login-path TEXT             Read this path from the login file.
+	-e, --execute TEXT            Execute command and quit.
+	--help                        Show this message and exit.
+</code></pre></div></div>
+
+<p><img src="https://raw.githubusercontent.com/dbcli/mycli/master/screenshots/tables.png" alt="Example" /></p>
+
+<p><img src="https://raw.githubusercontent.com/dbcli/mycli/master/screenshots/main.gif" alt="Example 2" /></p>
+
+<p><strong>Features</strong></p>
+
+<p><a href="http://www.mycli.net/">mycli</a> is written using <a href="https://github.com/jonathanslenders/python-prompt-toolkit/">prompt_toolkit</a>.</p>
+
+<ul>
+  <li><i class="icon-angle-right"></i> Auto-completion as you type for SQL keywords as well as tables, views and columns in the database.</li>
+  <li><i class="icon-angle-right"></i> Syntax highlighting using Pygments.</li>
+  <li><i class="icon-angle-right"></i> Smart-completion (enabled by default) will suggest context-sensitive completion.</li>
+  <li><i class="icon-angle-right"></i> SELECT * FROM <tab> will only show table names.</tab></li>
+  <li><i class="icon-angle-right"></i> SELECT * FROM users WHERE <tab> will only show column names.</tab></li>
+  <li><i class="icon-angle-right"></i> Support for multiline queries.</li>
+  <li><i class="icon-angle-right"></i> Favorite queries with optional positional parameters. Save a query using \fs alias query and execute it with \f alias whenever you need.</li>
+  <li><i class="icon-angle-right"></i> Timing of sql statments and table rendering.</li>
+  <li><i class="icon-angle-right"></i> Config file is automatically created at ~/.myclirc at first launch.</li>
+  <li><i class="icon-angle-right"></i> Log every query and its results to a file (disabled by default).</li>
+  <li><i class="icon-angle-right"></i> Pretty prints tabular data (with colors!)</li>
+  <li><i class="icon-angle-right"></i> Support for SSL connections</li>
+</ul>
+
+                <ul id="tags" class="tags">
+                    
+                    
+                        <li><a href="#"><i class="icon-tag"></i> 2018</a></li>
+                        &nbsp;
+                    
+                        <li><a href="#"><i class="icon-tag"></i> linux</a></li>
+                        &nbsp;
+                    
+                        <li><a href="#"><i class="icon-tag"></i> mysql</a></li>
+                        &nbsp;
+                    
+                        <li><a href="#"><i class="icon-tag"></i> ubuntu</a></li>
+                        &nbsp;
+                    
+                        <li><a href="#"><i class="icon-tag"></i> 2018</a></li>
+                        
+                    
+                </ul>
+                <br>
+            </section>
+            <div id="tweet_it">
+                <a href="javascript:void(0)" id="tweet_compose_close" class="close_it">x</a>
+                <h4>Like it? Tweet it.</h4>
+                <p>"Start using CLI more and more with mycli" via <a href="http://twitter.com/marcogmonteiro">@marcogmonteiro</a><br>
+                    <a href="https://twitter.com/share" data-count="horizontal" data-count="none" data-related="marcogmonteiro" data-via="marcogmonteiro" class="twitter-share-button" data-lang="en">Tweet</a>
+                  <br>
+                </p>
+                <footer>
+                    <a href="https://twitter.com/marcogmonteiro" class="twitter-follow-button" data-show-screen-name="false" data-show-count="true" data-lang="en">Follow me!</a>
+                    <img class="avatar" src="https://www.gravatar.com/avatar/44a64ea13da9db6c694e9c26b191a0af?s=28">
+                </footer>
+            </div>
+            <footer>
+    <br>
+    <p>
+        <a href="https://twitter.com/marcogmonteiro"><i class="icon-twitter"></i></a>
+        <a href="https://github.com/mpmont"><i class="icon-github-alt"></i></a>
+        <a href="/feed.xml"><i class="icon-rss"></i></a> © 2010 — 2020
+        <a href="http://marcomonteiro.net" target="_blank">Marco Monteiro</a>. All Rights Reserved. Powered by
+        <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>
+    </p>
+</footer>
+        </div>
+        <script src="/assets/js/site.js"></script>
+  </body>
+</html>

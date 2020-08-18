@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Blog++ | Updating Your Codeigniter Installation With Git</title>
+    <!--Meta Desc-->
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="subject" content="Web development & Linux Stuff">
+    <meta name="copyright"content="Marco Monteiro">
+    <meta name="language" content="EN">
+    <meta name="robots" content="index,follow" />
+    <meta name="Classification" content="Blog">
+    <meta name="author" content="Marco Monteiro, marco@marcomonteiro.net">
+    <meta name="designer" content="marco@marcomonteiro.net">
+    <meta name="owner" content="Marco Monteiro">
+    <meta name="url" content="https://blog.marcomonteiro.net">
+    <meta name="identifier-URL" content="https://blog.marcomonteiro.net">
+    <meta name="coverage" content="Worldwide">
+
+    <!--Meta Facebook-->
+    <meta property="og:image" content="https://blog.marcomonteiro.net/assets/img/facebooklogo.jpg"/>
+    <meta property="og:title" content="Blog++ | Updating Your Codeigniter Installation With Git"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content="https://blog.marcomonteiro.net"/>
+    <meta property="og:site_name" content="Blog++"/>
+    <meta property="og:type" content="blog"/>
+
+    <!--Meta Twitter-->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@marcogmonteiro">
+    <meta name="twitter:title" content="Blog++ | Updating Your Codeigniter Installation With Git">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:creator" content="@marcogmonteiro">
+    <meta name="twitter:domain" content="blog.marcomonteiro.net">
+
+    <link rel="start" href="https://blog.marcomonteiro.net/" title="Marco Monteiro Blog">
+    <link rel="shortcut icon" href="/assets/img/favicon.ico">
+    <!-- Styles -->
+    <link href='https://fonts.googleapis.com/css?family=OFL+Sorts+Mill+Goudy+TT' rel='stylesheet' type='text/css'/>
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/github.css" />
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+</head>
+
+  <body>
+    <div class="container">
+        <!-- nav -->
+        <header>
+    <h1><a href="https://blog.marcomonteiro.net">$blog++</a></h1>
+    <nav class="main">
+        <h1 class="mobile"><a href="https://blog.marcomonteiro.net">$blog++</a></h1>
+        <span class="mobile-trigger">
+            <a class="navicon-button x">
+                <div class="navicon"></div>
+            </a>
+        </span>
+        <ul>
+            
+                
+                   <li><a href="/">Posts</a></li>
+                
+            
+                
+                   <li><a href="/about">• About</a></li>
+                
+            
+            <li><a target="_blank" href="https://marcomonteiro.net">&bull; Website</a></li>
+            <li><a href="javascript:void(0)" id="search" class="search ir" title="Search">&bull; <i class="icon-search"></i> Search</a></li>
+            <div id="searchbar" style="display:none;">
+                <iframe src="https://duckduckgo.com/search.html?site=blog.marcomonteiro.net&prefill=Search" style="overflow:hidden;margin:0;padding:0;width:408px;height:40px;" frameborder="0"></iframe>
+            </div>
+        </ul>
+    </nav>
+</header>
+        <div class="content">
+            <div id="scrollbubble"></div>
+            <section class="post">
+                <h2 class="flipboard-title title">Updating Your Codeigniter Installation With Git</h2>
+                <div class="date flipboard-date">August 21, 2012 <i class="icon-user"></i> Written By </div>
+                <hr />
+
+<p>layout: post</p>
+
+<p>title: Updating your Codeigniter installation with git</p>
+
+<p>date: 2012-08-21</p>
+
+<p>tag: codeigniter,Git,Version-control</p>
+
+<p>description: Ever since Codeigniter moved from Bitbucket to Github I craved for one easy way to update my applications every time a new version gets out. Turns out there is none.</p>
+
+<p>author: Marco Monteiro</p>
+
+<p>categories: [codeigniter,Git,Version-control]</p>
+
+<hr />
+
+<p>Ever since Codeigniter moved from Bitbucket to Github I craved for one easy way to update my applications every time a new version gets out. Turns out there is none. And as you can see here, the updating process is always kinda boring specially if a major version is out. Since the version 3.0 is around the block I’m going to show you how I normally upgrade my codeigniter applications.
+<!--more-->
+First things first, I’m assuming that you work with git in your normal day to day workflow. If you don’t use it, or even worst don’t know how to use it, stop reading this and without further delay go learn how to use it. (You can check this link for that!).</p>
+
+<p>Ok, so now that you can’t live without using git let’s start this thing.</p>
+
+<ol>
+  <li>Visit the codeigniter official repository on github.</li>
+  <li>Add that repository as another remote in your project.</li>
+</ol>
+
+<p>For that navigate to the root of your project in your terminal and do this:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    $ git remote add codeigniter git://github.com/EllisLab/CodeIgniter.git
+</code></pre></div></div>
+
+<p>Now if you list all your remotes you should get the following result:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	$ git remote
+	codeigniter
+ 	origin
+</code></pre></div></div>
+
+<p>Now that you have codeigniter as a remote you have access to all branches that are contained within that repository.</p>
+
+<ol>
+  <li>
+    <p>Before you continue make sure that your project is safe and create a new branch from your develop branch (assuming you’re using git flow) let’s call it feature/codeigniter_upgrade.</p>
+  </li>
+  <li>
+    <p>Now that you have your brand new branch created and that your project is safe the only thing that you have to do is look at all the codeigniter branches and find the latest codeigniter stable branch.</p>
+  </li>
+</ol>
+
+<p>At the moment you’ll be looking for 2.1-stable or hopefully when you read this you’ll be looking for 3.0-stable. Let’s hope that’s the case. (I’m using Source Tree so you can have a more visual context of what’s going on.)</p>
+
+<p>Moving on.</p>
+
+<ol>
+  <li>
+    <p>Now that you found the branch you want to merge you just need to check out to that branch. For that you just need to do:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ git branch 2.1-stable codeigniter/2.1-stable
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p>And like that now you have a local copy of the latest stable version of codeigniter in your local repository.</p>
+
+<ol>
+  <li>
+    <p>Now the only thing left to do is to merge your new 2.1-stable branch into your feature/codeigniter_upgrade.</p>
+  </li>
+  <li>
+    <p>After the merge there will be some things to consider, since you’ll obviously get some merge conflicts.</p>
+  </li>
+</ol>
+
+<p>**List of possible conflicts: **</p>
+
+<ul>
+  <li>application/config.php</li>
+  <li>application/routes.php</li>
+  <li>application/database.php</li>
+  <li>application/contants.php</li>
+  <li>index.php</li>
+  <li>user_guide (if you sill have one in your root)</li>
+</ul>
+
+<p>All these conflicts are actually quite easy to resolve, since normally you just need to pick your version over the original one. (Just make sure none of these file have any major changes in the new codeigniter version).</p>
+
+<p>I know this is far from a straight forward solution, but it’s better than changing file by file and probably forget something in the process. Sure it’ll take some time, and it can give you some headaches on the final part of the process, but if you have some experience with git just go for it, you can’t lose anything. Because you know, if you work with git, you never really lose anything.</p>
+
+<p>Have fun.</p>
+
+                <ul id="tags" class="tags">
+                    
+                    
+                </ul>
+                <br>
+            </section>
+            <div id="tweet_it">
+                <a href="javascript:void(0)" id="tweet_compose_close" class="close_it">x</a>
+                <h4>Like it? Tweet it.</h4>
+                <p>"Updating Your Codeigniter Installation With Git" via <a href="http://twitter.com/marcogmonteiro">@marcogmonteiro</a><br>
+                    <a href="https://twitter.com/share" data-count="horizontal" data-count="none" data-related="marcogmonteiro" data-via="marcogmonteiro" class="twitter-share-button" data-lang="en">Tweet</a>
+                  <br>
+                </p>
+                <footer>
+                    <a href="https://twitter.com/marcogmonteiro" class="twitter-follow-button" data-show-screen-name="false" data-show-count="true" data-lang="en">Follow me!</a>
+                    <img class="avatar" src="https://www.gravatar.com/avatar/44a64ea13da9db6c694e9c26b191a0af?s=28">
+                </footer>
+            </div>
+            <footer>
+    <br>
+    <p>
+        <a href="https://twitter.com/marcogmonteiro"><i class="icon-twitter"></i></a>
+        <a href="https://github.com/mpmont"><i class="icon-github-alt"></i></a>
+        <a href="/feed.xml"><i class="icon-rss"></i></a> © 2010 — 2020
+        <a href="http://marcomonteiro.net" target="_blank">Marco Monteiro</a>. All Rights Reserved. Powered by
+        <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>
+    </p>
+</footer>
+        </div>
+        <script src="/assets/js/site.js"></script>
+  </body>
+</html>

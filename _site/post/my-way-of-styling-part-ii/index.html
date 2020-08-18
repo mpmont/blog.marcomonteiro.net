@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Blog++ | My Way Of Styling Part Ii</title>
+    <!--Meta Desc-->
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="subject" content="Web development & Linux Stuff">
+    <meta name="copyright"content="Marco Monteiro">
+    <meta name="language" content="EN">
+    <meta name="robots" content="index,follow" />
+    <meta name="Classification" content="Blog">
+    <meta name="author" content="Marco Monteiro, marco@marcomonteiro.net">
+    <meta name="designer" content="marco@marcomonteiro.net">
+    <meta name="owner" content="Marco Monteiro">
+    <meta name="url" content="https://blog.marcomonteiro.net">
+    <meta name="identifier-URL" content="https://blog.marcomonteiro.net">
+    <meta name="coverage" content="Worldwide">
+
+    <!--Meta Facebook-->
+    <meta property="og:image" content="https://blog.marcomonteiro.net/assets/img/facebooklogo.jpg"/>
+    <meta property="og:title" content="Blog++ | My Way Of Styling Part Ii"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content="https://blog.marcomonteiro.net"/>
+    <meta property="og:site_name" content="Blog++"/>
+    <meta property="og:type" content="blog"/>
+
+    <!--Meta Twitter-->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@marcogmonteiro">
+    <meta name="twitter:title" content="Blog++ | My Way Of Styling Part Ii">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:creator" content="@marcogmonteiro">
+    <meta name="twitter:domain" content="blog.marcomonteiro.net">
+
+    <link rel="start" href="https://blog.marcomonteiro.net/" title="Marco Monteiro Blog">
+    <link rel="shortcut icon" href="/assets/img/favicon.ico">
+    <!-- Styles -->
+    <link href='https://fonts.googleapis.com/css?family=OFL+Sorts+Mill+Goudy+TT' rel='stylesheet' type='text/css'/>
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/github.css" />
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+</head>
+
+  <body>
+    <div class="container">
+        <!-- nav -->
+        <header>
+    <h1><a href="https://blog.marcomonteiro.net">$blog++</a></h1>
+    <nav class="main">
+        <h1 class="mobile"><a href="https://blog.marcomonteiro.net">$blog++</a></h1>
+        <span class="mobile-trigger">
+            <a class="navicon-button x">
+                <div class="navicon"></div>
+            </a>
+        </span>
+        <ul>
+            
+                
+                   <li><a href="/">Posts</a></li>
+                
+            
+                
+                   <li><a href="/about">• About</a></li>
+                
+            
+            <li><a target="_blank" href="https://marcomonteiro.net">&bull; Website</a></li>
+            <li><a href="javascript:void(0)" id="search" class="search ir" title="Search">&bull; <i class="icon-search"></i> Search</a></li>
+            <div id="searchbar" style="display:none;">
+                <iframe src="https://duckduckgo.com/search.html?site=blog.marcomonteiro.net&prefill=Search" style="overflow:hidden;margin:0;padding:0;width:408px;height:40px;" frameborder="0"></iframe>
+            </div>
+        </ul>
+    </nav>
+</header>
+        <div class="content">
+            <div id="scrollbubble"></div>
+            <section class="post">
+                <h2 class="flipboard-title title">My Way Of Styling Part Ii</h2>
+                <div class="date flipboard-date">November 08, 2010 <i class="icon-user"></i> Written By </div>
+                <hr />
+
+<p>layout: post</p>
+
+<p>title: My way of styling Part II</p>
+
+<p>date: 2010-11-08</p>
+
+<p>tag: css,Inspiration</p>
+
+<p>description: Last week i explained how to structure a good signature on your code and why. This week i’ll be explaining how i do my css coding and how i structure</p>
+
+<p>author: Marco Monteiro</p>
+
+<p>categories: [css,Inspiration]</p>
+
+<hr />
+
+<p>Last week i explained how to structure a good signature on your code and why. This week i’ll be explaining how i do my css coding and how i structure my files. First of all i’d like to point you to some useful websites that can help you get started coding with css.
+Ok now the next part and i’ll try to keep it clean and simple.
+<!--more-->
+First, how to divide my document? Well i do it the same way every single time. Top to bottom. So let’s imagine that your site is going to have this sections:</p>
+
+<p>Header / Navigation / Sidebar / Content / Footer</p>
+
+<p>the division will be this exact same order. So the first thing i like to do is create something that let me know where i am when i’m scrolling trough my css file.</p>
+
+<p>For example i always create something like this:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/* -------------------------------------------------------------- 
+HEADER
+* ALL THE HEADER STYLES. (includes search and breadcrumbs)
+-------------------------------------------------------------- */
+</code></pre></div></div>
+
+<p>This simple division can help you and someone that is working with you to know where to put new code and to look for something. This division is big enough to highlight from the rest of the document and if you add information like (includes search and breadcumbs) that will help a lot because the header will probably have some other small stuff inside so it is a best practice to always do this.</p>
+
+<p>Remember always code in a way that other developer can continue your job, because your job is never finished.</p>
+
+<p>With that in mind you can begin your coding and there is some other point that i still have to mention in this article, always be specific and i say that for everything in your code. Some developers have some trouble naming stuff and they might call a navigation bar just a menu and that’s ok, but why not go beyond that and say horizontal-menu or even main navigation? you know, a website can have more than one menu and if you call it just “menu” what are you going to call the second menu? second-menu? i don’t think that is a good idea.</p>
+
+<p>With this in mind there’s one more thing where you have to be really specific: and that is the way you declare your classes and id’s in your file. One thing that you probably do quite a lot is something like this:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.header{
+	background: #000;
+}
+</code></pre></div></div>
+
+<p>i’m sorry to say but for me this is wrong. The reason is really simple, when you look at that code can you tell me the markup that is using that class? No, you can’t! So why not declare the markup on your css like this:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>div.header{
+	background: #000;
+}
+</code></pre></div></div>
+
+<p>This tell me much more, now i know that the header will be a div. This small changes to your way of coding can be very useful to you and to your fellow developers.</p>
+
+<p>Of corse for a rulle like this there’s always an exception, if you use a class to more than one markup element than you can use the first example.</p>
+
+<p>On another matter on more thing i see a lot is code that does the exact same thing repeated over and over. This is really annoying. Imagine something like this:
+You are going to use a color for all the text on your site, and every-time you need it you declare a new class. Does that make any sense? Obviously not! So please try not to do it and reutilize your code.</p>
+
+<p>So what should you retain on this post:
+1 - Always structure your files Top to Bottom;
+2 - Always be specific with your naming and coding;
+3 - Don’t repeat yourself;
+4 - Reutilize your code;</p>
+
+                <ul id="tags" class="tags">
+                    
+                    
+                </ul>
+                <br>
+            </section>
+            <div id="tweet_it">
+                <a href="javascript:void(0)" id="tweet_compose_close" class="close_it">x</a>
+                <h4>Like it? Tweet it.</h4>
+                <p>"My Way Of Styling Part Ii" via <a href="http://twitter.com/marcogmonteiro">@marcogmonteiro</a><br>
+                    <a href="https://twitter.com/share" data-count="horizontal" data-count="none" data-related="marcogmonteiro" data-via="marcogmonteiro" class="twitter-share-button" data-lang="en">Tweet</a>
+                  <br>
+                </p>
+                <footer>
+                    <a href="https://twitter.com/marcogmonteiro" class="twitter-follow-button" data-show-screen-name="false" data-show-count="true" data-lang="en">Follow me!</a>
+                    <img class="avatar" src="https://www.gravatar.com/avatar/44a64ea13da9db6c694e9c26b191a0af?s=28">
+                </footer>
+            </div>
+            <footer>
+    <br>
+    <p>
+        <a href="https://twitter.com/marcogmonteiro"><i class="icon-twitter"></i></a>
+        <a href="https://github.com/mpmont"><i class="icon-github-alt"></i></a>
+        <a href="/feed.xml"><i class="icon-rss"></i></a> © 2010 — 2020
+        <a href="http://marcomonteiro.net" target="_blank">Marco Monteiro</a>. All Rights Reserved. Powered by
+        <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>
+    </p>
+</footer>
+        </div>
+        <script src="/assets/js/site.js"></script>
+  </body>
+</html>

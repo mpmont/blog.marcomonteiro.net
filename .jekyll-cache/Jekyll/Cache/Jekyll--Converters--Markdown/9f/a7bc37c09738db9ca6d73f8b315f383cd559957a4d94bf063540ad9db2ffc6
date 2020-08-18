@@ -1,0 +1,54 @@
+I"�<hr />
+
+<p>layout: post</p>
+
+<p>title: Le.git</p>
+
+<p>date: 2013-09-07</p>
+
+<p>tag: Git,tips</p>
+
+<p>description: I’m a big git flow fan, no doubt about that. I use it every day and I still think that it is the perfect way to work with a team</p>
+
+<p>author: Marco Monteiro</p>
+
+<p>categories: [Git,tips]</p>
+
+<hr />
+
+<p>I’m a big git flow fan, no doubt about that. I use it every day and I still think that it is the perfect way to work with a team of people. But, from time to time, you find yourself working on a small project. One that you’re just going to hack during the weekend and you want something simpler.</p>
+
+<p><a href="http://www.git-legit.org/">Legit</a> (Git workflow for humans) got you covered.</p>
+
+<!--more-->
+
+<p>Basically it works like this:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git sync
+# Synchronizes current branch. Auto-merge/rebase, un/stash.
+
+$ git switch &lt;branch&gt;
+# Switches to branch. Stashes and restores unstaged changes.
+
+$ git publish &lt;branch&gt;
+# Publishes branch to remote server.
+
+$ git unpublish &lt;branch&gt;
+# Removes branch from remote server.
+
+$ git branches
+# Nice &amp; pretty list of branches + publication status.
+</code></pre></div></div>
+
+<p>See how easy it to work with a feature branch?</p>
+
+<p>Now let’s say you want to install it and start using it, if you use <a href="http://brew.sh/">homebrew</a> like myself then once again I got you covered.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ brew install legit
+To enable the git aliases:
+
+$ legit install
+</code></pre></div></div>
+
+<p>Nice and simple — the way it should be.</p>
+:ET

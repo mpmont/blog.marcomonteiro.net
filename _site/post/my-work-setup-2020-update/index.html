@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Blog++ | My work setup - 2020 update</title>
+    <!--Meta Desc-->
+    <meta name="keywords" content="alacritty, fish, linux, micro, popOS, shell, sublime text, work,2020"/>
+    <meta name="description" content="It's mid 2020, Ubuntu has a new LTS release and with it its time to try a few things and actually update. As you know I'm now using Pop!OS a"/>
+    <meta name="subject" content="Web development & Linux Stuff">
+    <meta name="copyright"content="Marco Monteiro">
+    <meta name="language" content="EN">
+    <meta name="robots" content="index,follow" />
+    <meta name="Classification" content="Blog">
+    <meta name="author" content="Marco Monteiro, marco@marcomonteiro.net">
+    <meta name="designer" content="marco@marcomonteiro.net">
+    <meta name="owner" content="Marco Monteiro">
+    <meta name="url" content="https://blog.marcomonteiro.net">
+    <meta name="identifier-URL" content="https://blog.marcomonteiro.net">
+    <meta name="coverage" content="Worldwide">
+
+    <!--Meta Facebook-->
+    <meta property="og:image" content="https://blog.marcomonteiro.net/assets/img/facebooklogo.jpg"/>
+    <meta property="og:title" content="Blog++ | My work setup - 2020 update"/>
+    <meta property="og:description" content="It's mid 2020, Ubuntu has a new LTS release and with it its time to try a few things and actually update. As you know I'm now using Pop!OS a"/>
+    <meta property="og:url" content="https://blog.marcomonteiro.net"/>
+    <meta property="og:site_name" content="Blog++"/>
+    <meta property="og:type" content="blog"/>
+
+    <!--Meta Twitter-->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@marcogmonteiro">
+    <meta name="twitter:title" content="Blog++ | My work setup - 2020 update">
+    <meta name="twitter:description" content="It's mid 2020, Ubuntu has a new LTS release and with it its time to try a few things and actually update. As you know I'm now using Pop!OS a">
+    <meta name="twitter:creator" content="@marcogmonteiro">
+    <meta name="twitter:domain" content="blog.marcomonteiro.net">
+
+    <link rel="start" href="https://blog.marcomonteiro.net/" title="Marco Monteiro Blog">
+    <link rel="shortcut icon" href="/assets/img/favicon.ico">
+    <!-- Styles -->
+    <link href='https://fonts.googleapis.com/css?family=OFL+Sorts+Mill+Goudy+TT' rel='stylesheet' type='text/css'/>
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/github.css" />
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+</head>
+
+  <body>
+    <div class="container">
+        <!-- nav -->
+        <header>
+    <h1><a href="https://blog.marcomonteiro.net">$blog++</a></h1>
+    <nav class="main">
+        <h1 class="mobile"><a href="https://blog.marcomonteiro.net">$blog++</a></h1>
+        <span class="mobile-trigger">
+            <a class="navicon-button x">
+                <div class="navicon"></div>
+            </a>
+        </span>
+        <ul>
+            
+                
+                   <li><a href="/">Posts</a></li>
+                
+            
+                
+                   <li><a href="/about">• About</a></li>
+                
+            
+            <li><a target="_blank" href="https://marcomonteiro.net">&bull; Website</a></li>
+            <li><a href="javascript:void(0)" id="search" class="search ir" title="Search">&bull; <i class="icon-search"></i> Search</a></li>
+            <div id="searchbar" style="display:none;">
+                <iframe src="https://duckduckgo.com/search.html?site=blog.marcomonteiro.net&prefill=Search" style="overflow:hidden;margin:0;padding:0;width:408px;height:40px;" frameborder="0"></iframe>
+            </div>
+        </ul>
+    </nav>
+</header>
+        <div class="content">
+            <div id="scrollbubble"></div>
+            <section class="post">
+                <h2 class="flipboard-title title">My work setup - 2020 update</h2>
+                <div class="date flipboard-date">June 18, 2020 <i class="icon-user"></i> Written By Marco Monteiro</div>
+                <p>It’s mid 2020, Ubuntu has a new LTS release and with it its time to try a few things and actually update. As you know I’m now using Pop!OS a distro based on Ubuntu. I already wrote an entire blog post about it. Now I’m going to show you the actual tools I use at the moment.</p>
+
+<!--more-->
+
+<h3 id="operating-system"><strong>OPERATING SYSTEM</strong></h3>
+
+<p><a href="https://pop.system76.com/">Pop!OS</a> is designed for fast navigation, easy workspace organization, and fluid, convenient workflow. Your operating system should encourage discovery, not obstruct it. It uses gnome by default and that’s what I use.</p>
+
+<p>Here’s the look of it when I load it.</p>
+
+<p><img src="https://i.imgur.com/mXV0OZx.png" alt="Desktop" /></p>
+
+<p>Here’s the theme and icons that I’m using.</p>
+
+<p><img src="https://i.imgur.com/WDLwzXl.png" alt="neofetch" /></p>
+
+<h3 id="terminal-emulator"><strong>TERMINAL EMULATOR</strong></h3>
+
+<p>As you can see from that neofech print, I’m now using <a href="https://github.com/alacritty/alacritty">Alacritty</a>, I’ve been a long term terminator user, but ever since I discovered Alacritty I never went back.</p>
+
+<p><img src="https://i.imgur.com/ABbhg8a.png" alt="Alacritty" /></p>
+
+<p>Alacritty is a terminal emulator with a strong focus on simplicity and performance. With such a strong focus on performance, included features are carefully considered and you can always expect Alacritty to be blazingly fast. By making sane choices for defaults, Alacritty requires no additional setup. However, it does allow configuration of many aspects of the terminal.</p>
+
+<p>The software is considered to be at a beta level of readiness – there are a few missing features and bugs to be fixed, but it is already used by many as a daily driver, Including me.</p>
+
+<h3 id="text-editor"><strong>TEXT EDITOR</strong></h3>
+
+<p>Yes I’m still using <a href="https://www.sublimetext.com/">Sublime Text 3</a> and I don’t plan on changing that. However, when I need to use a terminal based text editor I’m actually using Micro. <a href="https://micro-editor.github.io">Micro</a> is easy to use ans it’s number one feature is being easy to install (it’s just a static binary with no dependencies) and easy to use.</p>
+
+<p><img src="https://i.imgur.com/qDwzk0n.png" alt="Sublime and micro" /></p>
+
+<p>Uses a simple json format to configure your options and rebind keys to your liking. If you need more power, you can use Lua to configure the editor further.</p>
+
+<h3 id="shell"><strong>SHELL</strong></h3>
+
+<p>I’ve been a ZSH user for so long, used it for probably 6 years. However at the start of this year and started to try something new. The one I ended up with was fish. And then I obviously installed oh-my-fish. <a href="https://fishshell.com/">Fish</a> is a smart and user-friendly command line shell for Linux, macOS, and the rest of the family.</p>
+
+<p><img src="https://i.imgur.com/VPaI1c1.png" alt="A simple LS" /></p>
+
+<h3 id="dot-files"><strong>.DOT FILES</strong></h3>
+
+<p>Want to take a look at my <a href="https://github.com/mpmont/dotFiles">dotfiles</a>? Sure I have them all on my <a href="https://github.com/mpmont/dotFiles">github</a>. Get on it.</p>
+
+                <ul id="tags" class="tags">
+                    
+                    
+                        <li><a href="#"><i class="icon-tag"></i> alacritty</a></li>
+                        &nbsp;
+                    
+                        <li><a href="#"><i class="icon-tag"></i> fish</a></li>
+                        &nbsp;
+                    
+                        <li><a href="#"><i class="icon-tag"></i> linux</a></li>
+                        &nbsp;
+                    
+                        <li><a href="#"><i class="icon-tag"></i> micro</a></li>
+                        &nbsp;
+                    
+                        <li><a href="#"><i class="icon-tag"></i> popOS</a></li>
+                        &nbsp;
+                    
+                        <li><a href="#"><i class="icon-tag"></i> shell</a></li>
+                        &nbsp;
+                    
+                        <li><a href="#"><i class="icon-tag"></i> sublime text</a></li>
+                        &nbsp;
+                    
+                        <li><a href="#"><i class="icon-tag"></i> work</a></li>
+                        &nbsp;
+                    
+                        <li><a href="#"><i class="icon-tag"></i> 2020</a></li>
+                        &nbsp;
+                    
+                        <li><a href="#"><i class="icon-tag"></i> 2020</a></li>
+                        
+                    
+                </ul>
+                <br>
+            </section>
+            <div id="tweet_it">
+                <a href="javascript:void(0)" id="tweet_compose_close" class="close_it">x</a>
+                <h4>Like it? Tweet it.</h4>
+                <p>"My work setup - 2020 update" via <a href="http://twitter.com/marcogmonteiro">@marcogmonteiro</a><br>
+                    <a href="https://twitter.com/share" data-count="horizontal" data-count="none" data-related="marcogmonteiro" data-via="marcogmonteiro" class="twitter-share-button" data-lang="en">Tweet</a>
+                  <br>
+                </p>
+                <footer>
+                    <a href="https://twitter.com/marcogmonteiro" class="twitter-follow-button" data-show-screen-name="false" data-show-count="true" data-lang="en">Follow me!</a>
+                    <img class="avatar" src="https://www.gravatar.com/avatar/44a64ea13da9db6c694e9c26b191a0af?s=28">
+                </footer>
+            </div>
+            <footer>
+    <br>
+    <p>
+        <a href="https://twitter.com/marcogmonteiro"><i class="icon-twitter"></i></a>
+        <a href="https://github.com/mpmont"><i class="icon-github-alt"></i></a>
+        <a href="/feed.xml"><i class="icon-rss"></i></a> © 2010 — 2020
+        <a href="http://marcomonteiro.net" target="_blank">Marco Monteiro</a>. All Rights Reserved. Powered by
+        <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>
+    </p>
+</footer>
+        </div>
+        <script src="/assets/js/site.js"></script>
+  </body>
+</html>

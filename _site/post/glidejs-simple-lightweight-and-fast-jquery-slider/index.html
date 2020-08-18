@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Blog++ | Glidejs Simple Lightweight And Fast Jquery Slider</title>
+    <!--Meta Desc-->
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="subject" content="Web development & Linux Stuff">
+    <meta name="copyright"content="Marco Monteiro">
+    <meta name="language" content="EN">
+    <meta name="robots" content="index,follow" />
+    <meta name="Classification" content="Blog">
+    <meta name="author" content="Marco Monteiro, marco@marcomonteiro.net">
+    <meta name="designer" content="marco@marcomonteiro.net">
+    <meta name="owner" content="Marco Monteiro">
+    <meta name="url" content="https://blog.marcomonteiro.net">
+    <meta name="identifier-URL" content="https://blog.marcomonteiro.net">
+    <meta name="coverage" content="Worldwide">
+
+    <!--Meta Facebook-->
+    <meta property="og:image" content="https://blog.marcomonteiro.net/assets/img/facebooklogo.jpg"/>
+    <meta property="og:title" content="Blog++ | Glidejs Simple Lightweight And Fast Jquery Slider"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content="https://blog.marcomonteiro.net"/>
+    <meta property="og:site_name" content="Blog++"/>
+    <meta property="og:type" content="blog"/>
+
+    <!--Meta Twitter-->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@marcogmonteiro">
+    <meta name="twitter:title" content="Blog++ | Glidejs Simple Lightweight And Fast Jquery Slider">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:creator" content="@marcogmonteiro">
+    <meta name="twitter:domain" content="blog.marcomonteiro.net">
+
+    <link rel="start" href="https://blog.marcomonteiro.net/" title="Marco Monteiro Blog">
+    <link rel="shortcut icon" href="/assets/img/favicon.ico">
+    <!-- Styles -->
+    <link href='https://fonts.googleapis.com/css?family=OFL+Sorts+Mill+Goudy+TT' rel='stylesheet' type='text/css'/>
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/github.css" />
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+</head>
+
+  <body>
+    <div class="container">
+        <!-- nav -->
+        <header>
+    <h1><a href="https://blog.marcomonteiro.net">$blog++</a></h1>
+    <nav class="main">
+        <h1 class="mobile"><a href="https://blog.marcomonteiro.net">$blog++</a></h1>
+        <span class="mobile-trigger">
+            <a class="navicon-button x">
+                <div class="navicon"></div>
+            </a>
+        </span>
+        <ul>
+            
+                
+                   <li><a href="/">Posts</a></li>
+                
+            
+                
+                   <li><a href="/about">• About</a></li>
+                
+            
+            <li><a target="_blank" href="https://marcomonteiro.net">&bull; Website</a></li>
+            <li><a href="javascript:void(0)" id="search" class="search ir" title="Search">&bull; <i class="icon-search"></i> Search</a></li>
+            <div id="searchbar" style="display:none;">
+                <iframe src="https://duckduckgo.com/search.html?site=blog.marcomonteiro.net&prefill=Search" style="overflow:hidden;margin:0;padding:0;width:408px;height:40px;" frameborder="0"></iframe>
+            </div>
+        </ul>
+    </nav>
+</header>
+        <div class="content">
+            <div id="scrollbubble"></div>
+            <section class="post">
+                <h2 class="flipboard-title title">Glidejs Simple Lightweight And Fast Jquery Slider</h2>
+                <div class="date flipboard-date">October 22, 2013 <i class="icon-user"></i> Written By </div>
+                <hr />
+
+<p>layout: post</p>
+
+<p>title: Glide.js a simple, lightweight &amp; fast jQuery slider</p>
+
+<p>date: 2013-10-22</p>
+
+<p>tag: css3,javascript,jquery,plugin,responsive</p>
+
+<p>description: Glide is responsive and touch-friendly jQuery slider. Based on CSS3 transitions with fallback to older broswers. It’s simple, lightweight and fast. Designed to slide, no less, no more. A lot</p>
+
+<p>author: Marco Monteiro</p>
+
+<p>categories: [css3,javascript,jquery,plugin,responsive]</p>
+
+<hr />
+
+<p>Glide is responsive and touch-friendly jQuery slider. Based on CSS3 transitions with fallback to older broswers. It’s simple, lightweight and fast. Designed to slide, no less, no more. A lot has been said this past few weeks about OOCSS markup, Jędrzej Chałubek (creator of Glide.js) needed simple and fast slider with fully customizable OOCSS markup. If you’re into OOCSS this is the way to go.</p>
+
+<!--more-->
+
+<p><strong>How to use</strong></p>
+
+<p>jQuery is the only dependency. Make sure to include it.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;script src="http://code.jquery.com/jquery-1.9.1.min.js"&gt;&lt;/script&gt;
+</code></pre></div></div>
+
+<p>Include Glide.js</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;script src="jquery.glide.js"&gt;&lt;/script&gt;
+</code></pre></div></div>
+
+<p>Link to slider stylesheet inside document head.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;link rel="stylesheet" type="text/css" href="css/style.css"&gt;
+</code></pre></div></div>
+
+<p>Make necessary markup for slider.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div class="slider"&gt;
+	&lt;ul class="slides"&gt;
+		&lt;li class="slide"&gt;&lt;/li&gt;
+		&lt;li class="slide"&gt;&lt;/li&gt;
+		&lt;li class="slide"&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+</code></pre></div></div>
+
+<p>Init our slider on default options …</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  &lt;script&gt;
+	  $('.slider').glide();
+  &lt;/script&gt;
+</code></pre></div></div>
+
+<p><strong>Best features of Glide.js</strong></p>
+
+<ul>
+  <li><i class="icon-angle-right"></i> Lightweight ~4,5kB minifed</li>
+  <li><i class="icon-angle-right"></i> Ultra fast CSS3 Transitions</li>
+  <li><i class="icon-angle-right"></i> Responsive</li>
+  <li><i class="icon-angle-right"></i> Touch &amp; mobile friendly</li>
+  <li><i class="icon-angle-right"></i> Public API with callbacks</li>
+  <li><i class="icon-angle-right"></i> OOCSS &amp; BEM</li>
+  <li><i class="icon-angle-right"></i> Swipe event</li>
+  <li><i class="icon-angle-right"></i> Arrows and bullets navigation</li>
+  <li><i class="icon-angle-right"></i> Keyboard navigation</li>
+  <li><i class="icon-angle-right"></i> Autoplay</li>
+  <li><i class="icon-angle-right"></i> Pause on hover</li>
+</ul>
+
+<p><a href="http://jedrzejchalubek.com/glide/"><i class="icon-link"></i> Glide.js</a></p>
+
+<p><a href="https://github.com/jedrzejchalubek/Glide.js"><i class="icon-github"></i> Github</a></p>
+
+                <ul id="tags" class="tags">
+                    
+                    
+                </ul>
+                <br>
+            </section>
+            <div id="tweet_it">
+                <a href="javascript:void(0)" id="tweet_compose_close" class="close_it">x</a>
+                <h4>Like it? Tweet it.</h4>
+                <p>"Glidejs Simple Lightweight And Fast Jquery Slider" via <a href="http://twitter.com/marcogmonteiro">@marcogmonteiro</a><br>
+                    <a href="https://twitter.com/share" data-count="horizontal" data-count="none" data-related="marcogmonteiro" data-via="marcogmonteiro" class="twitter-share-button" data-lang="en">Tweet</a>
+                  <br>
+                </p>
+                <footer>
+                    <a href="https://twitter.com/marcogmonteiro" class="twitter-follow-button" data-show-screen-name="false" data-show-count="true" data-lang="en">Follow me!</a>
+                    <img class="avatar" src="https://www.gravatar.com/avatar/44a64ea13da9db6c694e9c26b191a0af?s=28">
+                </footer>
+            </div>
+            <footer>
+    <br>
+    <p>
+        <a href="https://twitter.com/marcogmonteiro"><i class="icon-twitter"></i></a>
+        <a href="https://github.com/mpmont"><i class="icon-github-alt"></i></a>
+        <a href="/feed.xml"><i class="icon-rss"></i></a> © 2010 — 2020
+        <a href="http://marcomonteiro.net" target="_blank">Marco Monteiro</a>. All Rights Reserved. Powered by
+        <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>
+    </p>
+</footer>
+        </div>
+        <script src="/assets/js/site.js"></script>
+  </body>
+</html>
