@@ -93,7 +93,7 @@
 
 <p>However what I normally do is:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git init
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git init
 $ git flow init
 $ git remote add origin [insert url here]
 $ git pull origin develop
@@ -101,13 +101,13 @@ $ git pull origin develop
 
 <p>This is when everything turns to shit and I get the following output:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ fatal: refusing to merge unrelated histories
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ fatal: refusing to merge unrelated histories
 $ Error redoing merge 1234deadbeef1234deadbeef
 </code></pre></div></div>
 
 <p>However this is quite easy to solve. All you have to do is shove a <em>–allow-unrelated-histories</em> into your pull command. Like so:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git pull origin develop --allow-unrelated-histories
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git pull origin develop --allow-unrelated-histories
 </code></pre></div></div>
 
 <p>This will also work if you’re trying to merge or rebase code.</p>

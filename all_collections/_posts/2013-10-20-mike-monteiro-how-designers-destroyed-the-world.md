@@ -1,14 +1,14 @@
 ---
-layout: post
-title: How Designers Destroyed the World
-date: 2013-10-20
-tag: design,pep-talk,responsibility,talks,Webdesign
-description: Mike Monteiro is a Portuguese/American designer, one of the founders of [Mule Design](http://muledesign.com/). He's probably my favorite speaker when it comes to the subject of Design. He wrote one book
-author: Marco Monteiro
-categories: [design,pep-talk,responsibility,talks,Webdesign]
----
+layout: post
+title: How Designers Destroyed the World
+date: 2013-10-20
+tag: design,pep-talk,responsibility,talks,Webdesign
+description: Mike Monteiro is a Portuguese/American designer, one of the founders of Mule Design. He's probably my favorite speaker when it comes to the subject of Design. He wrote one book
+author: Marco Monteiro
+categories: [design,pep-talk,responsibility,talks,Webdesign]
+---
 
-Mike Monteiro is a Portuguese/American designer, one of the founders of [Mule Design](http://muledesign.com/). He's probably my favorite speaker when it comes to the subject of Design. He wrote one book called [Design is a Job](http://www.abookapart.com/products/design-is-a-job) that I highly recommend. 
+Mike Monteiro is a Portuguese/American designer, one of the founders of [Mule Design](http://muledesign.com/). He's probably my favorite speaker when it comes to the subject of Design. He wrote one book called [Design is a Job](http://www.abookapart.com/products/design-is-a-job) that I highly recommend.
 
 <!--more-->
 

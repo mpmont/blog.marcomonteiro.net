@@ -1,14 +1,14 @@
 ---
-layout: post
-title: Laracon here I come!
-date: 2013-07-15
-tag: conference,laracon,laravel,laravel 4,php
-description: That’s right, I just won a VIP ticket to Laracon. I’m not going to lie - it would be hard for me to go without this. Being a portuguese developer
-author: Marco Monteiro
-categories: [conference,laracon,laravel,laravel 4,php]
----
+layout: post
+title: Laracon here I come!
+date: 2013-07-15
+tag: conference,laracon,laravel,laravel 4,php
+description: Thats right, I just won a VIP ticket to Laracon. Im not going to lie it would be hard for me to go without this. Being a portuguese developer
+author: Marco Monteiro
+categories: [conference,laracon,laravel,laravel 4,php]
+---
 
-That’s right, I just won a VIP ticket to Laracon. I’m not going to lie - it would be hard for me to go without this. Being a portuguese developer is not that easy these days.
+That’s right, I just won a VIP ticket to Laracon. I’m not going to lie - it would be hard for me to go without this. Being a portuguese developer is not that easy these days.
 <!--more-->
 
 I have almost everything sorted, just need to finish some final arrangements with hostel and I’m on my way.

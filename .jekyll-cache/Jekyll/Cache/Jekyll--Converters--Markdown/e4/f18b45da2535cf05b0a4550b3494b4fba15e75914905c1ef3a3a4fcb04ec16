@@ -1,4 +1,4 @@
-I"�<hr />
+I"<hr />
 
 <p>layout: post</p>
 
@@ -29,12 +29,12 @@ First things first, I’m assuming that you work with git in your normal day to 
 
 <p>For that navigate to the root of your project in your terminal and do this:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    $ git remote add codeigniter git://github.com/EllisLab/CodeIgniter.git
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    $ git remote add codeigniter git://github.com/EllisLab/CodeIgniter.git
 </code></pre></div></div>
 
 <p>Now if you list all your remotes you should get the following result:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	$ git remote
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	$ git remote
 	codeigniter
  	origin
 </code></pre></div></div>
@@ -58,7 +58,7 @@ First things first, I’m assuming that you work with git in your normal day to 
   <li>
     <p>Now that you found the branch you want to merge you just need to check out to that branch. For that you just need to do:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ git branch 2.1-stable codeigniter/2.1-stable
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ git branch 2.1-stable codeigniter/2.1-stable
 </code></pre></div>    </div>
   </li>
 </ol>

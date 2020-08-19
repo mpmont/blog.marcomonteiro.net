@@ -1,4 +1,4 @@
-I"J<p>Ever since I moved into Linux I started using the CLI even more. Don’t get me wrong, I used it quite a lot on Mac. However if there was one thing that I normally didn’t use it for was for mySQL. However a few days ago I discovered <a href="http://www.mycli.net/">mycli</a>. Since then I gotta say. Love it!</p>
+I"�<p>Ever since I moved into Linux I started using the CLI even more. Don’t get me wrong, I used it quite a lot on Mac. However if there was one thing that I normally didn’t use it for was for mySQL. However a few days ago I discovered <a href="http://www.mycli.net/">mycli</a>. Since then I gotta say. Love it!</p>
 
 <!--more-->
 
@@ -6,18 +6,18 @@
 
 <p>Install the thing first:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt-get install mycli
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt-get install mycli
 </code></pre></div></div>
 
 <p><strong>Usage:</strong></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ mycli --help
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ mycli --help
 Usage: mycli [OPTIONS] [DATABASE]
   	A MySQL terminal client with auto-completion and syntax highlighting.
 </code></pre></div></div>
 
   	Examples:
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	- mycli my_database
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	- mycli my_database
 	- mycli -u my_user -h my_host.com my_database
 	- mycli mysql://my_user@my_host.com:3306/my_database
 

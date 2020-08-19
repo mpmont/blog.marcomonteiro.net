@@ -1,4 +1,4 @@
-I"Ù<p>As you may or may not know, I started to really use vagrant lately. The installation process to get a PHP development environment is quite easy. However, there was a few moment were I run into a small issues. Most of them happened just because my mind was still programmed to work with a simple Lamp stack.</p>
+I"ì<p>As you may or may not know, I started to really use vagrant lately. The installation process to get a PHP development environment is quite easy. However, there was a few moment were I run into a small issues. Most of them happened just because my mind was still programmed to work with a simple Lamp stack.</p>
 
 <p>One of the issues that made me lose 20 minutes or so was connecting SequelPro to the database. Sure I installed PHPmyAdmin but I wanted to use my own database management app.</p>
 
@@ -6,7 +6,7 @@
 
 <p>All you need to do is create a SSH tunnel to your server. Todo so, you need to use the following settings.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Server name: "YourServerName" (doesn't really matter)
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Server name: "YourServerName" (doesn't really matter)
 MySQL Host: 127.0.0.1
 Username: root
 Password: ******

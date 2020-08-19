@@ -1,4 +1,4 @@
-I"<hr />
+I",<hr />
 
 <p>layout: post</p>
 
@@ -40,7 +40,7 @@
 
 <p>Imagine you’re using less with javascript:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;link rel="stylesheet/less" type="text/css" href="css/styles.less" /&gt;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;link rel="stylesheet/less" type="text/css" href="css/styles.less" /&gt;
 &lt;script src="js/lib/less-1.1.3.min.js" type="text/javascript"&gt;&lt;/script&gt;
 </code></pre></div></div>
 

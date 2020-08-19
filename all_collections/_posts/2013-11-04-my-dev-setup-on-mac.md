@@ -1,22 +1,21 @@
 ---
-layout: post
-title: My Dev setup on Mac
-date: 2013-11-04
-tag: app,development,environment,mac
-description: I've been asked a couple of times about my dev environment: what apps I'm currently using, and how I do use them. I'm going to try and sum it all
-author: Marco Monteiro
-categories: [app,development,environment,mac]
----
+layout: post
+title: My Dev setup on Mac
+date: 2013-11-04
+tag: app,development,environment,mac
+description:
+author: Marco Monteiro
+categories: [app,development,environment,mac]
+---
 
-I've been asked a couple of times about my dev environment: what apps I'm currently using, and how I do use them. I'm going to try and sum it all up, going from terminal to text editor of choice and some of the plugins I have on them.
+I've been asked a couple of times about my dev environment: what apps I'm currently using, and how I do use them. I'm going to try and sum it all up, going from terminal to text editor of choice and some of the plugins I have on them.
 
-<!--more-->
 
 **<i class="icon-caret-right"></i> Text editor**
 
 >Sublime Text 2 may be downloaded and evaluated for free, however a license must be purchased for continued use. There is currently no enforced time limit for the evaluation.
 
-I haven't updated to Sublime Text 3 yet. Actually, I still don't see the point of upgrading. 
+I haven't updated to Sublime Text 3 yet. Actually, I still don't see the point of upgrading.
 
 Packages:
 
@@ -106,15 +105,15 @@ Settings:
 
 **<i class="icon-caret-right"></i> Version Control**
 
-For version control I use [Git](http://git-scm.com/). Along with that I normally use one git-GUI called [SourceTree](http://www.sourcetreeapp.com/). 
+For version control I use [Git](http://git-scm.com/). Along with that I normally use one git-GUI called [SourceTree](http://www.sourcetreeapp.com/).
 
 [SourceTree](http://www.sourcetreeapp.com/) is a free Git & Mercurial client for Windows or Mac. I specially like this one because it has Git-Flow already out of the box.
 
-Along with this I also use those two packages for Sublime. Specially when I want to do something quick like a diff or change branches. That way, I don't need to go into my Terminal or SourceTree so often. 
+Along with this I also use those two packages for Sublime. Specially when I want to do something quick like a diff or change branches. That way, I don't need to go into my Terminal or SourceTree so often.
 
 **<i class="icon-caret-right"></i> Terminal**
 
-ZSH is a must have. And if you want to use it like me you'll need the [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) awesome sauce. 
+ZSH is a must have. And if you want to use it like me you'll need the [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) awesome sauce.
 
 >oh-my-zsh is an open source, community-driven framework for managing your ZSH configuration. It comes bundled with a ton of helpful functions, helpers, plugins, themes, and few things that make you shout…
 
@@ -122,13 +121,13 @@ Here's my ZSH config:
 
 	# Path to your oh-my-zsh configuration.
 	ZSH=$HOME/.oh-my-zsh
-	
+
 	#Set name of the theme to load.
 	# Look in ~/.oh-my-zsh/themes/
 	# Optionally, if you set this to "random", it'll load a random theme each
 	# time that oh-my-zsh is loaded.
 	ZSH_THEME="miloshadzic"
-	
+
 	# Aliases
 	alias zshconfig="st ~/.zshrc"
 	alias ohmyzsh="st ~/.oh-my-zsh"
@@ -142,36 +141,36 @@ Here's my ZSH config:
 	alias update-php="sudo curl -s http://php-osx.liip.ch/install.sh | bash -s 5.4"
 	alias ctags="`brew --prefix`/bin/ctags"
 	alias ctagsbuild="ctags -R -f .tags"
-	
-	
+
+
 	# Set to this to use case-sensitive completion
 	# CASE_SENSITIVE="true"
-	
+
 	# Comment this out to disable weekly auto-update checks
 	# DISABLE_AUTO_UPDATE="true"
-	
+
 	# Uncomment following line if you want to disable colors in ls
 	# DISABLE_LS_COLORS="true"
-	
+
 	# Uncomment following line if you want to disable autosetting terminal title.
 	# DISABLE_AUTO_TITLE="true"
-	
+
 	# Uncomment following line if you want red dots to be displayed while waiting for completion
 	# COMPLETION_WAITING_DOTS="true"
-	
+
 	# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 	# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 	# Example format: plugins=(rails git textmate ruby lighthouse)
 	plugins=(git github git-flow brew django node perl rails rails3 mercurial)
-	
+
 	source $ZSH/oh-my-zsh.sh
 	unsetopt correct_all
-	
+
 	# Customize to your needs...
 	export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin
-	
+
 	PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-	
+
 **<i class="icon-caret-right"></i> Markdown**
 
 I write all my blog posts in Markdown. I could do it right on my blog, but I do most of my writing when I don't have a connection. So I need a Markdown app. [Mou app](http://mouapp.com/) is my favourite. One of the best features is that I can include my blog css and see exactly how my post is going to be like while I write it.
@@ -181,14 +180,14 @@ I write all my blog posts in Markdown. I could do it right on my blog, but I do 
 Most developers using PHP probably use [MAMP](http://www.mamp.info/en/index.html), personally I don't like it. I use a simple binary package where you can install or update your php with just one terminal command using curl.
 
 	curl -s http://php-osx.liip.ch/install.sh | bash -s 5.4
-	
+
 **<i class="icon-caret-right"></i> Database management**
 
 Most of my projects are using mySQL. Installing mySQL is quite easy, but the best free tool for database management is probably [Sequel Pro](http://www.sequelpro.com/).
 
 **<i class="icon-caret-right"></i> Office Apps**
 
-These days I actually use the bundle from Apple, since it's free and it's a good alternative to the expensive Microsoft one. 
+These days I actually use the bundle from Apple, since it's free and it's a good alternative to the expensive Microsoft one.
 
 * [<i class="icon-angle-right"></i> Numbers <small>*Spreadsheets*</small>](http://www.apple.com/ios/numbers/)
 * [<i class="icon-angle-right"></i> Pages <small>*Word processor*</small>](http://www.apple.com/ios/pages/)
@@ -226,4 +225,4 @@ We all need to socialize every now and again. For that I use the following.
 * [<i class="icon-angle-right"></i> Textual <small>*IRC*</small>](http://www.codeux.com/textual/)
 * [<i class="icon-angle-right"></i> Hangouts chrome extension <small>*Google Hangouts*</small>](https://chrome.google.com/webstore/detail/hangouts/nckgahadagoaajjgafhacjanaoiihapd?utm_source=chrome-ntp-icon)
 
-Let me know what alternatives you are using besides the ones I listed. 
+Let me know what alternatives you are using besides the ones I listed.

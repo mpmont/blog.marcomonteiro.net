@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Blog++ | Normalizedsync Single File Demo</title>
+    <title>Blog++ | normalizedSync.php - Single file demo</title>
     <!--Meta Desc-->
-    <meta name="keywords" content=""/>
-    <meta name="description" content=""/>
+    <meta name="keywords" content="data,database,how-to,sync,tutorial"/>
+    <meta name="description" content="Are you trying to sync de-normalized data from a remote source (e.g. webservice) and struggle importing it into your nicely normalized database? Maybe this little demo might give you an"/>
     <meta name="subject" content="Web development & Linux Stuff">
     <meta name="copyright"content="Marco Monteiro">
     <meta name="language" content="EN">
@@ -22,8 +22,8 @@
 
     <!--Meta Facebook-->
     <meta property="og:image" content="https://blog.marcomonteiro.net/assets/img/facebooklogo.jpg"/>
-    <meta property="og:title" content="Blog++ | Normalizedsync Single File Demo"/>
-    <meta property="og:description" content=""/>
+    <meta property="og:title" content="Blog++ | normalizedSync.php - Single file demo"/>
+    <meta property="og:description" content="Are you trying to sync de-normalized data from a remote source (e.g. webservice) and struggle importing it into your nicely normalized database? Maybe this little demo might give you an"/>
     <meta property="og:url" content="https://blog.marcomonteiro.net"/>
     <meta property="og:site_name" content="Blog++"/>
     <meta property="og:type" content="blog"/>
@@ -31,8 +31,8 @@
     <!--Meta Twitter-->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@marcogmonteiro">
-    <meta name="twitter:title" content="Blog++ | Normalizedsync Single File Demo">
-    <meta name="twitter:description" content="">
+    <meta name="twitter:title" content="Blog++ | normalizedSync.php - Single file demo">
+    <meta name="twitter:description" content="Are you trying to sync de-normalized data from a remote source (e.g. webservice) and struggle importing it into your nicely normalized database? Maybe this little demo might give you an">
     <meta name="twitter:creator" content="@marcogmonteiro">
     <meta name="twitter:domain" content="blog.marcomonteiro.net">
 
@@ -83,27 +83,9 @@
         <div class="content">
             <div id="scrollbubble"></div>
             <section class="post">
-                <h2 class="flipboard-title title">Normalizedsync Single File Demo</h2>
-                <div class="date flipboard-date">November 19, 2013 <i class="icon-user"></i> Written By </div>
-                <hr />
-
-<p>layout: post</p>
-
-<p>title: normalizedSync.php - Single file demo</p>
-
-<p>date: 2013-11-19</p>
-
-<p>tag: data,database,how-to,sync,tutorial</p>
-
-<p>description: Are you trying to sync de-normalized data from a remote source (e.g. webservice) and struggle importing it into your nicely normalized database? Maybe this little demo might give you an</p>
-
-<p>author: Marco Monteiro</p>
-
-<p>categories: [data,database,how-to,sync,tutorial]</p>
-
-<hr />
-
-<p>Are you trying to sync de-normalized data from a remote source (e.g. webservice) and struggle importing it into your nicely normalized database? Maybe this little demo might give you an idea!</p>
+                <h2 class="flipboard-title title">normalizedSync.php - Single file demo</h2>
+                <div class="date flipboard-date">November 19, 2013 <i class="icon-user"></i> Written By Marco Monteiro</div>
+                <p>Are you trying to sync de-normalized data from a remote source (e.g. webservice) and struggle importing it into your nicely normalized database? Maybe this little demo might give you an idea!</p>
 
 <!--more-->
 
@@ -115,7 +97,7 @@
   <li>
     <p>run this from your CLI:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  curl -Ls http://git.io/6VTovw | php
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  curl -Ls http://git.io/6VTovw | php
 </code></pre></div>    </div>
   </li>
   <li>
@@ -221,8 +203,8 @@ Again: just run <em>“curl -Ls http://git.io/6VTovw | php”</em> from your CLI
     <ul>
       <li><i class="icon-angle-right"></i> Related data (vendors, categories) get extracted from the flat dataset</li>
       <li><i class="icon-angle-right"></i> Then 2 batch insert queries are fired <em>(ON DUPLICATE KEY UPDATE)</em> and the results are instantly retrieved</li>
-      <li><i class="icon-angle-right"></i> And a lookup transformation is applied: <br />
- 		 <i class="icon-angle-right"></i> <strong>Before:</strong> <em>vendors[] = {“id”: 1, “name”: “Vendor 1”}</em> <br />
+      <li><i class="icon-angle-right"></i> And a lookup transformation is applied:
+ 		 <i class="icon-angle-right"></i> <strong>Before:</strong> <em>vendors[] = {“id”: 1, “name”: “Vendor 1”}</em>
  		 <i class="icon-angle-right"></i> <strong>After:</strong>  <em>vendors[“Vendor 1”] = {“id”: 1, “name”: “Vendor 1”}</em>
  	* <i class="icon-angle-right"></i> So with that easy accessible array of meta-infos, for every row of the received data, the columns <em>vendor</em> and <em>category</em> will be replaced by <em>vendor_id</em>, respectively <em>category_id</em>
  	* <i class="icon-angle-right"></i> Out of this <em>normalized</em> result set, we can quickly create another batch insert</li>
@@ -288,7 +270,7 @@ Again: just run <em>“curl -Ls http://git.io/6VTovw | php”</em> from your CLI
 
 <p>When you take a look at <em>Helper::get_products()</em> you will find that I’ve limited the number of unique vendors and categories to a hundred results each.  That’s just for the sake of creating key-collision so the update part of the query is fired to, demonstrating the desired behaviour. (Albeit only accumulating data at this point)</p>
 
-<p>Then we’ve got the <em>Extractor</em> <em>(cue dramatic music)</em><br />
+<p>Then we’ve got the <em>Extractor</em> <em>(cue dramatic music)</em>
 It’s whole purpose is just to extract the meta-info from the API’s data, induce the assembly of the query string, and initiate the lookup optimization.</p>
 
 <blockquote>
@@ -309,12 +291,12 @@ It’s whole purpose is just to extract the meta-info from the API’s data, ind
 
 <p>Drop me a note, if I haven’t scared you already :)</p>
 
-<p><strong>And just btw:</strong>  <br />
-<a href="http://i.imgur.com/JRWcbfC.png">Here’s a call graph.</a>  <br />
+<p><strong>And just btw:</strong>
+<a href="http://i.imgur.com/JRWcbfC.png">Here’s a call graph.</a>
 And <a href="https://gist.github.com/druu/7541557">here’s the Gist</a></p>
 
 <blockquote>
-  <p>Have Fun!  <br />
+  <p>Have Fun!
 druu</p>
 </blockquote>
 
@@ -323,13 +305,28 @@ druu</p>
                 <ul id="tags" class="tags">
                     
                     
+                        <li><a href="#"><i class="icon-tag"></i> data</a></li>
+                        &nbsp;
+                    
+                        <li><a href="#"><i class="icon-tag"></i> database</a></li>
+                        &nbsp;
+                    
+                        <li><a href="#"><i class="icon-tag"></i> how-to</a></li>
+                        &nbsp;
+                    
+                        <li><a href="#"><i class="icon-tag"></i> sync</a></li>
+                        &nbsp;
+                    
+                        <li><a href="#"><i class="icon-tag"></i> tutorial</a></li>
+                        
+                    
                 </ul>
                 <br>
             </section>
             <div id="tweet_it">
                 <a href="javascript:void(0)" id="tweet_compose_close" class="close_it">x</a>
                 <h4>Like it? Tweet it.</h4>
-                <p>"Normalizedsync Single File Demo" via <a href="http://twitter.com/marcogmonteiro">@marcogmonteiro</a><br>
+                <p>"normalizedSync.php - Single file demo" via <a href="http://twitter.com/marcogmonteiro">@marcogmonteiro</a><br>
                     <a href="https://twitter.com/share" data-count="horizontal" data-count="none" data-related="marcogmonteiro" data-via="marcogmonteiro" class="twitter-share-button" data-lang="en">Tweet</a>
                   <br>
                 </p>

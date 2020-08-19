@@ -1,16 +1,16 @@
 ---
-layout: post
-title: How to add Previous and Next links on wardrobe
-date: 2013-10-17
-tag: laravel,laravel 4,tips,wardrobe
-description: If you're a regular here you may have noticed that I'm always making some small improvements on my blog. The last one was quite simple, I just wanted to add
-author: Marco Monteiro
-categories: [laravel,laravel 4,tips,wardrobe]
----
+layout: post
+title: How to add Previous and Next links on wardrobe
+date: 2013-10-17
+tag: laravel,laravel 4,tips,wardrobe
+description: If you're a regular here you may have noticed that I'm always making some small improvements on my blog. The last one was quite simple, I just wanted to add
+author: Marco Monteiro
+categories: [laravel,laravel 4,tips,wardrobe]
+---
 
-If you're a regular here you may have noticed that I'm always making some small improvements on my blog. The last one was quite simple, I just wanted to add some previous and next links when the user is reading an article. However, I wasn't aiming to just simple arrows. I wanted to user to see the title of those articles.
+If you're a regular here you may have noticed that I'm always making some small improvements on my blog. The last one was quite simple, I just wanted to add some previous and next links when the user is reading an article. However, I wasn't aiming to just simple arrows. I wanted to user to see the title of those articles.
 
-Since my blog uses wardrobe and that is built on top of Laravel, doing that is pretty straight forward. 
+Since my blog uses wardrobe and that is built on top of Laravel, doing that is pretty straight forward.
 
 <!--more-->
 
@@ -35,7 +35,7 @@ This is the function you're looking for:
 
 		return View::make('themes.'.$this->theme.'.post', compact('post'));
 	}
-	
+
 So let's get the prev and next articles based on the Post object.
 
 	/**
@@ -57,7 +57,7 @@ So let's get the prev and next articles based on the Post object.
 
 		return View::make('themes.'.$this->theme.'.post', compact('post', 'next', 'prev'));
 	}
-	
+
 Quite easy right? Now you may want to do the same in your getPreview function.
 
 	/**
@@ -79,7 +79,7 @@ Quite easy right? Now you may want to do the same in your getPreview function.
 
 		return View::make('themes.'.$this->theme.'.post', compact('post', 'next', 'prev'));
 	}
-	
+
 Now you just need to add that navigation links to your layout. I added mine to my post.blade.php file, since our next and prev links will only be used there.
 
 	<nav class="other_posts">
@@ -92,10 +92,10 @@ Now you just need to add that navigation links to your layout. I added mine to m
 			@endif
 		</ul>
 	</nav>
-	
-That's is, nice and easy. 
 
-**ps:** Soon after I published this post I had [this talk](https://twitter.com/marcogmonteiro/status/390842895458369536) with [Dan Horrigan](https://twitter.com/dhrrgn). Turns out there's a better way to do it. 
+That's is, nice and easy.
+
+**ps:** Soon after I published this post I had [this talk](https://twitter.com/marcogmonteiro/status/390842895458369536) with [Dan Horrigan](https://twitter.com/dhrrgn). Turns out there's a better way to do it.
 
 Basically he got the same result with just one query. Look at this beauty.
 
@@ -106,9 +106,9 @@ Basically he got the same result with just one query. Look at this beauty.
 	  	{
 		  	return App::abort(404, 'Page not found');
 	  	}
-   
+
 	  	$posts = DB::select('SELECT * FROM `posts` WHERE `active` = 1 AND (`id` = (SELECT MIN(`id`) FROM `posts` where `id` > ?) OR `id` = (SELECT MAX(`id`) FROM `posts` where `id` < ?))', array($post->id, $post->id));
-   
+
 	  	$prev = null;
 	  	$next = null;
 	  	$count = count($posts);
@@ -118,11 +118,11 @@ Basically he got the same result with just one query. Look at this beauty.
 		  	if ($posts[0]->id > $post->id) {
 			  	$next = $posts[0];
 		  	} else {
-			  	$prev = $posts[0];    
+			  	$prev = $posts[0];
 		  	}
 	  	}
-		
+
 	  return View::make('themes.'.$this->theme.'.post', compact('post', 'next', 'prev'));
   	}
-	
+
 Keep in mind that this is really only useful if it is a high traffic site. Thank you [Dan](https://twitter.com/dhrrgn).

@@ -1,14 +1,14 @@
 ---
-layout: post
-title: Pixel density of 538ppi?
-date: 2013-08-21
-tag: mobile,rant,responsive
-description: Full HD displays? Eat your heart out, handset manufacturers. LG Display has just laid claim to the world's first Quad HD (2,560 x 1,440) smartphone display, which also boasts the
-author: Marco Monteiro
-categories: [mobile,rant,responsive]
----
+layout: post
+title: Pixel density of 538ppi?
+date: 2013-08-21
+tag: mobile,rant,responsive
+description: Full HD displays Eat your heart out, handset manufacturers. LG Display has just laid claim to the worlds
+author: Marco Monteiro
+categories: [mobile,rant,responsive]
+---
 
-Full HD displays? Eat your heart out, handset manufacturers. LG Display has just laid claim to the world's first Quad HD (2,560 x 1,440) smartphone display, which also boasts the highest pixel density of a mobile device, clocking in at 538ppi.
+Full HD displays? Eat your heart out, handset manufacturers. LG Display has just laid claim to the world's first Quad HD (2,560 x 1,440) smartphone display, which also boasts the highest pixel density of a mobile device, clocking in at 538ppi.
 
 <!--more-->
 

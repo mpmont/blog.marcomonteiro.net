@@ -96,37 +96,37 @@
 <p>So I made a small box that supports what I needed and here’s what you need to do:</p>
 
 <h3 id="download-the-box-and-init-vagrant">Download the box and init vagrant</h3>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ vagrant box add legacy-box https://www.dropbox.com/s/ch0rq7ajonkzimp/lucid64-lamp.box?dl=1
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ vagrant box add legacy-box https://www.dropbox.com/s/ch0rq7ajonkzimp/lucid64-lamp.box?dl=1
 $ vagrant init legacy-box
 </code></pre></div></div>
 
 <h3 id="edit-your-vagrant-file">Edit your vagrant file</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>config.vm.network "private_network", ip: "192.168.33.10"
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>config.vm.network "private_network", ip: "192.168.33.10"
 config.vm.synced_folder "./", "/vagrant", type: "nfs"
 </code></pre></div></div>
 
 <h3 id="boot-up-the-machine">Boot up the machine</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ vagrant up
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ vagrant up
 $ vagrant ssh
 </code></pre></div></div>
 
 <h3 id="you-can-add-this-to-your-provision-id-you-want">You can add this to your provision id you want</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt-get install php5 // no futuro adicionar à provision
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt-get install php5 // no futuro adicionar à provision
 $ sudo apt-get install php5-cli // no futuro adicionar à provision
 </code></pre></div></div>
 
 <h3 id="if-you-need-mysql-you-might-want-yo-edit-your-bindaddress-so-you-can-connect-via-ssh-tunnel">If you need mysql you might want yo edit your bindaddress so you can connect via ssh tunnel</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo nano /etc/mysql/my.cnf
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo nano /etc/mysql/my.cnf
 bindaddress passa de 127.0.0.1 a 0.0.0.0 // no futuro adicionar à provision
 </code></pre></div></div>
 
 <h3 id="with-the-lattest-versions-of-vagrant-using-such-a-old-version-of-ubuntu-you-might-need-to-create-this-file-with-the-following-contents">With the lattest versions of vagrant using such a old version of ubuntu you might need to create this file with the following contents</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cat /etc/os-release
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cat /etc/os-release
 NAME="Ubuntu"
 VERSION="12.04 LTS, Precise Pangolin"
 ID=ubuntu
@@ -137,13 +137,13 @@ VERSION_ID="12.04"
 
 <h3 id="exit-and-restart-the-machine">Exit and restart the machine</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ exit
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ exit
 $ vagrant reload
 </code></pre></div></div>
 
 <h3 id="heres-your-default-connection-to-mysql">Here’s your default connection to mysql</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>host: 127.0.0.1
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>host: 127.0.0.1
 user: root
 password: password
 

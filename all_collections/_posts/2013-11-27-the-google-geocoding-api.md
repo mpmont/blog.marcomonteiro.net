@@ -1,14 +1,14 @@
 ---
-layout: post
-title: The Google Geocoding API
-date: 2013-11-27
-tag: api,code,geocoding,google,maps,tips
-description: Geocoding is the process of converting addresses (like "1600 Amphitheatre Parkway, Mountain View, CA") into geographic coordinates (like latitude 37.423021 and longitude -122.083739), which you can use to place markers
-author: Marco Monteiro
-categories: [api,code,geocoding,google,maps,tips]
----
+layout: post
+title: The Google Geocoding API
+date: 2013-11-27
+tag: api,code,geocoding,google,maps,tips
+description: Geocoding is the process of converting addresses (like "1600 Amphitheatre Parkway, Mountain View, CA") into geographic coordinates (like latitude 37.423021 and longitude -122.083739), which you can use to place markers
+author: Marco Monteiro
+categories: [api,code,geocoding,google,maps,tips]
+---
 
-Geocoding is the process of converting addresses (like "1600 Amphitheatre Parkway, Mountain View, CA") into geographic coordinates (like latitude 37.423021 and longitude -122.083739), which you can use to place markers or position the map.
+Geocoding is the process of converting addresses (like "1600 Amphitheatre Parkway, Mountain View, CA") into geographic coordinates (like latitude 37.423021 and longitude -122.083739), which you can use to place markers or position the map.
 
 Reverse geocoding is the process of converting geographic coordinates into a human-readable address.
 
@@ -31,9 +31,9 @@ To access the Geocoding API over HTTPS, use:
 
 **Required parameters**
 
-**address** - The address that you want to geocode. 
- 
-**latlng** - The textual latitude/longitude value for which you wish to obtain the closest, human-readable address. See Reverse Geocoding for more information. 
+**address** - The address that you want to geocode.
+
+**latlng** - The textual latitude/longitude value for which you wish to obtain the closest, human-readable address. See Reverse Geocoding for more information.
 
 **components** - A component filter for which you wish to obtain a geocode. See Component Filtering for more information. The components filter will also be accepted as an optional parameter if an address is provided.
 
@@ -134,7 +134,7 @@ The JSON returned by this request is shown below. Note that actual JSON may cont
 In this example, the Geocoding API requests an xml response for the identical query shown above for "1600 Amphitheatre Parkway, Mountain View, CA":
 
 	http://maps.googleapis.com/maps/api/geocode/xml?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&sensor=true_or_false
-	
+
 The XML returned by this request is shown below.
 
 	<GeocodeResponse>
@@ -206,7 +206,7 @@ The XML returned by this request is shown below.
   			</geometry>
  		</result>
 	</GeocodeResponse>
-	
+
 **Reverse Geocoding (Address Lookup)**
 
 The term geocoding generally refers to translating a human-readable address into a location on a map. The process of doing the converse, translating a location on the map into a human-readable address, is known as reverse geocoding.
@@ -214,7 +214,7 @@ The term geocoding generally refers to translating a human-readable address into
 The Geocoding API supports reverse geocoding directly using the latlng parameter. For example, the following query contains the latitude/longitude value for a location in Brooklyn:
 
 	http://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452&sensor=true_or_false
-	
+
 This query returns the following result:
 
 	{
@@ -274,7 +274,7 @@ This query returns the following result:
     	}
   	},
 	... Additional results[] ...
-	
+
 Note that the reverse geocoder returned more than one result. The result's "formatted_addresses" are not just postal addresses, but any way to geographically name a location. For example, when geocoding a point in the city of Chicago, the geocoded point may be denoted as a street address, as the city (Chicago), as its state (Illinois) or as a country (The United States). All are "addresses" to the geocoder. The reverse geocoder returns any of these types as valid results.
 
 The reverse geocoder matches political entities (countries, provinces, cities and neighborhoods), street addresses, and postal codes.
@@ -289,7 +289,7 @@ The full list of formatted_address values returned by the previous query are sho
 	"formatted_address": "New York, NY, USA",
 	"formatted_address": "New York, USA",
 	"formatted_address": "United States"
-	
+
 **Region Biasing**
 
 The Google Geocoding API returns address results influenced by the region (typically the country) from which the request is sent. For example, searches for "San Francisco" may return different results if sent from a domain within the United States than one sent from Spain.

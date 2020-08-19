@@ -1,10 +1,10 @@
-I"�<p>If everytime you run <em>sudo apt-get update</em>   you get the following error “Err:14 URL HERE The following signatures couldn’t be verified because the public key is not available: NO_PUBKEY PUBLIC_KEY_HERE” and like me you want to fix that. Don’t worry, I got your back.</p>
+I"1<p>If everytime you run <em>sudo apt-get update</em>   you get the following error “Err:14 URL HERE The following signatures couldn’t be verified because the public key is not available: NO_PUBKEY PUBLIC_KEY_HERE” and like me you want to fix that. Don’t worry, I got your back.</p>
 
 <!--more-->
 
 <p>I got this error with the ppa related to the vivaldi browser, so my error was like this:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Err:14 http://repo.vivaldi.com/stable/deb stable Release.gpg The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 8D04CE49EFB20B23
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Err:14 http://repo.vivaldi.com/stable/deb stable Release.gpg The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 8D04CE49EFB20B23
 </code></pre></div></div>
 
 <p>The fix</p>
@@ -13,12 +13,12 @@
 
 <p>To install it, first add the webupd8 repository for this program:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo add-apt-repository ppa:webupd8team/y-ppa-manager
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo add-apt-repository ppa:webupd8team/y-ppa-manager
 </code></pre></div></div>
 
 <p>Update your software list and install Y-PPA-Manager:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt-get update
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt-get update
 $ sudo apt-get install y-ppa-manager
 </code></pre></div></div>
 

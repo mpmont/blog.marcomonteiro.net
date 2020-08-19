@@ -1,4 +1,4 @@
-I"’<hr />
+I"¥<hr />
 
 <p>layout: post</p>
 
@@ -29,7 +29,7 @@ I have a blog you know? I write stuff from time to time. Keep up, Internet.</p>
 <p><strong>The plugin!</strong>
 This plugin is quite simple actually. It gives you auto-complete and a bunch of useful aliases:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	c = 'composer'
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	c = 'composer'
 	c  for autcomplete
 	csu = 'composer self-update'
 	cu = 'composer update'

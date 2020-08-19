@@ -1,18 +1,16 @@
 ---
-layout: post
-title: Happy Programmers' Day
-date: 2013-09-13
-tag: life
-description: That's right, today (Friday the 13th) is Programmers Day.
+layout: post
+title: Happy Programmers Day
+date: 2013-09-13
+tag: life
+description: Thats right, today Friday the 13th is Programmers Day
+author: Marco Monteiro
+categories: [life]
+---
 
-Programmers' Day is an international professional day recognized in many technology companies and programming firms, that is celebrated on the 256th
-author: Marco Monteiro
-categories: [life]
----
+That's right, today (Friday the 13th) is Programmers Day.
 
-That's right, today (Friday the 13th) is Programmers Day.
-
-Programmers' Day is an international professional day recognized in many technology companies and programming firms, that is celebrated on the 256th (hexadecimal 100th, or the 28th) day of each year (September 13 during common years and on September 12 in leap years). 
+Programmers Day is an international professional day recognized in many technology companies and programming firms, that is celebrated on the 256th (hexadecimal 100th, or the 28th) day of each year (September 13 during common years and on September 12 in leap years).
 
 The number 256 (28) was chosen because it is the number of distinct values that can be represented with an eight-bit byte, a value well-known to programmers. 256 is the highest power of two that is less than 365, the number of days in a common year.
 

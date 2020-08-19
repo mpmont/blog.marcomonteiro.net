@@ -1,4 +1,4 @@
-I"º<p>For the last 4 years or so Iâ€™ve been using sublime text 2. I bought the license, therefore I saw no point in upgrading. Until today, when I found out that I could use my ST2 license on ST3 (beta). Today was configuration day and I re-configured editor or choice.</p>
+I"ó<p>For the last 4 years or so Iâ€™ve been using sublime text 2. I bought the license, therefore I saw no point in upgrading. Until today, when I found out that I could use my ST2 license on ST3 (beta). Today was configuration day and I re-configured editor or choice.</p>
 
 <!--more-->
 
@@ -68,7 +68,7 @@
 
 <p>Hereâ€™s my config:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
 "enable_auto_align": false,
 "indent_with_space": true,
 "passes":
@@ -86,7 +86,7 @@
 
 <p><strong>And finally my config file:</strong></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
   "auto_complete_commit_on_tab": false,
   "bold_folder_labels": true,
   "caret_style": "phase",
@@ -158,7 +158,7 @@
 
 <p><strong>Keybindings</strong></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[
 	{ "keys": ["ctrl+shift+left"], "command": "next_view_in_stack" },
 	{ "keys": ["ctrl+shift+right"], "command": "prev_view_in_stack" },
 	{ "keys": ["alt+d"], "command": "goto_definition" },

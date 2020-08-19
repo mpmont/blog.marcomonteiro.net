@@ -1,4 +1,4 @@
-I"�B<hr />
+I"VC<hr />
 
 <p>layout: post</p>
 
@@ -26,7 +26,7 @@
 
 <p>A Geocoding API request must be of the following form:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://maps.googleapis.com/maps/api/geocode/output?parameters
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://maps.googleapis.com/maps/api/geocode/output?parameters
 </code></pre></div></div>
 
 <p>where output may be either of the following values:</p>
@@ -38,7 +38,7 @@
 
 <p>To access the Geocoding API over HTTPS, use:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://maps.googleapis.com/maps/api/geocode/output?parameters
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://maps.googleapis.com/maps/api/geocode/output?parameters
 </code></pre></div></div>
 
 <p><strong>Required parameters</strong></p>
@@ -76,14 +76,14 @@
 
 <p>In this example, the Geocoding API requests a json response for a query on “1600 Amphitheatre Parkway, Mountain View, CA”:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&amp;sensor=true_or_false
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&amp;sensor=true_or_false
 </code></pre></div></div>
 
 <p>We’ve left the sensor parameter in this example as a variable true_or_false to emphasize that you must set this value to either true or false explicitly.</p>
 
 <p>The JSON returned by this request is shown below. Note that actual JSON may contain less whitespace. You should not make assumptions about the amount or format of whitespace between requests.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
 	{
    		"results" : [
   	{
@@ -153,12 +153,12 @@
 
 <p>In this example, the Geocoding API requests an xml response for the identical query shown above for “1600 Amphitheatre Parkway, Mountain View, CA”:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://maps.googleapis.com/maps/api/geocode/xml?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&amp;sensor=true_or_false
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://maps.googleapis.com/maps/api/geocode/xml?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&amp;sensor=true_or_false
 </code></pre></div></div>
 
 <p>The XML returned by this request is shown below.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;GeocodeResponse&gt;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;GeocodeResponse&gt;
 	 &lt;status&gt;OK&lt;/status&gt;
 	 &lt;result&gt;
 	 	&lt;type&gt;street_address&lt;/type&gt;
@@ -235,12 +235,12 @@
 
 <p>The Geocoding API supports reverse geocoding directly using the latlng parameter. For example, the following query contains the latitude/longitude value for a location in Brooklyn:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452&amp;sensor=true_or_false
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452&amp;sensor=true_or_false
 </code></pre></div></div>
 
 <p>This query returns the following result:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
   		"status": "OK",
   		"results": [ {
 		"types": street_address,
@@ -305,7 +305,7 @@
 
 <p>The full list of formatted_address values returned by the previous query are shown below.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"formatted_address": "275-291 Bedford Ave, Brooklyn, NY 11211, USA",
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"formatted_address": "275-291 Bedford Ave, Brooklyn, NY 11211, USA",
 "formatted_address": "Williamsburg, NY, USA",
 "formatted_address": "New York 11211, USA",
 "formatted_address": "Kings, New York, USA",
@@ -325,7 +325,7 @@
 
 <p>For example, a geocode for “Toledo” returns this result, as the default domain for the Geocoding API is set to the United States:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://maps.googleapis.com/maps/api/geocode/json?address=Toledo&amp;sensor=false
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://maps.googleapis.com/maps/api/geocode/json?address=Toledo&amp;sensor=false
 # Returns:
 #
 {

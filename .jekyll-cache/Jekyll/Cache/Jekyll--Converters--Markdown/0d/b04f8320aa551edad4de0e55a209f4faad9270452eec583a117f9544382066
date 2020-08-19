@@ -1,4 +1,4 @@
-I"w/<hr />
+I"Š/<hr />
 
 <p>layout: post</p>
 
@@ -28,7 +28,7 @@
   <li>
     <p>run this from your CLI:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  curl -Ls http://git.io/6VTovw | php
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  curl -Ls http://git.io/6VTovw | php
 </code></pre></div>    </div>
   </li>
   <li>

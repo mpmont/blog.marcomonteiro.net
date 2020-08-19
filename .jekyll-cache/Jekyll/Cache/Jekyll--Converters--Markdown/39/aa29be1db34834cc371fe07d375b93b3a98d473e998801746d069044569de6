@@ -1,4 +1,4 @@
-I"§<p>Recently I wrote a post about <a href="http://blog.marcomonteiro.net/post/my-dev-setup-on-mac">my dev setup on mac</a>. However someone has been recommending me for a while to start using Vagrant. But I never did. Specially because my dev setup was working fine.</p>
+I"º<p>Recently I wrote a post about <a href="http://blog.marcomonteiro.net/post/my-dev-setup-on-mac">my dev setup on mac</a>. However someone has been recommending me for a while to start using Vagrant. But I never did. Specially because my dev setup was working fine.</p>
 
 <p>A few days ago, I decided it was time to do a clean install on my mac, and start fresh. That means itâ€™s time for some experimenting.</p>
 
@@ -28,7 +28,7 @@
 
 <p>All you need to do is open your terminal. Navigate to your downloaded files from Puphpet and run the following command:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ vagrant up
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ vagrant up
 </code></pre></div></div>
 
 <p>This will install and start the virtual machine you ended up choosing. After that, you can access your server with the IP you used during the Puphpet setup process or you can configure the virtual host.</p>

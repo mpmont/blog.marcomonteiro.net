@@ -1,0 +1,27 @@
+I"^<p>Ever since <a href="http://blog.marcomonteiro.net/post/a-message-from-the-future">I stopped using normal RSS clients</a> I started using apps like <a href="https://flipboard.com/">Flipboard</a> to read my content. Since then, I notice that some content coming from some sources would look amazing, and some would look awful. So I’ve done some research and noticed that you can improve how your content looks on flipboard.</p>
+
+<!--more-->
+
+<p>Here’s a list of classes that you can add to your markup to make it happen.</p>
+
+<ul>
+  <li><i class="icon-angle-right"></i> <strong>flipboard-remove</strong> — will ignore any element with this class</li>
+  <li><i class="icon-angle-right"></i> <strong>flipboard-keep</strong> — will use this element in the article e.g tagging a paragraph with this will insure it remains part of the excerpt</li>
+  <li><i class="icon-angle-right"></i> <strong>flipboard-image</strong> — will use the element as an image</li>
+  <li><i class="icon-angle-right"></i> <strong>flipboard-title</strong> — will use as title</li>
+  <li><i class="icon-angle-right"></i> <strong>flipboard-subtitle</strong> — will use subtitle</li>
+  <li><i class="icon-angle-right"></i> <strong>flipboard-author</strong> — use as author</li>
+  <li><i class="icon-angle-right"></i> <strong>flipboard-copyright</strong> – set copyright</li>
+  <li><i class="icon-angle-right"></i> <strong>flipboard-date</strong> — set the date of the article</li>
+  <li><i class="icon-angle-right"></i> <strong>flipboard-caption</strong> — set as caption for an image; must be immediately after the image</li>
+  <li><i class="icon-angle-right"></i> <strong>flipboard-startArticle and flipboard-endArticle</strong> — only consider the markup between flipboard-startArticle and flipboard-endArticle</li>
+</ul>
+
+<p>Simple example for date using wardrobe:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div class="date flipboard-date"&gt;&lt;/div&gt;
+</code></pre></div></div>
+
+<p>This way you can control a bit more on what content should be displayed on Flipboard.</p>
+
+:ET

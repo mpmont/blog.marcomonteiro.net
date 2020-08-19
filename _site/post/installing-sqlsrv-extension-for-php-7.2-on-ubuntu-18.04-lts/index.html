@@ -95,7 +95,7 @@
 
 <p>On your server type the following commands:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -s https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -s https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
 sudo bash -c "curl -s https://packages.microsoft.com/config/ubuntu/18.04/prod.list &gt; /etc/apt/sources.list.d/mssql-release.list"
 sudo apt-get update
 sudo ACCEPT_EULA=Y apt-get -y install msodbcsql17 mssql-tools
@@ -104,7 +104,7 @@ sudo apt-get -y install unixodbc-dev
 
 <p>After this, you most likelly don’t have the  the pecl7.X-sp command working. To solve this I did the following:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get -y install gcc g++ make autoconf libc-dev pkg-config
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get -y install gcc g++ make autoconf libc-dev pkg-config
 sudo apt-get install php-pear php-dev
 sudo pecl install sqlsrv
 sudo pecl install pdo_sqlsrv
@@ -112,7 +112,7 @@ sudo pecl install pdo_sqlsrv
 
 <p>After this all you need to do is create the necessary .ini file so that PHP can do its magic.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo bash -c "echo extension=sqlsrv.so &gt; /etc/php/7.2/mods-available/sqlsrv.ini"
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo bash -c "echo extension=sqlsrv.so &gt; /etc/php/7.2/mods-available/sqlsrv.ini"
 sudo ln -s /etc/php/7.2/mods-available/sqlsrv.ini /etc/php/7.2/apache2/conf.d/sqlsrv.ini
 sudo ln -s /etc/php/7.2/mods-available/sqlsrv.ini /etc/php/7.2/cli/conf.d/sqlsrv.ini
 sudo bash -c "echo extension=pdo_sqlsrv.so &gt; /etc/php/7.2/mods-available/pdo_sqlsrv.ini"
@@ -122,7 +122,7 @@ sudo ln -s /etc/php/7.2/mods-available/pdo_sqlsrv.ini /etc/php/7.2/cli/conf.d/pd
 
 <p>After this all you need to do is restart your apache:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo service apache2 restart
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo service apache2 restart
 </code></pre></div></div>
 
 <p>That’s it!</p>

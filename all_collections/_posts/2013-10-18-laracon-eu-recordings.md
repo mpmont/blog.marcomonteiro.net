@@ -1,14 +1,14 @@
 ---
-layout: post
-title: Laracon EU recordings
-date: 2013-10-18
-tag: laracon,laravel,laravel 4,php,talks
-description: You may or may not know, but last month I went to Amsterdam for [Laracon EU](http://laracon.eu/2013/). I wrote a few posts about it. At the time they promised that everything
-author: Marco Monteiro
-categories: [laracon,laravel,laravel 4,php,talks]
----
+layout: post
+title: Laracon EU recordings
+date: 2013-10-18
+tag: laracon,laravel,laravel 4,php,talks
+description: You may or may not know, but last month I went to Amsterdam for Laracon EU. I wrote a few posts about it. At the time they promised that everything
+author: Marco Monteiro
+categories: [laracon,laravel,laravel 4,php,talks]
+---
 
-You may or may not know, but last month I went to Amsterdam for [Laracon EU](http://laracon.eu/2013/). I wrote a few posts about it. At the time they promised that everything would be recorded so all the devs out there could see it. They promised and they're now delivering. For now we access to 5 videos, but soon there will be more. Just keep track of Laracon EU youtube channel.
+You may or may not know, but last month I went to Amsterdam for [Laracon EU](http://laracon.eu/2013/). I wrote a few posts about it. At the time they promised that everything would be recorded so all the devs out there could see it. They promised and they're now delivering. For now we access to 5 videos, but soon there will be more. Just keep track of Laracon EU youtube channel.
 
 <!--more-->
 

@@ -1,14 +1,14 @@
 ---
-layout: post
-title: Sublime pro tip CTags
-date: 2013-06-06
-tag: osx,package,Sublime Text,text-editor
-description: One of the best features about the new version of Sublime that is now in beta is probably the goto definition. That was actually the main feature that was making
-author: Marco Monteiro
-categories: [osx,package,Sublime Text,text-editor]
----
+layout: post
+title: Sublime pro tip CTags
+date: 2013-06-06
+tag: osx,package,Sublime Text,text-editor
+description: One of the best features about the new version of Sublime that is now in beta is probably the goto definition. That was actually the main feature that was making
+author: Marco Monteiro
+categories: [osx,package,Sublime Text,text-editor]
+---
 
-One of the best features about the new version of Sublime that is now in beta is probably the goto definition. That was actually the main feature that was making me consider the update.
+One of the best features about the new version of Sublime that is now in beta is probably the goto definition. That was actually the main feature that was making me consider the update.
 However, now you can have that feature in your sublime text 2 powered by CTags.
 
 The ctags command is searched for on the system PATH. It works by doing a binary search of a memory-mapped tags file, so it will work efficiently with very large (50MB+) tags files if needed.

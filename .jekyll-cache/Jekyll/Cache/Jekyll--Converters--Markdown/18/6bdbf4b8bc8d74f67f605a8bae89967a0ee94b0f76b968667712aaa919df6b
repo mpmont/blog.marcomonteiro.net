@@ -1,4 +1,4 @@
-I"L
+I"…
 <hr />
 
 <p>layout: post</p>
@@ -31,12 +31,12 @@ However, now you can have that feature in your sublime text 2 powered by CTags.<
 
 <p><strong>Using Homebrew:</strong></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	brew install ctags
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	brew install ctags
 </code></pre></div></div>
 
 <p><strong>Using MacPorts:</strong></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	port install ctags
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	port install ctags
 </code></pre></div></div>
 
 <p>Make sure that Sublime Text is using the right version of CTags:</p>
@@ -47,7 +47,7 @@ However, now you can have that feature in your sublime text 2 powered by CTags.<
 
 <p>Also if you installed it via brew you may want to add this to your alias list:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	$ alias ctags="`brew --prefix`/bin/ctags"
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	$ alias ctags="`brew --prefix`/bin/ctags"
 </code></pre></div></div>
 
 <p><strong>Usage</strong></p>

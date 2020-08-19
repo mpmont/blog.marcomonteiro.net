@@ -1,36 +1,36 @@
 ---
-layout: post
-title: Atomic commits
-date: 2013-11-04
-tag: Git,tips,Version-control
-description: I'm sure this happened to you before, more than one time actually. You have a big file, you changed lots of stuff in it, but those changes are not really
-author: Marco Monteiro
-categories: [Git,tips,Version-control]
----
+layout: post
+title: Atomic commits
+date: 2013-11-04
+tag: Git,tips,Version-control
+description: I'm sure this happened to you before, more than one time actually. You have a big file, you changed lots of stuff in it, but those changes are not really
+author: Marco Monteiro
+categories: [Git,tips,Version-control]
+---
 
-I'm sure this happened to you before, more than one time actually. You have a big file, you changed lots of stuff in it, but those changes are not really related. One may be related to one class and the other to something completely different. Normally you should avoid that, your commits should *always* be specific to one task, feature or bug. If you do a small search about how to commit better you'll see that even the commit messages should have this notion.
+I'm sure this happened to you before, more than one time actually. You have a big file, you changed lots of stuff in it, but those changes are not really related. One may be related to one class and the other to something completely different. Normally you should avoid that, your commits should *always* be specific to one task, feature or bug. If you do a small search about how to commit better you'll see that even the commit messages should have this notion.
 
 <!--more-->
 
 Your commit message should look something like this:
 
 	Explain in one line what the commit is about (Issue number if possible)
-	
-	Describe the problem the commit solves. 
-	Justify why you chose the particular solution. 
+
+	Describe the problem the commit solves.
+	Justify why you chose the particular solution.
 	Reference the issue number if not addressed in the title.
 
-So if you're solving a bunch of problems in the same commit, your commit messages will tend to go off-road. 
+So if you're solving a bunch of problems in the same commit, your commit messages will tend to go off-road.
 
 Ideally you want to separate those changes into different commits and there's only one way (that I know of) to do that.
 
 Let's look at the git add command:
 
-	git add [-n] [-v] [--force | -f] [--interactive | -i] [--patch | -p] 
-	[--edit | -e] [--[no-]all | --[no-]ignore-removal | [--update | -u]] 
+	git add [-n] [-v] [--force | -f] [--interactive | -i] [--patch | -p]
+	[--edit | -e] [--[no-]all | --[no-]ignore-removal | [--update | -u]]
 	[--intent-to-add | -N] [--refresh] [--ignore-errors] [--ignore-missing][--] [<pathspec>...]
-		
-The one we're looking for is ***git add -p***  
+
+The one we're looking for is ***git add -p***
 
 >-p
 --patch

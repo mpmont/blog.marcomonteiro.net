@@ -1,4 +1,4 @@
-I"å<p>Codeigniter 4 has been in the works since 2015. It took almost 3 years to have a basic framework working and 2 more to document everything so we can use it in production. This is very exciting news, since codeigniter still holds a place in me. It was PHP framework that I use the most and I still use version 3 at work.</p>
+I"ø<p>Codeigniter 4 has been in the works since 2015. It took almost 3 years to have a basic framework working and 2 more to document everything so we can use it in production. This is very exciting news, since codeigniter still holds a place in me. It was PHP framework that I use the most and I still use version 3 at work.</p>
 
 <!--more-->
 
@@ -6,7 +6,7 @@
 
 <p>Letâ€™s make the new one has big as the first one. I made a repo here, and I already have a <a href="https://github.com/wbond/package_control_channel/pull/7845">pull request</a> to have it avaiable to everyone via package control. Until then you can just install it manually. To do that you just have to make a clone of this repository into your packages folder <strong>(Preferences &gt; Browse packagesâ€¦)</strong>, like so:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/mpmont/ci4-snippets ci4-snippets
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/mpmont/ci4-snippets ci4-snippets
 </code></pre></div></div>
 
 <p>If you feel like helping, you can just send me a pull request and we can sort something out.</p>

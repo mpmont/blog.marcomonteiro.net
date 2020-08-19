@@ -1,22 +1,22 @@
 ---
-layout: post
-title: normalizedSync.php - Single file demo
-date: 2013-11-19
-tag: data,database,how-to,sync,tutorial
-description: Are you trying to sync de-normalized data from a remote source (e.g. webservice) and struggle importing it into your nicely normalized database? Maybe this little demo might give you an
-author: Marco Monteiro
-categories: [data,database,how-to,sync,tutorial]
----
+layout: post
+title: normalizedSync.php - Single file demo
+date: 2013-11-19
+tag: data,database,how-to,sync,tutorial
+description: Are you trying to sync de-normalized data from a remote source (e.g. webservice) and struggle importing it into your nicely normalized database? Maybe this little demo might give you an
+author: Marco Monteiro
+categories: [data,database,how-to,sync,tutorial]
+---
 
-Are you trying to sync de-normalized data from a remote source (e.g. webservice) and struggle importing it into your nicely normalized database? Maybe this little demo might give you an idea!
+Are you trying to sync de-normalized data from a remote source (e.g. webservice) and struggle importing it into your nicely normalized database? Maybe this little demo might give you an idea!
 
 <!--more-->
 
-**Part 1:**  ( [Normalize existing DB-Data](http://sqlfiddle.com/#!2/aa28e/1) )  
+**Part 1:**  ( [Normalize existing DB-Data](http://sqlfiddle.com/#!2/aa28e/1) )
 
-**Part 2:** Keepin' it all in sync  
+**Part 2:** Keepin' it all in sync
 
-- run this from your CLI:   
+- run this from your CLI:
 
 		curl -Ls http://git.io/6VTovw | php
 
@@ -26,9 +26,9 @@
 
 **Picture this:**
 
-* <i class="icon-angle-right"></i>  You're facing yourself with the task to frequently pull data from ***theSERVICE*** via their API and keep a synchronized copy on your DB cluster.  
-* <i class="icon-angle-right"></i>  You skim the docs, run some little test scripts and have soon found just the right combination of URL and request data to get exactly the data you need to have.  
-* <i class="icon-angle-right"></i>  You head happily and motivated into implementing and testing your little cron jobby.  
+* <i class="icon-angle-right"></i>  You're facing yourself with the task to frequently pull data from ***theSERVICE*** via their API and keep a synchronized copy on your DB cluster.
+* <i class="icon-angle-right"></i>  You skim the docs, run some little test scripts and have soon found just the right combination of URL and request data to get exactly the data you need to have.
+* <i class="icon-angle-right"></i>  You head happily and motivated into implementing and testing your little cron jobby.
 
 And then you realize...
 
@@ -43,7 +43,7 @@ Or maybe someone though:
 *"3NF - WHAT? Ain't nobody got tyme fo' dat!"*
 
 So basically, you're facing this situation:
- 
+
  <code><pre>
    +----------------------+---------------------------+--------------------+-------------+
    |  vendor              | category                  | name               |    ....     |
@@ -80,7 +80,7 @@ Your system looks like this:
    +-----+-----------------------+          +-----+--------------------------+
    \\==============> vendors table          \\==============> categories table
 </pre></code>
-    
+
 <code><pre>
    +-----+--------------+-----------------+----------------------+-----------+
    | id  | vendor_id    | category_id     | name                 |    ...    |
@@ -114,15 +114,15 @@ Let me quickly describe what's going on there:
 * <i class="icon-angle-right"></i> Within the loop:
     * <i class="icon-angle-right"></i> Related data (vendors, categories) get extracted from the flat dataset
     * <i class="icon-angle-right"></i> Then 2 batch insert queries are fired *(ON DUPLICATE KEY UPDATE)* and the results are instantly retrieved
-    * <i class="icon-angle-right"></i> And a lookup transformation is applied:   
-       		 <i class="icon-angle-right"></i> **Before:** *vendors[] = {"id": 1, "name": "Vendor 1"}*   
+    * <i class="icon-angle-right"></i> And a lookup transformation is applied:
+       		 <i class="icon-angle-right"></i> **Before:** *vendors[] = {"id": 1, "name": "Vendor 1"}*
        		 <i class="icon-angle-right"></i> **After:**  *vendors["Vendor 1"] = {"id": 1, "name": "Vendor 1"}*
  	* <i class="icon-angle-right"></i> So with that easy accessible array of meta-infos, for every row of the received data, the columns *vendor* and *category* will be replaced by *vendor_id*, respectively *category_id*
  	* <i class="icon-angle-right"></i> Out of this *normalized* result set, we can quickly create another batch insert
 	* <i class="icon-angle-right"></i> And be done.
 
 But seriously, read the source, get a hang of what's happening.  This was more or less hastily done, and probably has loads of things to optimize.
-  
+
 But you get the idea ;)
 
 **One more thing...**
@@ -135,25 +135,25 @@ There are a few things I'd like to point out and/or explain:
 
 **Why the hell did you even write this?**
 
-* <i class="icon-angle-right"></i>Well, I started answering a question about how that particular person could implement an efficient way to solve exactly this problem.  
+* <i class="icon-angle-right"></i>Well, I started answering a question about how that particular person could implement an efficient way to solve exactly this problem.
 * <i class="icon-angle-right"></i> The thing got out of hand...
 
-**So, is it efficient?**  
+**So, is it efficient?**
 
 * <i class="icon-angle-right"></i> To be fair, I just lab-tested it. I have no real-life benchmarks or anything.
 * <i class="icon-angle-right"></i> This particular thing uses 15 db queries in total, and the queries aren't super complex either. But again, I have not analyzed in regards of performance
-  
+
 **Okay, Lab-tested? You sure have run it against a DB, haven't ya?**
-  
+
 ***OK! Here's the interesting bit:***
 
-We've got 3 classes (Sorry @jdorn ):  
+We've got 3 classes (Sorry @jdorn ):
 
 * <i class="icon-angle-right"></i> Helper
 * <i class="icon-angle-right"></i> Extractor
 * <i class="icon-angle-right"></i> DB
-  
-  
+
+
 It is *Helper's* job to simulate the API-call, perform the lookup transformations, generate the query string, and so on. Just a little collection of sort of generic methods.
 
 When you run the script you will see some output like
@@ -171,7 +171,7 @@ When you run the script you will see some output like
 
 When you take a look at *Helper::get_products()* you will find that I've limited the number of unique vendors and categories to a hundred results each.  That's just for the sake of creating key-collision so the update part of the query is fired to, demonstrating the desired behaviour. (Albeit only accumulating data at this point)
 
-Then we've got the *Extractor* *(cue dramatic music)*  
+Then we've got the *Extractor* *(cue dramatic music)*
 It's whole purpose is just to extract the meta-info from the API's data, induce the assembly of the query string, and initiate the lookup optimization.
 
 > ...sigh.
@@ -187,14 +187,14 @@ It emulates an **extremely** reduced subset of a DBMS, taking an actual SQL-Quer
 Also, not wanting to overcomplicate it too much, I just gave it a few quick'n'dirty shorthand methods, to make it obey. :)
 
 As I said, check the source! It's always fun to see, what the human brain comes up with, when you're actually drifting into insanity. :D
-  
+
 Drop me a note, if I haven't scared you already :)
 
-**And just btw:**    
-[Here's a call graph.](http://i.imgur.com/JRWcbfC.png)    
-And [here's the Gist](https://gist.github.com/druu/7541557)   
+**And just btw:**
+[Here's a call graph.](http://i.imgur.com/JRWcbfC.png)
+And [here's the Gist](https://gist.github.com/druu/7541557)
 
-> Have Fun!    
+> Have Fun!
 > druu
 
 **P.S.:** Thanks to Jeremy Dorn (@jdorn) for that supreme SQL Formatter and to Marco Monteiro for editing and publishing this bit :) You rock! \o/

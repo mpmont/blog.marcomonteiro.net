@@ -99,12 +99,12 @@
 
 <p>Run this command to download the latest version of Docker Compose:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo curl -L "https://github.com/docker/compose/releases/download/1.23.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo curl -L "https://github.com/docker/compose/releases/download/1.23.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 </code></pre></div></div>
 
 <p>Apply executable permissions to the binary:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo chmod +x /usr/local/bin/docker-compose
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo chmod +x /usr/local/bin/docker-compose
 </code></pre></div></div>
 
 <p>Optionally, install command completion for the bash and zsh shell.</p>
@@ -113,23 +113,23 @@
 
 <p>Place the completion script in your /path/to/zsh/completion (typically ~/.zsh/completion/):</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir -p ~/.zsh/completion
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir -p ~/.zsh/completion
 $ curl -L https://raw.githubusercontent.com/docker/compose/1.23.2/contrib/completion/zsh/_docker-compose &gt; ~/.zsh/completion/_docker-compose
 </code></pre></div></div>
 
 <p>Include the directory in your $fpath by adding in ~/.zshrc:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fpath=(~/.zsh/completion $fpath)
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fpath=(~/.zsh/completion $fpath)
 </code></pre></div></div>
 
 <p>Make sure compinit is loaded or do it by adding in ~/.zshrc:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>autoload -Uz compinit &amp;&amp; compinit -i
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>autoload -Uz compinit &amp;&amp; compinit -i
 </code></pre></div></div>
 
 <p>Then reload your shell:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>exec $SHELL -l
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>exec $SHELL -l
 </code></pre></div></div>
 
 <p><strong>Available completions</strong></p>
@@ -163,7 +163,7 @@ $ curl -L https://raw.githubusercontent.com/docker/compose/1.23.2/contrib/comple
 
 <p><strong>Test the installation.</strong></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ docker-compose --version
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ docker-compose --version
 docker-compose version 1.23.2, build 1110ad01
 </code></pre></div></div>
 

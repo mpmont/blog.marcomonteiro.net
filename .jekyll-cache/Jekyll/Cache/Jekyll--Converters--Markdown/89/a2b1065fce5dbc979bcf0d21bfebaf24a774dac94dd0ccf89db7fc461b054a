@@ -1,4 +1,4 @@
-I"	<p>Since I moved up all my work stuff into Linux (mostly Ubuntu 18.04) I’ve been exploring more and more on how to perfect my work environment. Last thing we all need is to not have backups in place. Specially if its a work environment. For that we have <a href="https://github.com/teejee2008/timeshift/">TimeShift</a>.</p>
+I"$	<p>Since I moved up all my work stuff into Linux (mostly Ubuntu 18.04) I’ve been exploring more and more on how to perfect my work environment. Last thing we all need is to not have backups in place. Specially if its a work environment. For that we have <a href="https://github.com/teejee2008/timeshift/">TimeShift</a>.</p>
 
 <!--more-->
 
@@ -26,7 +26,7 @@
 
 <p>Packages are available in the Launchpad PPA for supported Ubuntu releases. Run the following commands in a terminal window:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo add-apt-repository -y ppa:teejee2008/ppa
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo add-apt-repository -y ppa:teejee2008/ppa
 $ sudo apt-get update
 $ sudo apt-get install timeshift
 </code></pre></div></div>

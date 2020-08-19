@@ -1,4 +1,4 @@
-I"<hr />
+I",<hr />
 
 <p>layout: post</p>
 
@@ -28,7 +28,7 @@ So I searched some more, and found something even better. The new version of the
 
 <p>As you can see the pagination now has one more param than before. It’s called reuse_query_string. And just by setting that to TRUE, you can now use both uri segments and query strings in your pagination.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>protected $base_url			= ''; // The page we are linking to
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>protected $base_url			= ''; // The page we are linking to
 protected $prefix			= ''; // A custom prefix added to the path.
 protected $suffix			= ''; // A custom suffix added to the path.
 protected $total_rows			= 0; // Total number of items (database results)

@@ -1,8 +1,8 @@
-I"]<p>Upgraded my Nvidia driver just now from 396.24.0 to 396.24.02, rebooted, and Spotify no longer works. It opens a window but never draws anything but a black screen.</p>
+I"ƒ<p>Upgraded my Nvidia driver just now from 396.24.0 to 396.24.02, rebooted, and Spotify no longer works. It opens a window but never draws anything but a black screen.</p>
 
 <!--more-->
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ snap run spotify
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ snap run spotify
 Gtk-Message: Failed to load module "gail"
 Gtk-Message: Failed to load module "atk-bridge"
 Gtk-Message: Failed to load module "canberra-gtk-module"
@@ -18,7 +18,7 @@ libGL error: failed to load driver: swrast
 
 <p>The solution is quite simple. Until fixed snaps are available, you can start spotify without GPU accelerated graphics.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ snap run spotify --disable-gpu
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ snap run spotify --disable-gpu
 </code></pre></div></div>
 
 <p><small><strong>Update:</strong> Since 06/08/2018 spotify is working fine with the new drivers!</small></p>

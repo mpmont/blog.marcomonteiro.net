@@ -3,9 +3,8 @@
 title: Unsubscribe all the things
 date: 2013-12-14
 tag: email,tips,unsubscribe,web
-description: We all been at the place where we find a brand new project that is yet to come
 author: Marco Monteiro
-categories: [email,tips,unsubscribe,web]
+categories: [email,tips,web]
 ---
 
 We all been at the place where we find a brand new project that is yet to come. We subscribe the newsletter to be up to date. The project dies, but somehow you keep getting those annoying emails, and doesn't matter how many times we try to unsubscribe, we just can't do it.
@@ -17,3 +16,5 @@
 Do your self a favor and keep your inbox clean.
 
 <i class="icon-external-link"></i> [unroll.me](https://unroll.me/)
+
+Use it and abuse it.

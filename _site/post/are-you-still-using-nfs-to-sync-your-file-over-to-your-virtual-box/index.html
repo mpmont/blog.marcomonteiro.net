@@ -89,13 +89,13 @@
 
 <p>So, do yourself a favor and change to rsync. To do so, you just need to edit your vagrant file for something like this:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>config.vm.synced_folder "./", "/vagrant", type: "rsync",
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>config.vm.synced_folder "./", "/vagrant", type: "rsync",
     rsync__exclude: ".git/"
 </code></pre></div></div>
 
 <p>This way you’re using rsync and you’re excluding your git folder. You can add other folder there. Now, when you start your vagrant box you have to do this:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ vagrant up
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ vagrant up
 $ vagrant rsync-auto
 </code></pre></div></div>
 

@@ -1,0 +1,75 @@
+I"s<p>Last week I told you all about my next set of articles on my blog. My main focus will be PHPUnit and Composer. Not because I’m an expert about the subject, but for the exact opposite â€” I’m learning as I go.
+Let’s define “the thing” first.</p>
+
+<p>PHPUnit is the de-facto standard for unit testing in PHP projects. It provides both a framework that makes the writing of tests easy as well as the functionality to easily run the tests and analyse their results.</p>
+
+<p>That take us to another subject. Test Driven Development or TDD.
+<!--more--></p>
+
+<p><strong>What is TDD?</strong></p>
+
+<p>Test-driven development (TDD) is a software development process that relies on the repetition of a very short development cycle: first the developer writes an (initially failing) automated test case that defines a desired improvement or new function, then produces the minimum amount of code to pass that test and finally refactors the new code to acceptable standards.</p>
+
+<p>Since last week I showed you how to get started with Composer now is quite easy to install PHPUnit framework into your projects.</p>
+
+<p>This is how my composer.json looked like last week.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+	"require": {
+    	"kriswallsmith/assetic": "*"
+	}
+}
+</code></pre></div></div>
+
+<p>Until recently there was no official PHPUnit package listed at packagist.org, essentially because the author used PEAR and he didn’t believe in the Composer project. However, now we have a official package at Composer.</p>
+
+<p><strong>Installing PHPUnit</strong></p>
+
+<p>First navigate to your project folder and then edit your composer.json file.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+	"require": {
+		"kriswallsmith/assetic": "*",
+		"phpunit/phpunit": "3.7.1"
+	}
+  	}
+</code></pre></div></div>
+
+<p>Since 3.7.1 was the lastest stable release when I wrote this, that’s the version I went with. After editing your composer.json file you just have to run your update Composer command. To do so, in your terminal run:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ php composer update
+</code></pre></div></div>
+
+<p><strong>This will be the result:</strong></p>
+
+  	Loading composer repositories with package information
+  	Updating dependencies
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- Installing symfony/yaml (v2.1.2)
+  Downloading: 100%
+
+- Installing phpunit/php-text-template (1.1.2)
+  Downloading: 100%
+
+- Installing phpunit/phpunit-mock-objects (1.2.0)
+  Downloading: 100%
+
+- Installing phpunit/php-timer (1.0.3)
+  Downloading: 100%
+
+- Installing phpunit/php-token-stream (1.1.4)
+  Downloading: 100%
+
+- Installing phpunit/php-file-iterator (1.3.2)
+  Downloading: 100%
+
+- Installing phpunit/php-code-coverage (1.2.2)
+  Downloading: 100%
+
+- Installing phpunit/phpunit (3.7.1)
+  Downloading: 100%
+</code></pre></div></div>
+
+<p>As you can see, Composer is already working for us installing everything it’s needed to work with PHPUnit.</p>
+
+<p>This is all there is to know about installing PHPUnit into your projects. On the next issue I’m going to tell you all about the TDD process and after that we’re going to actually start using PHPUnit in a small PHP project.</p>
+:ET

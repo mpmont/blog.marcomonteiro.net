@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Blog++ | Starting With Phpunit</title>
+    <title>Blog++ | Starting with PHPUnit</title>
     <!--Meta Desc-->
-    <meta name="keywords" content=""/>
-    <meta name="description" content=""/>
+    <meta name="keywords" content="composer,php,php-unit,TDD,tests"/>
+    <meta name="description" content="Last week I told you all about my next set of articles on my blog My main focus will be PHPUnit and Composer"/>
     <meta name="subject" content="Web development & Linux Stuff">
     <meta name="copyright"content="Marco Monteiro">
     <meta name="language" content="EN">
@@ -22,8 +22,8 @@
 
     <!--Meta Facebook-->
     <meta property="og:image" content="https://blog.marcomonteiro.net/assets/img/facebooklogo.jpg"/>
-    <meta property="og:title" content="Blog++ | Starting With Phpunit"/>
-    <meta property="og:description" content=""/>
+    <meta property="og:title" content="Blog++ | Starting with PHPUnit"/>
+    <meta property="og:description" content="Last week I told you all about my next set of articles on my blog My main focus will be PHPUnit and Composer"/>
     <meta property="og:url" content="https://blog.marcomonteiro.net"/>
     <meta property="og:site_name" content="Blog++"/>
     <meta property="og:type" content="blog"/>
@@ -31,8 +31,8 @@
     <!--Meta Twitter-->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@marcogmonteiro">
-    <meta name="twitter:title" content="Blog++ | Starting With Phpunit">
-    <meta name="twitter:description" content="">
+    <meta name="twitter:title" content="Blog++ | Starting with PHPUnit">
+    <meta name="twitter:description" content="Last week I told you all about my next set of articles on my blog My main focus will be PHPUnit and Composer">
     <meta name="twitter:creator" content="@marcogmonteiro">
     <meta name="twitter:domain" content="blog.marcomonteiro.net">
 
@@ -83,32 +83,14 @@
         <div class="content">
             <div id="scrollbubble"></div>
             <section class="post">
-                <h2 class="flipboard-title title">Starting With Phpunit</h2>
-                <div class="date flipboard-date">September 25, 2012 <i class="icon-user"></i> Written By </div>
-                <hr />
-
-<p>layout: post</p>
-
-<p>title: Starting with PHPUnit</p>
-
-<p>date: 2012-09-25</p>
-
-<p>tag: composer,php,php-unit,TDD,tests</p>
-
-<p>description: Last week I told you all about my next set of articles on my blog. My main focus will be PHPUnit and Composer. Not because I’m an expert about the</p>
-
-<p>author: Marco Monteiro</p>
-
-<p>categories: [composer,php,php-unit,TDD,tests]</p>
-
-<hr />
-
-<p>Last week I told you all about my next set of articles on my blog. My main focus will be PHPUnit and Composer. Not because I’m an expert about the subject, but for the exact opposite â€” I’m learning as I go.
+                <h2 class="flipboard-title title">Starting with PHPUnit</h2>
+                <div class="date flipboard-date">September 25, 2012 <i class="icon-user"></i> Written By Marco Monteiro</div>
+                <p>Last week I told you all about my next set of articles on my blog. My main focus will be PHPUnit and Composer. Not because I’m an expert about the subject, but for the exact opposite â€” I’m learning as I go.
 Let’s define “the thing” first.</p>
 
 <p>PHPUnit is the de-facto standard for unit testing in PHP projects. It provides both a framework that makes the writing of tests easy as well as the functionality to easily run the tests and analyse their results.</p>
 
-<p>That take us to another subject. Test Driven Development or TDD. 
+<p>That take us to another subject. Test Driven Development or TDD.
 <!--more--></p>
 
 <p><strong>What is TDD?</strong></p>
@@ -119,7 +101,7 @@ Let’s define “the thing” first.</p>
 
 <p>This is how my composer.json looked like last week.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
 	"require": {
     	"kriswallsmith/assetic": "*"
 	}
@@ -132,7 +114,7 @@ Let’s define “the thing” first.</p>
 
 <p>First navigate to your project folder and then edit your composer.json file.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
 	"require": {
 		"kriswallsmith/assetic": "*",
 		"phpunit/phpunit": "3.7.1"
@@ -142,34 +124,34 @@ Let’s define “the thing” first.</p>
 
 <p>Since 3.7.1 was the lastest stable release when I wrote this, that’s the version I went with. After editing your composer.json file you just have to run your update Composer command. To do so, in your terminal run:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ php composer update
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ php composer update
 </code></pre></div></div>
 
 <p><strong>This will be the result:</strong></p>
 
   	Loading composer repositories with package information
   	Updating dependencies
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- Installing symfony/yaml (v2.1.2)
-  Downloading: 100%         
-  
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- Installing symfony/yaml (v2.1.2)
+  Downloading: 100%
+
 - Installing phpunit/php-text-template (1.1.2)
-  Downloading: 100%         
-  
+  Downloading: 100%
+
 - Installing phpunit/phpunit-mock-objects (1.2.0)
-  Downloading: 100%         
-  
+  Downloading: 100%
+
 - Installing phpunit/php-timer (1.0.3)
-  Downloading: 100%         
-  
+  Downloading: 100%
+
 - Installing phpunit/php-token-stream (1.1.4)
-  Downloading: 100%         
-  
+  Downloading: 100%
+
 - Installing phpunit/php-file-iterator (1.3.2)
-  Downloading: 100%         
-  
+  Downloading: 100%
+
 - Installing phpunit/php-code-coverage (1.2.2)
-  Downloading: 100%         
-  
+  Downloading: 100%
+
 - Installing phpunit/phpunit (3.7.1)
   Downloading: 100%
 </code></pre></div></div>
@@ -181,13 +163,28 @@ Let’s define “the thing” first.</p>
                 <ul id="tags" class="tags">
                     
                     
+                        <li><a href="#"><i class="icon-tag"></i> composer</a></li>
+                        &nbsp;
+                    
+                        <li><a href="#"><i class="icon-tag"></i> php</a></li>
+                        &nbsp;
+                    
+                        <li><a href="#"><i class="icon-tag"></i> php-unit</a></li>
+                        &nbsp;
+                    
+                        <li><a href="#"><i class="icon-tag"></i> TDD</a></li>
+                        &nbsp;
+                    
+                        <li><a href="#"><i class="icon-tag"></i> tests</a></li>
+                        
+                    
                 </ul>
                 <br>
             </section>
             <div id="tweet_it">
                 <a href="javascript:void(0)" id="tweet_compose_close" class="close_it">x</a>
                 <h4>Like it? Tweet it.</h4>
-                <p>"Starting With Phpunit" via <a href="http://twitter.com/marcogmonteiro">@marcogmonteiro</a><br>
+                <p>"Starting with PHPUnit" via <a href="http://twitter.com/marcogmonteiro">@marcogmonteiro</a><br>
                     <a href="https://twitter.com/share" data-count="horizontal" data-count="none" data-related="marcogmonteiro" data-via="marcogmonteiro" class="twitter-share-button" data-lang="en">Tweet</a>
                   <br>
                 </p>

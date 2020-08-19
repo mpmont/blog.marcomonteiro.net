@@ -1,16 +1,14 @@
 ---
-layout: post
-title: Top 100 with 18k installs
-date: 2013-09-24
-tag: ci,codeigniter,st2,Sublime Text,text-editor
-description: That's right, I'm talking about the Codeigniter snippets package for sublime text. The package is now one of the top 100 most installed packages and it has 18k installs.
+layout: post
+title: Top 100 with 18k installs
+date: 2013-09-24
+tag: ci,codeigniter,st2,Sublime Text,text-editor
+description: Thats right, Im talking about the Codeigniter snippets package for sublime text. The package is now one of the top 100 most installed packages and it has 18k installs.
+author: Marco Monteiro
+categories: [ci,codeigniter,st2,Sublime Text,text-editor]
+---
 
-<!--more-->
-author: Marco Monteiro
-categories: [ci,codeigniter,st2,Sublime Text,text-editor]
----
-
-That's right, I'm talking about the Codeigniter snippets package for sublime text. The package is now one of the top 100 most installed packages and it has 18k installs.
+That's right, I'm talking about the Codeigniter snippets package for sublime text. The package is now one of the top 100 most installed packages and it has 18k installs.
 
 <!--more-->
 

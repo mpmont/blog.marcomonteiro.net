@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Blog++ | How To Add Previous And Next Links On Wardrobe</title>
+    <title>Blog++ | How to add Previous and Next links on wardrobe</title>
     <!--Meta Desc-->
-    <meta name="keywords" content=""/>
-    <meta name="description" content=""/>
+    <meta name="keywords" content="laravel,laravel 4,tips,wardrobe"/>
+    <meta name="description" content="If you're a regular here you may have noticed that I'm always making some small improvements on my blog. The last one was quite simple, I just wanted to add"/>
     <meta name="subject" content="Web development & Linux Stuff">
     <meta name="copyright"content="Marco Monteiro">
     <meta name="language" content="EN">
@@ -22,8 +22,8 @@
 
     <!--Meta Facebook-->
     <meta property="og:image" content="https://blog.marcomonteiro.net/assets/img/facebooklogo.jpg"/>
-    <meta property="og:title" content="Blog++ | How To Add Previous And Next Links On Wardrobe"/>
-    <meta property="og:description" content=""/>
+    <meta property="og:title" content="Blog++ | How to add Previous and Next links on wardrobe"/>
+    <meta property="og:description" content="If you're a regular here you may have noticed that I'm always making some small improvements on my blog. The last one was quite simple, I just wanted to add"/>
     <meta property="og:url" content="https://blog.marcomonteiro.net"/>
     <meta property="og:site_name" content="Blog++"/>
     <meta property="og:type" content="blog"/>
@@ -31,8 +31,8 @@
     <!--Meta Twitter-->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@marcogmonteiro">
-    <meta name="twitter:title" content="Blog++ | How To Add Previous And Next Links On Wardrobe">
-    <meta name="twitter:description" content="">
+    <meta name="twitter:title" content="Blog++ | How to add Previous and Next links on wardrobe">
+    <meta name="twitter:description" content="If you're a regular here you may have noticed that I'm always making some small improvements on my blog. The last one was quite simple, I just wanted to add">
     <meta name="twitter:creator" content="@marcogmonteiro">
     <meta name="twitter:domain" content="blog.marcomonteiro.net">
 
@@ -83,27 +83,9 @@
         <div class="content">
             <div id="scrollbubble"></div>
             <section class="post">
-                <h2 class="flipboard-title title">How To Add Previous And Next Links On Wardrobe</h2>
-                <div class="date flipboard-date">October 17, 2013 <i class="icon-user"></i> Written By </div>
-                <hr />
-
-<p>layout: post</p>
-
-<p>title: How to add Previous and Next links on wardrobe</p>
-
-<p>date: 2013-10-17</p>
-
-<p>tag: laravel,laravel 4,tips,wardrobe</p>
-
-<p>description: If you’re a regular here you may have noticed that I’m always making some small improvements on my blog. The last one was quite simple, I just wanted to add</p>
-
-<p>author: Marco Monteiro</p>
-
-<p>categories: [laravel,laravel 4,tips,wardrobe]</p>
-
-<hr />
-
-<p>If you’re a regular here you may have noticed that I’m always making some small improvements on my blog. The last one was quite simple, I just wanted to add some previous and next links when the user is reading an article. However, I wasn’t aiming to just simple arrows. I wanted to user to see the title of those articles.</p>
+                <h2 class="flipboard-title title">How to add Previous and Next links on wardrobe</h2>
+                <div class="date flipboard-date">October 17, 2013 <i class="icon-user"></i> Written By Marco Monteiro</div>
+                <p>If you’re a regular here you may have noticed that I’m always making some small improvements on my blog. The last one was quite simple, I just wanted to add some previous and next links when the user is reading an article. However, I wasn’t aiming to just simple arrows. I wanted to user to see the title of those articles.</p>
 
 <p>Since my blog uses wardrobe and that is built on top of Laravel, doing that is pretty straight forward.</p>
 
@@ -113,7 +95,7 @@
 
 <p>This is the function you’re looking for:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/**
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/**
  * Display the specified resource.
  *
  * @param string $slug
@@ -134,7 +116,7 @@ public function getShow($slug)
 
 <p>So let’s get the prev and next articles based on the Post object.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/**
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/**
  * Display the specified resource.
  *
  * @param string $slug
@@ -157,7 +139,7 @@ public function getShow($slug)
 
 <p>Quite easy right? Now you may want to do the same in your getPreview function.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/**
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/**
  * Show a post preview.
  *
  * @param int $id
@@ -180,7 +162,7 @@ public function getPreview($id)
 
 <p>Now you just need to add that navigation links to your layout. I added mine to my post.blade.php file, since our next and prev links will only be used there.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;nav class="other_posts"&gt;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;nav class="other_posts"&gt;
 	&lt;ul&gt;
 		@if($next)
 			&lt;li id="next"&gt;&lt;a href="" rel="prev"&gt; &lt;/a&gt;&lt;/li&gt;
@@ -200,14 +182,14 @@ public function getPreview($id)
 
   	public function getShow($slug)
   	{
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  	$post = $this-&gt;posts-&gt;findBySlug($slug);
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  	$post = $this-&gt;posts-&gt;findBySlug($slug);
   	if ( ! $post)
   	{
 	  	return App::abort(404, 'Page not found');
   	}
-   
+
   	$posts = DB::select('SELECT * FROM `posts` WHERE `active` = 1 AND (`id` = (SELECT MIN(`id`) FROM `posts` where `id` &gt; ?) OR `id` = (SELECT MAX(`id`) FROM `posts` where `id` &lt; ?))', array($post-&gt;id, $post-&gt;id));
-   
+
   	$prev = null;
   	$next = null;
   	$count = count($posts);
@@ -217,10 +199,10 @@ public function getPreview($id)
 	  	if ($posts[0]-&gt;id &gt; $post-&gt;id) {
 		  	$next = $posts[0];
 	  	} else {
-		  	$prev = $posts[0];    
+		  	$prev = $posts[0];
 	  	}
   	}
-	
+
   return View::make('themes.'.$this-&gt;theme.'.post', compact('post', 'next', 'prev'));
   	}
 </code></pre></div></div>
@@ -230,13 +212,25 @@ public function getPreview($id)
                 <ul id="tags" class="tags">
                     
                     
+                        <li><a href="#"><i class="icon-tag"></i> laravel</a></li>
+                        &nbsp;
+                    
+                        <li><a href="#"><i class="icon-tag"></i> laravel 4</a></li>
+                        &nbsp;
+                    
+                        <li><a href="#"><i class="icon-tag"></i> tips</a></li>
+                        &nbsp;
+                    
+                        <li><a href="#"><i class="icon-tag"></i> wardrobe</a></li>
+                        
+                    
                 </ul>
                 <br>
             </section>
             <div id="tweet_it">
                 <a href="javascript:void(0)" id="tweet_compose_close" class="close_it">x</a>
                 <h4>Like it? Tweet it.</h4>
-                <p>"How To Add Previous And Next Links On Wardrobe" via <a href="http://twitter.com/marcogmonteiro">@marcogmonteiro</a><br>
+                <p>"How to add Previous and Next links on wardrobe" via <a href="http://twitter.com/marcogmonteiro">@marcogmonteiro</a><br>
                     <a href="https://twitter.com/share" data-count="horizontal" data-count="none" data-related="marcogmonteiro" data-via="marcogmonteiro" class="twitter-share-button" data-lang="en">Tweet</a>
                   <br>
                 </p>

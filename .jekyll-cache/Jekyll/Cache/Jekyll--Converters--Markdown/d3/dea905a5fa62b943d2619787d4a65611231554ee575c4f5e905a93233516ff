@@ -1,4 +1,4 @@
-I"�<hr />
+I"$<hr />
 
 <p>layout: post</p>
 
@@ -25,7 +25,7 @@ Using only one file i would say that there’s no perfect way of coding, but sti
 <p>First bit of code:
 One thing that most developers tend to forget is the credits, hell if you have the hard work of making the code, and if in the end you are proud of what you done so why not put a little signature? This is my signature on every project i’ve worked so far:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/*
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/*
 # -----------------------------------------------------------------------
 # Project name: here goes your project name
 # -----------------------------------------------------------------------
@@ -58,7 +58,7 @@ So, now you can see how this is a big deal, first you want to speed the word abo
 
 <p>The next step is to pick a good reset styles, this is very important and some developers tend to forget this, without this you will be having a lot more problems with different browsers and a bunch of other problems like strange margins or paddings that wasn’t suppose to be there in the first place.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/* -------------------------------------------------------------- 
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/* -------------------------------------------------------------- 
 reset.css
 * Resets default browser CSS.
 -------------------------------------------------------------- */

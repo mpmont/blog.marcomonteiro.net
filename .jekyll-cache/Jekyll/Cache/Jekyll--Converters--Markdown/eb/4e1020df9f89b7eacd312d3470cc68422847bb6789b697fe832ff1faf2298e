@@ -1,4 +1,4 @@
-I"·<hr />
+I"Ê<hr />
 
 <p>layout: post</p>
 
@@ -26,7 +26,7 @@
 
 <p>All you need to do is add the javascript library into your website. Then you can just do:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$('#repo').repo({ user: 'mpmont', name: 'ci-snippets' });
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$('#repo').repo({ user: 'mpmont', name: 'ci-snippets' });
 </code></pre></div></div>
 
 <p>That should be all.</p>

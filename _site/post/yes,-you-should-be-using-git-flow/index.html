@@ -136,12 +136,12 @@ Hotfix branches (usually prefixed with ‘hotfix/’) If you need to patch the l
 
 <p>After installing git-flow, you can start a new repository in the current directory or convert an existing one to the new branch structure:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	$ git flow init
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	$ git flow init
 </code></pre></div></div>
 
 <p>It will ask you a bunch of questions, but you probably want to accept the default values:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>No branches exist yet. Base branches must be created now.
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>No branches exist yet. Base branches must be created now.
  		Branch name for production releases: [master] 
  		Branch name for "next release" development: [develop]
  		How to name your supporting branch prefixes?
@@ -154,19 +154,19 @@ Hotfix branches (usually prefixed with ‘hotfix/’) If you need to patch the l
 
 <p>Now, simply use Git like you’re used to, but only work on some small features in the develop branch. If you need to work on a bigger feature, just create a feature branch based on develop. Let’s say you want to add a login page:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	$ git flow feature start login
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	$ git flow feature start login
 </code></pre></div></div>
 
 <p>This will create a new branch called feature/login, based on our develop branch and switches to it. Commit away and after you finish working on the login page, simply finish it:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	$ git flow feature finish login
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	$ git flow feature finish login
 </code></pre></div></div>
 
 <p>It’ll merge feature/login back to develop and delete the feature branch.</p>
 
 <p>When you’re feature complete, simply start a release branch â€” again, based on develop â€” to bump the version number and fix the last bugs before releasing:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	$ git flow release start v0.1.0
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	$ git flow release start v0.1.0
 </code></pre></div></div>
 
 <p>When you finish a release branch, it’ll merge your changes to master and back to develop, so you don’t have to worry about your master being ahead of develop.</p>

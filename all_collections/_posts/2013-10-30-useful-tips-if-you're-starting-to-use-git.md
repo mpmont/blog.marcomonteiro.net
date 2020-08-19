@@ -1,14 +1,14 @@
 ---
-layout: post
-title: Useful tips if you're starting with Git
-date: 2013-10-30
-tag: flow,Git,gui,tips,Version-control,workflow
-description: When I started using Git I wasn't doing any version control. I was just working on my projects and I just didn't see any use to it. I wasn't seeing
-author: Marco Monteiro
-categories: [flow,Git,gui,tips,Version-control,workflow]
----
+layout: post
+title: Useful tips if you're starting with Git
+date: 2013-10-30
+tag: flow,Git,gui,tips,Version-control,workflow
+description: When I started using Git I wasn't doing any version control. I was just working on my projects and I just didn't see any use to it. I wasn't seeing
+author: Marco Monteiro
+categories: [flow,Git,gui,tips,Version-control,workflow]
+---
 
-When I started using Git I wasn't doing any version control. I was just working on my projects and I just didn't see any use to it. I wasn't seeing the long run. Everything seemed like too much work — Branching, staging, stashing, committing — I was confused.  But then Git was kind forced on me, since I wanted to contribute to open source projects and almost all of them were (and still are thankfully) using Git I had to learn how to use it. This is what I learned from that process.
+When I started using Git I wasn't doing any version control. I was just working on my projects and I just didn't see any use to it. I wasn't seeing the long run. Everything seemed like too much work — Branching, staging, stashing, committing — I was confused.  But then Git was kind forced on me, since I wanted to contribute to open source projects and almost all of them were (and still are thankfully) using Git I had to learn how to use it. This is what I learned from that process.
 
 <!--more-->
 
@@ -18,7 +18,7 @@ Really, don't give up. It's going to hurt. Your not going to like it at first. B
 
 **<i class="icon-arrow-right"></i> Do your homework**
 
-Read a bit, prepared yourself. You're going to need a little know how before you start. You don't need to read a book on the subject, but it's good to know the basics. 
+Read a bit, prepared yourself. You're going to need a little know how before you start. You don't need to read a book on the subject, but it's good to know the basics.
 
 * <i class="icon-angle-right"></i> How to start a repository?
 * <i class="icon-angle-right"></i> How to commit?

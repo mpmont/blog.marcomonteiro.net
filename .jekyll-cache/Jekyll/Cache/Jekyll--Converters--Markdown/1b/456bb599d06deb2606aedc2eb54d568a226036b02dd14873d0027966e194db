@@ -1,0 +1,2 @@
+I"�<p>I’m sure this happened to you before, more than one time actually. You have a big file, you changed lots of stuff in it, but those changes are not really related. One may be related to one class and the other to something completely different. Normally you should avoid that, your commits should <em>always</em> be specific to one task, feature or bug. If you do a small search about how to commit better you’ll see that even the commit messages should have this notion.</p>
+:ET

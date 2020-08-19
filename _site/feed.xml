@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-18T22:12:57+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Blog++</title><author><name>Blog++</name><email>marco@marcomonteiro.net</email></author><entry><title type="html">How to setup Codeigniter 4</title><link href="http://localhost:4000/post/how-to-setup-codeigniter-4/" rel="alternate" type="text/html" title="How to setup Codeigniter 4" /><published>2020-07-04T00:00:00+01:00</published><updated>2020-07-04T00:00:00+01:00</updated><id>http://localhost:4000/post/how-to-setup-codeigniter-4</id><content type="html" xml:base="http://localhost:4000/post/how-to-setup-codeigniter-4/">&lt;p&gt;I started a brand new &lt;a href=&quot;https://www.youtube.com/channel/UC9HQjernJPHN-RoKMwtYQ4w&quot;&gt;youtube channel&lt;/a&gt;. It’s called &lt;a href=&quot;https://www.youtube.com/channel/UC9HQjernJPHN-RoKMwtYQ4w&quot;&gt;TIL Things&lt;/a&gt;. As in Today I Learned Things. The idea is to share kinda the same thing I normally do here but in a video format.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-19T14:35:27+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Blog++</title><author><name>Blog++</name><email>marco@marcomonteiro.net</email></author><entry><title type="html">How to setup Codeigniter 4</title><link href="http://localhost:4000/post/how-to-setup-codeigniter-4/" rel="alternate" type="text/html" title="How to setup Codeigniter 4" /><published>2020-07-04T00:00:00+01:00</published><updated>2020-07-04T00:00:00+01:00</updated><id>http://localhost:4000/post/how-to-setup-codeigniter-4</id><content type="html" xml:base="http://localhost:4000/post/how-to-setup-codeigniter-4/">&lt;p&gt;I started a brand new &lt;a href=&quot;https://www.youtube.com/channel/UC9HQjernJPHN-RoKMwtYQ4w&quot;&gt;youtube channel&lt;/a&gt;. It’s called &lt;a href=&quot;https://www.youtube.com/channel/UC9HQjernJPHN-RoKMwtYQ4w&quot;&gt;TIL Things&lt;/a&gt;. As in Today I Learned Things. The idea is to share kinda the same thing I normally do here but in a video format.&lt;/p&gt;
 
 &lt;p&gt;To start things, I decided to do a video series about Codeigniter 4, from how to install it, how it works and building a small blog application with it.&lt;/p&gt;
 
@@ -94,32 +94,32 @@
 
 &lt;p&gt;Run the following command (assuming you have curl installedo on your system) to get started with the installation of Rust in your ubuntu based server/pc:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ curl https://sh.rustup.rs -sSf | sh
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ curl https://sh.rustup.rs -sSf | sh
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Now you need to download the lattest version of exa. Head on to &lt;a href=&quot;https://github.com/ogham/exa/releases&quot;&gt;their github page&lt;/a&gt; and download the lattest version.&lt;/p&gt;
 
 &lt;p&gt;Just copy the download link and download the zip using wget, for example with the v0.9.0 you can download the binary with the following command (you can switch to a temporary directory and download the zip in there):&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# You should check your own version of this.
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# You should check your own version of this.
 $ wget -c https://github.com/ogham/exa/releases/download/v0.9.0/exa-linux-x86_64-0.8.0.zip
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Then, unzip the binary:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ unzip exa-linux-x86_64-0.8.0.zip
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ unzip exa-linux-x86_64-0.8.0.zip
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;The zip contains a single file, namely the binary exa-linux-x86_64. So the last step is to move it to the bin directory of the local user so it will be accesible later in the cli as exa with the following instruction:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo mv exa-linux-x86_64 /usr/local/bin/exa
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo mv exa-linux-x86_64 /usr/local/bin/exa
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;To use this all you need is to type exa on your terminal. However what you can do to make the change even more perminante is to alias ls to axa.&lt;/p&gt;
 
 &lt;p&gt;To do that I went to my .zshrc file and added the following:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;alias ls='exa --long --header --git'
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;alias ls='exa --long --header --git'
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;This way you can use your ls command like you always did and it will be translated into exa.&lt;/p&gt;
@@ -193,7 +193,7 @@ Want to know more? I found this YouTube video about it:&lt;/p&gt;
 
 &lt;p&gt;On your server type the following commands:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;curl -s https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;curl -s https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
 sudo bash -c &quot;curl -s https://packages.microsoft.com/config/ubuntu/18.04/prod.list &amp;gt; /etc/apt/sources.list.d/mssql-release.list&quot;
 sudo apt-get update
 sudo ACCEPT_EULA=Y apt-get -y install msodbcsql17 mssql-tools
@@ -202,7 +202,7 @@ sudo apt-get -y install unixodbc-dev
 
 &lt;p&gt;After this, you most likelly don’t have the  the pecl7.X-sp command working. To solve this I did the following:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get -y install gcc g++ make autoconf libc-dev pkg-config
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get -y install gcc g++ make autoconf libc-dev pkg-config
 sudo apt-get install php-pear php-dev
 sudo pecl install sqlsrv
 sudo pecl install pdo_sqlsrv
@@ -210,7 +210,7 @@ sudo pecl install pdo_sqlsrv
 
 &lt;p&gt;After this all you need to do is create the necessary .ini file so that PHP can do its magic.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo bash -c &quot;echo extension=sqlsrv.so &amp;gt; /etc/php/7.2/mods-available/sqlsrv.ini&quot;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo bash -c &quot;echo extension=sqlsrv.so &amp;gt; /etc/php/7.2/mods-available/sqlsrv.ini&quot;
 sudo ln -s /etc/php/7.2/mods-available/sqlsrv.ini /etc/php/7.2/apache2/conf.d/sqlsrv.ini
 sudo ln -s /etc/php/7.2/mods-available/sqlsrv.ini /etc/php/7.2/cli/conf.d/sqlsrv.ini
 sudo bash -c &quot;echo extension=pdo_sqlsrv.so &amp;gt; /etc/php/7.2/mods-available/pdo_sqlsrv.ini&quot;
@@ -220,7 +220,7 @@ sudo ln -s /etc/php/7.2/mods-available/pdo_sqlsrv.ini /etc/php/7.2/cli/conf.d/pd
 
 &lt;p&gt;After this all you need to do is restart your apache:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo service apache2 restart
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo service apache2 restart
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;That’s it!&lt;/p&gt;</content><author><name>Marco Monteiro</name></author><category term="2020,apache,linux,mssql,php,sqlsrv,ubuntu" /><summary type="html">One of our windows servers got updated to a more recent version of windows and SQLServer. Until then I was using the msSQL extension and was still on PHP 5.6 on our intranet at work.</summary></entry><entry><title type="html">Codeigniter 4 snippets for sublime text is here</title><link href="http://localhost:4000/post/codeigniter-4-snippets-for-sublime-text-is-here/" rel="alternate" type="text/html" title="Codeigniter 4 snippets for sublime text is here" /><published>2020-03-15T00:00:00+00:00</published><updated>2020-03-15T00:00:00+00:00</updated><id>http://localhost:4000/post/codeigniter-4-snippets-for-sublime-text-is-here</id><content type="html" xml:base="http://localhost:4000/post/codeigniter-4-snippets-for-sublime-text-is-here/">&lt;p&gt;Codeigniter 4 has been in the works since 2015. It took almost 3 years to have a basic framework working and 2 more to document everything so we can use it in production. This is very exciting news, since codeigniter still holds a place in me. It was PHP framework that I use the most and I still use version 3 at work.&lt;/p&gt;
@@ -231,7 +231,7 @@ sudo ln -s /etc/php/7.2/mods-available/pdo_sqlsrv.ini /etc/php/7.2/cli/conf.d/pd
 
 &lt;p&gt;Let’s make the new one has big as the first one. I made a repo here, and I already have a &lt;a href=&quot;https://github.com/wbond/package_control_channel/pull/7845&quot;&gt;pull request&lt;/a&gt; to have it avaiable to everyone via package control. Until then you can just install it manually. To do that you just have to make a clone of this repository into your packages folder &lt;strong&gt;(Preferences &amp;gt; Browse packages…)&lt;/strong&gt;, like so:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone https://github.com/mpmont/ci4-snippets ci4-snippets
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone https://github.com/mpmont/ci4-snippets ci4-snippets
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;If you feel like helping, you can just send me a pull request and we can sort something out.&lt;/p&gt;
@@ -337,7 +337,7 @@ sudo ln -s /etc/php/7.2/mods-available/pdo_sqlsrv.ini /etc/php/7.2/cli/conf.d/pd
 
 &lt;p&gt;As of now, our most mature client is the node.js one, which you can easily install from NPM:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ npm install -g tldr
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ npm install -g tldr
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Marco Monteiro</name></author><category term="2020,linux,terminal" /><summary type="html">I always hated the man pages, I always have a hard time to understand stuff and mostly I have a really hard time finding the option I need.</summary></entry><entry><title type="html">Prime OS an android based system for your laptop needs</title><link href="http://localhost:4000/post/prime-os-an-android-based-system-for-your-laptop-needs/" rel="alternate" type="text/html" title="Prime OS an android based system for your laptop needs" /><published>2019-03-17T00:00:00+00:00</published><updated>2019-03-17T00:00:00+00:00</updated><id>http://localhost:4000/post/prime-os-an-android-based-system-for-your-laptop-needs</id><content type="html" xml:base="http://localhost:4000/post/prime-os-an-android-based-system-for-your-laptop-needs/">&lt;p&gt;A few months back I got me a cheap chinese laptop mostly for email, browsing the web, some light reading and watching some videos.&lt;/p&gt;
 
 &lt;p&gt;The laptop came with windows, so the first thing I did was remove it and install Ubuntu. However, performance wise it wasn’t the best. So I tried Lubuntu, but then I found out about Prime OS.&lt;/p&gt;

@@ -1,4 +1,4 @@
-I"q<hr />
+I"�<hr />
 
 <p>layout: post</p>
 
@@ -27,7 +27,7 @@ First, how to divide my document? Well i do it the same way every single time. T
 
 <p>For example i always create something like this:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/* -------------------------------------------------------------- 
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/* -------------------------------------------------------------- 
 HEADER
 * ALL THE HEADER STYLES. (includes search and breadcrumbs)
 -------------------------------------------------------------- */
@@ -41,14 +41,14 @@ HEADER
 
 <p>With this in mind there’s one more thing where you have to be really specific: and that is the way you declare your classes and id’s in your file. One thing that you probably do quite a lot is something like this:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.header{
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.header{
 	background: #000;
 }
 </code></pre></div></div>
 
 <p>i’m sorry to say but for me this is wrong. The reason is really simple, when you look at that code can you tell me the markup that is using that class? No, you can’t! So why not declare the markup on your css like this:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>div.header{
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>div.header{
 	background: #000;
 }
 </code></pre></div></div>

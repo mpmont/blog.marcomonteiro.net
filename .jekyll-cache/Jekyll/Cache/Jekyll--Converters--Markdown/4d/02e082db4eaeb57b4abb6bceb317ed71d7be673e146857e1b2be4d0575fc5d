@@ -1,4 +1,4 @@
-I"8<hr />
+I"�<hr />
 
 <p>layout: post</p>
 
@@ -26,7 +26,7 @@
 
 <p>This is the function you’re looking for:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/**
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/**
  * Display the specified resource.
  *
  * @param string $slug
@@ -47,7 +47,7 @@ public function getShow($slug)
 
 <p>So let’s get the prev and next articles based on the Post object.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/**
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/**
  * Display the specified resource.
  *
  * @param string $slug
@@ -70,7 +70,7 @@ public function getShow($slug)
 
 <p>Quite easy right? Now you may want to do the same in your getPreview function.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/**
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/**
  * Show a post preview.
  *
  * @param int $id
@@ -93,7 +93,7 @@ public function getPreview($id)
 
 <p>Now you just need to add that navigation links to your layout. I added mine to my post.blade.php file, since our next and prev links will only be used there.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;nav class="other_posts"&gt;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;nav class="other_posts"&gt;
 	&lt;ul&gt;
 		@if($next)
 			&lt;li id="next"&gt;&lt;a href="" rel="prev"&gt; &lt;/a&gt;&lt;/li&gt;
@@ -113,7 +113,7 @@ public function getPreview($id)
 
   	public function getShow($slug)
   	{
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  	$post = $this-&gt;posts-&gt;findBySlug($slug);
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  	$post = $this-&gt;posts-&gt;findBySlug($slug);
   	if ( ! $post)
   	{
 	  	return App::abort(404, 'Page not found');

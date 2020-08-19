@@ -1,14 +1,14 @@
 ---
-layout: post
-title: PHP the right way
-date: 2013-10-01
-tag: php,tips,web,Webdev
-description: Personally I use PHP everyday. It has a lot of things that I don't like. It's not the best language in the world, it not perfect. However, it's flexible and
-author: Marco Monteiro
-categories: [php,tips,web,Webdev]
----
+layout: post
+title: PHP the right way
+date: 2013-10-01
+tag: php,tips,web,Webdev
+description: Personally I use PHP everyday. It has a lot of things that I dont like. Its not the best language in the world, it not perfect. However, its flexible and
+author: Marco Monteiro
+categories: [php,tips,web,Webdev]
+---
 
-Personally I use PHP everyday. It has a lot of things that I don't like. It's not the best language in the world, it not perfect. However, it's flexible and easy to start with. 
+Personally I use PHP everyday. It has a lot of things that I don't like. It's not the best language in the world, it not perfect. However, it's flexible and easy to start with.
 
 The thing I hate more about using PHP is the amount of people that have the following hobby:
 

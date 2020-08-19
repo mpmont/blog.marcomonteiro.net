@@ -1,4 +1,4 @@
-I"N<hr />
+I"­<hr />
 
 <p>layout: post</p>
 
@@ -24,22 +24,22 @@
 
 <p>jQuery is the only dependency. Make sure to include it.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;script src="http://code.jquery.com/jquery-1.9.1.min.js"&gt;&lt;/script&gt;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;script src="http://code.jquery.com/jquery-1.9.1.min.js"&gt;&lt;/script&gt;
 </code></pre></div></div>
 
 <p>Include Glide.js</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;script src="jquery.glide.js"&gt;&lt;/script&gt;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;script src="jquery.glide.js"&gt;&lt;/script&gt;
 </code></pre></div></div>
 
 <p>Link to slider stylesheet inside document head.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;link rel="stylesheet" type="text/css" href="css/style.css"&gt;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;link rel="stylesheet" type="text/css" href="css/style.css"&gt;
 </code></pre></div></div>
 
 <p>Make necessary markup for slider.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div class="slider"&gt;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div class="slider"&gt;
 	&lt;ul class="slides"&gt;
 		&lt;li class="slide"&gt;&lt;/li&gt;
 		&lt;li class="slide"&gt;&lt;/li&gt;
@@ -50,7 +50,7 @@
 
 <p>Init our slider on default options â€¦</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  &lt;script&gt;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  &lt;script&gt;
 	  $('.slider').glide();
   &lt;/script&gt;
 </code></pre></div></div>

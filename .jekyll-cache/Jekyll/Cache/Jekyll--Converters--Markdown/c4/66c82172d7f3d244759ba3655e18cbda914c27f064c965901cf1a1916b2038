@@ -1,4 +1,4 @@
-I"<hr />
+I"P<hr />
 
 <p>layout: post</p>
 
@@ -32,7 +32,7 @@ Let’s define “the thing” first.</p>
 
 <p>This is how my composer.json looked like last week.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
 	"require": {
     	"kriswallsmith/assetic": "*"
 	}
@@ -45,7 +45,7 @@ Let’s define “the thing” first.</p>
 
 <p>First navigate to your project folder and then edit your composer.json file.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
 	"require": {
 		"kriswallsmith/assetic": "*",
 		"phpunit/phpunit": "3.7.1"
@@ -55,14 +55,14 @@ Let’s define “the thing” first.</p>
 
 <p>Since 3.7.1 was the lastest stable release when I wrote this, that’s the version I went with. After editing your composer.json file you just have to run your update Composer command. To do so, in your terminal run:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ php composer update
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ php composer update
 </code></pre></div></div>
 
 <p><strong>This will be the result:</strong></p>
 
   	Loading composer repositories with package information
   	Updating dependencies
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- Installing symfony/yaml (v2.1.2)
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- Installing symfony/yaml (v2.1.2)
   Downloading: 100%         
   
 - Installing phpunit/php-text-template (1.1.2)

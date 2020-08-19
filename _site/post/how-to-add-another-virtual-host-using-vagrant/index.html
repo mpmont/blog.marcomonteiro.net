@@ -7,7 +7,7 @@
     <title>Blog++ | How to add another virtual host using Vagrant</title>
     <!--Meta Desc-->
     <meta name="keywords" content="development,server,vagrant"/>
-    <meta name="description" content="There's a lot of ways to use Vagrant. Some people create a virtual machine per project. I don't like that idea. I think it's best to create a virtual machine"/>
+    <meta name="description" content="Theres a lot of ways to use Vagrant. Some people create a virtual machine per project. I don't like that idea. I think it's best to create a virtual machine"/>
     <meta name="subject" content="Web development & Linux Stuff">
     <meta name="copyright"content="Marco Monteiro">
     <meta name="language" content="EN">
@@ -23,7 +23,7 @@
     <!--Meta Facebook-->
     <meta property="og:image" content="https://blog.marcomonteiro.net/assets/img/facebooklogo.jpg"/>
     <meta property="og:title" content="Blog++ | How to add another virtual host using Vagrant"/>
-    <meta property="og:description" content="There's a lot of ways to use Vagrant. Some people create a virtual machine per project. I don't like that idea. I think it's best to create a virtual machine"/>
+    <meta property="og:description" content="Theres a lot of ways to use Vagrant. Some people create a virtual machine per project. I don't like that idea. I think it's best to create a virtual machine"/>
     <meta property="og:url" content="https://blog.marcomonteiro.net"/>
     <meta property="og:site_name" content="Blog++"/>
     <meta property="og:type" content="blog"/>
@@ -32,7 +32,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@marcogmonteiro">
     <meta name="twitter:title" content="Blog++ | How to add another virtual host using Vagrant">
-    <meta name="twitter:description" content="There's a lot of ways to use Vagrant. Some people create a virtual machine per project. I don't like that idea. I think it's best to create a virtual machine">
+    <meta name="twitter:description" content="Theres a lot of ways to use Vagrant. Some people create a virtual machine per project. I don't like that idea. I think it's best to create a virtual machine">
     <meta name="twitter:creator" content="@marcogmonteiro">
     <meta name="twitter:domain" content="blog.marcomonteiro.net">
 
@@ -91,7 +91,7 @@
 
 <p>In any case, I hope I’m not the only one trying to do that. If I am, then I must be wrong and you should stop reading this post. Anyway. If you want to do that, you have to create more than one virtual host so you can have something like:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>foobar.dev
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>foobar.dev
 nyancat.dev
 blog.dev
 </code></pre></div></div>
@@ -106,7 +106,7 @@ blog.dev
 
 <p>Under Vhosts you’ll have something like this:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vhosts:
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vhosts:
     VO6aT11EHJmL:
         servername: localhost
         docroot: /var/www/public
@@ -129,12 +129,12 @@ blog.dev
 
 <p>Next for the virtual machine to recognize your updates make sure your vagrant is stopped while making these changes. After you’re done restart vagrant. Once vagrant is up go into your directories where your sites-available directory is. In my case i’m using apache under ubuntu.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/etc/apache2/sites-available
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/etc/apache2/sites-available
 </code></pre></div></div>
 
 <p>The files that you will see there, their name will match the unique names that you have in the common.yaml file except there are numbers in them for example:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#-unique_name.conf
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#-unique_name.conf
 </code></pre></div></div>
 
 <p>So in the common.yaml file if you created or modified settings under 4yNJr1LpLJYA you would need to look for #-4yNJr1LpLJYA.conf in this directory and match the settings as you have in your common.yaml file. Once you are done restart your server.</p>

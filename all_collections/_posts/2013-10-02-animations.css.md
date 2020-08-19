@@ -1,14 +1,14 @@
 ---
-layout: post
-title: Animations using CSS3
-date: 2013-10-02
-tag: animations,css,css3,libraries,tips
-description: I'm not a big fan of big animations on websites. I like to get in, get the thing I was looking for and get out. I hate it if I
-author: Marco Monteiro
-categories: [animations,css,css3,libraries,tips]
----
+layout: post
+title: Animations using CSS3
+date: 2013-10-02
+tag: animations,css,css3,libraries,tips
+description: Im not a big fan of big animations on websites. I like to get in, get the thing I was looking for and get out. I hate it if I
+author: Marco Monteiro
+categories: [animations,css,css3,libraries,tips]
+---
 
-I'm not a big fan of big animations on websites. I like to get in, get the thing I was looking for and get out. I hate it if I have to look at your awesome loading animation if the thing I just want is to look at your contacts page.
+I'm not a big fan of big animations on websites. I like to get in, get the thing I was looking for and get out. I hate it if I have to look at your awesome loading animation if the thing I just want is to look at your contacts page.
 
 However, from time to time, we need to animate some small elements. These days you can do most of it with just CSS3. People are using less and less javascript for this.
 

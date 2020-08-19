@@ -1,4 +1,4 @@
-I"�<p>I’m a heavy git user, hence I’m always trying to improve my workflow while using it. I normally have 3 ways of using git. I could use a gui client (<a href="http://www.sourcetreeapp.com/">sourcetree</a>), normally I do this when I’m preparing a new release.</p>
+I"<p>I’m a heavy git user, hence I’m always trying to improve my workflow while using it. I normally have 3 ways of using git. I could use a gui client (<a href="http://www.sourcetreeapp.com/">sourcetree</a>), normally I do this when I’m preparing a new release.</p>
 
 <p>On my daily code day I would use git inside <a href="http://www.sublimetext.com/">Sublime Text 2</a>. That way I don’t need to constantly change between my text editor of choice and a git gui or the terminal. However, from time to time, I use just the terminal. That happens for two reasons, one I could be using git remotely, or I could be doing something more difficult that couldn’t be resolved inside sourcetree or <a href="http://www.sublimetext.com/">Sublime Text</a>.</p>
 
@@ -8,22 +8,22 @@
 
 <p><strong>Clone / Tarball:</strong></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ make install
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ make install
 </code></pre></div></div>
 
 <p><strong>One-liner:</strong></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ (cd /tmp &amp;&amp; git clone --depth 1 https://github.com/visionmedia/git-extras.git &amp;&amp; cd git-extras &amp;&amp; sudo make install)
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ (cd /tmp &amp;&amp; git clone --depth 1 https://github.com/visionmedia/git-extras.git &amp;&amp; cd git-extras &amp;&amp; sudo make install)
 </code></pre></div></div>
 
 <p><strong>MacPorts</strong></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo port install git-extras
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo port install git-extras
 </code></pre></div></div>
 
 <p><strong>Brew (buggy):</strong></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ brew install git-extras
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ brew install git-extras
 </code></pre></div></div>
 
 <p>Here’s a small screencast on how to use it.</p>
@@ -32,7 +32,7 @@
 
 <p>This tool is specially useful when you’re managing .gitignore files. Or when you want to know all the info about your repo. You just have to type git info and you’ll get something like this:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git info
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git info
 
 ## Remote URLs:
 

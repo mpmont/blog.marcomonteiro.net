@@ -1,0 +1,45 @@
+I"O<p>I’m sure this happened to you before, more than one time actually. You have a big file, you changed lots of stuff in it, but those changes are not really related. One may be related to one class and the other to something completely different. Normally you should avoid that, your commits should <em>always</em> be specific to one task, feature or bug. If you do a small search about how to commit better you’ll see that even the commit messages should have this notion.</p>
+
+<!--more-->
+
+<p>Your commit message should look something like this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Explain in one line what the commit is about (Issue number if possible)
+
+Describe the problem the commit solves.
+Justify why you chose the particular solution.
+Reference the issue number if not addressed in the title.
+</code></pre></div></div>
+
+<p>So if you’re solving a bunch of problems in the same commit, your commit messages will tend to go off-road.</p>
+
+<p>Ideally you want to separate those changes into different commits and there’s only one way (that I know of) to do that.</p>
+
+<p>Let’s look at the git add command:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add [-n] [-v] [--force | -f] [--interactive | -i] [--patch | -p]
+[--edit | -e] [--[no-]all | --[no-]ignore-removal | [--update | -u]]
+[--intent-to-add | -N] [--refresh] [--ignore-errors] [--ignore-missing][--] [&lt;pathspec&gt;...]
+</code></pre></div></div>
+
+<p>The one we’re looking for is <strong><em>git add -p</em></strong></p>
+
+<blockquote>
+  <p>-p
+–patch
+Interactively choose hunks of patch between the index and the work tree and add them to the index. This gives the user a chance to review the difference before adding modified contents to the index.
+This effectively runs add –interactive, but bypasses the initial command menu and directly jumps to the patch subcommand. See “Interactive mode” for details.</p>
+</blockquote>
+
+<p>The <strong><em>-p</em></strong> flag is not only available for <strong><em>git add</em></strong> but also for <strong><em>git checkout</em></strong> (I haven’t used this one yet).</p>
+
+<blockquote>
+  <p>This means that you can use git checkout -p to selectively discard edits from your current working tree. See the “Interactive Mode” section of git-add(1) to learn how to operate the –patch mode.</p>
+</blockquote>
+
+<p>Personally I have used the <strong><em>git add -p</em></strong> flag without even know about it when using a Git GUI. But sometimes you just need to go old school and use the terminal.</p>
+
+<p><i class="icon-external-link"></i> <a href="http://git-scm.com/docs/git-add">Git add reference</a></p>
+
+<p><i class="icon-external-link"></i> <a href="http://git-scm.com/docs/git-checkout">Git checkout reference</a></p>
+:ET

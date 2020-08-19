@@ -1,0 +1,35 @@
+I"
+<p>The last day of Laracon was amazing. I must say, I learned a lot. The talks were amazing. All of them, but there was one that I need to reference in particular. Kapil Verma’s talk.</p>
+
+<blockquote>
+  <p>Kapil is a software engineer that specializes in application architecture design. He has significant experience in designing software that is able to quickly react to vague and constantly evolving business requirements. He is currently involved as a project-manager, consultant and developer at multiple startups in Delhi.</p>
+</blockquote>
+
+<!--more-->
+
+<p><strong>Engineering Complex Applications with Laravel 4</strong></p>
+
+<blockquote>
+  <p>One of Laravel’s core strengths is that it grows with the developer. In this talk we focus on what exactly that means. How can we improve our application architectures past what developers have come to expect from MVC frameworks? We’ll explore strategies for code organization, modeling your domain and creating code that is loosely coupled and easy to maintain, all done with examples based on real-world experience.</p>
+</blockquote>
+
+<p>I was so confused during this talk and I think I was not alone on this wagon. A lot of people seemed confused at the time. The talk had one main problem: Kapil didn’t had much time to explain is point.</p>
+
+<p>Hence, he didn’t had much time to explain the problem, and jumped right to the solution. So when he was doing so, many people at the audience were struggling with it.</p>
+
+<p>In conclusion I just think Kapil is miles away from my skill set, and many other developers at the audience.</p>
+
+<p>However we had some other interesting talks during that day, like the one from <strong>Ross Tuck</strong>.</p>
+
+<blockquote>
+  <p>Ross Tuck is an American developer, living in the Netherlands, working at Ibuildings, wearing a hat, and wishing he was reading a book.</p>
+</blockquote>
+
+<p><strong>HTTP and Your Angry Dog</strong></p>
+
+<blockquote>
+  <p>What is an etag, exactly? What’s all that stuff in the Accept header? And what the heck does a Vary header do anyways?! Web developers use HTTP everyday but most of us don’t know how to get the most out of it. This talk goes past memorizing status codes (although we’ll see those too) and teaches how to get the most out of every request and response.</p>
+</blockquote>
+
+<p>He was probably the speaker that did more homework there, because his talk was really well prepared. Everything about it was thought before hand. He always knew what to say and when to say it, not a single - hummm, errrrr.</p>
+:ET

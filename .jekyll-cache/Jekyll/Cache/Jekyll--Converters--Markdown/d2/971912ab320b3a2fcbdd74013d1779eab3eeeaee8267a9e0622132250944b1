@@ -1,4 +1,4 @@
-I"ã<p>You list files hundreds of times a day. Why spend your time squinting at black and white text?</p>
+I"B<p>You list files hundreds of times a day. Why spend your time squinting at black and white text?</p>
 
 <p>exa is an improved file lister with more features and better defaults. It uses colours to distinguish file types and metadata. It knows about symlinks, extended attributes, and Git. And itâ€™s small, fast, and just one single binary.</p>
 
@@ -8,32 +8,32 @@
 
 <p>Run the following command (assuming you have curl installedo on your system) to get started with the installation of Rust in your ubuntu based server/pc:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ curl https://sh.rustup.rs -sSf | sh
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ curl https://sh.rustup.rs -sSf | sh
 </code></pre></div></div>
 
 <p>Now you need to download the lattest version of exa. Head on to <a href="https://github.com/ogham/exa/releases">their github page</a> and download the lattest version.</p>
 
 <p>Just copy the download link and download the zip using wget, for example with the v0.9.0 you can download the binary with the following command (you can switch to a temporary directory and download the zip in there):</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># You should check your own version of this.
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># You should check your own version of this.
 $ wget -c https://github.com/ogham/exa/releases/download/v0.9.0/exa-linux-x86_64-0.8.0.zip
 </code></pre></div></div>
 
 <p>Then, unzip the binary:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ unzip exa-linux-x86_64-0.8.0.zip
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ unzip exa-linux-x86_64-0.8.0.zip
 </code></pre></div></div>
 
 <p>The zip contains a single file, namely the binary exa-linux-x86_64. So the last step is to move it to the bin directory of the local user so it will be accesible later in the cli as exa with the following instruction:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo mv exa-linux-x86_64 /usr/local/bin/exa
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo mv exa-linux-x86_64 /usr/local/bin/exa
 </code></pre></div></div>
 
 <p>To use this all you need is to type exa on your terminal. However what you can do to make the change even more perminante is to alias ls to axa.</p>
 
 <p>To do that I went to my .zshrc file and added the following:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>alias ls='exa --long --header --git'
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>alias ls='exa --long --header --git'
 </code></pre></div></div>
 
 <p>This way you can use your ls command like you always did and it will be translated into exa.</p>

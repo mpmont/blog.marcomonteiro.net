@@ -127,7 +127,7 @@ Merge or Rebase?
 
 <p>Assume the following history exists and the current branch is “master”:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  A---B---C topic
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  A---B---C topic
  /
 D---E---F---G master
 </code></pre></div></div>
@@ -140,34 +140,34 @@ D---E---F---G master
 
 <p>Assume the following history exists and the current branch is “topic”:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      A---B---C topic
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      A---B---C topic
      /
 D---E---F---G master
 </code></pre></div></div>
 
 <p>From this point, the result of either of the following commands:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git rebase master
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git rebase master
 git rebase master topic
 </code></pre></div></div>
 
 <p>Would be:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>              A'--B'--C' topic
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>              A'--B'--C' topic
              /
 D---E---F---G master
 </code></pre></div></div>
 
 <p>If the upstream branch already contains a change you have made (e.g., because you mailed a patch which was applied upstream), then that commit will be skipped. For example, running git rebase master on the following history (in which A’ and A introduce the same set of changes, but have different committer information):</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      A---B---C topic
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      A---B---C topic
      /
 D---E---A'---F master
 </code></pre></div></div>
 
 <p>will result in:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>               B'---C' topic
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>               B'---C' topic
               /
 D---E---A'---F master
 </code></pre></div></div>

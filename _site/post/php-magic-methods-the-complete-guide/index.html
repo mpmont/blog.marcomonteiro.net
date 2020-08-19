@@ -118,7 +118,7 @@
 
 <p>Classes which have a constructor method call this method on each newly-created object, so it is suitable for any initialization that the object may need before it is used. Opposed to that the destructor method will be called as soon as there are no other references to a particular object, or in any order during the shutdown sequence.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class MyDestructableClass {
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class MyDestructableClass {
    function __construct() {
 	   print "In constructor\n";
 	   $this-&gt;name = "MyDestructableClass";
@@ -136,7 +136,7 @@ $obj = new MyDestructableClass();
 
 <p>‘Call’ is triggered when invoking inaccessible methods in an object context. For methods in a static context you should use ‘callStatic’.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class MethodTest
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class MethodTest
 {
 	public function __call($name, $arguments)
 	{
@@ -163,7 +163,7 @@ MethodTest::runTest('in static context');
 
 <p>‘set’ is run when writing data to inaccessible properties. ‘get’ is utilized for reading data from inaccessible properties. ‘isset’ is triggered by calling isset() or empty() on inaccessible properties. ‘unset’ is invoked when unset() is used on inaccessible properties.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class PropertyTest
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class PropertyTest
 {
 	/**  Location for overloaded data.  */
 	private $data = array();
@@ -230,7 +230,7 @@ MethodTest::runTest('in static context');
 
 <p>It is not possible for __sleep() to return names of private properties in parent classes. Doing this will result in an E_NOTICE level error. Instead you may use the Serializable interface. The intended use of __sleep() is to commit pending data or perform similar cleanup tasks. Also, the function is useful if you have very large objects which do not need to be saved completely. As for __wakeup() is to reestablish any database connections that may have been lost during serialization and perform other reinitialization tasks.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class Connection
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class Connection
 {
 	protected $link;
 	private $server, $username, $password, $db;
@@ -266,7 +266,7 @@ MethodTest::runTest('in static context');
 
 <p>The __toString() method allows a class to decide how it will react when it is treated like a string. For example, what echo $obj; will print. This method must return a string, as otherwise a fatal E_RECOVERABLE_ERROR level error is emitted.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class TestClass
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class TestClass
 {
 	public $foo;
  
@@ -289,7 +289,7 @@ echo $class;
 
 <p>The __invoke() method is called when a script tries to call an object as a function.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class CallableClass
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class CallableClass
 {
 	public function __invoke($x)
 	{
@@ -305,7 +305,7 @@ var_dump(is_callable($obj));
 
 <p>Static object __set_state ( array $properties ) This static method is called for classes exported by var_export() since PHP 5.1.0. The only parameter of this method is an array containing exported properties in the form array(‘property’ =&gt; value, …).</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class A
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class A
 {
 	public $var1;
 	public $var2;
@@ -335,7 +335,7 @@ eval('$b = ' . var_export($a, true) . ';'); // $b = A::__set_state(array(
 
 <p>An object copy is created by using the clone keyword (which calls the object’s __clone() method if possible). An object’s __clone() method cannot be called directly.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class SubObject
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class SubObject
 {
 	static $instances = 0;
 	public $instance;

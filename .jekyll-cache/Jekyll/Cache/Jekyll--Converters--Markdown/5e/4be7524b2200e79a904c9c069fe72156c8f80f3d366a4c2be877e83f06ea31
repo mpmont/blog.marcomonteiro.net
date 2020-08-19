@@ -1,4 +1,4 @@
-I"-<hr />
+I"I-<hr />
 
 <p>layout: post</p>
 
@@ -44,7 +44,7 @@
 
 <p>Settings:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
 	"auto_complete_commit_on_tab": false,
 	"bold_folder_labels": true,
 	"caret_style": "smooth",
@@ -135,7 +135,7 @@
 
 <p>Here’s my ZSH config:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Path to your oh-my-zsh configuration.
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
 #Set name of the theme to load.
@@ -196,7 +196,7 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 <p>Most developers using PHP probably use <a href="http://www.mamp.info/en/index.html">MAMP</a>, personally I don’t like it. I use a simple binary package where you can install or update your php with just one terminal command using curl.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -s http://php-osx.liip.ch/install.sh | bash -s 5.4
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -s http://php-osx.liip.ch/install.sh | bash -s 5.4
 </code></pre></div></div>
 
 <p><strong><i class="icon-caret-right"></i> Database management</strong></p>

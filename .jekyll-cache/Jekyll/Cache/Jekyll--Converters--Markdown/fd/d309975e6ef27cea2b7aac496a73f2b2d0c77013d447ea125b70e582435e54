@@ -1,4 +1,4 @@
-I"®<hr />
+I"Ô<hr />
 
 <p>layout: post</p>
 
@@ -22,7 +22,7 @@
 
 <p>Your commit message should look something like this:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Explain in one line what the commit is about (Issue number if possible)
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Explain in one line what the commit is about (Issue number if possible)
 
 Describe the problem the commit solves. 
 Justify why you chose the particular solution. 
@@ -35,7 +35,7 @@ Reference the issue number if not addressed in the title.
 
 <p>Letâ€™s look at the git add command:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add [-n] [-v] [--force | -f] [--interactive | -i] [--patch | -p] 
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add [-n] [-v] [--force | -f] [--interactive | -i] [--patch | -p] 
 [--edit | -e] [--[no-]all | --[no-]ignore-removal | [--update | -u]] 
 [--intent-to-add | -N] [--refresh] [--ignore-errors] [--ignore-missing][--] [&lt;pathspec&gt;...]
 </code></pre></div></div>

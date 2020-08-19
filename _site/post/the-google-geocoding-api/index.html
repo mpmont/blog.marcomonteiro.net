@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Blog++ | The Google Geocoding Api</title>
+    <title>Blog++ | The Google Geocoding API</title>
     <!--Meta Desc-->
-    <meta name="keywords" content=""/>
-    <meta name="description" content=""/>
+    <meta name="keywords" content="api,code,geocoding,google,maps,tips"/>
+    <meta name="description" content="Geocoding is the process of converting addresses (like "1600 Amphitheatre Parkway, Mountain View, CA") into geographic coordinates (like latitude 37.423021 and longitude -122.083739), which you can use to place markers"/>
     <meta name="subject" content="Web development & Linux Stuff">
     <meta name="copyright"content="Marco Monteiro">
     <meta name="language" content="EN">
@@ -22,8 +22,8 @@
 
     <!--Meta Facebook-->
     <meta property="og:image" content="https://blog.marcomonteiro.net/assets/img/facebooklogo.jpg"/>
-    <meta property="og:title" content="Blog++ | The Google Geocoding Api"/>
-    <meta property="og:description" content=""/>
+    <meta property="og:title" content="Blog++ | The Google Geocoding API"/>
+    <meta property="og:description" content="Geocoding is the process of converting addresses (like "1600 Amphitheatre Parkway, Mountain View, CA") into geographic coordinates (like latitude 37.423021 and longitude -122.083739), which you can use to place markers"/>
     <meta property="og:url" content="https://blog.marcomonteiro.net"/>
     <meta property="og:site_name" content="Blog++"/>
     <meta property="og:type" content="blog"/>
@@ -31,8 +31,8 @@
     <!--Meta Twitter-->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@marcogmonteiro">
-    <meta name="twitter:title" content="Blog++ | The Google Geocoding Api">
-    <meta name="twitter:description" content="">
+    <meta name="twitter:title" content="Blog++ | The Google Geocoding API">
+    <meta name="twitter:description" content="Geocoding is the process of converting addresses (like "1600 Amphitheatre Parkway, Mountain View, CA") into geographic coordinates (like latitude 37.423021 and longitude -122.083739), which you can use to place markers">
     <meta name="twitter:creator" content="@marcogmonteiro">
     <meta name="twitter:domain" content="blog.marcomonteiro.net">
 
@@ -83,27 +83,9 @@
         <div class="content">
             <div id="scrollbubble"></div>
             <section class="post">
-                <h2 class="flipboard-title title">The Google Geocoding Api</h2>
-                <div class="date flipboard-date">November 27, 2013 <i class="icon-user"></i> Written By </div>
-                <hr />
-
-<p>layout: post</p>
-
-<p>title: The Google Geocoding API</p>
-
-<p>date: 2013-11-27</p>
-
-<p>tag: api,code,geocoding,google,maps,tips</p>
-
-<p>description: Geocoding is the process of converting addresses (like “1600 Amphitheatre Parkway, Mountain View, CA”) into geographic coordinates (like latitude 37.423021 and longitude -122.083739), which you can use to place markers</p>
-
-<p>author: Marco Monteiro</p>
-
-<p>categories: [api,code,geocoding,google,maps,tips]</p>
-
-<hr />
-
-<p>Geocoding is the process of converting addresses (like “1600 Amphitheatre Parkway, Mountain View, CA”) into geographic coordinates (like latitude 37.423021 and longitude -122.083739), which you can use to place markers or position the map.</p>
+                <h2 class="flipboard-title title">The Google Geocoding API</h2>
+                <div class="date flipboard-date">November 27, 2013 <i class="icon-user"></i> Written By Marco Monteiro</div>
+                <p>Geocoding is the process of converting addresses (like “1600 Amphitheatre Parkway, Mountain View, CA”) into geographic coordinates (like latitude 37.423021 and longitude -122.083739), which you can use to place markers or position the map.</p>
 
 <p>Reverse geocoding is the process of converting geographic coordinates into a human-readable address.</p>
 
@@ -113,7 +95,7 @@
 
 <p>A Geocoding API request must be of the following form:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://maps.googleapis.com/maps/api/geocode/output?parameters
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://maps.googleapis.com/maps/api/geocode/output?parameters
 </code></pre></div></div>
 
 <p>where output may be either of the following values:</p>
@@ -125,7 +107,7 @@
 
 <p>To access the Geocoding API over HTTPS, use:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://maps.googleapis.com/maps/api/geocode/output?parameters
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://maps.googleapis.com/maps/api/geocode/output?parameters
 </code></pre></div></div>
 
 <p><strong>Required parameters</strong></p>
@@ -163,14 +145,14 @@
 
 <p>In this example, the Geocoding API requests a json response for a query on “1600 Amphitheatre Parkway, Mountain View, CA”:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&amp;sensor=true_or_false
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&amp;sensor=true_or_false
 </code></pre></div></div>
 
 <p>We’ve left the sensor parameter in this example as a variable true_or_false to emphasize that you must set this value to either true or false explicitly.</p>
 
 <p>The JSON returned by this request is shown below. Note that actual JSON may contain less whitespace. You should not make assumptions about the amount or format of whitespace between requests.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
 	{
    		"results" : [
   	{
@@ -240,12 +222,12 @@
 
 <p>In this example, the Geocoding API requests an xml response for the identical query shown above for “1600 Amphitheatre Parkway, Mountain View, CA”:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://maps.googleapis.com/maps/api/geocode/xml?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&amp;sensor=true_or_false
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://maps.googleapis.com/maps/api/geocode/xml?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&amp;sensor=true_or_false
 </code></pre></div></div>
 
 <p>The XML returned by this request is shown below.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;GeocodeResponse&gt;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;GeocodeResponse&gt;
 	 &lt;status&gt;OK&lt;/status&gt;
 	 &lt;result&gt;
 	 	&lt;type&gt;street_address&lt;/type&gt;
@@ -322,12 +304,12 @@
 
 <p>The Geocoding API supports reverse geocoding directly using the latlng parameter. For example, the following query contains the latitude/longitude value for a location in Brooklyn:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452&amp;sensor=true_or_false
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452&amp;sensor=true_or_false
 </code></pre></div></div>
 
 <p>This query returns the following result:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
   		"status": "OK",
   		"results": [ {
 		"types": street_address,
@@ -392,7 +374,7 @@
 
 <p>The full list of formatted_address values returned by the previous query are shown below.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"formatted_address": "275-291 Bedford Ave, Brooklyn, NY 11211, USA",
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"formatted_address": "275-291 Bedford Ave, Brooklyn, NY 11211, USA",
 "formatted_address": "Williamsburg, NY, USA",
 "formatted_address": "New York 11211, USA",
 "formatted_address": "Kings, New York, USA",
@@ -412,7 +394,7 @@
 
 <p>For example, a geocode for “Toledo” returns this result, as the default domain for the Geocoding API is set to the United States:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://maps.googleapis.com/maps/api/geocode/json?address=Toledo&amp;sensor=false
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://maps.googleapis.com/maps/api/geocode/json?address=Toledo&amp;sensor=false
 # Returns:
 #
 {
@@ -492,13 +474,31 @@
                 <ul id="tags" class="tags">
                     
                     
+                        <li><a href="#"><i class="icon-tag"></i> api</a></li>
+                        &nbsp;
+                    
+                        <li><a href="#"><i class="icon-tag"></i> code</a></li>
+                        &nbsp;
+                    
+                        <li><a href="#"><i class="icon-tag"></i> geocoding</a></li>
+                        &nbsp;
+                    
+                        <li><a href="#"><i class="icon-tag"></i> google</a></li>
+                        &nbsp;
+                    
+                        <li><a href="#"><i class="icon-tag"></i> maps</a></li>
+                        &nbsp;
+                    
+                        <li><a href="#"><i class="icon-tag"></i> tips</a></li>
+                        
+                    
                 </ul>
                 <br>
             </section>
             <div id="tweet_it">
                 <a href="javascript:void(0)" id="tweet_compose_close" class="close_it">x</a>
                 <h4>Like it? Tweet it.</h4>
-                <p>"The Google Geocoding Api" via <a href="http://twitter.com/marcogmonteiro">@marcogmonteiro</a><br>
+                <p>"The Google Geocoding API" via <a href="http://twitter.com/marcogmonteiro">@marcogmonteiro</a><br>
                     <a href="https://twitter.com/share" data-count="horizontal" data-count="none" data-related="marcogmonteiro" data-via="marcogmonteiro" class="twitter-share-button" data-lang="en">Tweet</a>
                   <br>
                 </p>

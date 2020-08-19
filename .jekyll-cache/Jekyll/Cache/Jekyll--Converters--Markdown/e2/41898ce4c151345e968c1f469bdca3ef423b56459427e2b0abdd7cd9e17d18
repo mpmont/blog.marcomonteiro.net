@@ -1,0 +1,19 @@
+I"A<p>We are developers, we have personal websites, blogs and all that. So from time to time, we want to embed in a blog post or any other type of content a bit of code. There’s a lot of ways to do so. For instance on my blog I use <a href="http://softwaremaniacs.org/soft/highlight/en/">highlight.js</a>. It works fine I don’t have a single complaint about it.</p>
+
+<p>However, what if I had a bunch of files I needed to show inside a blog post or even more, imagine I want to show a hole github repository inside a blog post?</p>
+
+<!--more-->
+
+<p>Well repo.js is here to save the day.</p>
+
+<p>All you need to do is add the javascript library into your website. Then you can just do:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$('#repo').repo({ user: 'mpmont', name: 'ci-snippets' });
+</code></pre></div></div>
+
+<p>That should be all.</p>
+
+<p><a href="https://github.com/darcyclarke/Repo.js"><i class="icon-github"></i> Repo.js</a></p>
+
+<p><a href="http://darcyclarke.me/dev/repojs/"><i class="icon-link"></i> Demo</a></p>
+:ET

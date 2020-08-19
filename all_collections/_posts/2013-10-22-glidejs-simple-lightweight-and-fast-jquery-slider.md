@@ -1,14 +1,14 @@
 ---
-layout: post
-title: Glide.js a simple, lightweight & fast jQuery slider
-date: 2013-10-22
-tag: css3,javascript,jquery,plugin,responsive
-description: Glide is responsive and touch-friendly jQuery slider. Based on CSS3 transitions with fallback to older broswers. It's simple, lightweight and fast. Designed to slide, no less, no more. A lot
-author: Marco Monteiro
-categories: [css3,javascript,jquery,plugin,responsive]
----
+layout: post
+title: Glide.js a simple, lightweight & fast jQuery slider
+date: 2013-10-22
+tag: css3,javascript,jquery,plugin,responsive
+description: Glide is responsive and touch-friendly jQuery slider. Based on CSS3 transitions with fallback to older broswers. It's simple, lightweight and fast. Designed to slide, no less, no more. A lot
+author: Marco Monteiro
+categories: [css3,javascript,jquery,plugin,responsive]
+---
 
-Glide is responsive and touch-friendly jQuery slider. Based on CSS3 transitions with fallback to older broswers. It's simple, lightweight and fast. Designed to slide, no less, no more. A lot has been said this past few weeks about OOCSS markup, Jędrzej Chałubek (creator of Glide.js) needed simple and fast slider with fully customizable OOCSS markup. If you're into OOCSS this is the way to go.
+Glide is responsive and touch-friendly jQuery slider. Based on CSS3 transitions with fallback to older broswers. It's simple, lightweight and fast. Designed to slide, no less, no more. A lot has been said this past few weeks about OOCSS markup, Jędrzej Chałubek (creator of Glide.js) needed simple and fast slider with fully customizable OOCSS markup. If you're into OOCSS this is the way to go.
 
 <!--more-->
 
@@ -17,7 +17,7 @@
 jQuery is the only dependency. Make sure to include it.
 
 	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-	
+
 Include Glide.js
 
 	<script src="jquery.glide.js"></script>
@@ -35,13 +35,13 @@ Make necessary markup for slider.
 			<li class="slide"></li>
 		</ul>
 	</div>
-  
+
 Init our slider on default options ...
 
 	  <script>
 		  $('.slider').glide();
 	  </script>
-	
+
 **Best features of Glide.js**
 
 * <i class="icon-angle-right"></i> Lightweight ~4,5kB minifed

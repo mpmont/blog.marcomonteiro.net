@@ -1,4 +1,4 @@
-I"¡<p>I always hated the man pages, I always have a hard time to understand stuff and mostly I have a really hard time finding the option I need.</p>
+I"´<p>I always hated the man pages, I always have a hard time to understand stuff and mostly I have a really hard time finding the option I need.</p>
 
 <p>The TLDR pages are a community effort to simplify the beloved man pages with practical examples.</p>
 
@@ -12,6 +12,6 @@
 
 <p>As of now, our most mature client is the node.js one, which you can easily install from NPM:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ npm install -g tldr
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ npm install -g tldr
 </code></pre></div></div>
 :ET

@@ -1,21 +1,19 @@
 ---
-layout: post
-title: The CH experience
-date: 2013-08-19
-tag: experience,life,work
-description: Earlier this year I got out of the previous company I was working for. My plan was simple. Earn enough money to live on my own as a freelancer. 
+layout: post
+title: The CH experience
+date: 2013-08-19
+tag: experience,life,work
+description: Earlier this year I got out of the previous company I was working for. My plan was simple. Earn enough money to live on my own as a freelancer.
+author: Marco Monteiro
+categories: [experience,life,work]
+---
 
-However
-author: Marco Monteiro
-categories: [experience,life,work]
----
-
-Earlier this year I got out of the previous company I was working for. My plan was simple. Earn enough money to live on my own as a freelancer. 
+Earlier this year I got out of the previous company I was working for. My plan was simple. Earn enough money to live on my own as a freelancer.
 
 However things didn't go exactly as expected. Mainly because living as a freelancer in Portugal sucks. Almost all the companies are in the toilet hence you only get paid when they can and not when you should.
 
 So I decided to try the market again and go after another full time job. I only had two requirements:
-	
+
 * <i class="icon-angle-right"></i> Work for a small company
 * <i class="icon-angle-right"></i> Don't have to move to another city
 
@@ -24,7 +22,7 @@ I got my resume ready (as in export my profile from linkedin) and sent it to Gru
 
 Got the job. Moved to another city and within a week I was working for a company with 75-100 people.
 
-> Well I guess my two requirements went out the window then. 
+> Well I guess my two requirements went out the window then.
 
 I was afraid at the time. My main concerns were that the group was just "too corporate" for me and I wouldn't like it. Because you know, I like to wear shorts and ironic t-shirts to work.
 

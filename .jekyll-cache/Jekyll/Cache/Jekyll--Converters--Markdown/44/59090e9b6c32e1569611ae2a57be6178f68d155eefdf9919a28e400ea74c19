@@ -1,4 +1,4 @@
-I"Q
+I"d
 <hr />
 
 <p>layout: post</p>
@@ -38,7 +38,7 @@
 
 <p>Simple example for date using wardrobe:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div class="date flipboard-date"&gt;&lt;/div&gt;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div class="date flipboard-date"&gt;&lt;/div&gt;
 </code></pre></div></div>
 
 <p>This way you can control a bit more on what content should be displayed on Flipboard.</p>

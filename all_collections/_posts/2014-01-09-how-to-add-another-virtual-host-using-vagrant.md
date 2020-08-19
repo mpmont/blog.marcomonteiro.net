@@ -3,7 +3,7 @@ layout: post
 title: How to add another virtual host using Vagrant
 date: 2014-01-09
 tag: development,server,vagrant
-description: There's a lot of ways to use Vagrant. Some people create a virtual machine per project. I don't like that idea. I think it's best to create a virtual machine
+description: Theres a lot of ways to use Vagrant. Some people create a virtual machine per project. I don't like that idea. I think it's best to create a virtual machine
 author: Marco Monteiro
 categories: [development,server,vagrant]
 ---

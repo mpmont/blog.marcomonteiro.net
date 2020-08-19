@@ -95,7 +95,7 @@
 
 <p>First lets create a project forlder, this can be in any place you want.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ mkdir -p lamp-stack/DocumentRoot
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ mkdir -p lamp-stack/DocumentRoot
 $ echo "&lt;?php phpinfo(); ?&gt;" &gt; lamp-stack/DocumentRoot/index.php
 </code></pre></div></div>
 
@@ -108,7 +108,7 @@ $ echo "&lt;?php phpinfo(); ?&gt;" &gt; lamp-stack/DocumentRoot/index.php
 
 <p>Let’s start with the docker-compose.yml file.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>version: '3'
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>version: '3'
 services:
 	php-apache:
 		build:
@@ -147,7 +147,7 @@ services:
 
 <p>Finally our dockerfile. This has all the comands you want to run for your php environment.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>FROM php:7.2.1-apache
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>FROM php:7.2.1-apache
 MAINTAINER egidio docile
 RUN docker-php-ext-install pdo pdo_mysql mysqli
 RUN a2enmod rewrite
@@ -161,7 +161,7 @@ RUN a2enmod rewrite
 
 <p>All you need to do now is start your docker container. You do this by going inside your project folder and running the following command.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo docker-compose up
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo docker-compose up
 </code></pre></div></div>
 
 <p>The first time you do it, this may take a while.</p>

@@ -1,10 +1,10 @@
-I"x<p>There’s a lot of ways to use Vagrant. Some people create a virtual machine per project. I don’t like that idea. I think it’s best to create a virtual machine for each different server you have to deploy. So if I have 2 projects that are going to be deployed to the same server why should I create two virtual machines? Makes no sense to me. Those two projects belong in the same virtual machine.</p>
+I"�<p>There’s a lot of ways to use Vagrant. Some people create a virtual machine per project. I don’t like that idea. I think it’s best to create a virtual machine for each different server you have to deploy. So if I have 2 projects that are going to be deployed to the same server why should I create two virtual machines? Makes no sense to me. Those two projects belong in the same virtual machine.</p>
 
 <!--more-->
 
 <p>In any case, I hope I’m not the only one trying to do that. If I am, then I must be wrong and you should stop reading this post. Anyway. If you want to do that, you have to create more than one virtual host so you can have something like:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>foobar.dev
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>foobar.dev
 nyancat.dev
 blog.dev
 </code></pre></div></div>
@@ -19,7 +19,7 @@ blog.dev
 
 <p>Under Vhosts you’ll have something like this:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vhosts:
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vhosts:
     VO6aT11EHJmL:
         servername: localhost
         docroot: /var/www/public
@@ -42,12 +42,12 @@ blog.dev
 
 <p>Next for the virtual machine to recognize your updates make sure your vagrant is stopped while making these changes. After you’re done restart vagrant. Once vagrant is up go into your directories where your sites-available directory is. In my case i’m using apache under ubuntu.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/etc/apache2/sites-available
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/etc/apache2/sites-available
 </code></pre></div></div>
 
 <p>The files that you will see there, their name will match the unique names that you have in the common.yaml file except there are numbers in them for example:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#-unique_name.conf
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#-unique_name.conf
 </code></pre></div></div>
 
 <p>So in the common.yaml file if you created or modified settings under 4yNJr1LpLJYA you would need to look for #-4yNJr1LpLJYA.conf in this directory and match the settings as you have in your common.yaml file. Once you are done restart your server.</p>

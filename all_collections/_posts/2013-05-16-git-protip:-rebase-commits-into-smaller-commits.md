@@ -1,14 +1,14 @@
 ---
-layout: post
-title: Git ProTip: Rebase Commits into smaller commits
-date: 2013-05-16
-tag: Git,merge,Version-control
-description: Yeah, that's right. If you're like me you have a small compulsion to commit every small task you complete. In some cases that can be a good practice. However, when
-author: Marco Monteiro
-categories: [Git,merge,Version-control]
----
+layout: post
+title: Git ProTip Rebase Commits into smaller commits
+date: 2013-05-16
+tag: Git,merge,Versioncontrol
+description: Yeah, thats right. If youre like me you have a small compulsion to commit every small task you complete
+author: Marco Monteiro
+categories: [Git,merge,Versioncontrol]
+---
 
-Yeah, that's right. If you're like me you have a small compulsion to commit every small task you complete. In some cases that can be a good practice. However, when you're working with a large team, or even on a open source project that has lot's of contributors that can be a PITA in the long run. Imagine you're looking for all the changes done while creating a feature, and your history is full of small commits. Finding what you're looking for is not going to be easy.
+Yeah, that's right. If you're like me you have a small compulsion to commit every small task you complete. In some cases that can be a good practice. However, when you're working with a large team, or even on a open source project that has lot's of contributors that can be a PITA in the long run. Imagine you're looking for all the changes done while creating a feature, and your history is full of small commits. Finding what you're looking for is not going to be easy.
 
 <!--more-->
 

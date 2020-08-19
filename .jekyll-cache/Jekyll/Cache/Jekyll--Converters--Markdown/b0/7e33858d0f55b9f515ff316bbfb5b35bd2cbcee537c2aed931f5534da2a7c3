@@ -1,4 +1,4 @@
-I"H<p>Conky can display more than 300 built-in objects, including support for:</p>
+I"”<p>Conky can display more than 300 built-in objects, including support for:</p>
 
 <ul>
   <li>
@@ -41,23 +41,23 @@
 
 <p>Having said this lets install the thing and get it going.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt-get update
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt-get update
 $ sudo apt-get install conky-all
 </code></pre></div></div>
 
 <p>You might want to install sensorr, curl and hddtemp.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt-get install conky curl lm-sensors hddtemp
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt-get install conky curl lm-sensors hddtemp
 </code></pre></div></div>
 
 <p>Create a config file.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ touch ~/.conky
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ touch ~/.conky
 </code></pre></div></div>
 
 <p>All that is left is to just shove your config file in there. Hereâ€™s mine!</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conky.config = {
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conky.config = {
 	update_interval = 1,
 	cpu_avg_samples = 2,
 	net_avg_samples = 2,

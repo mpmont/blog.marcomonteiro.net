@@ -1,4 +1,4 @@
-I"�<hr />
+I"<hr />
 
 <p>layout: post</p>
 
@@ -22,28 +22,28 @@
 
 <p>The problem was in my SSH password. I thought it was this one:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>u. vagrant
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>u. vagrant
 p. vagrant
 </code></pre></div></div>
 
 <p>But for some reason it wasn’t (yes it was left it as the default one from PuPHPet). So for consistency now everytime I do a fresh install I  always do a few things; Access my machine via SSH.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    $ vagrant ssh
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    $ vagrant ssh
 </code></pre></div></div>
 
 <p>Changing the way your server deals with mysql connections.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    $ sudo nano /etc/mysql/my.cnf   
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    $ sudo nano /etc/mysql/my.cnf   
 </code></pre></div></div>
 
 <p>Here you want to find the bindaddress setting which will be set to 127.0.0.0 and change it to 0.0.0.0. Don’t forget to restart the mysql server after this.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    $ sudo service mysql restart
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    $ sudo service mysql restart
 </code></pre></div></div>
 
 <p>Anythins left to do is change your password to “vagrant” for consistency.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    $ passwd
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    $ passwd
 </code></pre></div></div>
 
 <p>That’s it, now you can connect without any problems via SSH tunnel to your mysql.</p>

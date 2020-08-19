@@ -1,14 +1,14 @@
 ---
-layout: post
-title: Wardrobe a minimal blogging application
-date: 2013-08-15
-tag: blog,laravel,wardrobe,Webdev
-description: As you may or may not know last week I migrated all my content from tumblr into this new cms called Wardrobe. For now I'm really happy with it. It
-author: Marco Monteiro
-categories: [blog,laravel,wardrobe,Webdev]
----
+layout: post
+title: Wardrobe a minimal blogging application
+date: 2013-08-15
+tag: blog,laravel,wardrobe,Webdev
+description: As you may or may not know last week I migrated all my content from tumblr into this new cms called Wardrobe.
+author: Marco Monteiro
+categories: [blog,laravel,wardrobe,Webdev]
+---
 
-As you may or may not know last week I migrated all my content from tumblr into this new cms called Wardrobe. For now I'm really happy with it. It gives me total control over my content and it doesn't have all those features that most blogging platforms have. Features that I never needed in the first place.
+As you may or may not know last week I migrated all my content from tumblr into this new cms called Wardrobe. For now I'm really happy with it. It gives me total control over my content and it doesn't have all those features that most blogging platforms have. Features that I never needed in the first place.
 
 **What is Wardrobe anyway?**
 

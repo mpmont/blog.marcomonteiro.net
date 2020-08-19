@@ -1,16 +1,14 @@
 ---
-layout: post
-title: The creative badge
-date: 2013-07-30
-tag: creative,life,rant,work
-description: I’ve been working in the creative business for a while now, and being around people that need to be creative for a living can have it’s advantages, and disadvantages. 
+layout: post
+title: The creative badge
+date: 2013-07-30
+tag: creative,life,rant,work
+description: Ive been working in the creative business for a while now, and being around people that need to be creative for a living can have its advantages, and disadvantages.
+author: Marco Monteiro
+categories: [creative,life,rant,work]
+---
 
-In
-author: Marco Monteiro
-categories: [creative,life,rant,work]
----
-
-I’ve been working in the creative business for a while now, and being around people that need to be creative for a living can have it’s advantages, and disadvantages. 
+I’ve been working in the creative business for a while now, and being around people that need to be creative for a living can have it’s advantages, and disadvantages.
 
 In one hand if you work with really good creatives you tend to be blown away by their ideas. On the other hand, you have to deal with the creative badges that they so proudly use. The “I’m so damn busy badge”.
 <!--more-->
@@ -20,10 +18,10 @@ It’s a fact. Creative people - like designers and such - always like to brag a
 
 **So here’s my view on these so called badges.**
 
-Creative folks, get your shit together, if you have too much stuff to do, or don’t even have time to sleep that can only mean one of three things. 
+Creative folks, get your shit together, if you have too much stuff to do, or don’t even have time to sleep that can only mean one of three things.
 
 * <i class="icon-angle-right"></i> You’re not productive.
-* <i class="icon-angle-right"></i> You don’t know how to manage your own time. 
+* <i class="icon-angle-right"></i> You don’t know how to manage your own time.
 * <i class="icon-angle-right"></i> You don’t know how to say the word no.
 
 If you work alone and suffer from one of these, I would say that’s ok. It’s your problem after all. However, when you work as a team, working with people that suffer from these diseases can be frustrating.

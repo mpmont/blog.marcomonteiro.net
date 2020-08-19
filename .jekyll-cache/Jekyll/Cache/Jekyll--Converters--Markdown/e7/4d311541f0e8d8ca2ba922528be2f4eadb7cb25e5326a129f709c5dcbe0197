@@ -1,4 +1,4 @@
-I"Y<hr />
+I"¥<hr />
 
 <p>layout: post</p>
 
@@ -23,14 +23,14 @@
 
 <p><strong>image</strong></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;meta property="og:image" content="http://blog.marcomonteiro.net/themes/default/img/facebooklogo.jpg"/&gt;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;meta property="og:image" content="http://blog.marcomonteiro.net/themes/default/img/facebooklogo.jpg"/&gt;
 </code></pre></div></div>
 
 <p>Itâ€™s best to use a square image, as Facebook displays them in that matter. That image should be at least 50x50 in any of the usually supported image forms (JPG, PNG, etc.)</p>
 
 <p><strong>title</strong></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;meta property="og:title" content="Go social"/&gt;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;meta property="og:title" content="Go social"/&gt;
 </code></pre></div></div>
 
 <p>In most cases, this should be the article or page title.</p>
@@ -43,7 +43,7 @@
 
 <p><strong>site_name</strong></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;meta property="og:site_name" content="$blog++"/&gt;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;meta property="og:site_name" content="$blog++"/&gt;
 </code></pre></div></div>
 
 <p>This is very useful as Facebook may have no way of knowing outside of this META tag.</p>
@@ -52,7 +52,7 @@
 
 <p>Provides Facebook the type of website that you would like your website to be categorized by:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;meta property="og:type" content="blog"/&gt;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;meta property="og:type" content="blog"/&gt;
 </code></pre></div></div>
 
 <p>Read the <a href="http://developers.facebook.com/docs/opengraph/#types">complete list of website types</a> to best categorize your website.</p>

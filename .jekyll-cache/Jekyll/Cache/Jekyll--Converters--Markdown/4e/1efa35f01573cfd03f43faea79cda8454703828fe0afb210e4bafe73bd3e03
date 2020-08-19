@@ -1,0 +1,58 @@
+I"<p>Nowadays everything is about social networks. My question is, do you have your website prepared for all of that malarkey? Facebook released their open-graph. But is Facebook the only one with it?
+<!--more--></p>
+
+<p>For Facebook all you need to do it add all these meta tags into your header. That way, every time someone shares your links on facebook they will have a lot more info with it.</p>
+
+<p><strong>image</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;meta property="og:image" content="http://blog.marcomonteiro.net/themes/default/img/facebooklogo.jpg"/&gt;
+</code></pre></div></div>
+
+<p>It’s best to use a square image, as Facebook displays them in that matter. That image should be at least 50x50 in any of the usually supported image forms (JPG, PNG, etc.)</p>
+
+<p><strong>title</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;meta property="og:title" content="Go social"/&gt;
+</code></pre></div></div>
+
+<p>In most cases, this should be the article or page title.</p>
+
+<p><strong>url</strong></p>
+
+<meta property="og:url" content="http://blog.marcomonteiro.net" />
+
+<p>Familiarize yourself with the canonical LINK type if you aren’t aware of its purpose – it could help your SEO out greatly!</p>
+
+<p><strong>site_name</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;meta property="og:site_name" content="$blog++"/&gt;
+</code></pre></div></div>
+
+<p>This is very useful as Facebook may have no way of knowing outside of this META tag.</p>
+
+<p><strong>type</strong></p>
+
+<p>Provides Facebook the type of website that you would like your website to be categorized by:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;meta property="og:type" content="blog"/&gt;
+</code></pre></div></div>
+
+<p>Read the <a href="http://developers.facebook.com/docs/opengraph/#types">complete list of website types</a> to best categorize your website.</p>
+
+<p>These are not the complete list of open-graph tags.</p>
+
+<p>If you use twitter a lot, on the web or on a mobile app you have noticed that some of the links people share now have a description with it, or an image, sometimes even a video. Well that’s because twitter has it’s own tags for content. The main difference is that you have to apply for it. I guess that’s because twitter want’s to filter adult content.</p>
+
+<p>You can test and create your tags <a href="https://dev.twitter.com/docs/cards/validation/validator">here</a>. And when you do so, you can add them to your website and request approval from them. It may take a couple of weeks to be approved (I’m still waiting actually).</p>
+
+<p>Here’s a example list of twitter tags:</p>
+
+  	<meta name="twitter:card" content="summary" />
+  	<meta name="twitter:site" content="@marcogmonteiro" />
+  	<meta name="twitter:title" content="Pixel density of 538ppi?" />
+  	<meta name="twitter:description" content="Full HD displays? Eat your heart out, handset manufacturers. LG Display has just laid claim to the world's first Quad HD (2,560 x 1,440) smartphone display, which also boasts the highest pixel density of a mobile device, clocking in at 538ppi." />
+  	<meta name="twitter:creator" content="@marcogmonteiro" />
+ 	<meta name="twitter:domain" content="blog.marcomonteiro.net" />
+
+<p>So next time you think about going social on your website just remember: the Internet is more than just Facebook.</p>
+:ET
