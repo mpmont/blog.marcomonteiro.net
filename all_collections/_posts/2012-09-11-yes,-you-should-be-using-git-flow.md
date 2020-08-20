@@ -1,14 +1,14 @@
 ---
-layout: post
-title: Yes, you should be using git-flow
-date: 2012-09-11
-tag: flow,Git,Version-control
-description: I’ve been talking a lot about git these days, and I still have a few articles to do about it. With that in mind today I’m here to talk to
-author: Marco Monteiro
-categories: [flow,Git,Version-control]
----
+layout: post
+title: Yes, you should be using git-flow
+date: 2012-09-11
+tag: flow,Git,Version-control
+description: I’ve been talking a lot about git these days, and I still have a few articles to do about it. With that in mind today I’m here to talk to
+author: Marco Monteiro
+categories: [flow,Git,Version-control]
+---
 
-I’ve been talking a lot about git these days, and I still have a few articles to do about it. With that in mind today I’m here to talk to you a bit about git-flow. 
+I’ve been talking a lot about git these days, and I still have a few articles to do about it. With that in mind today I’m here to talk to you a bit about git-flow.
 
 Once again, I’m not here to re-invent the wheel. If someone has good articles about something I’m going to point you there during this process.
 <!--more-->
@@ -21,7 +21,7 @@ In early 2010, Vincent Driessen wrote an article called ...A successful Git bran
 > * Keep your procedures clearer
 > * Move between projects more easily with familiar branch structures
 > * Get new developers up to speed more quickly
-> 
+>
 > in: sourcetreeapp.com
 
 **Summary of the concept**
@@ -42,13 +42,13 @@ After installing git-flow, you can start a new repository in the current directo
 It will ask you a bunch of questions, but you probably want to accept the default values:
 
 	No branches exist yet. Base branches must be created now.
- 		Branch name for production releases: [master] 
+ 		Branch name for production releases: [master]
  		Branch name for "next release" development: [develop]
  		How to name your supporting branch prefixes?
- 		Feature branches? [feature/] 
- 		Release branches? [release/] 
-	 	Hotfix branches? [hotfix/] 
- 		Support branches? [support/] 
+ 		Feature branches? [feature/]
+ 		Release branches? [release/]
+	 	Hotfix branches? [hotfix/]
+ 		Support branches? [support/]
  		Version tag prefix? []
 
 Now, simply use Git like you're used to, but only work on some small features in the develop branch. If you need to work on a bigger feature, just create a feature branch based on develop. Let's say you want to add a login page:

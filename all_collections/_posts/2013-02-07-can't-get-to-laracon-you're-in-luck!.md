@@ -1,14 +1,14 @@
 ---
-layout: post
-title: Can't get to Laracon? You're in luck!
-date: 2013-02-07
-tag: laracon,laravel
-description: First thing this morning (a little past midnight UK time), a guy by the name of Chris Borgia posted a campaign on indiegogo. The campaign, “Film Laracon” is pretty self-explanatory.
-author: Marco Monteiro
-categories: [laracon,laravel]
----
+layout: post
+title: Can't get to Laracon? You're in luck!
+date: 2013-02-07
+tag: laracon,laravel
+description: First thing this morning (a little past midnight UK time), a guy by the name of Chris Borgia posted a campaign on indiegogo. The campaign, “Film Laracon” is pretty self-explanatory.
+author: Marco Monteiro
+categories: [laracon,laravel]
+---
 
-First thing this morning (a little past midnight UK time), a guy by the name of Chris Borgia posted a campaign on indiegogo. The campaign, “Film Laracon” is pretty self-explanatory. In the project summary he pointed out that there were no plans for the talks to be recorded, meaning those of us unable to attend Laracon would be left out of the mix. As it happens, Chris already owns the relatively wide range of gear necessary to record a conference and he’d managed to secure a slot on the guest list, so all he had to cover was the cost of a hotel and parking at a total of $560.
+First thing this morning (a little past midnight UK time), a guy by the name of Chris Borgia posted a campaign on indiegogo. The campaign, “Film Laracon” is pretty self-explanatory. In the project summary he pointed out that there were no plans for the talks to be recorded, meaning those of us unable to attend Laracon would be left out of the mix. As it happens, Chris already owns the relatively wide range of gear necessary to record a conference and he’d managed to secure a slot on the guest list, so all he had to cover was the cost of a hotel and parking at a total of $560.
 <!--more-->
 
 Can’t make it to #laracon? We can record videos of the talks, but we need a little extra help from you! Lend a hand? igg.me/at/laracon

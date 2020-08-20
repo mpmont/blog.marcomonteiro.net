@@ -1,14 +1,4 @@
----
-layout: post
-title: Is it really that bad that Codeigniter has a slow release cycle?
-date: 2012-09-16
-tag: codeigniter,laravel
-description: In one of our breaks from the discussion “vi vs emacs” on the IRC Codeigniter channel we ended up discussing the slow release cycle of our favorite framework. There were
-author: Marco Monteiro
-categories: [codeigniter,laravel]
----
-
-In one of our breaks from the discussion “vi vs emacs” on the IRC Codeigniter channel we ended up discussing the slow release cycle of our favorite framework. There were some who didn’t like that about Codeigniter, but fortunately we had some people in the channel that were able to give some good points about the other side.
+In one of our breaks from the discussion “vi vs emacs” on the IRC Codeigniter channel we ended up discussing the slow release cycle of our favorite framework. There were some who didn’t like that about Codeigniter, but fortunately we had some people in the channel that were able to give some good points about the other side.
 A lot of people don’t like that codeigniter is not in the cool kids group anymore. Well that’s ok, I bet the community using the framework was not using it just because it was cool (if you’re using it for that reason, you’re doing it wrong).
 <!--more-->
 First let’s get some things out of the way. I love working with Codeigniter and I use it for almost all of my projects. But I’m not here to talk back at people that don’t use codeigniter. People should use what is best for them, or to the task they need to complete.

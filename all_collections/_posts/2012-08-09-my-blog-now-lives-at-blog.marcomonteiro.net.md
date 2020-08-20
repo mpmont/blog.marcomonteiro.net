@@ -1,17 +1,7 @@
----
-layout: post
-title: My blog now lives at blog.marcomonteiro.net
-date: 2012-08-09
-tag: hosting,news
-description: Just dropping by to tell you that I moved my blog from a self hosted wordpress blog to a tumblr blog. And now I’m using a sub-domain for my blog.
-author: Marco Monteiro
-categories: [hosting,news]
----
+Just dropping by to tell you that I moved my blog from a self hosted wordpress blog to a tumblr blog. And now I’m using a sub-domain for my blog.
 
-Just dropping by to tell you that I moved my blog from a self hosted wordpress blog to a tumblr blog. And now I’m using a sub-domain for my blog. 
+The main reason behing this decision was just the fact that I was not happy with my hosting and therefore I’m moving all my stuff away from them.
 
-The main reason behing this decision was just the fact that I was not happy with my hosting and therefore I’m moving all my stuff away from them. 
+Tumblr looks like a good free option to me.
 
-Tumblr looks like a good free option to me. 
-
-ps: I’m sorry if all the feed are going crazy and they apear all marked as unread. That’s because all the posts have a new link now, there’s no need to update your feed though.
+ps: I’m sorry if all the feed are going crazy and they apear all marked as unread. That’s because all the posts have a new link now, there’s no need to update your feed though.

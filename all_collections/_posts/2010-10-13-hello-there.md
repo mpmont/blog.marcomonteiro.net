@@ -1,16 +1,4 @@
----
-layout: post
-title: Hello there
-date: 2010-10-13
-tag: Miscellaneous
-description: Hello there and welcome to my blog.
-
-i’ll be using this place  for three things, first i’ll be sharing my opinion about things on the web, new ways of making
-author: Marco Monteiro
-categories: [Miscellaneous]
----
-
-Hello there and welcome to my blog.
+Hello there and welcome to my blog.
 
 i’ll be using this place  for three things, first i’ll be sharing my opinion about things on the web, new ways of making things. What is the best way to make stuff that actually works for the general user. So this will be the main purpose of this place!
 

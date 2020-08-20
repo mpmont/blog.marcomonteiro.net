@@ -1,14 +1,4 @@
----
-layout: post
-title: My way of styling Part II
-date: 2010-11-08
-tag: css,Inspiration
-description: Last week i explained how to structure a good signature on your code and why. This week i’ll be explaining how i do my css coding and how i structure
-author: Marco Monteiro
-categories: [css,Inspiration]
----
-
-Last week i explained how to structure a good signature on your code and why. This week i’ll be explaining how i do my css coding and how i structure my files. First of all i’d like to point you to some useful websites that can help you get started coding with css.
+Last week i explained how to structure a good signature on your code and why. This week i’ll be explaining how i do my css coding and how i structure my files. First of all i’d like to point you to some useful websites that can help you get started coding with css.
 Ok now the next part and i’ll try to keep it clean and simple.
 <!--more-->
 First, how to divide my document? Well i do it the same way every single time. Top to bottom. So let’s imagine that your site is going to have this sections:
@@ -19,7 +9,7 @@ the division will be this exact same order. So the first thing i like to do is c
 
 For example i always create something like this:
 
-	/* -------------------------------------------------------------- 
+	/* --------------------------------------------------------------
 	HEADER
 	* ALL THE HEADER STYLES. (includes search and breadcrumbs)
 	-------------------------------------------------------------- */

@@ -1,14 +1,4 @@
----
-layout: post
-title: The Tumblr experience
-date: 2012-09-01
-tag: blog,tumblr
-description: As you may, or may not know I moved my blog from a self hosted wordpress to a tumblr blog. Some may disagree with that, but what the hell it’s
-author: Marco Monteiro
-categories: [blog,tumblr]
----
-
-As you may, or may not know I moved my blog from a self hosted wordpress to a tumblr blog. Some may disagree with that, but what the hell it’s done. And now I’m going to tell you how’s my experience with it so far.
+As you may, or may not know I moved my blog from a self hosted wordpress to a tumblr blog. Some may disagree with that, but what the hell it’s done. And now I’m going to tell you how’s my experience with it so far.
 <!--more-->
 **The Migration Process**
 
@@ -43,7 +33,7 @@ This was the easy part, since the tumblr community provides so many great themes
 
 **I needed my blog to have a few features that tumblr didn’t provide. Stuff like:**
 
-* Being able to show code properly. 
+* Being able to show code properly.
 * Having social share icons for each post.
 * Adding ads to the template.
 * The first one was pretty easy, once I found that you can use embed gists.
@@ -56,7 +46,7 @@ Adding ads to my template was pretty easy. At the moment I’m using the amazon 
 
 **Well, tumblr is not the best tool ever made when it comes to SEO. But you should be ok if you do the following:**
 
-* Add your blog to the most used search engines using their webmaster tools. 
+* Add your blog to the most used search engines using their webmaster tools.
 * Always tag your posts.
 * Edit your template so the post tags can be in your header as meta information.
 * Always add slugs to your posts.

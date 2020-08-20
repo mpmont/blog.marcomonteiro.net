@@ -1,24 +1,24 @@
 ---
-layout: post
-title: Something happened this week, something really good
-date: 2012-03-10
-tag: Git,Version-control
-description: One of the things that was really annoying me at work was that some of the people there was still 1995 and coding in a team without using any kind
-author: Marco Monteiro
-categories: [Git,Version-control]
----
+layout: post
+title: Something happened this week, something really good
+date: 2012-03-10
+tag: Git,Version-control
+description: One of the things that was really annoying me at work was that some of the people there was still 1995 and coding in a team without using any kind
+author: Marco Monteiro
+categories: [Git,Version-control]
+---
 
-One of the things that was really annoying me at work was that some of the people there was still 1995 and coding in a team without using any kind of version control.
+One of the things that was really annoying me at work was that some of the people there was still 1995 and coding in a team without using any kind of version control.
 
 Well not anymore. We had a couple of big projects coming in, and finally I convinced all the people there that we really needed to get everyone to use Git or Mercurial. So I explained the concepts then we created a small dummy repository and started playing around with it. After a little while everyone was discovering the power of being in 2012.
 <!--more-->
-Ok there's still a lot to do, they still have some bad habits from using errr nothing, like working for a day without committing anything to the repository. But I think that will end with time. 
+Ok there's still a lot to do, they still have some bad habits from using errr nothing, like working for a day without committing anything to the repository. But I think that will end with time.
 
-What can I ask next? Well the only thing I'd like to happen next would be for us to start using real hosting companies and not 1975 companies or whatever company our client had a contract with. If that happens in the near future I'll be one hell of a happy nerd. 
+What can I ask next? Well the only thing I'd like to happen next would be for us to start using real hosting companies and not 1975 companies or whatever company our client had a contract with. If that happens in the near future I'll be one hell of a happy nerd.
 
 Oh well, one can't ask for everything at once can we? :)
 
-If you having the same problem I had you might want to reason with your team and try to get them to the dark side. 
+If you having the same problem I had you might want to reason with your team and try to get them to the dark side.
 
 Also show them [this tutorial](http://thinkvitamin.com/design/git-for-designers-part-1/%3Cbr/%3Ehttp://thinkvitamin.com/design/git-for-designers-part-1/%3Cbr/%3Ehttp://thinkvitamin.com/design/git-for-designers-part-1/) so they can see that is not so hard to do.
 

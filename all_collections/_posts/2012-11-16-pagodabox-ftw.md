@@ -1,14 +1,14 @@
 ---
-layout: post
-title: Pagodabox FTW
-date: 2012-11-16
-tag: hosting,tips
-description: I know, this is going to sound like a promotion post. Guess what, it is. I’m hosting my website (marcomonteiro.net) there for free so I guessed this was the least
-author: Marco Monteiro
-categories: [hosting,tips]
----
+layout: post
+title: Pagodabox FTW
+date: 2012-11-16
+tag: hosting,tips
+description: I know, this is going to sound like a promotion post. Guess what, it is. I’m hosting my website (marcomonteiro.net) there for free so I guessed this was the least
+author: Marco Monteiro
+categories: [hosting,tips]
+---
 
-I know, this is going to sound like a promotion post. Guess what, it is. I’m hosting my website (marcomonteiro.net) there for free so I guessed this was the least I could do for them.
+I know, this is going to sound like a promotion post. Guess what, it is. I’m hosting my website (marcomonteiro.net) there for free so I guessed this was the least I could do for them.
 So what so great about it?
 <!--more-->
 * It’s not hosting, it’s a hosting framework.

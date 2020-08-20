@@ -1,14 +1,14 @@
 ---
-layout: post
-title: Laravel Starter front to back
-date: 2013-01-08
-tag: books,frameworks,laravel,php
-description: I just finished reading this book, so it's now time to give it the review it deserves. First and foremost this is a really small book that you can read
-author: Marco Monteiro
-categories: [books,frameworks,laravel,php]
----
+layout: post
+title: Laravel Starter front to back
+date: 2013-01-08
+tag: books,frameworks,laravel,php
+description: I just finished reading this book, so it's now time to give it the review it deserves. First and foremost this is a really small book that you can read
+author: Marco Monteiro
+categories: [books,frameworks,laravel,php]
+---
 
-I just finished reading this book, so it's now time to give it the review it deserves. First and foremost this is a really small book that you can read in hours. However you shouldn't judge a book by its weight. Even though the book is small, it's actually full of useful content.
+I just finished reading this book, so it's now time to give it the review it deserves. First and foremost this is a really small book that you can read in hours. However you shouldn't judge a book by its weight. Even though the book is small, it's actually full of useful content.
 Like any other book about a framework, it starts by walking the reader into the process of downloading and getting started with the framework. Getting everything ready on all the operating systems.
 <!--more-->
 The second part of the book walks the reader into making his own web-application. This is when it starts getting interesting. The thing I liked the most about the book is that Shawn didn't focus on the usual subjects. He could've skipped the migrations subject entirely and just give the reader the necessary code to create the users table. But he didn't, he used the migrations and moreover he explains the importance of using migrations while developing web-applications, especially while working with a team.

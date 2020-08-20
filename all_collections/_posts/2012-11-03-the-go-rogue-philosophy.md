@@ -1,18 +1,16 @@
 ---
-layout: post
-title: The "go rogue" philosophy
-date: 2012-11-03
-tag: experience,life,motivation,pep-talk,thoughts,Webdev
-description: I’ve been meaning to write this post for a long time now. The problem was I never quite find the right words to do it.
+layout: post
+title: The "go rogue" philosophy
+date: 2012-11-03
+tag: experience,life,motivation,pep-talk,thoughts,Webdev
+description: I’ve been meaning to write this post for a long time now. The problem was I never quite find the right words to do it.
+author: Marco Monteiro
+categories: [experience,life,motivation,pep-talk,thoughts,Webdev]
+---
 
-The ”go rogue” philosophy is
-author: Marco Monteiro
-categories: [experience,life,motivation,pep-talk,thoughts,Webdev]
----
+I’ve been meaning to write this post for a long time now. The problem was I never quite find the right words to do it.
 
-I’ve been meaning to write this post for a long time now. The problem was I never quite find the right words to do it.
-
-The ”go rogue” philosophy is something that people follow every-time they want something to change. See it as a way to fight the system. 
+The ”go rogue” philosophy is something that people follow every-time they want something to change. See it as a way to fight the system.
 Imagine you’re told to do something, something that you know is wrong and there’s a lot of better ways to do it. You have three options when that happens:
 <!--more-->
 
@@ -20,7 +18,7 @@ Imagine you’re told to do something, something that you know is wrong and ther
 * You can try to make them change their minds into doing the right thing.
 * You can do the right thing either way.
 * Obviously you should only jump into option number 3 if the second is not an option anymore.
-* 
+*
 Let’s just say there’s consequences to each one of the roads you take. The first one, will end up biting you in the ass later. Because the more likely thing to happen is you having to do everything again because they realized that you’re right in the middle of the process.
 
 The second option can also have some consequences. You do it a lot of times and you’ll end up being seen as the lone wolf that is always against the system. Hence if you just jump into option two you’re discrediting yourself. People will think that you’re being against the system just because you don’t care or are frustrated about something else.

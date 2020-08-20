@@ -17,7 +17,7 @@ plugins:
 
 paginate_path: "/page:num/"
 
-paginate: 5
+paginate: 15
 
 collections_dir: all_collections
 collections:

@@ -1,21 +1,21 @@
 ---
-layout: post
-title: Git vs Svn is it really a battle?
-date: 2012-08-27
-tag: Git,Version-control
-description: Since I wrote that last post on how to update your codeigniter installation with git, I got a question on why use git? (at least this time was why use
-author: Marco Monteiro
-categories: [Git,Version-control]
----
+layout: post
+title: Git vs Svn is it really a battle?
+date: 2012-08-27
+tag: Git,Version-control
+description: Since I wrote that last post on how to update your codeigniter installation with git, I got a question on why use git? (at least this time was why use
+author: Marco Monteiro
+categories: [Git,Version-control]
+---
 
-Since I wrote that last post on how to update your codeigniter installation with git, I got a question on why use git? (at least this time was why use git, and not why use any kind of version control). 
+Since I wrote that last post on how to update your codeigniter installation with git, I got a question on why use git? (at least this time was why use git, and not why use any kind of version control).
 <!--more-->
 Normally I post some of my posts on Forrst, and there was the place the question took place. Take a look:
 
 > Marco,
-> 
+>
 > really interesting. We use Codeigniter for our applications. May sound so noob but... Should we always be up to date? It's secure to update?
-> 
+>
 > I'm one of those that doesn't use git. We have our own SNV and I can't still find what is what you guys see in git to not be able to live without it. Can you give a bit of details? :-)
 
 So I promised the dude I would blog about this, since the freaking text-area where you comment on Forrst is so damn small.
@@ -45,7 +45,7 @@ Single Repository (Since Subversion only supports a single repository there is l
 Access Controls (Since Subversion has a single central repository it is possible to specify read and write access controls in a single location and have them be enforced across the entire project.)
 So as you can see they both have their ups and downs. For me I still think Git is way better than SVN. I find it more intuitive/natural to use.
 
-This article does not aspire to be final proof of anything, it’s just a collection of stuff I found on the web. Hell, if someone reads this and is not using any kind of version control and starts using it because of it I say - Mission accomplished. 
+This article does not aspire to be final proof of anything, it’s just a collection of stuff I found on the web. Hell, if someone reads this and is not using any kind of version control and starts using it because of it I say - Mission accomplished.
 
 Take some time to watch this talk from the great Linus Torvalds about Git. If I can’t convince you about using git he’s the man to do it.
 

@@ -1,0 +1,4 @@
+I"$<p>Well since I’m now working as a freelancer I now have a bit more power over what framework should be used for this or that project. Therefore, I think I’m not going to use Codeigniter by choice anymore. This means I’ll use it if the client requests it. Or if by any chance I’m working with someone else that is only familiar with CI and not Laravel.
+<!--more-->
+Also I still need to support a lot of applications that were built with CI, and since the code doen’t re-write itself I’m going to continue with Codeigniter on those.</p>
+:ET

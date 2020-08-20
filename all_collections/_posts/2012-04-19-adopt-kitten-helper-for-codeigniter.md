@@ -1,16 +1,4 @@
----
-layout: post
-title: Adopt Kitten helper for Codeigniter
-date: 2012-04-19
-tag: ci,code,codeigniter,helper,image,kitten,placeholder
-description: Need a placeholder? Like kittens? Use Codeigniter?
-
-Well you’ve come to the right place sir. I have just the thing for you. Today edmundask did his own placeholder helper for
-author: Marco Monteiro
-categories: [ci,code,codeigniter,helper,image,kitten,placeholder]
----
-
-Need a placeholder? Like kittens? Use Codeigniter?
+Need a placeholder? Like kittens? Use Codeigniter?
 
 Well you’ve come to the right place sir. I have just the thing for you. Today edmundask did his own placeholder helper for Codeigniter. When I saw it I just had to make a placeholder with kittens. So I forked his repository and did it.
 

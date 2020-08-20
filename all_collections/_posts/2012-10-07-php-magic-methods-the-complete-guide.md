@@ -1,14 +1,14 @@
 ---
-layout: post
-title: Php magic methods - The complete guide
-date: 2012-10-07
-tag: magic methods,oop,php
-description: PHP has a few ‘magic’ methods that you can use in OOP (Object oriented programming). All of them must be identified with two underscore prefix and they act as interceptors
-author: Marco Monteiro
-categories: [magic methods,oop,php]
----
+layout: post
+title: Php magic methods - The complete guide
+date: 2012-10-07
+tag: magic methods,oop,php
+description: PHP has a few magic methods that you can use in OOP (Object oriented programming). All of them must be identified with two underscore prefix and they act as interceptors
+author: Marco Monteiro
+categories: [magic methods,oop,php]
+---
 
-PHP has a few ‘magic’ methods that you can use in OOP (Object oriented programming). All of them must be identified with two underscore prefix and they act as interceptors that will run then certain required conditions are met. So as you can see these methods are extremely useful.
+PHP has a few ‘magic’ methods that you can use in OOP (Object oriented programming). All of them must be identified with two underscore prefix and they act as interceptors that will run then certain required conditions are met. So as you can see these methods are extremely useful.
 <!--more-->
 
 **List of magic methods**
@@ -28,14 +28,14 @@ Classes which have a constructor method call this method on each newly-created o
 		   print "In constructor\n";
 		   $this->name = "MyDestructableClass";
 	   }
-	 
+
 	   function __destruct() {
 		   print "Destroying " . $this->name . "\n";
 	   }
 	}
-	 
+
 	$obj = new MyDestructableClass();
-	
+
 **__call() and __callStatic()**
 
 'Call' is triggered when invoking inaccessible methods in an object context. For methods in a static context you should use 'callStatic'.
@@ -48,7 +48,7 @@ Classes which have a constructor method call this method on each newly-created o
 			echo "Calling object method '$name' "
 				 . implode(', ', $arguments). "\n";
 		}
-	 
+
 		public static function __callStatic($name, $arguments)
 		{
 			// Note: value of $name is case sensitive.
@@ -56,12 +56,12 @@ Classes which have a constructor method call this method on each newly-created o
 				 . implode(', ', $arguments). "\n";
 		}
 	}
-	 
+
 	$obj = new MethodTest;
 	$obj->runTest('in object context');
-	 
+
 	MethodTest::runTest('in static context');
-	
+
 **__get(), __set(), __isset() and __unset()**
 
 'set' is run when writing data to inaccessible properties. 'get' is utilized for reading data from inaccessible properties. 'isset' is triggered by calling isset() or empty() on inaccessible properties. 'unset' is invoked when unset() is used on inaccessible properties.
@@ -70,26 +70,26 @@ Classes which have a constructor method call this method on each newly-created o
 	{
 		/**  Location for overloaded data.  */
 		private $data = array();
-	 
+
 		/**  Overloading not used on declared properties.  */
 		public $declared = 1;
-	 
+
 		/**  Overloading only used on this when accessed outside the class.  */
 		private $hidden = 2;
-	 
+
 		public function __set($name, $value)
 		{
 			echo "Setting '$name' to '$value'\n";
 			$this->data[$name] = $value;
 		}
-	 
+
 		public function __get($name)
 		{
 			echo "Getting '$name'\n";
 			if (array_key_exists($name, $this->data)) {
 				return $this->data[$name];
 			}
-	 
+
 			$trace = debug_backtrace();
 			trigger_error(
 				'Undefined property via __get(): ' . $name .
@@ -98,28 +98,28 @@ Classes which have a constructor method call this method on each newly-created o
 				E_USER_NOTICE);
 			return null;
 		}
-	 
+
 		/**  As of PHP 5.1.0  */
 		public function __isset($name)
 		{
 			echo "Is '$name' set?\n";
 			return isset($this->data[$name]);
 		}
-	 
+
 		/**  As of PHP 5.1.0  */
 		public function __unset($name)
 		{
 			echo "Unsetting '$name'\n";
 			unset($this->data[$name]);
 		}
-	 
+
 		/**  Not a magic method, just here for example.  */
 		public function getHidden()
 		{
 			return $this->hidden;
 		}
 	}
-	
+
 You have to be careful with this one, because if you don’t specify __isset() and rely just on __get() while using isset() or empty(), you’re in for some bad time.
 
 **Note:**
@@ -136,7 +136,7 @@ It is not possible for __sleep() to return names of private properties in parent
 	{
 		protected $link;
 		private $server, $username, $password, $db;
-		
+
 		public function __construct($server, $username, $password, $db)
 		{
 			$this->server = $server;
@@ -145,24 +145,24 @@ It is not possible for __sleep() to return names of private properties in parent
 			$this->db = $db;
 			$this->connect();
 		}
-		
+
 		private function connect()
 		{
 			$this->link = mysql_connect($this->server, $this->username, $this->password);
 			mysql_select_db($this->db, $this->link);
 		}
-		
+
 		public function __sleep()
 		{
 			return array('server', 'username', 'password', 'db');
 		}
-		
+
 		public function __wakeup()
 		{
 			$this->connect();
 		}
 	}
-	
+
 **__toString()**
 
 The __toString() method allows a class to decide how it will react when it is treated like a string. For example, what echo $obj; will print. This method must return a string, as otherwise a fatal E_RECOVERABLE_ERROR level error is emitted.
@@ -170,21 +170,21 @@ The __toString() method allows a class to decide how it will react when it is tr
 	class TestClass
 	{
 		public $foo;
-	 
+
 		public function __construct($foo)
 		{
 			$this->foo = $foo;
 		}
-	 
+
 		public function __toString()
 		{
 			return $this->foo;
 		}
 	}
-	 
+
 	$class = new TestClass('Hello');
 	echo $class;
-	
+
 **__invoke()**
 
 The __invoke() method is called when a script tries to call an object as a function.
@@ -208,7 +208,7 @@ Static object __set_state ( array $properties ) This static method is called for
 	{
 		public $var1;
 		public $var2;
-	 
+
 		public static function __set_state($an_array) // As of PHP 5.1.0
 		{
 			$obj = new A;
@@ -217,16 +217,16 @@ Static object __set_state ( array $properties ) This static method is called for
 			return $obj;
 		}
 	}
-	 
+
 	$a = new A;
 	$a->var1 = 5;
 	$a->var2 = 'foo';
-	 
+
 	eval('$b = ' . var_export($a, true) . ';'); // $b = A::__set_state(array(
 												//    'var1' => 5,
 												//    'var2' => 'foo',
 												// ));
-												
+
 **__clone()**
 
 Creating a copy of an object with fully replicated properties is not always the wanted behavior. A good example of the need for copy constructors, is if you have an object which represents a GTK window and the object holds the resource of this GTK window, when you create a duplicate you might want to create a new window with the same properties and have the new object hold the resource of the new window. Another example is if your object holds a reference to another object which it uses and when you replicate the parent object you want to create a new instance of this other object so that the replica has its own separate copy.
@@ -237,21 +237,21 @@ An object copy is created by using the clone keyword (which calls the object’s
 	{
 		static $instances = 0;
 		public $instance;
-	 
+
 		public function __construct() {
 			$this->instance = ++self::$instances;
 		}
-	 
+
 		public function __clone() {
 			$this->instance = ++self::$instances;
 		}
 	}
-	 
+
 	class MyCloneable
 	{
 		public $object1;
 		public $object2;
-	 
+
 		function __clone()
 		{
 			// Force a copy of this->object, otherwise
@@ -259,19 +259,19 @@ An object copy is created by using the clone keyword (which calls the object’s
 			$this->object1 = clone $this->object1;
 		}
 	}
-	 
+
 	$obj = new MyCloneable();
-	 
+
 	$obj->object1 = new SubObject();
 	$obj->object2 = new SubObject();
-	 
+
 	$obj2 = clone $obj;
-	 
-	 
+
+
 	print("Original Object:\n");
 	print_r($obj);
-	 
+
 	print("Cloned Object:\n");
 	print_r($obj2);
-	
+
 This is a complete guide for the magic methods in PHP. All the examples are from the php.net website. I hope this can be useful to other PHP developers just starting the world of OOP.

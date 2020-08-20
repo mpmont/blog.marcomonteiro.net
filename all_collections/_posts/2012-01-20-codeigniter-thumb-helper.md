@@ -1,18 +1,14 @@
 ---
-layout: post
-title: Codeigniter - Thumb Helper
-date: 2012-01-20
-tag: ci,code,codeigniter,helper,image,php,thumb
-description: I’ve created a small thumbnail helper for codeigniter and I’d like to get some feedback from you guys.
+layout: post
+title: Codeigniter - Thumb Helper
+date: 2012-01-20
+tag: ci,code,codeigniter,helper,image,php,thumb
+description: I’ve created a small thumbnail helper for codeigniter and I’d like to get some feedback from you guys.
+author: Marco Monteiro
+categories: [ci,code,codeigniter,helper,image,php,thumb]
+---
 
-**Go nuts:**
-
-* Propose changes (fork the thingy and make some changes
-author: Marco Monteiro
-categories: [ci,code,codeigniter,helper,image,php,thumb]
----
-
-I’ve created a small thumbnail helper for codeigniter and I’d like to get some feedback from you guys.
+I’ve created a small thumbnail helper for codeigniter and I’d like to get some feedback from you guys.
 
 **Go nuts:**
 

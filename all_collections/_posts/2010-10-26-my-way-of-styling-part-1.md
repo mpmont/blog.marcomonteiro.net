@@ -1,14 +1,4 @@
----
-layout: post
-title: My way of styling Part 1
-date: 2010-10-26
-tag: css,Webdesign,Webdev
-description: Well i’m a webdeveloper, therefore much of my work is making an idea come to reality, or making the website “alive”. That can be achieved with css among other things.
-author: Marco Monteiro
-categories: [css,Webdesign,Webdev]
----
-
-Well i’m a webdeveloper, therefore much of my work is making an idea come to reality, or making the website “alive”. That can be achieved with css among other things. This is my favorite thing to do on my daily work, styling a website. With this article i’ll be trying to show my process of doing this.
+Well i’m a webdeveloper, therefore much of my work is making an idea come to reality, or making the website “alive”. That can be achieved with css among other things. This is my favorite thing to do on my daily work, styling a website. With this article i’ll be trying to show my process of doing this.
 
 First of all i try to use only one css file, but sometimes the file get’s so big that you might find useful to make some divisions. So, if you can’t use only one file try not to use more than 3, after that you will see the difference specially when someone is arriving to the website for the first time.
 <!--more-->
@@ -49,7 +39,7 @@ So, now you can see how this is a big deal, first you want to speed the word abo
 
 The next step is to pick a good reset styles, this is very important and some developers tend to forget this, without this you will be having a lot more problems with different browsers and a bunch of other problems like strange margins or paddings that wasn’t suppose to be there in the first place.
 
-	/* -------------------------------------------------------------- 
+	/* --------------------------------------------------------------
 	reset.css
 	* Resets default browser CSS.
 	-------------------------------------------------------------- */

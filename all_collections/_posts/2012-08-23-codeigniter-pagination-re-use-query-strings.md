@@ -1,18 +1,8 @@
----
-layout: post
-title: Codeigniter Pagination - Re-use query strings
-date: 2012-08-23
-tag: codeigniter,pagination
-description: A few months ago I had a problem. I was paginating some results based on some data the user had provided. So I needed to be able to pass that
-author: Marco Monteiro
-categories: [codeigniter,pagination]
----
+A few months ago I had a problem. I was paginating some results based on some data the user had provided. So I needed to be able to pass that data from page to page during the pagination process. First I set to read the Codeigniter documentation to see if it was possible to do that with the pagination library.
 
-A few months ago I had a problem. I was paginating some results based on some data the user had provided. So I needed to be able to pass that data from page to page during the pagination process. First I set to read the Codeigniter documentation to see if it was possible to do that with the pagination library. 
-
-Turns out I could if I set up that data to be a query string and save it in my suffix param. However this solution had a problem. Every-time the user clicked the first or last link on the pagination the query string would disappear. 
+Turns out I could if I set up that data to be a query string and save it in my suffix param. However this solution had a problem. Every-time the user clicked the first or last link on the pagination the query string would disappear.
 <!--more-->
-So I searched some more, and found something even better. The new version of the pagination Library (3.0) already had that feature. So if you ever need it and don’t want to wait for the next version of Codeigniter you just have to do the following. 
+So I searched some more, and found something even better. The new version of the pagination Library (3.0) already had that feature. So if you ever need it and don’t want to wait for the next version of Codeigniter you just have to do the following.
 
 Download the version 3.0 of the Pagination Library [here](https://github.com/EllisLab/CodeIgniter/blob/develop/system/libraries/Pagination.php).
 
@@ -54,4 +44,4 @@ As you can see the pagination now has one more param than before. It’s called 
 	protected $_attributes			= '';
 	protected $_link_types			= array();
 	protected $reuse_query_string           = FALSE;
-	protected $data_page_attr		= 'data-ci-pagination-page';    
+	protected $data_page_attr		= 'data-ci-pagination-page';

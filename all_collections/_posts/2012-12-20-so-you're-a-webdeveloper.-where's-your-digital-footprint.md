@@ -1,16 +1,16 @@
 ---
-layout: post
-title: So you're a webdeveloper. Where's your Digital Footprint?
-date: 2012-12-20
-tag: life,rant,web,Webdev
-description: Something that always amazed me is the amount of webdevelopers I happen to find on the web with literally almost no Digital Fooprint. Specially with people that I find on
-author: Marco Monteiro
-categories: [life,rant,web,Webdev]
----
+layout: post
+title: So you're a webdeveloper. Where's your Digital Footprint?
+date: 2012-12-20
+tag: life,rant,web,Webdev
+description: Something that always amazed me is the amount of webdevelopers I happen to find on the web with literally almost no Digital Fooprint. Specially with people that I find on
+author: Marco Monteiro
+categories: [life,rant,web,Webdev]
+---
 
-Something that always amazed me is the amount of webdevelopers I happen to find on the web with literally almost no Digital Fooprint. Specially with people that I find on Freenode.
+Something that always amazed me is the amount of webdevelopers I happen to find on the web with literally almost no Digital Fooprint. Specially with people that I find on Freenode.
 
-This normally happens when I’m looking for some small freelance stuff, or even just going voyeur style and find someone talking big. 
+This normally happens when I’m looking for some small freelance stuff, or even just going voyeur style and find someone talking big.
 <!--more-->
 **People saying **
 
@@ -38,9 +38,9 @@ Inevitable if you are a “normal” webdeveloper you will end up with some kind
 * have a twitter account.
 * contributed to open-source projects.
 * have a personal website.
-* hopefully you blog. 
+* hopefully you blog.
 * are not afraid of this thing called the Internet.
- 
+
 What I’m trying to say is: it’s ok if you want to protect your personal information from the Elders of the internet. Actually I think the Internet appreciates that. I think there’s enough weird family photos around already.
 
 However, I’m sure you use stackoverflow all the time. You find answers on forums everyday. Every now and again you even ask for help yourself. But when you see that lonely person asking for help on a forum, and you actually know the solution to that poor soul problem, you just close the window and move on with your life.

@@ -1,14 +1,14 @@
 ---
-layout: post
-title: The new Gowalla approach
-date: 2011-09-24
-tag: Miscellaneous,socialmedia
-description: This week Gowalla released a new mobile app both for Android and IOS. When I heard this I was so excited. I'm not using gowalla for that long, I used
-author: Marco Monteiro
-categories: [Miscellaneous,socialmedia]
----
+layout: post
+title: The new Gowalla approach
+date: 2011-09-24
+tag: Miscellaneous,socialmedia
+description: This week Gowalla released a new mobile app both for Android and IOS. When I heard this I was so excited. I'm not using gowalla for that long, I used
+author: Marco Monteiro
+categories: [Miscellaneous,socialmedia]
+---
 
-This week Gowalla released a new mobile app both for Android and IOS. When I heard this I was so excited. I'm not using gowalla for that long, I used foursquare when I started checkin into places. But lately I noticed that I had much more real friends on Gowalla than foursquare. So I changed to Gowalla and I love it.
+This week Gowalla released a new mobile app both for Android and IOS. When I heard this I was so excited. I'm not using gowalla for that long, I used foursquare when I started checkin into places. But lately I noticed that I had much more real friends on Gowalla than foursquare. So I changed to Gowalla and I love it.
 
 I loved Gowala, it's was fun, fast and most of all it worked. Well not anymore, not after that last version. For what I've been reading they changed the business strategy, trying to difference their product from foursquare. I can relate to that, since there's no space in the market for both. But I never thought they would go down this path.
 <!--more-->

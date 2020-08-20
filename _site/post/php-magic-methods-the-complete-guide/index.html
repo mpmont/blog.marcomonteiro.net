@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Blog++ | Php Magic Methods The Complete Guide</title>
+    <title>Blog++ | Php magic methods - The complete guide</title>
     <!--Meta Desc-->
-    <meta name="keywords" content=""/>
-    <meta name="description" content=""/>
+    <meta name="keywords" content="magic methods,oop,php"/>
+    <meta name="description" content="PHP has a few magic methods that you can use in OOP (Object oriented programming). All of them must be identified with two underscore prefix and they act as interceptors"/>
     <meta name="subject" content="Web development & Linux Stuff">
     <meta name="copyright"content="Marco Monteiro">
     <meta name="language" content="EN">
@@ -22,8 +22,8 @@
 
     <!--Meta Facebook-->
     <meta property="og:image" content="https://blog.marcomonteiro.net/assets/img/facebooklogo.jpg"/>
-    <meta property="og:title" content="Blog++ | Php Magic Methods The Complete Guide"/>
-    <meta property="og:description" content=""/>
+    <meta property="og:title" content="Blog++ | Php magic methods - The complete guide"/>
+    <meta property="og:description" content="PHP has a few magic methods that you can use in OOP (Object oriented programming). All of them must be identified with two underscore prefix and they act as interceptors"/>
     <meta property="og:url" content="https://blog.marcomonteiro.net"/>
     <meta property="og:site_name" content="Blog++"/>
     <meta property="og:type" content="blog"/>
@@ -31,8 +31,8 @@
     <!--Meta Twitter-->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@marcogmonteiro">
-    <meta name="twitter:title" content="Blog++ | Php Magic Methods The Complete Guide">
-    <meta name="twitter:description" content="">
+    <meta name="twitter:title" content="Blog++ | Php magic methods - The complete guide">
+    <meta name="twitter:description" content="PHP has a few magic methods that you can use in OOP (Object oriented programming). All of them must be identified with two underscore prefix and they act as interceptors">
     <meta name="twitter:creator" content="@marcogmonteiro">
     <meta name="twitter:domain" content="blog.marcomonteiro.net">
 
@@ -83,27 +83,9 @@
         <div class="content">
             <div id="scrollbubble"></div>
             <section class="post">
-                <h2 class="flipboard-title title">Php Magic Methods The Complete Guide</h2>
-                <div class="date flipboard-date">October 07, 2012 <i class="icon-user"></i> Written By </div>
-                <hr />
-
-<p>layout: post</p>
-
-<p>title: Php magic methods - The complete guide</p>
-
-<p>date: 2012-10-07</p>
-
-<p>tag: magic methods,oop,php</p>
-
-<p>description: PHP has a few ‘magic’ methods that you can use in OOP (Object oriented programming). All of them must be identified with two underscore prefix and they act as interceptors</p>
-
-<p>author: Marco Monteiro</p>
-
-<p>categories: [magic methods,oop,php]</p>
-
-<hr />
-
-<p>PHP has a few ‘magic’ methods that you can use in OOP (Object oriented programming). All of them must be identified with two underscore prefix and they act as interceptors that will run then certain required conditions are met. So as you can see these methods are extremely useful.
+                <h2 class="flipboard-title title">Php magic methods - The complete guide</h2>
+                <div class="date flipboard-date">October 07, 2012 <i class="icon-user"></i> Written By Marco Monteiro</div>
+                <p>PHP has a few ‘magic’ methods that you can use in OOP (Object oriented programming). All of them must be identified with two underscore prefix and they act as interceptors that will run then certain required conditions are met. So as you can see these methods are extremely useful.
 <!--more--></p>
 
 <p><strong>List of magic methods</strong></p>
@@ -123,12 +105,12 @@
 	   print "In constructor\n";
 	   $this-&gt;name = "MyDestructableClass";
    }
- 
+
    function __destruct() {
 	   print "Destroying " . $this-&gt;name . "\n";
    }
 }
- 
+
 $obj = new MyDestructableClass();
 </code></pre></div></div>
 
@@ -144,7 +126,7 @@ $obj = new MyDestructableClass();
 		echo "Calling object method '$name' "
 			 . implode(', ', $arguments). "\n";
 	}
- 
+
 	public static function __callStatic($name, $arguments)
 	{
 		// Note: value of $name is case sensitive.
@@ -152,10 +134,10 @@ $obj = new MyDestructableClass();
 			 . implode(', ', $arguments). "\n";
 	}
 }
- 
+
 $obj = new MethodTest;
 $obj-&gt;runTest('in object context');
- 
+
 MethodTest::runTest('in static context');
 </code></pre></div></div>
 
@@ -167,26 +149,26 @@ MethodTest::runTest('in static context');
 {
 	/**  Location for overloaded data.  */
 	private $data = array();
- 
+
 	/**  Overloading not used on declared properties.  */
 	public $declared = 1;
- 
+
 	/**  Overloading only used on this when accessed outside the class.  */
 	private $hidden = 2;
- 
+
 	public function __set($name, $value)
 	{
 		echo "Setting '$name' to '$value'\n";
 		$this-&gt;data[$name] = $value;
 	}
- 
+
 	public function __get($name)
 	{
 		echo "Getting '$name'\n";
 		if (array_key_exists($name, $this-&gt;data)) {
 			return $this-&gt;data[$name];
 		}
- 
+
 		$trace = debug_backtrace();
 		trigger_error(
 			'Undefined property via __get(): ' . $name .
@@ -195,21 +177,21 @@ MethodTest::runTest('in static context');
 			E_USER_NOTICE);
 		return null;
 	}
- 
+
 	/**  As of PHP 5.1.0  */
 	public function __isset($name)
 	{
 		echo "Is '$name' set?\n";
 		return isset($this-&gt;data[$name]);
 	}
- 
+
 	/**  As of PHP 5.1.0  */
 	public function __unset($name)
 	{
 		echo "Unsetting '$name'\n";
 		unset($this-&gt;data[$name]);
 	}
- 
+
 	/**  Not a magic method, just here for example.  */
 	public function getHidden()
 	{
@@ -234,7 +216,7 @@ MethodTest::runTest('in static context');
 {
 	protected $link;
 	private $server, $username, $password, $db;
-	
+
 	public function __construct($server, $username, $password, $db)
 	{
 		$this-&gt;server = $server;
@@ -243,18 +225,18 @@ MethodTest::runTest('in static context');
 		$this-&gt;db = $db;
 		$this-&gt;connect();
 	}
-	
+
 	private function connect()
 	{
 		$this-&gt;link = mysql_connect($this-&gt;server, $this-&gt;username, $this-&gt;password);
 		mysql_select_db($this-&gt;db, $this-&gt;link);
 	}
-	
+
 	public function __sleep()
 	{
 		return array('server', 'username', 'password', 'db');
 	}
-	
+
 	public function __wakeup()
 	{
 		$this-&gt;connect();
@@ -269,18 +251,18 @@ MethodTest::runTest('in static context');
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class TestClass
 {
 	public $foo;
- 
+
 	public function __construct($foo)
 	{
 		$this-&gt;foo = $foo;
 	}
- 
+
 	public function __toString()
 	{
 		return $this-&gt;foo;
 	}
 }
- 
+
 $class = new TestClass('Hello');
 echo $class;
 </code></pre></div></div>
@@ -309,7 +291,7 @@ var_dump(is_callable($obj));
 {
 	public $var1;
 	public $var2;
- 
+
 	public static function __set_state($an_array) // As of PHP 5.1.0
 	{
 		$obj = new A;
@@ -318,11 +300,11 @@ var_dump(is_callable($obj));
 		return $obj;
 	}
 }
- 
+
 $a = new A;
 $a-&gt;var1 = 5;
 $a-&gt;var2 = 'foo';
- 
+
 eval('$b = ' . var_export($a, true) . ';'); // $b = A::__set_state(array(
 											//    'var1' =&gt; 5,
 											//    'var2' =&gt; 'foo',
@@ -339,21 +321,21 @@ eval('$b = ' . var_export($a, true) . ';'); // $b = A::__set_state(array(
 {
 	static $instances = 0;
 	public $instance;
- 
+
 	public function __construct() {
 		$this-&gt;instance = ++self::$instances;
 	}
- 
+
 	public function __clone() {
 		$this-&gt;instance = ++self::$instances;
 	}
 }
- 
+
 class MyCloneable
 {
 	public $object1;
 	public $object2;
- 
+
 	function __clone()
 	{
 		// Force a copy of this-&gt;object, otherwise
@@ -361,18 +343,18 @@ class MyCloneable
 		$this-&gt;object1 = clone $this-&gt;object1;
 	}
 }
- 
+
 $obj = new MyCloneable();
- 
+
 $obj-&gt;object1 = new SubObject();
 $obj-&gt;object2 = new SubObject();
- 
+
 $obj2 = clone $obj;
- 
- 
+
+
 print("Original Object:\n");
 print_r($obj);
- 
+
 print("Cloned Object:\n");
 print_r($obj2);
 </code></pre></div></div>
@@ -382,13 +364,22 @@ print_r($obj2);
                 <ul id="tags" class="tags">
                     
                     
+                        <li><a href="#"><i class="icon-tag"></i> magic methods</a></li>
+                        &nbsp;
+                    
+                        <li><a href="#"><i class="icon-tag"></i> oop</a></li>
+                        &nbsp;
+                    
+                        <li><a href="#"><i class="icon-tag"></i> php</a></li>
+                        
+                    
                 </ul>
                 <br>
             </section>
             <div id="tweet_it">
                 <a href="javascript:void(0)" id="tweet_compose_close" class="close_it">x</a>
                 <h4>Like it? Tweet it.</h4>
-                <p>"Php Magic Methods The Complete Guide" via <a href="http://twitter.com/marcogmonteiro">@marcogmonteiro</a><br>
+                <p>"Php magic methods - The complete guide" via <a href="http://twitter.com/marcogmonteiro">@marcogmonteiro</a><br>
                     <a href="https://twitter.com/share" data-count="horizontal" data-count="none" data-related="marcogmonteiro" data-via="marcogmonteiro" class="twitter-share-button" data-lang="en">Tweet</a>
                   <br>
                 </p>

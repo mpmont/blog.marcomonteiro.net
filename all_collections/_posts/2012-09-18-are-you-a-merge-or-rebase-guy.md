@@ -1,14 +1,4 @@
----
-layout: post
-title: Are you a merge or rebase guy?
-date: 2012-09-18
-tag: Git,Version-control
-description: I know, by now you read almost every tutorial about how to get started with git. You know how to create your repo, add stuff to it and push to
-author: Marco Monteiro
-categories: [Git,Version-control]
----
-
-I know, by now you read almost every tutorial about how to get started with git. You know how to create your repo, add stuff to it and push to your remote. You started branching and everything is now great. Then you read the term Rebase somewhere and think - who wants that? I have Merge. 
+I know, by now you read almost every tutorial about how to get started with git. You know how to create your repo, add stuff to it and push to your remote. You started branching and everything is now great. Then you read the term Rebase somewhere and think - who wants that? I have Merge.
 
 Well today we talk about the differences between them. Also have in mind that these concepts can be applied to both Git and Mercurial.
 Merge or Rebase?
@@ -26,7 +16,7 @@ Join two or more development histories together.
 
 Incorporates changes from the named commits (since the time their histories diverged from the current branch) into the current branch. This command is used by git pull to incorporate changes from another repository and can be used by hand to merge changes from one branch into another.
 
-Assume the following history exists and the current branch is “master”: 
+Assume the following history exists and the current branch is “master”:
 
 	  A---B---C topic
 	 /
@@ -69,7 +59,7 @@ will result in:
 
 And it can get more and more complex than this. But trying to resume what it is to a more simple definition in contrast to Branching.
 
-Rebasing unifies the lines of development by re-writing changes from the source branch so that they appear as children of the destination branch effectively pretending that those commits were written on top of the destination branch all along. 
+Rebasing unifies the lines of development by re-writing changes from the source branch so that they appear as children of the destination branch effectively pretending that those commits were written on top of the destination branch all along.
 
 **Pros and cons**
 

@@ -1,16 +1,14 @@
 ---
-layout: post
-title: Ci-presenter library for Codeigniter
-date: 2012-06-09
-tag: ci,codeigniter,screencasts
-description: <iframe src="https://player.vimeo.com/video/43767192?color=ffffff" width="600" height="375" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+layout: post
+title: Ci-presenter library for Codeigniter
+date: 2012-06-09
+tag: ci,codeigniter,screencasts
+description: For a long time I’ve been using Jamie Rumbelow view presenters and after his presentation at Ciconf (London 2012) I noticed that
+author: Marco Monteiro
+categories: [ci,codeigniter,screencasts]
+---
 
-For a long time I’ve been using Jamie Rumbelow view presenters and after his presentation at Ciconf (London 2012) I noticed that
-author: Marco Monteiro
-categories: [ci,codeigniter,screencasts]
----
-
-<iframe src="https://player.vimeo.com/video/43767192?color=ffffff" width="600" height="375" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+<iframe src="https://player.vimeo.com/video/43767192?color=ffffff" width="100%" height="375" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
 For a long time I’ve been using Jamie Rumbelow view presenters and after his presentation at Ciconf (London 2012) I noticed that a lot of people started using his code including my buddy David Wosnitza. After a while David started using the presenters in a even more clever way. He showed me his code and we agreed that it was time to create a library inspired in Jamie’s work.
 
@@ -18,7 +16,7 @@ For a long time I’ve been using Jamie Rumbelow view presenters and after his p
 
 **What is a presenter?**
 
-A presenter just another layer of abstraction that works between the Controller and the View. 
+A presenter just another layer of abstraction that works between the Controller and the View.
 
 **Why do we need another layer of abstraction?**
 

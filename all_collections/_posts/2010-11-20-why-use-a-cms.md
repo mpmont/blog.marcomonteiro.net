@@ -1,14 +1,14 @@
 ---
-layout: post
-title: Why use a cms?
-date: 2010-11-20
-tag: cms,drupal,joomla,Webdesign,Webdev,wordpress
-description: A while ago i received an e-mail with a future subject to write about on my blog and i was really glad, since that ment two things, people are reading
-author: Marco Monteiro
-categories: [cms,drupal,joomla,Webdesign,Webdev,wordpress]
----
+layout: post
+title: Why use a cms?
+date: 2010-11-20
+tag: cms,drupal,joomla,Webdesign,Webdev,wordpress
+description: A while ago i received an e-mail with a future subject to write about on my blog and i was really glad, since that ment two things, people are reading
+author: Marco Monteiro
+categories: [cms,drupal,joomla,Webdesign,Webdev,wordpress]
+---
 
-A while ago i received an e-mail with a future subject to write about on my blog and i was really glad, since that ment two things, people are reading and most of all are interested in my opinion.
+A while ago i received an e-mail with a future subject to write about on my blog and i was really glad, since that ment two things, people are reading and most of all are interested in my opinion.
 Therefore this week post will be all about free stuff and all you can actually make with it on the webdesign / webdev world.
 <!--more-->
 **First i should show you guys the message that brought this subject here:**
@@ -35,7 +35,7 @@ Let’s begin.
 If you do you have two choices: or you start programming your own scripts and make your websites from scratch, or you can use some cool frameworks.
 If you are a hardcore developer you might want to try Ruby on rails, this got a lot of attention lately. This is almost like programming with Ruby but just for web.
 
-I tried this one out for a bit but end up sticking with php, not because i didn’t like it but because of my lack of time to actually use in the real world. 
+I tried this one out for a bit but end up sticking with php, not because i didn’t like it but because of my lack of time to actually use in the real world.
 Take a look at the framework here: http://rubyonrails.org/.
 
 There are some other frameworks that uses PHP and also with a MVC structure like Zend software, cakePHP or even CodeIgniter. Even if Zend isn’t totally free is really cool but now this is really just a mather of preference. /by the way you can place the Zend SDK on eclipse.
@@ -59,13 +59,13 @@ Follow the links on the article and you’ll be amazed with what you can do with
 
 **phpBB**
 
-This is a strong cms forum oriented that can help you a lot. I think it’s safe to say that more than 50% of the forums are built with this one. You can do almost anything: moderate, have all different kinds of permissions for users and admins. And the view it self if really easy to customize, if you don’t like the themes out there you can change one knowing just a little bit of css. 
+This is a strong cms forum oriented that can help you a lot. I think it’s safe to say that more than 50% of the forums are built with this one. You can do almost anything: moderate, have all different kinds of permissions for users and admins. And the view it self if really easy to customize, if you don’t like the themes out there you can change one knowing just a little bit of css.
 
 In conclusion, if you look back you see that you can do almost anything with a cms’s. You have wordpress to build powerful blog’s and simple websites. If you want to build some complicated website you should definitely go with Joomla or Dupal. And to build a community you can always use phpBB.
 
 If you want to build some complicated website you should definitely go with Joomla or Dupal.
 
-To view some examples of all of this you can check my portfolio at www.marcomonteiro.net and see some examples. 
+To view some examples of all of this you can check my portfolio at www.marcomonteiro.net and see some examples.
 And fell free to comment if you have some doubts about what cms to use.
 
 Obviously you can be at the point where a cms is not enough you should go with a good framework and start coding. I hope i have help you guys understanding how easy it is to make to the webdev world.

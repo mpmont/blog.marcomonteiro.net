@@ -1,0 +1,2 @@
+I"?<p>A few months ago I had a problem. I was paginating some results based on some data the user had provided. So I needed to be able to pass that data from page to page during the pagination process. First I set to read the Codeigniter documentation to see if it was possible to do that with the pagination library.</p>
+:ET

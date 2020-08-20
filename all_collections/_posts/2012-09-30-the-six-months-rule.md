@@ -1,16 +1,4 @@
----
-layout: post
-title: The six months rule
-date: 2012-09-30
-tag: life,motivation,pep-talk,thoughts,Webdev
-description: Last week I had to make some changes into a really old project. The problem was: when I started, I didn’t remember how old the project really was.
-
-This was
-author: Marco Monteiro
-categories: [life,motivation,pep-talk,thoughts,Webdev]
----
-
-Last week I had to make some changes into a really old project. The problem was: when I started, I didn’t remember how old the project really was.
+Last week I had to make some changes into a really old project. The problem was: when I started, I didn’t remember how old the project really was.
 
 This was actually my first MVC project using Codeigniter. When I opened the project there was a couple of things that I started missing. First, no version control. Second, no comments whatsoever.
 

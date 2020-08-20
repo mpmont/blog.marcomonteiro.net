@@ -1,14 +1,4 @@
----
-layout: post
-title: Starting with composer
-date: 2012-09-19
-tag: composer,dependency manager,php
-description: I’m just getting started with Composer. I’ve been reading a lot about it and I think it’s the way to go. I don’t know many common developers (like me) that
-author: Marco Monteiro
-categories: [composer,dependency manager,php]
----
-
-I’m just getting started with Composer. I’ve been reading a lot about it and I think it’s the way to go. I don’t know many common developers (like me) that are already using it, but I’m going to give it a go. No more Git articles for you. From now on the two main subjects on my blog will be Composer and Unit Testing, since I decided that’s what I’m going to do next.
+I’m just getting started with Composer. I’ve been reading a lot about it and I think it’s the way to go. I don’t know many common developers (like me) that are already using it, but I’m going to give it a go. No more Git articles for you. From now on the two main subjects on my blog will be Composer and Unit Testing, since I decided that’s what I’m going to do next.
 What is this thing called Composer?
 
 Composer is a tool for dependency management in PHP. It allows you to declare the dependent libraries your project needs and it will install them in your project for you.
@@ -20,7 +10,7 @@ Well it’s quite easy. All there is to know actually is that there’s two logi
 * The repository: where all your packages will be stored.
 * The command line utility: that will help you manage everything.
 * To install Composer first you have to navigate to your project.
- 
+
 		$ cd /path/to/my/project
 
 Then you download Composer into your project

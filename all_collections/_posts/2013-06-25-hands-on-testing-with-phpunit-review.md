@@ -1,14 +1,14 @@
 ---
-layout: post
-title: Hands-on Testing with PHPUnit - review
-date: 2013-06-25
-tag: books,frameworks,php,tests,unit-testing
-description: One of the things that is actually starting to matter in our PHP world is testing. THe PHP community disregarded this for far too long. However, more modern frameworks took
-author: Marco Monteiro
-categories: [books,frameworks,php,tests,unit-testing]
----
+layout: post
+title: Hands-on Testing with PHPUnit - review
+date: 2013-06-25
+tag: books,frameworks,php,tests,unit-testing
+description: One of the things that is actually starting to matter in our PHP world is testing. THe PHP community disregarded this for far too long. However, more modern frameworks took
+author: Marco Monteiro
+categories: [books,frameworks,php,tests,unit-testing]
+---
 
-One of the things that is actually starting to matter in our PHP world is testing. THe PHP community disregarded this for far too long. However, more modern frameworks took this issue seriously and the community responded well. 
+One of the things that is actually starting to matter in our PHP world is testing. THe PHP community disregarded this for far too long. However, more modern frameworks took this issue seriously and the community responded well.
 
 PHPUnit is a testing framework that is supported, integrated and suggested by the majority of PHP frameworks. Test Driven Development (TDD), and Continuous Integration are here to stay and PHPUnit is an industry standard that caters for both.
 <!--more-->

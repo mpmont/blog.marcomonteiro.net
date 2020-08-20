@@ -1,14 +1,4 @@
----
-layout: post
-title: So you use Dropbox for version control? You're awesome
-date: 2012-08-30
-tag: dropbox,Git,rant,Version-control
-description: If you follow my blog, or are even a casual visitor you know at least 2 tools I use everyday. Codeigniter and Git. I use them for lots of reasons,
-author: Marco Monteiro
-categories: [dropbox,Git,rant,Version-control]
----
-
-If you follow my blog, or are even a casual visitor you know at least 2 tools I use everyday. Codeigniter and Git. I use them for lots of reasons, but most of all because they make my life and the team I work with easier. Moving forward.
+If you follow my blog, or are even a casual visitor you know at least 2 tools I use everyday. Codeigniter and Git. I use them for lots of reasons, but most of all because they make my life and the team I work with easier. Moving forward.
 <!--more-->
 One thing that I’m constantly doing is trying to improve my foo while using these two tools. Usually I'm on IRC talking with other developers that have the same interests, or just sharing lolcats. But every now and then, a guy shows up while we’re talking about Git and version control. I’m talking about a regular developer, a well intentioned one, that also wants to learn new stuff. But then he says the following:
 
@@ -38,4 +28,4 @@ Seriously people, using dropbox like that is just wrong. There’s no other way 
 
 Have fun.
 
-**ps:** Also check this [link](http://stackoverflow.com/questions/8238399/dropbox-as-a-programmers-source-control) to see how serious people about using this method. 
+**ps:** Also check this [link](http://stackoverflow.com/questions/8238399/dropbox-as-a-programmers-source-control) to see how serious people about using this method.

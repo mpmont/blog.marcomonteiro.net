@@ -1,0 +1,28 @@
+I"�<p>One of the things that is actually starting to matter in our PHP world is testing. THe PHP community disregarded this for far too long. However, more modern frameworks took this issue seriously and the community responded well.</p>
+
+<p>PHPUnit is a testing framework that is supported, integrated and suggested by the majority of PHP frameworks. Test Driven Development (TDD), and Continuous Integration are here to stay and PHPUnit is an industry standard that caters for both.
+<!--more-->
+<strong>Things I liked about the book:</strong></p>
+
+<ul>
+  <li><i class="icon-angle-right"></i> The book is short, but it takes the reader from easy examples to something that is far more complex than the normal tests you may find on the interwebs.</li>
+  <li><i class="icon-angle-right"></i> The amount of real life examples and not just theoretical ones.</li>
+  <li><i class="icon-angle-right"></i> Great book if you’re just starting with testing in PHP.</li>
+</ul>
+
+<p><strong>Thinks you may want to consider before buying this book</strong></p>
+
+<ul>
+  <li><i class="icon-angle-right"></i> This is not a manual on how to use PHPUnit.</li>
+  <li><i class="icon-angle-right"></i> If you already have an intermediate experience with testing this book might not be the best one for you.</li>
+</ul>
+
+<p>Overall the book is great and it accomplishes quite well it’s purpose - getting people started with phpUnit. So if that’s your case you should definitely give it a go.</p>
+
+<p>You can find the book at:</p>
+
+<ul>
+  <li><a href="http://www.packtpub.com/how-to-hands-on-testing-with-phpunit/book"><i class="icon-link"></i> Packt</a></li>
+  <li><a href="http://www.amazon.com/dp/178216958X/?tag=packtpubli-20"><i class="icon-link"></i> Amazon</a></li>
+</ul>
+:ET

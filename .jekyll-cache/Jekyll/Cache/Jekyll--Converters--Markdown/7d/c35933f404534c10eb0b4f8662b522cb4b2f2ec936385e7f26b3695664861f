@@ -1,0 +1,5 @@
+I"<p>Last week i explained how to structure a good signature on your code and why. This week i’ll be explaining how i do my css coding and how i structure my files. First of all i’d like to point you to some useful websites that can help you get started coding with css.
+Ok now the next part and i’ll try to keep it clean and simple.
+<!--more-->
+First, how to divide my document? Well i do it the same way every single time. Top to bottom. So let’s imagine that your site is going to have this sections:</p>
+:ET
