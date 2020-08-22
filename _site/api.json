@@ -4,6 +4,23 @@
     "posts": [
         
             {
+                "title": "Moved my blog to jekyll and hosting it on github",
+                "content_text": "I had my blog on wardrobe and using a normal shared hosting for a long time. Worked out great for my blog and website. However later I’ve been playing more and more with static website generators and see what can be done with them.With that in mind I decided to move both my website and blog to github hosting, for freeI might say and just use Jekyll to generate the static websites that I need.The blog is really fast now, and everything works exactly like I want it.I even used duckduckgo for the search functionality and it works amazing and with that I’m even supporting a really cool project.",
+                "content_html": "<p>I had my blog on wardrobe and using a normal shared hosting for a long time. Worked out great for my blog and website. However later I’ve been playing more and more with static website generators and see what can be done with them.</p><p>With that in mind I decided to move both my website and blog to github hosting, for freeI might say and just use Jekyll to generate the static websites that I need.</p><p>The blog is really fast now, and everything works exactly like I want it.</p><p>I even used duckduckgo for the search functionality and it works amazing and with that I’m even supporting a really cool project.</p>",
+                "url": "http://localhost:4000/post/moved-my-blog-to-jekyll-hosted-in-github/",
+                
+                
+                "categories": ["blog",2020,"2020"],                
+                
+                "tags": ["blog,2020"],
+                "date_published": "2020-08-22T00:00:00+01:00",
+                "date_modified": "2020-08-22T00:00:00+01:00",
+                
+                "author":  "Marco Monteiro" 
+                
+            },
+        
+            {
                 "title": "How to setup Codeigniter 4",
                 "content_text": "I started a brand new youtube channel. It’s called TIL Things. As in Today I Learned Things. The idea is to share kinda the same thing I normally do here but in a video format.To start things, I decided to do a video series about Codeigniter 4, from how to install it, how it works and building a small blog application with it.Here’s the first video. I hope you can enjoy it and if you do please consider liking and subscribing.All the code that will exist in these series will live in the following github repository.Github",
                 "content_html": "<p>I started a brand new <a href=\"https://www.youtube.com/channel/UC9HQjernJPHN-RoKMwtYQ4w\">youtube channel</a>. It’s called <a href=\"https://www.youtube.com/channel/UC9HQjernJPHN-RoKMwtYQ4w\">TIL Things</a>. As in Today I Learned Things. The idea is to share kinda the same thing I normally do here but in a video format.</p><p>To start things, I decided to do a video series about Codeigniter 4, from how to install it, how it works and building a small blog application with it.</p><!--more--><p>Here’s the first video. I hope you can enjoy it and if you do please consider liking and subscribing.</p><iframe width=\"100%\" height=\"400\" src=\"https://www.youtube.com/embed/tSdbT0GMEqU\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"\"></iframe><p>All the code that will exist in these series will live in the following github repository.</p><p><a href=\"https://github.com/mpmont/ci4-screencasts\">Github</a></p>",
@@ -2900,226 +2917,6 @@
                 "content_text": "",
                 "content_html": "",
                 "url": "http://localhost:4000/page12/",
-                "date_published": "",
-                "date_modified": ""
-            },
-        
-            {
-                "id": "blog",
-                "title": "Blog",
-                "content_text": "",
-                "content_html": "",
-                "url": "http://localhost:4000/page13/",
-                "date_published": "",
-                "date_modified": ""
-            },
-        
-            {
-                "id": "blog",
-                "title": "Blog",
-                "content_text": "",
-                "content_html": "",
-                "url": "http://localhost:4000/page14/",
-                "date_published": "",
-                "date_modified": ""
-            },
-        
-            {
-                "id": "blog",
-                "title": "Blog",
-                "content_text": "",
-                "content_html": "",
-                "url": "http://localhost:4000/page15/",
-                "date_published": "",
-                "date_modified": ""
-            },
-        
-            {
-                "id": "blog",
-                "title": "Blog",
-                "content_text": "",
-                "content_html": "",
-                "url": "http://localhost:4000/page16/",
-                "date_published": "",
-                "date_modified": ""
-            },
-        
-            {
-                "id": "blog",
-                "title": "Blog",
-                "content_text": "",
-                "content_html": "",
-                "url": "http://localhost:4000/page17/",
-                "date_published": "",
-                "date_modified": ""
-            },
-        
-            {
-                "id": "blog",
-                "title": "Blog",
-                "content_text": "",
-                "content_html": "",
-                "url": "http://localhost:4000/page18/",
-                "date_published": "",
-                "date_modified": ""
-            },
-        
-            {
-                "id": "blog",
-                "title": "Blog",
-                "content_text": "",
-                "content_html": "",
-                "url": "http://localhost:4000/page19/",
-                "date_published": "",
-                "date_modified": ""
-            },
-        
-            {
-                "id": "blog",
-                "title": "Blog",
-                "content_text": "",
-                "content_html": "",
-                "url": "http://localhost:4000/page20/",
-                "date_published": "",
-                "date_modified": ""
-            },
-        
-            {
-                "id": "blog",
-                "title": "Blog",
-                "content_text": "",
-                "content_html": "",
-                "url": "http://localhost:4000/page21/",
-                "date_published": "",
-                "date_modified": ""
-            },
-        
-            {
-                "id": "blog",
-                "title": "Blog",
-                "content_text": "",
-                "content_html": "",
-                "url": "http://localhost:4000/page22/",
-                "date_published": "",
-                "date_modified": ""
-            },
-        
-            {
-                "id": "blog",
-                "title": "Blog",
-                "content_text": "",
-                "content_html": "",
-                "url": "http://localhost:4000/page23/",
-                "date_published": "",
-                "date_modified": ""
-            },
-        
-            {
-                "id": "blog",
-                "title": "Blog",
-                "content_text": "",
-                "content_html": "",
-                "url": "http://localhost:4000/page24/",
-                "date_published": "",
-                "date_modified": ""
-            },
-        
-            {
-                "id": "blog",
-                "title": "Blog",
-                "content_text": "",
-                "content_html": "",
-                "url": "http://localhost:4000/page25/",
-                "date_published": "",
-                "date_modified": ""
-            },
-        
-            {
-                "id": "blog",
-                "title": "Blog",
-                "content_text": "",
-                "content_html": "",
-                "url": "http://localhost:4000/page26/",
-                "date_published": "",
-                "date_modified": ""
-            },
-        
-            {
-                "id": "blog",
-                "title": "Blog",
-                "content_text": "",
-                "content_html": "",
-                "url": "http://localhost:4000/page27/",
-                "date_published": "",
-                "date_modified": ""
-            },
-        
-            {
-                "id": "blog",
-                "title": "Blog",
-                "content_text": "",
-                "content_html": "",
-                "url": "http://localhost:4000/page28/",
-                "date_published": "",
-                "date_modified": ""
-            },
-        
-            {
-                "id": "blog",
-                "title": "Blog",
-                "content_text": "",
-                "content_html": "",
-                "url": "http://localhost:4000/page29/",
-                "date_published": "",
-                "date_modified": ""
-            },
-        
-            {
-                "id": "blog",
-                "title": "Blog",
-                "content_text": "",
-                "content_html": "",
-                "url": "http://localhost:4000/page30/",
-                "date_published": "",
-                "date_modified": ""
-            },
-        
-            {
-                "id": "blog",
-                "title": "Blog",
-                "content_text": "",
-                "content_html": "",
-                "url": "http://localhost:4000/page31/",
-                "date_published": "",
-                "date_modified": ""
-            },
-        
-            {
-                "id": "blog",
-                "title": "Blog",
-                "content_text": "",
-                "content_html": "",
-                "url": "http://localhost:4000/page32/",
-                "date_published": "",
-                "date_modified": ""
-            },
-        
-            {
-                "id": "blog",
-                "title": "Blog",
-                "content_text": "",
-                "content_html": "",
-                "url": "http://localhost:4000/page33/",
-                "date_published": "",
-                "date_modified": ""
-            },
-        
-            {
-                "id": "blog",
-                "title": "Blog",
-                "content_text": "",
-                "content_html": "",
-                "url": "http://localhost:4000/page34/",
                 "date_published": "",
                 "date_modified": ""
             },
