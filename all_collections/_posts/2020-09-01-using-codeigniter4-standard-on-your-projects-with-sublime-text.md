@@ -14,14 +14,14 @@ However Codeigniter 4 has it's own standard and it just makes sense for us to mo
 
 For this we need:
 
-* PHP_CodeSniffer
-* Codeigniter4-Standard
-* PHP-CS-Fixer
-* Sublime-phpcs
+1. PHP_CodeSniffer
+1. Codeigniter4-Standard
+1. PHP-CS-Fixer
+1. Sublime-phpcs
 
 There's a few ways we can go about this, but since this was something that we actually need to use on a bunch of projects I going with installing all this globally.
 
-### 1. PHP Code Sniffer
+## 1. PHP Code Sniffer
 
 PHP_CodeSniffer requires PHP version 5.4.0 or greater, although individual sniffs may have additional requirements such as external applications and scripts. See the Configuration Options manual page for a list of these requirements.
 
@@ -29,13 +29,13 @@ If you're using PHP_CodeSniffer as part of a team, or you're running it on a CI 
 
     $ composer global require "squizlabs/php_codesniffer=*"
 
-### 2. Codeigniter 4 - Coding Standard
+## 2. Codeigniter 4 - Coding Standard
 
 Using composer this can also be installed globally.
 
     $ composer global require codeigniter4/codeigniter4-standard
 
-### 3. PHP CS Fixer
+## 3. PHP CS Fixer
 
 To install PHP CS Fixer, install Composer and issue the following command:
 
@@ -45,7 +45,7 @@ Then make sure you have the global Composer binaries directory in your PATH. Thi
 
     $ export PATH="$PATH:$HOME/.composer/vendor/bin"
 
-### 4. Sublime-phpcs package
+## 4. Sublime-phpcs package
 
 Open your sublime text and install this package. After that you want to to open the user setting and change the following:
 
