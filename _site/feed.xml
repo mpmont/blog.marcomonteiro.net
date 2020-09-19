@@ -1,4 +1,115 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-22T09:19:39+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Blog++</title><author><name>Blog++</name><email>marco@marcomonteiro.net</email></author><entry><title type="html">Moved my blog to jekyll and hosting it on github</title><link href="http://localhost:4000/post/moved-my-blog-to-jekyll-hosted-in-github/" rel="alternate" type="text/html" title="Moved my blog to jekyll and hosting it on github" /><published>2020-08-22T00:00:00+01:00</published><updated>2020-08-22T00:00:00+01:00</updated><id>http://localhost:4000/post/moved-my-blog-to-jekyll-hosted-in-github</id><content type="html" xml:base="http://localhost:4000/post/moved-my-blog-to-jekyll-hosted-in-github/">&lt;p&gt;I had my blog on wardrobe and using a normal shared hosting for a long time. Worked out great for my blog and website. However later I’ve been playing more and more with static website generators and see what can be done with them.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-09-19T13:54:40+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Blog++</title><author><name>Blog++</name><email>marco@marcomonteiro.net</email></author><entry><title type="html">How to improve your privacy 1.0</title><link href="http://localhost:4000/post/improve-your-privacy-part-1/" rel="alternate" type="text/html" title="How to improve your privacy 1.0" /><published>2020-09-19T00:00:00+01:00</published><updated>2020-09-19T00:00:00+01:00</updated><id>http://localhost:4000/post/improve-your-privacy-part-1</id><content type="html" xml:base="http://localhost:4000/post/improve-your-privacy-part-1/">&lt;p&gt;For the last 6 months or so I made it my mission to improve my privacy on the web. This article shows you what changes I made so far and what you can also do to protect yourself.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h3 style=&quot;font-weight: 400; font-size: 26px;&quot;&gt;&lt;strong&gt;&lt;u&gt; Stop using google.com&lt;/u&gt;&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;One of the first changed I made was stop myself from using google.com. Google tracks everything you do on the web, all your searchs, but most of all, instead of giving you the results that are more relevant based on their SEO score, they give you the result that they think are best for you. This keeps you from seeing different ideas or even getting into websites that might make more sense to what you look for.&lt;/p&gt;
+
+&lt;p&gt;I started using &lt;a href=&quot;https://duckduckgo.com/&quot;&gt;DuckDuckGo.com instead&lt;/a&gt;. They don’t track your searches, and most of all you get unbiased results outside the Filter Bubble. They are committed to unbiased search that’s never based on your search history. I even made DuckDuckGo my default search engine on my blog. Give it a go. :)&lt;/p&gt;
+
+&lt;h3 style=&quot;font-weight: 400; font-size: 26px;&quot;&gt;&lt;strong&gt;&lt;u&gt; Stop Using google Chrome&lt;/u&gt;&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;Google chrome has been my default browser for years now. Before that I used Firefox for a long time but I parted ways with it mostly because it was getting behind in features and it was way slower than Chrome.&lt;/p&gt;
+
+&lt;p&gt;However, for the same reason I stopped using google.com I thought it was time to give Firefox a try once more. Boy or boy was I impressed.&lt;/p&gt;
+
+&lt;p&gt;Firefox is fast, it has all the feature I need in a browser for web-development that I do everyday and in it I installed a bunch of addons that helped further with my quest.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Firefox addons I installed realted to privacy.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;AdBlocker Ultimate&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;AdBlocker Ultimate is designed with a singular purpose: remove all ads so you can focus your attention on the content you want.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;DuckDuckGo Privacy Essentials&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;DuckDuckGo Privacy Essentials comes packed with best-in-class privacy essentials and makes browsing in Firefox even faster.&lt;/p&gt;
+
+&lt;p&gt;Escape Online Tracking — automatically block hidden third-party trackers we can find lurking on websites you visit, which stops the companies behind those trackers from collecting and selling your data.
+Search Privately — our private search engine comes built-in so you can search the Internet without being tracked.
+Enforce Encryption — force sites to use an encrypted (HTTPS) connection where available, protecting your data from prying eyes, like from unwanted snoopers and Internet service providers.
+Decode Privacy — each site you visit gets a Privacy Grade (A-F) so you can see how protected you are at a glance, and you can even dig into the details to see who we caught trying to track you.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Firefox Multi-Account Containers (This is a must have)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The Firefox Multi-Account Containers extension lets you carve out a separate box for each of your online lives – no more opening a different browser just to check your work email! Here is a quick video showing you how it works.&lt;/p&gt;
+
+&lt;p&gt;Under the hood, it separates website storage into tab-specific Containers. Cookies downloaded by one Container are not available to other Containers. With the Firefox Multi-Account Containers extension, you can…&lt;/p&gt;
+
+&lt;p&gt;Sign in to two different accounts on the same site for example, you could sign in to work email and home email in two different Container tabs. Keep different kinds of browsing far away from each other (for example, you might use one Container tab for managing your Checking Account and a different Container tab for searching for new songs by your favorite band).&lt;/p&gt;
+
+&lt;p&gt;Avoid leaving social-network footprints all over the web (for example, you could use a Container tab for signing in to a social network, and use a different tab for visiting online news sites, keeping your social identity separate from tracking scripts on news sites).&lt;/p&gt;
+
+&lt;p&gt;Next time I’ll tell you all about the changes I made on my phone.&lt;/p&gt;</content><author><name>Marco Monteiro</name></author><category term="web privacy, security, standard" /><summary type="html">For the last 6 months or so I made it my mission to improve my privacy on the web. This article shows you what changes I made so far and what you can also do to protect yourself.</summary></entry><entry><title type="html">Using the Codeigniter 4 standard on your projects with Sublime Text 4</title><link href="http://localhost:4000/post/using-codeigniter4-standard-on-your-projects-with-sublime-text/" rel="alternate" type="text/html" title="Using the Codeigniter 4 standard on your projects with Sublime Text 4" /><published>2020-09-01T00:00:00+01:00</published><updated>2020-09-01T00:00:00+01:00</updated><id>http://localhost:4000/post/using-codeigniter4-standard-on-your-projects-with-sublime-text</id><content type="html" xml:base="http://localhost:4000/post/using-codeigniter4-standard-on-your-projects-with-sublime-text/">&lt;p&gt;We moved to Codeigniter 4 for our new projects. Until now, we’ve using phpfmt so everyone in the team can use the same standard while coding.&lt;/p&gt;
+
+&lt;p&gt;However Codeigniter 4 has it’s own standard and it just makes sense for us to move to that new standard.&lt;/p&gt;
+
+&lt;p&gt;For this we need:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/squizlabs/PHP_CodeSniffer/&quot;&gt;PHP_CodeSniffer&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/codeigniter4/coding-standard&quot;&gt;Codeigniter4-Standard&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/FriendsOfPhp/PHP-CS-Fixer&quot;&gt;PHP-CS-Fixer&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://packagecontrol.io/packages/Phpcs&quot;&gt;Sublime-phpcs&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;There’s a few ways we can go about this, but since this was something that we actually need to use on a bunch of projects I going with installing all this globally.&lt;/p&gt;
+
+&lt;h3 id=&quot;1-php-code-sniffer&quot;&gt;&lt;strong&gt;1. PHP Code Sniffer&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;PHP_CodeSniffer requires PHP version 5.4.0 or greater, although individual sniffs may have additional requirements such as external applications and scripts. See the Configuration Options manual page for a list of these requirements.&lt;/p&gt;
+
+&lt;p&gt;If you’re using PHP_CodeSniffer as part of a team, or you’re running it on a CI server, you may want to configure your project’s settings using a configuration file.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ composer global require &quot;squizlabs/php_codesniffer=*&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;2-codeigniter-4---coding-standard&quot;&gt;&lt;strong&gt;2. Codeigniter 4 - Coding Standard&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;Using composer this can also be installed globally.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ composer global require codeigniter4/codeigniter4-standard
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;3-php-cs-fixer&quot;&gt;&lt;strong&gt;3. PHP CS Fixer&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;To install PHP CS Fixer, install Composer and issue the following command:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ composer global require friendsofphp/php-cs-fixer
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Then make sure you have the global Composer binaries directory in your PATH. This directory is platform-dependent, see Composer documentation for details. Example for some Unix systems:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ export PATH=&quot;$PATH:$HOME/.composer/vendor/bin&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;4-sublime-phpcs-package&quot;&gt;&lt;strong&gt;4. Sublime-phpcs package&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;Open your sublime text and install this package. After that you want to to open the user setting and change the following:&lt;/p&gt;
+
+&lt;p&gt;You should pay special attention to the following setting:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&quot;phpcs_executable_path&quot;: &quot;/home/marco/.config/composer/vendor/squizlabs/php_codesniffer/bin/phpcs&quot;,
+&quot;phpcs_additional_args&quot;: {
+    &quot;--standard&quot;: &quot;/home/marco/.config/composer/vendor/codeigniter4/codeigniter4-standard/CodeIgniter4&quot;,
+    &quot;-n&quot;: &quot;&quot;
+},
+&quot;php_cs_fixer_executable_path&quot;: &quot;/home/marco/.config/composer/vendor/friendsofphp/php-cs-fixer/php-cs-fixer&quot;,
+&quot;phpcbf_executable_path&quot;: &quot;/home/marco/.config/composer/vendor/squizlabs/php_codesniffer/bin/phpcbf&quot;,
+&quot;phpcbf_additional_args&quot;: {
+    &quot;--standard&quot;: &quot;/home/marco/.config/composer/vendor/codeigniter4/codeigniter4-standard/CodeIgniter4&quot;,
+    &quot;-n&quot;: &quot;&quot;
+},
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The paths should be the ones you have on your system. I’m on linux, so the composer installed globally are in my .config. If you’re on windows or mac your paths might differ.&lt;/p&gt;</content><author><name>Marco Monteiro</name></author><category term="blog,codeigniter 4, standard" /><summary type="html">We moved to Codeigniter 4 for our new projects. Until now, we’ve using phpfmt so everyone in the team can use the same standard while coding.</summary></entry><entry><title type="html">Moved my blog to jekyll and hosting it on github</title><link href="http://localhost:4000/post/moved-my-blog-to-jekyll-hosted-in-github/" rel="alternate" type="text/html" title="Moved my blog to jekyll and hosting it on github" /><published>2020-08-22T00:00:00+01:00</published><updated>2020-08-22T00:00:00+01:00</updated><id>http://localhost:4000/post/moved-my-blog-to-jekyll-hosted-in-github</id><content type="html" xml:base="http://localhost:4000/post/moved-my-blog-to-jekyll-hosted-in-github/">&lt;p&gt;I had my blog on wardrobe and using a normal shared hosting for a long time. Worked out great for my blog and website. However later I’ve been playing more and more with static website generators and see what can be done with them.&lt;/p&gt;
 
 &lt;p&gt;With that in mind I decided to move both my website and blog to github hosting, for freeI might say and just use Jekyll to generate the static websites that I need.&lt;/p&gt;
 
@@ -244,104 +355,4 @@ sudo ln -s /etc/php/7.2/mods-available/pdo_sqlsrv.ini /etc/php/7.2/cli/conf.d/pd
 
 &lt;p&gt;You can know more about Codeigniter 4 by &lt;a href=&quot;https://codeigniter4.github.io/userguide/&quot;&gt;checking the docs&lt;/a&gt;. And the &lt;a href=&quot;https://forum.codeigniter.com/thread-75581.html&quot;&gt;official release post&lt;/a&gt; in the forums.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://github.com/mpmont/ci4-snippets&quot;&gt;Github repo&lt;/a&gt; with the ci4 snippets.&lt;/p&gt;</content><author><name>Marco Monteiro</name></author><category term="2020,codeigniter,github,open-source,php,programming" /><summary type="html">Codeigniter 4 has been in the works since 2015. It took almost 3 years to have a basic framework working and 2 more to document everything so we can use it in production. This is very exciting news, since codeigniter still holds a place in me. It was PHP framework that I use the most and I still use version 3 at work.</summary></entry><entry><title type="html">Dealing with technical debt</title><link href="http://localhost:4000/post/dealing-with-technical-debt/" rel="alternate" type="text/html" title="Dealing with technical debt" /><published>2020-03-05T00:00:00+00:00</published><updated>2020-03-05T00:00:00+00:00</updated><id>http://localhost:4000/post/dealing-with-technical-debt</id><content type="html" xml:base="http://localhost:4000/post/dealing-with-technical-debt/">&lt;p&gt;Technical debt is just a fancy way of saying that something will bite you in the ass in the long term. However, in every project this is something very real that every Lead Developer has to deal with almost in a daily basis.&lt;/p&gt;
-
-&lt;p&gt;Here I’ll try to describe on how to avoid it it, or at least identify it as soon as possible so you can plan ahead.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;First of all, if we’re talking about technical debt, there’s something that you can be sure, you’ll have to pay it in the future, in one way or another. However I’m not here to say that this is something that should be avoided at all costs. It’s not! There’s some really good reasons  to accept some form of technical debt. Maybe there’s a deadline, or the dreadfull marketing team made some promisses that you’ll have to deal with. Or worst of all, management just made some crazy demands that you have to follow. These are just some examples. There’s many more, but I think these everyone can relate to.&lt;/p&gt;
-
-&lt;p&gt;With this in mind you should always accept some form of technical debt with a deadline in mind, but if you do so, make sure you have a backup plan to fix it in the future. This is how you balance business and your codebase. Never ever, accept technical debt without a backup plan on how to solve it in the future.&lt;/p&gt;
-
-&lt;p&gt;I’m going to quote Martin Fowler here:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;If you have this kind of exponential relationship, then if you do it more frequently, you can drastically reduce the pain. And this is what happens with Continuous Integration - by integrating every day, the pain of integration almost vanishes. It did hurt, so you did it more often, and now it no longer hurts. - In &lt;a href=&quot;https://martinfowler.com/bliki/FrequencyReducesDifficulty.html&quot;&gt;Frequency Reduces Difficulty&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;center&gt;
-![graph](https://martinfowler.com/bliki/images/frequency-reduces-difficulty/graph.png)
-&lt;/center&gt;
-
-&lt;p&gt;What I mean is, managing technical debt is something that you’ll learn to do once you start acknowledge is that this is something that you do often. What normally tends to happen is that us, Lead Developers are quite good at identifying these technical debts, however we tend to slack on solve them. Sure this might be ok on smaller projects, where you just have to be sure to avoid them on the next project. But what about big projects? That is just something that you can’t avoid, that will probably mean that somewhere in the future you’ll have a very dificult conversation with management saying that your app needs a complet re-write. I know! I’ve been there and it’s not pleasent.&lt;/p&gt;
-
-&lt;p&gt;How to better understand your codebase so you can identify your technical debt easly?&lt;/p&gt;
-
-&lt;p&gt;First you need to check your version control often. Try and see how your developers interact with your code. See what part of your code is being used most of the time. With this you can identify these key areas:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;&lt;strong&gt;Hotspots&lt;/strong&gt; = where most developers are working&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;&lt;strong&gt;Refactoring targets&lt;/strong&gt; = prioritize change&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;&lt;strong&gt;Change coupling&lt;/strong&gt; = implicit change in patters&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;&lt;strong&gt;Code biomarkers&lt;/strong&gt; = aim to indicate specific properties at very low code base&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Then you should ask yourself the following questions:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;Where should we focus improvements?&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;Where are the risk areas?&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;Is team productivity a problem?&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;When you answer those questions, then there’s time for the walk of shame and start paying your debt.&lt;/p&gt;
-
-&lt;center&gt;&lt;iframe src=&quot;https://giphy.com/embed/vX9WcCiWwUF7G&quot; width=&quot;100%&quot; height=&quot;270&quot; frameborder=&quot;0&quot; class=&quot;giphy-embed&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/center&gt;
-
-&lt;p&gt;But how?&lt;/p&gt;
-
-&lt;p&gt;You have many options here and you should pick the one that aplies to your case.&lt;/p&gt;
-
-&lt;p&gt;You can allocate more time into the development of said feature and that might solve it because this were rushed. This can be done by making a that a team priority and thats what everyone will be doing until things are solved.&lt;/p&gt;
-
-&lt;p&gt;Another way of paying it is actually making a rulle of having a technical debt day per week or month, were you pick days where everyone in the team will do it.&lt;/p&gt;
-
-&lt;p&gt;You can just choose to educate your team about it, this can be an option with just small debts in small projects, otherwise education can only go so far.&lt;/p&gt;
-
-&lt;p&gt;Should definetly have a talk with management and marketing about it so in the future deadlines wont afect the project as much.&lt;/p&gt;
-
-&lt;p&gt;There’s only one thing that you might be tempted to do, but maybe it’s not really an answer. Hire more developers. This seems like a great idea at first, but sometimes you want to solve these issues with your team before bringing more people into the mix.&lt;/p&gt;</content><author><name>Marco Monteiro</name></author><category term="2020,management,programming,team" /><summary type="html">Technical debt is just a fancy way of saying that something will bite you in the ass in the long term. However, in every project this is something very real that every Lead Developer has to deal with almost in a daily basis.</summary></entry><entry><title type="html">A better man page for your terminal, tldr</title><link href="http://localhost:4000/post/a-better-man-page-for-your-terminal,-tldr/" rel="alternate" type="text/html" title="A better man page for your terminal, tldr" /><published>2020-01-25T00:00:00+00:00</published><updated>2020-01-25T00:00:00+00:00</updated><id>http://localhost:4000/post/a-better-man-page-for-your-terminal,-tldr</id><content type="html" xml:base="http://localhost:4000/post/a-better-man-page-for-your-terminal,-tldr/">&lt;p&gt;I always hated the man pages, I always have a hard time to understand stuff and mostly I have a really hard time finding the option I need.&lt;/p&gt;
-
-&lt;p&gt;The TLDR pages are a community effort to simplify the beloved man pages with practical examples.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;Here’s how it works:&lt;/p&gt;
-
-&lt;iframe src=&quot;https://tldr.ostera.io/tar&quot; width=&quot;100%&quot; height=&quot;500px&quot; style=&quot;border: 1px solid&quot;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;strong&gt;Installation&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;As of now, our most mature client is the node.js one, which you can easily install from NPM:&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ npm install -g tldr
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Marco Monteiro</name></author><category term="2020,linux,terminal" /><summary type="html">I always hated the man pages, I always have a hard time to understand stuff and mostly I have a really hard time finding the option I need.</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://github.com/mpmont/ci4-snippets&quot;&gt;Github repo&lt;/a&gt; with the ci4 snippets.&lt;/p&gt;</content><author><name>Marco Monteiro</name></author><category term="2020,codeigniter,github,open-source,php,programming" /><summary type="html">Codeigniter 4 has been in the works since 2015. It took almost 3 years to have a basic framework working and 2 more to document everything so we can use it in production. This is very exciting news, since codeigniter still holds a place in me. It was PHP framework that I use the most and I still use version 3 at work.</summary></entry></feed>

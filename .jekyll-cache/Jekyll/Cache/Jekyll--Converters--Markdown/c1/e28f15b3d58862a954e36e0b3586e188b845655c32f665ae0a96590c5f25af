@@ -1,0 +1,64 @@
+I"�<p>We moved to Codeigniter 4 for our new projects. Until now, we’ve using phpfmt so everyone in the team can use the same standard while coding.</p>
+
+<p>However Codeigniter 4 has it’s own standard and it just makes sense for us to move to that new standard.</p>
+
+<p>For this we need:</p>
+
+<ol>
+  <li><a href="https://github.com/squizlabs/PHP_CodeSniffer/">PHP_CodeSniffer</a></li>
+  <li><a href="https://github.com/codeigniter4/coding-standard">Codeigniter4-Standard</a></li>
+  <li><a href="https://github.com/FriendsOfPhp/PHP-CS-Fixer">PHP-CS-Fixer</a></li>
+  <li><a href="https://packagecontrol.io/packages/Phpcs">Sublime-phpcs</a></li>
+</ol>
+
+<p>There’s a few ways we can go about this, but since this was something that we actually need to use on a bunch of projects I going with installing all this globally.</p>
+
+<h3 id="1-php-code-sniffer"><strong>1. PHP Code Sniffer</strong></h3>
+
+<p>PHP_CodeSniffer requires PHP version 5.4.0 or greater, although individual sniffs may have additional requirements such as external applications and scripts. See the Configuration Options manual page for a list of these requirements.</p>
+
+<p>If you’re using PHP_CodeSniffer as part of a team, or you’re running it on a CI server, you may want to configure your project’s settings using a configuration file.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ composer global require "squizlabs/php_codesniffer=*"
+</code></pre></div></div>
+
+<h3 id="2-codeigniter-4---coding-standard"><strong>2. Codeigniter 4 - Coding Standard</strong></h3>
+
+<p>Using composer this can also be installed globally.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ composer global require codeigniter4/codeigniter4-standard
+</code></pre></div></div>
+
+<h3 id="3-php-cs-fixer"><strong>3. PHP CS Fixer</strong></h3>
+
+<p>To install PHP CS Fixer, install Composer and issue the following command:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ composer global require friendsofphp/php-cs-fixer
+</code></pre></div></div>
+
+<p>Then make sure you have the global Composer binaries directory in your PATH. This directory is platform-dependent, see Composer documentation for details. Example for some Unix systems:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ export PATH="$PATH:$HOME/.composer/vendor/bin"
+</code></pre></div></div>
+
+<h3 id="4-sublime-phpcs-package"><strong>4. Sublime-phpcs package</strong></h3>
+
+<p>Open your sublime text and install this package. After that you want to to open the user setting and change the following:</p>
+
+<p>You should pay special attention to the following setting:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"phpcs_executable_path": "/home/marco/.config/composer/vendor/squizlabs/php_codesniffer/bin/phpcs",
+"phpcs_additional_args": {
+    "--standard": "/home/marco/.config/composer/vendor/codeigniter4/codeigniter4-standard/CodeIgniter4",
+    "-n": ""
+},
+"php_cs_fixer_executable_path": "/home/marco/.config/composer/vendor/friendsofphp/php-cs-fixer/php-cs-fixer",
+"phpcbf_executable_path": "/home/marco/.config/composer/vendor/squizlabs/php_codesniffer/bin/phpcbf",
+"phpcbf_additional_args": {
+    "--standard": "/home/marco/.config/composer/vendor/codeigniter4/codeigniter4-standard/CodeIgniter4",
+    "-n": ""
+},
+</code></pre></div></div>
+
+<p>The paths should be the ones you have on your system. I’m on linux, so the composer installed globally are in my .config. If you’re on windows or mac your paths might differ.</p>
+:ET

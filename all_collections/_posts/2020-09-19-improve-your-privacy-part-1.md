@@ -1,0 +1,60 @@
+---
+layout: post
+title: How to improve your privacy 1.0
+date: 2020-09-19
+tag: web privacy, security, standard
+description: For the last 6 months I made my mission to improve my privacy on the web, so here's what I found thus far
+author: Marco Monteiro
+categories: [ web privacy, security, standard ]
+---
+
+For the last 6 months or so I made it my mission to improve my privacy on the web. This article shows you what changes I made so far and what you can also do to protect yourself.
+
+<!--more-->
+
+<h3 style="font-weight: 400; font-size: 26px;"><strong><u> Stop using google.com</u></strong></h3>
+
+One of the first changed I made was stop myself from using google.com. Google tracks everything you do on the web, all your searchs, but most of all, instead of giving you the results that are more relevant based on their SEO score, they give you the result that they think are best for you. This keeps you from seeing different ideas or even getting into websites that might make more sense to what you look for.
+
+I started using [DuckDuckGo.com instead](https://duckduckgo.com/). They don't track your searches, and most of all you get unbiased results outside the Filter Bubble. They are committed to unbiased search that's never based on your search history. I even made DuckDuckGo my default search engine on my blog. Give it a go. :)
+
+<h3 style="font-weight: 400; font-size: 26px;"><strong><u> Stop Using google Chrome</u></strong></h3>
+
+Google chrome has been my default browser for years now. Before that I used Firefox for a long time but I parted ways with it mostly because it was getting behind in features and it was way slower than Chrome.
+
+However, for the same reason I stopped using google.com I thought it was time to give Firefox a try once more. Boy or boy was I impressed.
+
+Firefox is fast, it has all the feature I need in a browser for web-development that I do everyday and in it I installed a bunch of addons that helped further with my quest.
+
+<br><br>
+
+**Firefox addons I installed realted to privacy.**
+
+**AdBlocker Ultimate**
+
+AdBlocker Ultimate is designed with a singular purpose: remove all ads so you can focus your attention on the content you want.
+
+<br>
+
+**DuckDuckGo Privacy Essentials**
+
+DuckDuckGo Privacy Essentials comes packed with best-in-class privacy essentials and makes browsing in Firefox even faster.
+
+Escape Online Tracking — automatically block hidden third-party trackers we can find lurking on websites you visit, which stops the companies behind those trackers from collecting and selling your data.
+Search Privately — our private search engine comes built-in so you can search the Internet without being tracked.
+Enforce Encryption — force sites to use an encrypted (HTTPS) connection where available, protecting your data from prying eyes, like from unwanted snoopers and Internet service providers.
+Decode Privacy — each site you visit gets a Privacy Grade (A-F) so you can see how protected you are at a glance, and you can even dig into the details to see who we caught trying to track you.
+
+<br>
+
+**Firefox Multi-Account Containers (This is a must have)**
+
+The Firefox Multi-Account Containers extension lets you carve out a separate box for each of your online lives – no more opening a different browser just to check your work email! Here is a quick video showing you how it works.
+
+Under the hood, it separates website storage into tab-specific Containers. Cookies downloaded by one Container are not available to other Containers. With the Firefox Multi-Account Containers extension, you can...
+
+Sign in to two different accounts on the same site for example, you could sign in to work email and home email in two different Container tabs. Keep different kinds of browsing far away from each other (for example, you might use one Container tab for managing your Checking Account and a different Container tab for searching for new songs by your favorite band).
+
+Avoid leaving social-network footprints all over the web (for example, you could use a Container tab for signing in to a social network, and use a different tab for visiting online news sites, keeping your social identity separate from tracking scripts on news sites).
+
+Next time I'll tell you all about the changes I made on my phone.
