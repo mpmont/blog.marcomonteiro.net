@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Using the Codeigniter 4 standard on your projects with Sublime Text 4
+title: Using the Codeigniter 4 standard on your projects with Sublime Text
 date: 2020-09-01
 tag: blog,codeigniter 4, standard
 description: Ive been using phpfmt for a while, however we now moved to codeigniter 4 that provides actual standards that can be used with sublike
@@ -8,7 +8,7 @@ author: Marco Monteiro
 categories: [ blog,codeigniter 4, standard ]
 ---
 
-We moved to Codeigniter 4 for our new projects. Until now, we've using phpfmt so everyone in the team can use the same standard while coding. 
+We moved to Codeigniter 4 for our new projects. Until now, we've using phpfmt so everyone in the team can use the same standard while coding.
 
 However Codeigniter 4 has it's own standard and it just makes sense for us to move to that new standard.
 
@@ -50,7 +50,7 @@ Then make sure you have the global Composer binaries directory in your PATH. Thi
 Open your sublime text and install this package. After that you want to to open the user setting and change the following:
 
 
-You should pay special attention to the following setting: 
+You should pay special attention to the following setting:
 
     "phpcs_executable_path": "/home/marco/.config/composer/vendor/squizlabs/php_codesniffer/bin/phpcs",
     "phpcs_additional_args": {
