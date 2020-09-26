@@ -1,12 +1,12 @@
-I"�<p>For the last 6 months or so I made it my mission to improve my privacy on the web. This article shows you what changes I made so far and what you can also do to protect yourself.</p>
+I"�<p>Whatsapp is one the most used chat apps outhere, basically eveyone uses it. Therefore even if you don’t like it you’re kinda forced to use it if you want to stay in touch with friends and family. There’s a few setting that you might want to change to make it a bit more private.</p>
 
 <!--more-->
 
-<h3 style="font-weight: 400; font-size: 26px;"><strong><u> Stop using google.com</u></strong></h3>
+<h3 style="font-weight: 400; font-size: 26px;"><strong><u> Understanding Whatsapp</u></strong></h3>
 
 <p>One of the first changed I made was stop myself from using google.com. Google tracks everything you do on the web, all your searchs, but most of all, instead of giving you the results that are more relevant based on their SEO score, they give you the result that they think are best for you. This keeps you from seeing different ideas or even getting into websites that might make more sense to what you look for.</p>
 
-<p>I started using <a href="https://duckduckgo.com/">DuckDuckGo.com instead</a>. They don’t track your searches, and most of all you get unbiased results outside the Filter Bubble. They are committed to unbiased search that’s never based on your search history.</p>
+<p>I started using <a href="https://duckduckgo.com/">DuckDuckGo.com instead</a>. They don’t track your searches, and most of all you get unbiased results outside the Filter Bubble. They are committed to unbiased search that’s never based on your search history. I even made DuckDuckGo my default search engine on my blog. Give it a go. :)</p>
 
 <h3 style="font-weight: 400; font-size: 26px;"><strong><u> Stop Using google Chrome</u></strong></h3>
 
@@ -46,4 +46,6 @@ Decode Privacy — each site you visit gets a Privacy Grade (A-F) so you can see
 <p>Sign in to two different accounts on the same site for example, you could sign in to work email and home email in two different Container tabs. Keep different kinds of browsing far away from each other (for example, you might use one Container tab for managing your Checking Account and a different Container tab for searching for new songs by your favorite band).</p>
 
 <p>Avoid leaving social-network footprints all over the web (for example, you could use a Container tab for signing in to a social network, and use a different tab for visiting online news sites, keeping your social identity separate from tracking scripts on news sites).</p>
+
+<p>Next time I’ll tell you all about the changes I made on my phone.</p>
 :ET
