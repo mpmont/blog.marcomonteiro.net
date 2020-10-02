@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-09-26T10:33:12+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Blog++</title><author><name>Blog++</name><email>marco@marcomonteiro.net</email></author><entry><title type="html">How to improve your privacy 1.1 Whatsapp</title><link href="http://localhost:4000/post/improve-your-privacy-part-2/" rel="alternate" type="text/html" title="How to improve your privacy 1.1  Whatsapp" /><published>2020-09-26T00:00:00+01:00</published><updated>2020-09-26T00:00:00+01:00</updated><id>http://localhost:4000/post/improve-your-privacy-part-2</id><content type="html" xml:base="http://localhost:4000/post/improve-your-privacy-part-2/">&lt;p&gt;Whatsapp is one the most used chat apps, basically everyone uses it. Therefore, even if you don’t like it you’re kinda forced to use it if you want to stay in touch with friends and family. There’s a few setting that you might want to change to make it a bit more private.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-10-02T21:25:43+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Blog++</title><author><name>Blog++</name><email>marco@marcomonteiro.net</email></author><entry><title type="html">Permanent Record from Edward Snowden</title><link href="http://localhost:4000/post/permanent-record-from-edward-snowden/" rel="alternate" type="text/html" title="Permanent Record from Edward Snowden" /><published>2020-10-02T00:00:00+01:00</published><updated>2020-10-02T00:00:00+01:00</updated><id>http://localhost:4000/post/permanent-record-from%20edward-snowden</id><content type="html" xml:base="http://localhost:4000/post/permanent-record-from-edward-snowden/">&lt;p&gt;Permanent Record is a 2019 autobiography by Edward Snowden, whose revelations sparked a global debate about surveillance. It was published on September 17, 2019, by Metropolitan Books, an imprint of Henry Holt and Company.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;In case you’ve been living under a rock and don’t know who Edward Snowden is then I don’t know what to tell you.&lt;/p&gt;
+
+&lt;p&gt;Edward Snowden have been a hero of mine for a few years now, I really admire the courage it took from him to do what he did. Earlier this year to took uppon myself to listen to his book and my God, what a ride. The life this man is living is out of this world.&lt;/p&gt;
+
+&lt;p&gt;The book describes Snowden’s childhood as well as his tenure at the Central Intelligence Agency and National Security Agency and his motivations for the leaking of highly classified information in 2013 that revealed global surveillance programs. Snowden also discusses his views on authoritarianism, democracy and privacy. The writer Joshua Cohen is credited by Snowden for “helping to transform my rambling reminiscences and capsule manifestoes into a book.&lt;/p&gt;
+
+&lt;p&gt;If you really want to know more about im I advise you to read the book or listen to it like I did. If that’s not something that you’re incline to do, then just listen to these two podcasts when he was on Joe Rogan.&lt;/p&gt;
+
+&lt;iframe width=&quot;100%&quot; height=&quot;350&quot; src=&quot;https://www.youtube.com/embed/efs3QRr8LWw&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;iframe width=&quot;100%&quot; height=&quot;350&quot; src=&quot;https://www.youtube.com/embed/_Rl82OQDoOc&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Marco Monteiro</name></author><category term="web privacy, security, standard, books" /><summary type="html">Permanent Record is a 2019 autobiography by Edward Snowden, whose revelations sparked a global debate about surveillance. It was published on September 17, 2019, by Metropolitan Books, an imprint of Henry Holt and Company.</summary></entry><entry><title type="html">How to improve your privacy 1.1 Whatsapp</title><link href="http://localhost:4000/post/improve-your-privacy-part-2/" rel="alternate" type="text/html" title="How to improve your privacy 1.1  Whatsapp" /><published>2020-09-26T00:00:00+01:00</published><updated>2020-09-26T00:00:00+01:00</updated><id>http://localhost:4000/post/improve-your-privacy-part-2</id><content type="html" xml:base="http://localhost:4000/post/improve-your-privacy-part-2/">&lt;p&gt;Whatsapp is one the most used chat apps, basically everyone uses it. Therefore, even if you don’t like it you’re kinda forced to use it if you want to stay in touch with friends and family. There’s a few setting that you might want to change to make it a bit more private.&lt;/p&gt;
 
 &lt;!--more--&gt;
 
@@ -324,44 +338,4 @@ Want to know more? I found this YouTube video about it:&lt;/p&gt;
 
 &lt;p&gt;Was everything great with this change into a completly remote work environment? No, far from it. The lack of personal relationships at the office, the solitude of being inside 24/7 and time management were a big problem at first. When it started I worked way more at home than I did at the office, mostly because I worked since I woke up until I went to bed.&lt;/p&gt;
 
-&lt;p&gt;These days I try to do my normal schedule and work 9 to 5 even though I’m still in front of the computer most of the time.&lt;/p&gt;</content><author><name>Marco Monteiro</name></author><category term="2020,covid-19,productivity,quarantine" /><summary type="html">I manage a small team of 6 including myself. I mostly do quality control stuff at work and I’ve been programming less and less in the past few months, mainly because I’m more involved in the project management side of things. However, there were always a few things that I knew we could do better and wanted to change but it was really hard to find the right time.</summary></entry><entry><title type="html">Installing SQLsrv extension for PHP 7.2 on Ubuntu 18.04 LTS</title><link href="http://localhost:4000/post/installing-sqlsrv-extension-for-php-7.2-on-ubuntu-18.04-lts/" rel="alternate" type="text/html" title="Installing SQLsrv extension for PHP 7.2 on Ubuntu 18.04 LTS" /><published>2020-03-18T00:00:00+00:00</published><updated>2020-03-18T00:00:00+00:00</updated><id>http://localhost:4000/post/installing-sqlsrv-extension-for-php-7.2-on-ubuntu-18.04-lts</id><content type="html" xml:base="http://localhost:4000/post/installing-sqlsrv-extension-for-php-7.2-on-ubuntu-18.04-lts/">&lt;p&gt;One of our windows servers got updated to a more recent version of windows and SQLServer. Until then I was using the msSQL extension and was still on PHP 5.6 on our intranet at work.&lt;/p&gt;
-
-&lt;p&gt;Since this update I decided to upgrade our servers too and move to PHP 7.2 and obviously to the SQLsrv extension.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;Let’s assume that you already have PHP install and apache, so after that you should just do the following to get your microsoft packages.&lt;/p&gt;
-
-&lt;p&gt;On your server type the following commands:&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;curl -s https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
-sudo bash -c &quot;curl -s https://packages.microsoft.com/config/ubuntu/18.04/prod.list &amp;gt; /etc/apt/sources.list.d/mssql-release.list&quot;
-sudo apt-get update
-sudo ACCEPT_EULA=Y apt-get -y install msodbcsql17 mssql-tools
-sudo apt-get -y install unixodbc-dev
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;After this, you most likelly don’t have the  the pecl7.X-sp command working. To solve this I did the following:&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get -y install gcc g++ make autoconf libc-dev pkg-config
-sudo apt-get install php-pear php-dev
-sudo pecl install sqlsrv
-sudo pecl install pdo_sqlsrv
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;After this all you need to do is create the necessary .ini file so that PHP can do its magic.&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo bash -c &quot;echo extension=sqlsrv.so &amp;gt; /etc/php/7.2/mods-available/sqlsrv.ini&quot;
-sudo ln -s /etc/php/7.2/mods-available/sqlsrv.ini /etc/php/7.2/apache2/conf.d/sqlsrv.ini
-sudo ln -s /etc/php/7.2/mods-available/sqlsrv.ini /etc/php/7.2/cli/conf.d/sqlsrv.ini
-sudo bash -c &quot;echo extension=pdo_sqlsrv.so &amp;gt; /etc/php/7.2/mods-available/pdo_sqlsrv.ini&quot;
-sudo ln -s /etc/php/7.2/mods-available/pdo_sqlsrv.ini /etc/php/7.2/apache2/conf.d/pdo_sqlsrv.ini
-sudo ln -s /etc/php/7.2/mods-available/pdo_sqlsrv.ini /etc/php/7.2/cli/conf.d/pdo_sqlsrv.ini
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;After this all you need to do is restart your apache:&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo service apache2 restart
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;That’s it!&lt;/p&gt;</content><author><name>Marco Monteiro</name></author><category term="2020,apache,linux,mssql,php,sqlsrv,ubuntu" /><summary type="html">One of our windows servers got updated to a more recent version of windows and SQLServer. Until then I was using the msSQL extension and was still on PHP 5.6 on our intranet at work.</summary></entry></feed>
+&lt;p&gt;These days I try to do my normal schedule and work 9 to 5 even though I’m still in front of the computer most of the time.&lt;/p&gt;</content><author><name>Marco Monteiro</name></author><category term="2020,covid-19,productivity,quarantine" /><summary type="html">I manage a small team of 6 including myself. I mostly do quality control stuff at work and I’ve been programming less and less in the past few months, mainly because I’m more involved in the project management side of things. However, there were always a few things that I knew we could do better and wanted to change but it was really hard to find the right time.</summary></entry></feed>
