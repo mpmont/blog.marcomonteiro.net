@@ -23,26 +23,6 @@ var hljs=new function(){function l(o){return o.replace(/&/gm,"&amp;").replace(/<
 var width = $(window).width();
 $(document).ready(function(){
     $("nav.main").sticky({topSpacing:0});
-    $(window).resize(function() {
-        var width = $(window).width();
-        if (width > 980) {
-            $("section.post img").parent().css({
-                "width": "150%",
-                "max-width": "850px",
-                "margin-bottom": "-25px"
-            });
-            $("section.post img").css('margin-left', '-18%');
-        }
-        else
-        {
-            $("section.post img").parent().css({
-                "width": "100%",
-                "max-width": "850px",
-                "margin-bottom": "-25px"
-            });
-            $("section.post img").css('margin-left', '0');
-        }
-    });
 });
 
 $('#search').click(function() {

@@ -529,9 +529,7 @@ h1.mobile{
 }
 
 section.post img{
-    border: 1px solid #ccc;
     max-width: 100%;
-    background: #586e75;
 }
 
 #scrollbubble {
