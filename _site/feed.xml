@@ -1,4 +1,31 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-10-29T18:05:50+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Blog++</title><author><name>Blog++</name><email>marco@marcomonteiro.net</email></author><entry><title type="html">Trying Manjaro Linux for a month</title><link href="http://localhost:4000/post/trying-manjaro-linux-for-a-month/" rel="alternate" type="text/html" title="Trying Manjaro Linux for a month" /><published>2020-10-29T00:00:00+00:00</published><updated>2020-10-29T00:00:00+00:00</updated><id>http://localhost:4000/post/trying-manjaro-linux-for-a-month</id><content type="html" xml:base="http://localhost:4000/post/trying-manjaro-linux-for-a-month/">&lt;p&gt;I’ve been a full time Linux user for the past 4 years. Until now, all I’ve used was Debian distributions. I never in my life even consider a Arch based distro because rolling release distros scared me.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-11-07T10:48:45+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Blog++</title><author><name>Blog++</name><email>marco@marcomonteiro.net</email></author><entry><title type="html">A week on Manjaro Linux</title><link href="http://localhost:4000/post/a-week-on-manjaro/" rel="alternate" type="text/html" title="A week on Manjaro Linux" /><published>2020-11-07T00:00:00+00:00</published><updated>2020-11-07T00:00:00+00:00</updated><id>http://localhost:4000/post/a-week-on-manjaro</id><content type="html" xml:base="http://localhost:4000/post/a-week-on-manjaro/">&lt;p&gt;Last week I installed Manjaro Linux on my laptop and since then I’ve been using it as I would my work machine, even though I still use my desktop as my primary machine.&lt;/p&gt;
+
+&lt;!--more --&gt;
+
+&lt;p&gt;I made my USB stick and went with the KDE version of Manjaro. The installation worked like a charm, even the live USB worked incredible.&lt;/p&gt;
+
+&lt;p&gt;Even thought I had my computer configured with my /home in another partition I decided to do a clean install and just format my home directory since if I end up installing it on my Desktop that’s what I’ll do.&lt;/p&gt;
+
+&lt;p&gt;After the install I updated the system, but a new version of Manjaro just came out, so I zero updates to do. I was not expeting that.&lt;/p&gt;
+
+&lt;p&gt;Then I started to tweak the KDE settings and most of all the “add/remove software” app, where you can configure how you wan your package manager to work.&lt;/p&gt;
+
+&lt;p&gt;I decided to enable pacman, AUR, flatpak and appImages.&lt;/p&gt;
+
+&lt;p&gt;Just a few momments later I started to install my software and adding my dotfiles from github.&lt;/p&gt;
+
+&lt;p&gt;First of all I was quite impressed with te amount of software available on pacman and AUR. I didn’t have to add any sources like ppa on debian. Everything was avaiable and I could install it with one click or via terminal.&lt;/p&gt;
+
+&lt;p&gt;One basic example is docker and docker compose. Tools that I use everyday at work and at home. On debian based distros I had to read one or two pages of documentation to get them installed and working. On Manjaro?&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo pacman -S docker docker-compose
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;That’s it!&lt;/p&gt;
+
+&lt;p&gt;So far first impressions are looking really good. I’m impressed with the package manager, the speed of everything, even the KDE theme is impressive.&lt;/p&gt;
+
+&lt;p&gt;Let’s see how it goes next week.&lt;/p&gt;</content><author><name>Marco Monteiro</name></author><category term="linux, distro, security, pacman, manjaro, arch" /><summary type="html">Last week I installed Manjaro Linux on my laptop and since then I’ve been using it as I would my work machine, even though I still use my desktop as my primary machine.</summary></entry><entry><title type="html">Trying Manjaro Linux for a month</title><link href="http://localhost:4000/post/trying-manjaro-linux-for-a-month/" rel="alternate" type="text/html" title="Trying Manjaro Linux for a month" /><published>2020-10-29T00:00:00+00:00</published><updated>2020-10-29T00:00:00+00:00</updated><id>http://localhost:4000/post/trying-manjaro-linux-for-a-month</id><content type="html" xml:base="http://localhost:4000/post/trying-manjaro-linux-for-a-month/">&lt;p&gt;I’ve been a full time Linux user for the past 4 years. Until now, all I’ve used was Debian distributions. I never in my life even consider a Arch based distro because rolling release distros scared me.&lt;/p&gt;
 
 &lt;!--more--&gt;
 
@@ -261,70 +288,4 @@ Decode Privacy — each site you visit gets a Privacy Grade (A-F) so you can see
 
 &lt;h3 id=&quot;steam-and-litrus&quot;&gt;&lt;strong&gt;STEAM AND LITRUS&lt;/strong&gt;&lt;/h3&gt;
 
-&lt;p&gt;Not that I do any more gaming besides minecraft on Linux, but if you plan on doing so, popOs! comes with almost everything pre-configured for you so that your gaming experience can be as easy as possible.&lt;/p&gt;</content><author><name>Marco Monteiro</name></author><category term="20.04, 2020, lts, popOs!,linux" /><summary type="html">PopOS! really made a big splash with its new 20.04 release and many long terms Ubuntu users like myself are now considering the change or actually changing. And there’s good reason why this is happening.</summary></entry><entry><title type="html">$ exa A modern replacement for ls</title><link href="http://localhost:4000/post/meet-exa-a-modern-replacement-for-ls/" rel="alternate" type="text/html" title="$ exa A modern replacement for ls" /><published>2020-04-17T00:00:00+01:00</published><updated>2020-04-17T00:00:00+01:00</updated><id>http://localhost:4000/post/meet-exa-a-modern-replacement-for-ls</id><content type="html" xml:base="http://localhost:4000/post/meet-exa-a-modern-replacement-for-ls/">&lt;p&gt;You list files hundreds of times a day. Why spend your time squinting at black and white text?&lt;/p&gt;
-
-&lt;p&gt;exa is an improved file lister with more features and better defaults. It uses colours to distinguish file types and metadata. It knows about symlinks, extended attributes, and Git. And it’s small, fast, and just one single binary.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;exa is written in Rust. So you’ll need that first in case you don’t already have it.&lt;/p&gt;
-
-&lt;p&gt;Run the following command (assuming you have curl installedo on your system) to get started with the installation of Rust in your ubuntu based server/pc:&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ curl https://sh.rustup.rs -sSf | sh
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Now you need to download the lattest version of exa. Head on to &lt;a href=&quot;https://github.com/ogham/exa/releases&quot;&gt;their github page&lt;/a&gt; and download the lattest version.&lt;/p&gt;
-
-&lt;p&gt;Just copy the download link and download the zip using wget, for example with the v0.9.0 you can download the binary with the following command (you can switch to a temporary directory and download the zip in there):&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# You should check your own version of this.
-$ wget -c https://github.com/ogham/exa/releases/download/v0.9.0/exa-linux-x86_64-0.8.0.zip
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Then, unzip the binary:&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ unzip exa-linux-x86_64-0.8.0.zip
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;The zip contains a single file, namely the binary exa-linux-x86_64. So the last step is to move it to the bin directory of the local user so it will be accesible later in the cli as exa with the following instruction:&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo mv exa-linux-x86_64 /usr/local/bin/exa
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;To use this all you need is to type exa on your terminal. However what you can do to make the change even more perminante is to alias ls to axa.&lt;/p&gt;
-
-&lt;p&gt;To do that I went to my .zshrc file and added the following:&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;alias ls='exa --long --header --git'
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;This way you can use your ls command like you always did and it will be translated into exa.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/VXTYKQl.png&quot; alt=&quot;exa&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Exa supports the following main features:&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Colours&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Different types of file and data will be coloured differently, and the user and group columns will be highlighted for the current user.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;All the information&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;exa can display a file’s extended attributes, as well as standard filesystem information such as the inode, the number of blocks, and a file’s various dates and times.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;It’s fast&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;exa queries files in parallel, giving you performance on par with ls.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Tree view&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Not only is the standard tree tool built-in, but it’ll show you your files’ information alongside the hierarchy.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Git support&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;View the staged and unstaged status of every file, right there in the standard view. Also works in tree view for a high-level overview of your repository.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Wide view&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;How many columns can you display in your terminal at once? How many do you need?&lt;/p&gt;</content><author><name>Marco Monteiro</name></author><category term="2020,linux,terminal,ubuntu" /><summary type="html">You list files hundreds of times a day. Why spend your time squinting at black and white text?</summary></entry></feed>
+&lt;p&gt;Not that I do any more gaming besides minecraft on Linux, but if you plan on doing so, popOs! comes with almost everything pre-configured for you so that your gaming experience can be as easy as possible.&lt;/p&gt;</content><author><name>Marco Monteiro</name></author><category term="20.04, 2020, lts, popOs!,linux" /><summary type="html">PopOS! really made a big splash with its new 20.04 release and many long terms Ubuntu users like myself are now considering the change or actually changing. And there’s good reason why this is happening.</summary></entry></feed>
