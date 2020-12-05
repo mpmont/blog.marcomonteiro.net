@@ -1,4 +1,40 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-11-07T10:48:45+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Blog++</title><author><name>Blog++</name><email>marco@marcomonteiro.net</email></author><entry><title type="html">A week on Manjaro Linux</title><link href="http://localhost:4000/post/a-week-on-manjaro/" rel="alternate" type="text/html" title="A week on Manjaro Linux" /><published>2020-11-07T00:00:00+00:00</published><updated>2020-11-07T00:00:00+00:00</updated><id>http://localhost:4000/post/a-week-on-manjaro</id><content type="html" xml:base="http://localhost:4000/post/a-week-on-manjaro/">&lt;p&gt;Last week I installed Manjaro Linux on my laptop and since then I’ve been using it as I would my work machine, even though I still use my desktop as my primary machine.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-12-05T15:38:36+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Blog++</title><author><name>Blog++</name><email>marco@marcomonteiro.net</email></author><entry><title type="html">Manjaro a month after</title><link href="http://localhost:4000/post/manjaro-a-month-after/" rel="alternate" type="text/html" title="Manjaro a month after" /><published>2020-12-05T00:00:00+00:00</published><updated>2020-12-05T00:00:00+00:00</updated><id>http://localhost:4000/post/manjaro-a-month-after</id><content type="html" xml:base="http://localhost:4000/post/manjaro-a-month-after/">&lt;p&gt;One month ago I installed Manjaro on my Laptop. In it I installed all the production tools I have on my production machine where I run Pop!OS. Here’s what I found.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
+
+&lt;p&gt;The installation process was really straight forward and really fast too.&lt;/p&gt;
+
+&lt;h2 id=&quot;desktop-environment&quot;&gt;Desktop Environment&lt;/h2&gt;
+
+&lt;p&gt;I opt-in for KDE. This was something that I changed a few months ago in my workflow, I moved from gnome into KDE. I even made a video recently about my KDE workflow. You can see it &lt;a href=&quot;https://www.youtube.com/watch?v=L7P3vVbQLfU&quot;&gt;here&lt;/a&gt;. The fact that the Manjaro team leaves the KDE environment almost untouched is quite good. They just made their own theme and icons and thats it. Other than that you get the latest and greatest from KDE. Love it!&lt;/p&gt;
+
+&lt;h2 id=&quot;base-tools&quot;&gt;Base tools&lt;/h2&gt;
+
+&lt;p&gt;The base tools the distributions comes with are quite good, sure I installed a lot more things that I use on my day to day, but for normal usage you get a lot.&lt;/p&gt;
+
+&lt;h2 id=&quot;package-management-and-other-tools&quot;&gt;Package management and other tools&lt;/h2&gt;
+
+&lt;h3 id=&quot;pacman&quot;&gt;Pacman&lt;/h3&gt;
+
+&lt;p&gt;This was probably what I liked the most about Manjaro. I never works with pacman before, I always used apt distros. Pacman is for sure the best package manager that I ever used. Intuitive to use, fast and even the output you get during updates and stuff like that is pretty good.&lt;/p&gt;
+
+&lt;h3 id=&quot;pamac--aur&quot;&gt;Pamac &amp;amp; AUR&lt;/h3&gt;
+
+&lt;p&gt;Manjaro brings a AUR helper called Pamac, works amazing and also pretty intuitive and easy to use.&lt;/p&gt;
+
+&lt;h3 id=&quot;other-tools&quot;&gt;Other tools&lt;/h3&gt;
+
+&lt;p&gt;Manjaro doesn’t push you towards one container app environment like snap, appimage or flatpak. You can just activate the ones you want to use and just use whatever you want. It’s not really that intuitive to do, because its kinda hidden in the add/remove software app.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-addremove-software-app&quot;&gt;The add/remove software app&lt;/h3&gt;
+
+&lt;p&gt;This was probably what I liked less in the distribution. I think the Manjaro team should work on this app and just make it more like a store, something like PopOs did when they boroed the app from Elementary OS.&lt;/p&gt;
+
+&lt;h2 id=&quot;final-thoughts&quot;&gt;Final thoughts&lt;/h2&gt;
+
+&lt;p&gt;I need to actually format my main production machine at the start of 2021. I want to re-arrange my disks and the way I have things. Therefore I really consider moving from Pop!OS to Manjaro for 2021. I’ll keep you posted.&lt;/p&gt;</content><author><name>Marco Monteiro</name></author><category term="linux, distro, security, pacman, manjaro, arch" /><summary type="html">One month ago I installed Manjaro on my Laptop. In it I installed all the production tools I have on my production machine where I run Pop!OS. Here’s what I found.</summary></entry><entry><title type="html">A week on Manjaro Linux</title><link href="http://localhost:4000/post/a-week-on-manjaro/" rel="alternate" type="text/html" title="A week on Manjaro Linux" /><published>2020-11-07T00:00:00+00:00</published><updated>2020-11-07T00:00:00+00:00</updated><id>http://localhost:4000/post/a-week-on-manjaro</id><content type="html" xml:base="http://localhost:4000/post/a-week-on-manjaro/">&lt;p&gt;Last week I installed Manjaro Linux on my laptop and since then I’ve been using it as I would my work machine, even though I still use my desktop as my primary machine.&lt;/p&gt;
 
 &lt;!--more --&gt;
 
@@ -256,36 +292,4 @@ Decode Privacy — each site you visit gets a Privacy Grade (A-F) so you can see
 
 &lt;h3 id=&quot;dot-files&quot;&gt;&lt;strong&gt;.DOT FILES&lt;/strong&gt;&lt;/h3&gt;
 
-&lt;p&gt;Want to take a look at my &lt;a href=&quot;https://github.com/mpmont/dotFiles&quot;&gt;dotfiles&lt;/a&gt;? Sure I have them all on my &lt;a href=&quot;https://github.com/mpmont/dotFiles&quot;&gt;github&lt;/a&gt;. Get on it.&lt;/p&gt;</content><author><name>Marco Monteiro</name></author><category term="alacritty, fish, linux, micro, popOS, shell, sublime text, work,2020" /><summary type="html">It’s mid 2020, Ubuntu has a new LTS release and with it its time to try a few things and actually update. As you know I’m now using Pop!OS a distro based on Ubuntu. I already wrote an entire blog post about it. Now I’m going to show you the actual tools I use at the moment.</summary></entry><entry><title type="html">Why I moved from Ubuntu to PopOS!</title><link href="http://localhost:4000/post/why-i-moved-from-ubuntu-to-popos!/" rel="alternate" type="text/html" title="Why I moved from Ubuntu to PopOS!" /><published>2020-06-06T00:00:00+01:00</published><updated>2020-06-06T00:00:00+01:00</updated><id>http://localhost:4000/post/why-i-moved-from-ubuntu-to-popos!</id><content type="html" xml:base="http://localhost:4000/post/why-i-moved-from-ubuntu-to-popos!/">&lt;p&gt;PopOS! really made a big splash with its new 20.04 release and many long terms Ubuntu users like myself are now considering the change or actually changing. And there’s good reason why this is happening.&lt;/p&gt;
-
-&lt;p&gt;For those who don’t know PopOs! is actually based on Ubuntu, so you might be like: - If that’s the case why don’t you just stick with Ubuntu? - That’s a good question. So here’s why.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;h3 id=&quot;its-made-from-the-guys-at-system76&quot;&gt;&lt;strong&gt;IT’S MADE FROM THE GUYS AT SYSTEM76&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;p&gt;If you don’t know what &lt;a href=&quot;https://system76.com/&quot;&gt;system76&lt;/a&gt; is, they are a hardware company that is focussed on shipping their laptops and desktops with linux based systems. So much so, that they started their own distro to make the experience better. Why is this important? Because their distro is focussed on the hardware. Not that I ever had anything bad to say against Canonical, I just like system76 more.&lt;/p&gt;
-
-&lt;h3 id=&quot;they-dont-change-the-default-gnome-experience&quot;&gt;&lt;strong&gt;THEY DON’T CHANGE THE DEFAULT GNOME EXPERIENCE&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;p&gt;One of the things that always bothered me in Ubuntu was the changes they make to gnome. Specially because they only do it for one reason, for the desktop environment to look more like the one that was created by them, &lt;a href=&quot;https://en.wikipedia.org/wiki/Unity_%28user_interface%29&quot;&gt;Unity&lt;/a&gt;. And we all hated Unity right?&lt;/p&gt;
-
-&lt;p&gt;I hated this so much that my Ubuntu installs on both personal desktop, laptop and work computer always have the default &lt;a href=&quot;https://www.gnome.org/&quot;&gt;gnome&lt;/a&gt; desktop instaled instead of the one that comes with Ubuntu.&lt;/p&gt;
-
-&lt;h3 id=&quot;flatpak&quot;&gt;&lt;strong&gt;FLATPAK&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;p&gt;I never had anything against snaps. Canonical had a problem at the time and they solved it. However, now that we have &lt;a href=&quot;https://www.flatpak.org/&quot;&gt;flatpaks&lt;/a&gt; that have become more and more popular I really don’t see the point of using &lt;a href=&quot;https://snapcraft.io/&quot;&gt;snaps&lt;/a&gt;. PopOs! has the same philosophy and they ship their system already supporting flatpaks and even the shop that comes with it supports it, giving me the choice if I want to install a .deb or a flatpak.&lt;/p&gt;
-
-&lt;h3 id=&quot;disk-encryption-by-default&quot;&gt;&lt;strong&gt;DISK ENCRYPTION BY DEFAULT&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;p&gt;PopOs! takes your privacy and files very seriously, that’s why during the instalation proccess you actually have to opt out the disk encryption if that’s something you don’t want. But why wouldn’t you want it right?&lt;/p&gt;
-
-&lt;h3 id=&quot;window-tiling-inside-gnome&quot;&gt;&lt;strong&gt;WINDOW TILING INSIDE GNOME&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;iframe width=&quot;100%&quot; height=&quot;438&quot; src=&quot;https://www.youtube.com/embed/-fltwBKsMY0&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;One of the things that had me intrigged even when popOs! was still in beta was the option to tile windows inside gnome. I always had a passion about window managers like i3 and others. Just never made the change because there’s a lot of stuff I want from a desktop environment like gnome that a window manager doesn’t have. When they started showing the demos about this feature I was blown away. Sure you can even install it on ubuntu.&lt;/p&gt;
-
-&lt;h3 id=&quot;steam-and-litrus&quot;&gt;&lt;strong&gt;STEAM AND LITRUS&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;p&gt;Not that I do any more gaming besides minecraft on Linux, but if you plan on doing so, popOs! comes with almost everything pre-configured for you so that your gaming experience can be as easy as possible.&lt;/p&gt;</content><author><name>Marco Monteiro</name></author><category term="20.04, 2020, lts, popOs!,linux" /><summary type="html">PopOS! really made a big splash with its new 20.04 release and many long terms Ubuntu users like myself are now considering the change or actually changing. And there’s good reason why this is happening.</summary></entry></feed>
+&lt;p&gt;Want to take a look at my &lt;a href=&quot;https://github.com/mpmont/dotFiles&quot;&gt;dotfiles&lt;/a&gt;? Sure I have them all on my &lt;a href=&quot;https://github.com/mpmont/dotFiles&quot;&gt;github&lt;/a&gt;. Get on it.&lt;/p&gt;</content><author><name>Marco Monteiro</name></author><category term="alacritty, fish, linux, micro, popOS, shell, sublime text, work,2020" /><summary type="html">It’s mid 2020, Ubuntu has a new LTS release and with it its time to try a few things and actually update. As you know I’m now using Pop!OS a distro based on Ubuntu. I already wrote an entire blog post about it. Now I’m going to show you the actual tools I use at the moment.</summary></entry></feed>

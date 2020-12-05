@@ -1,0 +1,38 @@
+I"�	<p>One month ago I installed Manjaro on my Laptop. In it I installed all the production tools I have on my production machine where I run Pop!OS. Here’s what I found.</p>
+
+<!--more-->
+
+<h3 id="installation">Installation</h3>
+
+<p>The installation process was really straight forward and really fast too.</p>
+
+<h3 id="desktop-environment">Desktop Environment</h3>
+
+<p>I opt-in for KDE. This was something that I changed a few months ago in my workflow, I moved from gnome into KDE. I even made a video recently about my KDE workflow. You can see it <a href="https://www.youtube.com/watch?v=L7P3vVbQLfU">here</a>. The fact that the Manjaro team leaves the KDE environment almost untouched is quite good. They just made their own theme and icons and thats it. Other than that you get the latest and greatest from KDE. Love it!</p>
+
+<h3 id="base-tools">Base tools</h3>
+
+<p>The base tools the distributions comes with are quite good, sure I installed a lot more things that I use on my day to day, but for normal usage you get a lot.</p>
+
+<h3 id="package-management-and-other-tools">Package management and other tools</h3>
+
+<h4 id="pacman">Pacman</h4>
+
+<p>This was probably what I liked the most about Manjaro. I never works with pacman before, I always used apt distros. Pacman is for sure the best package manager that I ever used. Intuitive to use, fast and even the output you get during updates and stuff like that is pretty good.</p>
+
+<h4 id="pamac--aur">Pamac &amp; AUR</h4>
+
+<p>Manjaro brings a AUR helper called Pamac, works amazing and also pretty intuitive and easy to use.</p>
+
+<h4 id="other-tools">Other tools</h4>
+
+<p>Manjaro doesn’t push you towards one container app environment like snap, appimage or flatpak. You can just activate the ones you want to use and just use whatever you want. It’s not really that intuitive to do, because its kinda hidden in the add/remove software app.</p>
+
+<h4 id="the-addremove-software-app">The add/remove software app</h4>
+
+<p>This was probably what I liked less in the distribution. I think the Manjaro team should work on this app and just make it more like a store, something like PopOs did when they boroed the app from Elementary OS.</p>
+
+<h3 id="final-thoughts">Final thoughts</h3>
+
+<p>I need to actually format my main production machine at the start of 2021. I want to re-arrange my disks and the way I have things. Therefore I really consider moving from Pop!OS to Manjaro for 2021. I’ll keep you posted.</p>
+:ET
