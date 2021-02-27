@@ -13,27 +13,27 @@ Recently I&#39;ve been very interested in this project called Pi-hole. Where you
 
 With Pi-hole you&#39;ll get this set of features:
 
-### **Network-wide protection**
+<h3 style="font-weight: 400; font-size: 26px;"><strong><u>Network-wide protection</u></strong></h3>
 
 Instead of browser plugins or other software on each computer, install Pi-hole in one place and your entire network is protected.
 
-### **Block in-app advertisements**
+<h3 style="font-weight: 400; font-size: 26px;"><strong><u>Block in-app advertisements</u></strong></h3>
 
 Network-level blocking allows you to block ads in non-traditional places such as mobile apps and smart TVs, regardless of hardware or OS.
 
-### **Improve network performance**
+<h3 style="font-weight: 400; font-size: 26px;"><strong><u>Improve network performance</u></strong></h3>
 
 Since advertisements are blocked before they are downloaded, network performance is improved and will feel faster.
 
-### **Monitor statistics**
+<h3 style="font-weight: 400; font-size: 26px;"><strong><u>Monitor statistics</u></strong></h3>
 
 Our Web interface offers control of your Pi-hole and a central place to view statistics. We also include an API for extending these stats. I wanted to re-utilize an old Raspberry Pi version 3 I had laying around that I haven’t used in a long time so here&#39;s the process. First, you&#39;ll need a Pi, a zero could work fine just make sure you have that, a case, a power brick and an SD card.
 
-### **Setup the Raspberry Pi**
+<h3 style="font-weight: 400; font-size: 26px;"><strong><u>Setup the Raspberry Pi</u></strong></h3>
 
 Head on to the Pi [website](https://www.raspberrypi.org/software/operating-systems/#raspberry-pi-os-32-bit) and download the latest version of the Pi software. You don&#39;t need a desktop environment for this so the lite version should suffice. Then you can use any tool to flash your SD card. Since I&#39;m on Linux I used [Balena Etcher](https://www.balena.io/etcher/) way easier than using dd. After this you want to open the boot folder in your SD card and create an empty file called SSH and we&#39;re ready to start.
 
-### **Update your system**
+<h3 style="font-weight: 400; font-size: 26px;"><strong><u>Update your system</u></strong></h3>
 
 Insert your SD card into your Pi and boot it up. Then you&#39;ll need to find your Pi IP address in your network. You can easily find this on your router. Once you&#39;ve done that open up your terminal and access your Pi via SSH.
 
@@ -51,7 +51,7 @@ This might take a while. Once it&#39;s done you might need to check if you have 
 
     $ sudo apt install curl
 
-### **Install the Pi-hole software**
+<h3 style="font-weight: 400; font-size: 26px;"><strong><u>Install the Pi-hole software</u></strong></h3>
 
 Here we take the easier route. One-Step Automated Install those who want to get started quickly and conveniently may install Pi-hole using the following command:
 
@@ -59,7 +59,7 @@ Here we take the easier route. One-Step Automated Install those who want to get 
 
 During the process of install you&#39;ll be asked a bunch of question, but my process was very straight forward. Just say yes to all the default options and you&#39;ll be fine. Once the process is complete, you&#39;ll be presented with your Pi-hole password. Make sure to save that somewhere. You can now access your Pi-hole admin panel by just typing the IP address of your pi in your browser.
 
-### **Setup your Pi-hole so it can be used in your entire network**
+<h3 style="font-weight: 400; font-size: 26px;"><strong><u>Setup your Pi-hole so it can be used in your entire network</u></strong></h3>
 
 There&#39;s two ways you can use the Pi-hole. You can use it in a per device choice. This way you basically should only go into the router to make sure your Pi always uses the same IP. The best way you can use the Pi-hole is to setup the system to be used by all the devices in your network, and that&#39;s what I did. To do that the next steps are different on every router so you might need to do some googling at this point, but here&#39;s what I have and what I did.
 
@@ -69,7 +69,7 @@ There&#39;s two ways you can use the Pi-hole. You can use it in a per device cho
 
 2. Router setup
 
-### **Huawei HS8247W (Smart Router 2)**
+<h3 style="font-weight: 400; font-size: 26px;"><strong><u>Huawei HS8247W (Smart Router 2)</u></strong></h3>
 
 **Step 1** Advanced settings -&gt; LAN -&gt; DHCP Settings Primary DNS Server: 192.168.1.2
 **Step 2** Advanced Settings -&gt; IPv6 -&gt; DHCPv6 Server DNS LAN administrative origin: Static config Preffered DNS: 2001:818:xxxx::192:168:1:2
