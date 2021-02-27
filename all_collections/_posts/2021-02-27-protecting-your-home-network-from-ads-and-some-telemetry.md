@@ -45,7 +45,7 @@ This will ask you for a password and that will be raspberry by default. After th
 
 Then enter your old password and your new password 2 times. To update your system just do the following:
 
-    $ sudo apt update &amp;&amp; sudo apt upgrade
+    $ sudo apt update && sudo apt upgrade
 
 This might take a while. Once it&#39;s done you might need to check if you have curl installed and if not, install it.
 
@@ -65,7 +65,7 @@ There&#39;s two ways you can use the Pi-hole. You can use it in a per device cho
 
 Setup the IPv4 and IPv6 static IP. In my case these are my settings, you can find yours in your information tab on your Pi-hole admin panel.
 
-192.168.1.2 e 2001:818:xxxx::192:168:1:2 in my case.
+192.168.1.2 and 2001:818:xxxx::192:168:1:2 in my case.
 
 <h3 style="font-weight: 400; font-size: 26px;"><strong><u>Huawei HS8247W (Smart Router 2) (Specific to my router)</u></strong></h3>
 
