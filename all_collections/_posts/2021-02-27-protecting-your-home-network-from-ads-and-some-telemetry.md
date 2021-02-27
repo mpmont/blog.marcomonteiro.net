@@ -63,13 +63,11 @@ During the process of install you&#39;ll be asked a bunch of question, but my pr
 
 There&#39;s two ways you can use the Pi-hole. You can use it in a per device choice. This way you basically should only go into the router to make sure your Pi always uses the same IP. The best way you can use the Pi-hole is to setup the system to be used by all the devices in your network, and that&#39;s what I did. To do that the next steps are different on every router so you might need to do some googling at this point, but here&#39;s what I have and what I did.
 
-1. Setup the IPv4 and IPv6 static IP. In my case these are my settings, you can find yours in your information tab on your Pi-hole admin panel.
+Setup the IPv4 and IPv6 static IP. In my case these are my settings, you can find yours in your information tab on your Pi-hole admin panel.
 
 192.168.1.2 e 2001:818:xxxx::192:168:1:2 in my case.
 
-2. Router setup
-
-<h3 style="font-weight: 400; font-size: 26px;"><strong><u>Huawei HS8247W (Smart Router 2)</u></strong></h3>
+<h3 style="font-weight: 400; font-size: 26px;"><strong><u>Huawei HS8247W (Smart Router 2) (Specific to my router)</u></strong></h3>
 
 **Step 1** Advanced settings -&gt; LAN -&gt; DHCP Settings Primary DNS Server: 192.168.1.2
 **Step 2** Advanced Settings -&gt; IPv6 -&gt; DHCPv6 Server DNS LAN administrative origin: Static config Preffered DNS: 2001:818:xxxx::192:168:1:2
