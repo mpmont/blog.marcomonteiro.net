@@ -70,8 +70,11 @@ Setup the IPv4 and IPv6 static IP. In my case these are my settings, you can fin
 <h3 style="font-weight: 400; font-size: 26px;"><strong><u>Huawei HS8247W (Smart Router 2) (Specific to my router)</u></strong></h3>
 
 **Step 1** Advanced settings -&gt; LAN -&gt; DHCP Settings Primary DNS Server: 192.168.1.2
+
 **Step 2** Advanced Settings -&gt; IPv6 -&gt; DHCPv6 Server DNS LAN administrative origin: Static config Preffered DNS: 2001:818:xxxx::192:168:1:2
+
 **Step 3** Advanced Settings -&gt; WAN Config -&gt; DNS Server configuration IPv4 / Origin: Personalized Primary DNS: 1.1.1.1 Secondary DNS: 1.0.0.1
+
 **Step 4** Advanced Settings -&gt; WAN Config -&gt; DNS IPv6 Server configuration / Origin: Personalized / Primary DNS: 2606:4700:4700::1111 / Secondary DNS: 2606:4700:4700::1001
 
 That&#39;s it, now always leave your Raspberry Pi on and you&#39;ll be fine. If your internet connection goes out for some reason, just make sure your cat didn&#39;t disconnect the Pi.
