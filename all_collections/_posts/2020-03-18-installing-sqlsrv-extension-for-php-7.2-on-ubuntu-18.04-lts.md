@@ -48,7 +48,7 @@ That's it!
 
 ----
 
-### Update for Ubuntu Server 20.04
+## Update for Ubuntu Server 20.04
 
 
 Recently I needed to do this in a more recent version of Ubuntu Server, the lattest 20.04 LTS release. For this version there's only a few tweaks that you need to do. The first one is to change the packages list from Microsoft to the correct version. So instead of using this:
@@ -78,3 +78,85 @@ To end this, the current version of PHP on Ubuntu Server 20.04 is 7.4, so all th
     sudo ln -s /etc/php/7.4/mods-available/pdo_sqlsrv.ini /etc/php/7.4/cli/conf.d/pdo_sqlsrv.ini
 
 That's it, this is everything that changed for Ubuntu Server 20.04.
+
+There was another quirk while I did this. I created the following script in the server to test my connection like so:
+
+
+    <?php
+
+    $serverName = "1.1.1.1,1111"; //serverName\instanceName (your ip and port)
+
+    // Since UID and PWD are not specified in the $connectionInfo array,
+    // The connection will be attempted using Windows Authentication.
+    $connectionInfo = array( "Database"=>"databaseName", "UID"=>"databaseUserName", "PWD"=>"YourPassword#");
+    $conn = sqlsrv_connect( $serverName, $connectionInfo);
+
+    if( $conn ) {
+         echo "Connection established.<br />";
+    }else{
+         echo "Connection could not be established.<br />";
+         die( print_r( sqlsrv_errors(), true));
+    }
+
+    ?>
+
+While testing this I got the following error:
+
+
+    Connection could not be established.
+    Array
+    (
+    [0] => Array
+        (
+            [0] => 08001
+            [SQLSTATE] => 08001
+            [1] => -1
+            [code] => -1
+            [2] => [Microsoft][ODBC Driver 17 for SQL Server]SSL Provider: [error:1425F102:SSL routines:ssl_choose_client_version:unsupported protocol]
+            [message] => [Microsoft][ODBC Driver 17 for SQL Server]SSL Provider: [error:1425F102:SSL routines:ssl_choose_client_version:unsupported protocol]
+        )
+
+    [1] => Array
+        (
+            [0] => 08001
+            [SQLSTATE] => 08001
+            [1] => -1
+            [code] => -1
+            [2] => [Microsoft][ODBC Driver 17 for SQL Server]Client unable to establish connection
+            [message] => [Microsoft][ODBC Driver 17 for SQL Server]Client unable to establish connection
+        )
+    )
+
+So the first thing I did was installing the correct ODBC Driver in my windows server. That would be the ODBC Driver 17 for SQL Server. But this didn't solve the issue. So I dig a bit further into that ssl issue and got had to do edit my /etc/ssl/openssl.cnf.
+
+Here's what I did:
+
+    $ cd /etc/ssl
+    $ sudo cp openssl.cnf openssl.cnf.bak
+    $ sudo nano openssl.cnf
+
+First I made a backup of my original file, then I openned the openssl.cnf file in nano and did the following:
+
+1st line in the file added:
+
+    openssl_conf = default_conf
+
+End of file added:
+
+    [default_conf]
+    ssl_conf = ssl_sect
+
+    [ssl_sect]
+    system_default = system_default_sect
+
+    [system_default_sect]
+    MinProtocol = TLSv1
+    CipherString = DEFAULT@SECLEVEL=1
+
+Not 100% sure why i had to restart apache2 for it to take effect, but I had to.
+
+    $ systemctl restart apache2
+
+Reloaded the test script and it works.
+
+Now I'm not really 100% sure if this compromises my security somehow. But this was all I had to do to be able to connect into an older version of SQLserver in a more recent version of Ubuntu 20.04.
