@@ -110,9 +110,7 @@ The best way of doing things is to combine both. And in this case you'll end up 
       }
       $sum = 0;
       foreach ($numbers as $number) {
-        foreach ($numbers as $number) {
-          $sum += isValidNumberSum($number);
-        }
+        $sum += isValidNumberSum($number);
       }
       return $sum;
     }
