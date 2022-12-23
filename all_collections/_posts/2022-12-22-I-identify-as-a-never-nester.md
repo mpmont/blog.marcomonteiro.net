@@ -116,12 +116,12 @@ The best way of doing things is to combine both. And in this case you'll end up 
     }
 
     function isValidNumberSum($input) {
-      if (is_numeric($input)) {
-        return $input;
+      if (!is_numeric($input)) {
+        throw new Exception("Error: Non-numeric value found in array.");
       }
-      throw new Exception("Error: Non-numeric value found in array.");
+      return $input;
     }
 
-In this case we even went a step further and removed the else statement in our isValidNumberSum function, since we know if the number is not returned you can assume its not a number and just throw a new exception.
+In this case we even went a step further and removed the else statement in our isValidNumberSum function, we just apply the same concept of validation first and return after.
 
 I've been adapting all my code to this approach and its way more redable because I know the start of any function is focussed on the errors and exceptions and the actual code will be in the end.
