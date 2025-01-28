@@ -36,9 +36,9 @@ This will assign the values of the array to the variables. This is a very simple
 
 Let's see a more complex example and how you maybe doing it at the moment and how you can improve it using array spreading and destructuring.
 
-function hello($name, $age, $email) {
-    return "Hello, my name is $name and I'm $age years old. My email is $email.";
-}
+    function hello($name, $age, $email) {
+        return "Hello, my name is $name and I'm $age years old. My email is $email.";
+    }
 
     $person = [
         'name' => 'John Doe',
