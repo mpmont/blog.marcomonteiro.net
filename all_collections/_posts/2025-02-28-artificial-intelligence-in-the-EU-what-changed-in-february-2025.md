@@ -1,12 +1,13 @@
 ---
 layout: post
 title: Artificial Intelligence in the EU: What Changed in February 2025?
-date: 2025-01-28
+date: 2025-02-28
 tag: ArtificialIntelligence, AIRegulation, Innovation, ResponsibleTechnology, Europe, DigitalTransformation
 description: As of February 2, 2025, new rules have come into effect to ensure AI is used ethically and in compliance with human rights.
 author: Marco Monteiro
 categories: [AI, AIRegulation]
 ---
+
 The European Union's Artificial Intelligence (AI) regulation is advancing towards a safer and more transparent future, strengthening the protection of fundamental rights. As of February 2, 2025, new rules have come into effect to ensure AI is used ethically and in compliance with human rights. These changes mark a significant step in balancing innovation with responsibility, setting a precedent for global AI governance.
 
 <!--more-->
